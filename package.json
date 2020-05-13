@@ -1,11 +1,11 @@
 {
-  "name": "gatsbify",
+  "name": "ecomloop",
   "HomePage": "https://ecomloop.com/",
-  "description": "the shopify + gatsby starter theme",
-  "version": "0.1",
+  "description": "We help uncommon businesses succeed in the digital economy",
+  "version": "2.4.3",
   "repository": {
     "type": "git",
-    "url": "https://github.ecomloop/gatsbify"
+    "url": "https://github.com/ecomloop/ecomloop.github.io"
   },
   "dependencies": {
     "@fs/gatsby-plugin-drive": "^0.2.1",
