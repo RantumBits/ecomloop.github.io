@@ -6,9 +6,9 @@ import PageHeader from '../components/PageHeader'
 import ProductGrid from '../components/ProductGrid'
 
 const ServicesPage = () => (
-  <Layout title="Services">
+  <Layout title="ecommcerce agency services">
     <PageHeader
-      title="services"
+      title="ecommcerce agency services"
       subtitle="ecommerce agency services are designed to get started right away and identify actionable next steps"
       backgroundImage='../images/ecoomloop_clock_leverage.png'
     />
@@ -45,32 +45,3 @@ Here at Ecommerce Magazine, we've compiled a list of nine agencies that are chan
 )
 
 export default ServicesPage
-
-export const pageQuery = graphql`
-  ## Query for HomePage data
-  ## Use GraphiQL interface (http://localhost:8000/___graphql)
-  ## $id is processed via gatsby-node.js
-  ## query name must be unique to this file
-  query ServicesPage($id: String!) {
-    page: markdownRemark(id: { eq: $id }) {
-      ...Meta
-      html
-      frontmatter {
-        title
-        subtitle
-        featuredImage
-        accordion {
-          title
-          content
-        }
-      }
-    }
-
-
-
-
-
-
-
-  }
-`
