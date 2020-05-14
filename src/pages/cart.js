@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 import Cart from '../components/Cart'
 
 const CartPage = () => (
-    <Layout>
+    <Layout title="Cart">
         <section className="section">
             <div className="container">
                 <h1>Cart</h1>
