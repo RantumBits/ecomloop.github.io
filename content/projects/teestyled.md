@@ -1,5 +1,5 @@
 ---
-template: ComponentsPage
+template: ProjectPage
 slug: shopify-development-apparel
 client: TeeStyled
 url: https://teestyled.com
@@ -7,19 +7,17 @@ title: Shopify Development for Apparel Manufacturer
 featuredImage: ../images/shopify_development_apparel.jpg
 subtitle: We developed a new Shopify ecommerce site for this Los Angeles-based blank apparel manufacturer to sell to existing wholesale customers & introduce a direct-to-consumer retail channel
 tags:
- - wholesale ecommerce
+ - wholesale
  - ecommerce development
- - shopify development
+ - shopify
 date: 2020-03-01
 section1: >-
   ## A multi-channel solution
 
   After successfully operating for 21 years without any ecommerce, Tee Styled came to us looking to develop a solution to sell both to their current wholesale customer, as well as open a new sales channel to sell direct to customers.
 
-section2: test
-video: https://www.youtube.com/embed/RKIhUCox-UE
-videoPoster: 'https://ucarecdn.com/7b370943-0401-4b4b-87e8-0150de313e21/-/progressive/yes/-/format/auto/-/resize/2000x/'
-videoTitle: 'Simple backend management'
+
+
 accordion:
   - description: Shopify, Liquid, Klaviyo, Google Analytics, Google Sheets
     title: Platforms & technologies

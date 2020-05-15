@@ -1,6 +1,6 @@
 ---
 template: ProjectPage
-slug: woocommerce conversion rate optimization
+slug: woocommerce-conversion-rate-optimization
 client: Luma Therapeurtics / illuvinate
 url: https://illuvinate.com
 title: Woocommerce conversion rate optimization for online prescriptions
