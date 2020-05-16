@@ -50,6 +50,10 @@ body {
 
 }
 
+.hide {
+  display: none;
+}
+
 a {
   color: var(--primary);
 }

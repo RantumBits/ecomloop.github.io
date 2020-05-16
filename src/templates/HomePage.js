@@ -17,7 +17,7 @@ export const convertServicesToPostFormat = (services) => {
                 omission: `…`,
             }),
             featuredImage: service.images[0].originalSrc,
-            slug: "/service/"+service.handle,
+            slug: "/solution/"+service.handle,
         }
         formattedServices.push(singleItem)
     });
