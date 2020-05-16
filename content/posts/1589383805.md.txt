@@ -1,0 +1,21 @@
+---
+template: SinglePost
+title: 'Coinbase and the future of IPOs'
+status: Published
+date: 2020-05-13T20:44:54-07:00
+tags:
+ - '*ecommerce'
+ -
+ -
+featuredImage: 'https://ecomloop.com/images/1589383805.jpg'
+excerpt: >-
+ The next move towards a Coinbase IPO...
+categories:
+  - category: Shared Links
+---
+The next move towards a Coinbase IPO...
+
+From The Ledger – Fortune on 2020 05 13
+> 
+
+[Read more at The Ledger – Fortune] (https://fortune.com/2020/05/13/coinbase-and-the-future-of-ipos/)

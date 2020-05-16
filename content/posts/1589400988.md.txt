@@ -1,0 +1,23 @@
+---
+template: SinglePost
+title: 'Is Your City Willing to Be Flexible So Small Businesses Can Survive?'
+status: Published
+date: 2020-05-13T20:50:02-07:00
+tags:
+ - '*ecommerce'
+ -
+ -
+featuredImage: 'https://ecomloop.com/images/1589400988.jpg'
+excerpt: >-
+ Open up streets like Vilnius, Lithuania to help small business 
+categories:
+  - category: Shared Links
+---
+Open up streets like Vilnius, Lithuania to help small business 
+
+From Strong Towns Media - Strong Towns on 2020 05 13
+> Small businesses are reeling from the effect of the COVID-19 crisis, especially those that rely on groups of people to congregate. And in a cruel twist of fate, it’s not the drive-thru chains that are hurting most, but rather the locally-owned businesses, the ones with the most vested interest in the community.
+
+
+
+[Read more at Strong Towns Media - Strong Towns] (https://www.strongtowns.org/journal/2020/5/13/is-your-city-willing-to-be-flexible-so-small-businesses-can-survive)

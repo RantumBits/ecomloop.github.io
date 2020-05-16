@@ -1,0 +1,21 @@
+---
+template: SinglePost
+title: 'Facebook is buying Giphy and integrating it with Instagram'
+status: Published
+date: 2020-05-15T10:07:37-07:00
+tags:
+ - '*ecommerce'
+ -
+ -
+featuredImage: 'https://ecomloop.com/images/1589553672.jpg'
+excerpt: >-
+ 
+categories:
+  - category: Shared Links
+---
+
+
+From The Verge -  Tech Posts on 2020 05 15
+> Giphy is one of the largest GIF sites on the internet, offering tools for creating, sharing, and remixing GIFs. Facebook has already relied on Giphy’s API for sourcing GIFs in its apps for years: Instagram, the main Facebook app, Facebook Messenger, and WhatsApp all already work with the service. According to Facebook, 50 percent of all of Giphy’s traffic comes from its apps, with half of that coming from Instagram alone.
+
+[Read more at The Verge -  Tech Posts] (https://www.theverge.com/2020/5/15/21259965/facebook-giphy-gif-acquisition-buy-instagram-integration-cost)

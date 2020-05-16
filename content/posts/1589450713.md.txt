@@ -1,0 +1,21 @@
+---
+template: SinglePost
+title: 'How Amazon is growing its power during the pandemic'
+status: Published
+date: 2020-05-14T17:31:38-07:00
+tags:
+ - '*ecommerce'
+ -
+ -
+featuredImage: 'https://ecomloop.com/images/1589450713.jpg'
+excerpt: >-
+ Amazon is beginning to press the gas again, widening the gap between them and “the field”
+categories:
+  - category: Shared Links
+---
+Amazon is beginning to press the gas again, widening the gap between them and “the field”
+
+From The Verge -  Tech Posts on 2020 05 14
+> The company on Sunday lifted restrictions on the amount of inventory its suppliers can send to Amazon warehouses and is shortening delivery times — which had stretched for weeks for some products since the outbreak began — back to days.
+
+[Read more at The Verge -  Tech Posts] (https://www.theverge.com/interface/2020/5/14/21257313/amazon-delivery-times-worker-raises-price-gouging-liability-pandemic)
