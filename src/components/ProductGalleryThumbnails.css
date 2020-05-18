@@ -15,6 +15,16 @@ div.cell {
   vertical-align: text-top;
 }
 
+.Gallery--FeaturedImage {
+    margin-left: -80px !important;
+    margin-right: -50px !important;
+}
+@media screen and (max-width: 700px) {
+    .Gallery--FeaturedImage {
+        margin: 1em !important;
+    }
+}
+
 span.Thumbnail {
     height: 100px !important;
     display: inline-block;

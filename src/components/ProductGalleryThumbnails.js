@@ -13,6 +13,7 @@ const ProductGalleryThumbnails = ({ productimages }) => {
                 <Image
                     fluid={productimages[currentImageIndex].localFile.childImageSharp.fluid}
                     key={productimages[currentImageIndex].id}
+                    className="Gallery--FeaturedImage"
                 />
             }
 
@@ -24,6 +25,9 @@ const ProductGalleryThumbnails = ({ productimages }) => {
                                 fluid={image.localFile.childImageSharp.fluid}
                                 key={image.id}
                                 className="cell"
+                                imgStyle={{
+                                    objectFit: "fill",
+                                }}
                             />
                         </span>
                     ))}

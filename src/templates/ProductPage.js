@@ -22,7 +22,7 @@ const ProductPage = ({ data }) => {
                 itemType="http://schema.org/BlogPosting"
             >
                 <div className="container skinny">
-                    <Link className="SingleService--BackButton" to="/services/">
+                    <Link className="SingleService--BackButton" to="/solutions/">
                         <ChevronLeft /> BACK
                     </Link>
                     <div className="SingleService--Content relative">

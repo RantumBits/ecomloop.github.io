@@ -6,19 +6,18 @@ div.Grid {
 
 div.Product {
     display: flex;
-    min-height: 100%;
     margin: 2em;
     flex-direction: column;
 }
 
-span.Title {
-    text-align: center;
+div.Title {
+    text-align: left;
 }
-span.PriceTag {
-    text-align: center;
+div.PriceTag {
+    text-align: left;
     margin-top: 15px;    
 }
-span.PriceTag:before {
+div.PriceTag:before {
     content: '- '
 }
 
@@ -26,4 +25,8 @@ span.PriceTag:before {
     div.Grid {
         grid-template-columns: repeat(1, 1fr);
     }
+    div.Product {
+        margin: 0em;
+    }
+
 }

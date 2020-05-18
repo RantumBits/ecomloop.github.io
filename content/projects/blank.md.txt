@@ -1,14 +1,15 @@
 ---
 template: ProjectPage
-slug:
-client:
-url:
-title:
+slug: email-signup-optimization
+client: Ranch Road Boots
+url: https://www.ranchroadboots.com/
+title: Email signup optimization for leather boot company
 featuredImage: ../images/
-subtitle:
+subtitle: We helped to increase signup rates by over 60%
 tags:
- -
- -
+ - conversion rate optimization
+ - email marketing
+ - Shopify
  -
 date: 2020-03-01
 section1: >-
@@ -36,7 +37,7 @@ gallery:
     title:
   - alt:
     image: ../images/123.jpg
-    title: 
+    title:
 meta:
   description:
   title:
