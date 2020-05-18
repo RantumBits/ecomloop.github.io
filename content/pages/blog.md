@@ -2,7 +2,7 @@
 template: BlogIndex
 slug: blog
 title: ecomloop blog
-featuredImage: '../images/ecomloop_ecommerce_development_header_wall.png'
+featuredImage: '../images/ecomloop_ecommerce_development_header_wall.jpg'
 subtitle: thoughts on digital commerce, technology & independent business
 meta:
   description: >-
