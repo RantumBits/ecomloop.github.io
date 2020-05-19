@@ -1,0 +1,21 @@
+---
+template: SinglePost
+title: 'A court in Texas is holding the first jury trial by Zoom'
+status: Published
+date: 2020-05-18T20:09:26-07:00
+tags:
+ - '*ecommerce'
+ -
+ -
+featuredImage: 'https://ecomloop.com/images/1589826449.jpg'
+excerpt: >-
+ Zoom looks like a much safer move for governments than using any offering from Facebook or Google. 
+categories:
+  - category: Shared Links
+---
+Zoom looks like a much safer move for governments than using any offering from Facebook or Google. 
+
+From The Verge -  Tech Posts on 2020 05 18
+> 
+
+[Read more at The Verge -  Tech Posts] (https://www.theverge.com/2020/5/18/21262506/texas-court-jury-trial-zoom-remote-virtual-verdict)
