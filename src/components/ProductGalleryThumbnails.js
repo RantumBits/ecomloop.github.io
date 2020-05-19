@@ -19,14 +19,14 @@ const ProductGalleryThumbnails = ({ productimages }) => {
 
             <div className="table">
                 <div className="row">
-                    {productimages && productimages.map((image, index) => (
+                    {productimages && productimages.length > 1 && productimages.map((image, index) => (
                         <span className="Thumbnail" onClick={() => setCurrentImageIndex(index)}>
                             <Image
                                 fluid={image.localFile.childImageSharp.fluid}
                                 key={image.id}
                                 className="cell"
                                 imgStyle={{
-                                    objectFit: "fill",
+                                    objectFit: "contain",
                                 }}
                             />
                         </span>

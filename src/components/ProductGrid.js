@@ -68,7 +68,7 @@ const ProductGrid = () => {
                             <div className="Title">{title}</div>
                             <div className="PriceTag">Starting at {getPrice(firstVariant.price)}</div>
                             <div style={{ paddingTop: '20px' }}>
-                                <Link to={`/solution/${handle}/`} style={{ width: '65%' }} className="Nav--CTA animated rubberBand slow delay-5s">Learn More</Link>
+                                <Link to={`/solution/${handle}/`} style={{ width: '%' }} className="Nav--CTA">Learn More</Link>
                             </div>
                         </div>
                     </div>

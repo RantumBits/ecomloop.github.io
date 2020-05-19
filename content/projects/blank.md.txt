@@ -1,44 +1,34 @@
 ---
 template: ProjectPage
-slug: email-signup-optimization
-client: Ranch Road Boots
-url: https://www.ranchroadboots.com/
-title: Email signup optimization for leather boot company
-featuredImage: ../images/
-subtitle: We helped to increase signup rates by over 60%
+slug: cannabis-website-development
+client: Heshies
+url: https://heshies.com/
+title: Website  development for cannabis brand
+featuredImage: ../images/cannabis-website-development.jpg
+subtitle: This cannabis brand needed a website to supply info to dispensary partners
 tags:
- - conversion rate optimization
- - email marketing
- - Shopify
+ - website development
+ - cannabis
+ - wordpress
  -
-date: 2020-03-01
+date: 2019-02-01
 section1: >-
-  ##
+  ## Website  development for cannabis brand
 
-  After successfully operating for 21 years without any ecommerce, Tee Styled came to us looking to develop a solution to sell both to their current wholesale customer, as well as open a new sales channel to sell direct to customers.
+  This cannabis brand needed a website to supply info to dispensary partners
 
 section2:
 
 accordion:
-  - description: Shopify, Liquid, Klaviyo, Google Analytics, Google Sheets
+  - description: Wordpress, Cloudways
     title: Platforms & technologies
-  - description: Wholesale section includes application form, approve/deny process, custom discounts & tiered pricing. Retail section allows company to sell to a new customer segment.
-    title: Wholesale & retail channels
-  - description: Site management is simple via the Shopify admin and automated integrations with Klaviyo for email marketing.
-    title: Simple backend management
-  - description: Inventory updates may be easily managed via a Google Sheets integration
-    title: Easy inventory updates
+
 gallery:
-  - alt:
-    image: ../images/123.jpg
-    title:
   - alt:
     image: ../images/
     title:
-  - alt:
-    image: ../images/123.jpg
-    title:
+
 meta:
-  description:
-  title:
+  description: This cannabis brand needed a website to supply info to dispensary partners
+  title: Website  development for cannabis brand
 ---

@@ -109,7 +109,7 @@ const ProductForm = ({ product }) => {
         <center>
             {options.map(({ id, name, values }, index) => (
                 <React.Fragment key={id}>
-                  <label className="Form--Label" style={{width:'33%'}}>Available Options</label>
+                  <label className="Form--Label" style={{width:'33%'}}>{name}</label>
                   <label className='Form--Label has-arrow' style={{width:'33%'}}>
                     <select
                         name={name}
