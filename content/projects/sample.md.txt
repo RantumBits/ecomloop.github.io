@@ -1,0 +1,32 @@
+---
+template: ProjectPage
+slug: client-name
+client: Client Name
+url: URL
+title:
+featuredImage: ../images/CLIENTNAME_01.jpg
+subtitle:
+tags:
+ -
+ -
+ -
+ -
+date: 2019-02-01
+section1: >-
+  ##
+
+section2:
+
+accordion:
+  - description:
+    title: Platforms & technologies
+
+gallery:
+  - alt:
+    image: ../images/
+    title:
+
+meta:
+  description:
+  title:
+---

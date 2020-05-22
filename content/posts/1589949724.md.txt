@@ -1,0 +1,21 @@
+---
+template: SinglePost
+title: 'Brent Simmons: Focus on what matters  ↦'
+status: Published
+date: 2020-05-20T22:21:38-07:00
+tags:
+ - '*ecommerce'
+ -
+ -
+featuredImage: 'https://ecomloop.com/images/1589949724.jpg'
+excerpt: >-
+ 
+categories:
+  - category: Shared Links
+---
+
+
+From Six Colors on 2020 05 19
+> The best general advice I can give is just this: make sure performance is part of the foundation of your app. Make sure it’s part of every decision every day. Make sure, in other words, that performance isn’t just a topping — it’s the pizza.
+
+[Read more at Six Colors] (https://inessential.com/2020/05/18/why_netnewswire_is_fast)

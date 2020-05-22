@@ -1,0 +1,21 @@
+---
+template: SinglePost
+title: 'Facebook and Instagram roll out Shops, turning business profiles into storefronts'
+status: Published
+date: 2020-05-19T18:14:54-07:00
+tags:
+ - '*ecommerce'
+ -
+ -
+featuredImage: 'https://ecomloop.com/images/1589909987.jpg'
+excerpt: >-
+ 
+categories:
+  - category: Shared Links
+---
+
+
+From eCommerce – TechCrunch on 2020 05 19
+> 
+
+[Read more at eCommerce – TechCrunch] (https://techcrunch.com/2020/05/19/facebook-shops/)

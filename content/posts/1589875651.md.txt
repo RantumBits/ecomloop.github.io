@@ -1,0 +1,32 @@
+---
+template: SinglePost
+title: 'U.S. Census Pulse Survey Finds Small Businesses Getting Slammed'
+status: Published
+date: 2020-05-19T20:49:33-07:00
+tags:
+ - '*ecommerce'
+ -
+ -
+featuredImage: 'https://ecomloop.com/images/1589875651.jpg'
+excerpt: >-
+ Not a great sign for small businesses in need
+
+“The data shows 74.9% of small businesses applied for loans from PPP).  However, only about half (38%) received funding“
+categories:
+  - category: Shared Links
+---
+Not a great sign for small businesses in need
+
+“The data shows 74.9% of small businesses applied for loans from PPP).  However, only about half (38%) received funding“
+
+From Small Business Labs on 2020 05 19
+> The industries with the highest percentages of businesses reporting a large negative effect are:
+
+Accommodation and food services - 83%
+Arts, entertainment and recreation - 75%
+Educational services - 74%
+Healthcare and social assistance - 70%
+Retail trade - 53%
+Transportation and warehousing - 52%
+
+[Read more at Small Business Labs] (https://www.smallbizlabs.com/2020/05/us-census-pulse-survey-finds-small-businesses-getting-slammed.html)
