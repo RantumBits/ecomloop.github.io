@@ -1,0 +1,21 @@
+---
+template: SinglePost
+title: 'Jack Dorsey donates $5 million to Andrew Yang’s universal basic income and COVID-19 relief efforts'
+status: Published
+date: 2020-05-21T18:10:25-07:00
+tags:
+ - '*ecommerce'
+ -
+ -
+featuredImage: 'https://ecomloop.com/images/1590072807.jpg'
+excerpt: >-
+ 
+categories:
+  - category: Shared Links
+---
+
+
+From The Verge -  Tech Posts on 2020 05 21
+> 
+
+[Read more at The Verge -  Tech Posts] (https://www.theverge.com/2020/5/21/21266096/twitter-jack-dorsey-andrew-yang-universal-basic-income-cornavirus-donation)
