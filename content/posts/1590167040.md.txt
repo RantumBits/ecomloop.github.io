@@ -1,0 +1,21 @@
+---
+template: SinglePost
+title: 'What We Leave Behind'
+status: Published
+date: 2020-05-25T10:39:15-07:00
+tags:
+ - '*ecommerce'
+ -
+ -
+featuredImage: 'https://ecomloop.com/images/1590167040.jpg'
+excerpt: >-
+ 
+categories:
+  - category: Shared Links
+---
+
+
+From Prof Galloway on 2020 05 22
+> 
+
+[Read more at Prof Galloway] (https://www.profgalloway.com/what-we-leave-behind/)

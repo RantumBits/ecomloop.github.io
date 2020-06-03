@@ -1,0 +1,21 @@
+---
+template: SinglePost
+title: 'Google tests voice matching to secure Google Assistant purchases'
+status: Published
+date: 2020-05-26T09:11:33-07:00
+tags:
+ - '*ecommerce'
+ -
+ -
+featuredImage: 'https://ecomloop.com/images/1590486129.jpg'
+excerpt: >-
+ 
+categories:
+  - category: Shared Links
+---
+
+
+From The Verge -  Tech Posts on 2020 05 26
+> Google Assistant’s Voice Match feature can now secure purchases made through its voice assistant as part of a limited pilot program.
+
+[Read more at The Verge -  Tech Posts] (https://www.theverge.com/2020/5/26/21270222/google-assistant-voice-match-purchases-in-app-google-play-shopping)
