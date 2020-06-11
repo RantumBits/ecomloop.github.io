@@ -1,80 +1,69 @@
-## 2.0.13 - 2020-03-11
 
-Update node .nvmrc for build step.
-Successful Upgrade to latest packages.
-Thanks @flamebeard
-Thanks @krosenk729
 
-## 2.0.12 - 2019-11-01
+## 2.5.0 - 2020.06.11
 
-Removed date-fns and replaced with moment.js  
-Thanks @doakheggeness
+## 2.5.0 - 2020.06.05
+add 6 new projects
+revise styles on product page
 
-## 2.0.11 - 2019-08-29
+## 2.4.0 - 2020.05.29
+update homepage & global keywords, get header images for 2 new projects, add titles, tags, text & slugs
+optimize images [init setup]
 
-Add API key to resolve instagram issue.
+## 2.3.0 - 2020.05.22
+create posts ten projects with screenshots
+implement changes to product pages & index from harshna
+add 5 more projects to ecomloop site
+add 10 final projects to ecomloop site [assigned prep]
+review and update FH task, setup 10 new files
 
-## 2.0.10 - 2019-08-01
+## 2.3.0 - 2020.05.15
+clarify CTA
+setup SEMrush for target keywords + pages
+revise copy on existing CRO pages, add paid search page
+add gatsby services page
 
-Change Accordion click event to toggle individual item.
+## 2.3.0 - 2020.05.08
+add animated CTA to top menu
+add feedback/quotes from upwork to homepage accordion
+add simple email signup form page
+add projects section to homepage [assign]
+update template on project pages
+update content on 3 project pages
+add 1 more projects [, ski shaggys]
+add projects to top menu, add client name to projects [assign]
+add 1 more projects [luma], update project index page
+revise descriptions/urls of services in shopify & plan updates for next week
 
-## 2.0.9 - 2019-07-26
+## 2.2.0 - 2020.05.01
+remove 'shared links' section
+fix image links on posts
+update menu for blog subcategories
+add shop/services section to menu
+check updates, assign new tasks, add projects section
+add services & blog to homepage
+add date to blog posts
+add images to blog posts
+check on updates
+add twitter link
+fix contact form page (map url, zoom), assign task to add project index page
+add serena, luma, shakawear
+review/revise project index
+update to use original images for all headers
+enable rss feed plugin , publish posts to buffer/twitter
+add checkout buttons on services page
 
-Add new Popup component - Accepts children :)
 
-## 2.0.9 - 2019-05-17
+## 2.1.0 - 2020.05.01
+setup shopify account create products, [1 hour call, CRO Blueprint, CRO management]
+configure shopify/gatsby starter project to import products
+configure shopify products on current site [commit changes, update images]
 
-Add google tag manager to track routes
-add you tag GMT_add_your_tag_here gatsby-config.js
-Update all packages :) `yarn upgrade --latest`
 
-## 2.0.8 - 2019-05-06
-
-Background Video with title
-Submit to showcase
-
-## 2.0.7 - 2019-03-27
-
-Upgrade CMS version.
-Fix broken image in preview when title is filled in.
-
-## 2.0.6 - 2019-01-22
-
-BackgroundVideo Component set poster for mobile width window.
-
-## 2.0.5 - 2019-01-22
-
-Offline support with prefetch 10px images from Uploadcare.
-Single post layout update to remove background image.
-
-## 2.0.4 - 2019-01-21
-
-New lazy image component and a bunch of errors.
-
-- instagram load + cache items
-- video bg z-index
-- post search bar responsiveness
-
-## 2.0.3 - 2019-01-16
-
-Add background video component with fade in over poster image by default.
-Inline images through markdown editor now use Image component.
-
-## 2.0.2 - 2018-11-06
-
-Add SVG icon component
-It allows you to change color of the icon in css with background of .SVGIcon--icon
-
-## 2.0.1.1 - 2018-10-28
-
-add accordion
-
-## 2.0.1 - 2018-10-18
-
-Configure Uploadcare widget  
-Image component setup  
-Add google maps
-
-## 2.0.0 - 2018-10-15
-
-Init Yellow cake
+## 2.0.0 - 2020.04.30
+setup site framework & get it working
+develop twitter/feedly integration & document plan for regular updates
+Setup GA, fix Google maps, configure contact form
+update menu, configure gDrive, add 1 project
+add ‘projects’ template & fix contact form
+fix posting process & existing posts
