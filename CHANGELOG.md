@@ -1,6 +1,7 @@
 
 
-## 2.5.0 - 2020.06.11
+## 2.5.8 - 2020.06.22
+optimize images on blog posts
 
 ## 2.5.0 - 2020.06.05
 add 6 new projects
