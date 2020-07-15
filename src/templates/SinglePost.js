@@ -89,10 +89,13 @@ export const SinglePostTemplate = ({
 
 // Export Default SinglePost for front-end
 const SinglePost = ({ data: { post, allPosts } }) => {
-    const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)
+    const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)    
+    console.log("**********")
+    console.log(post)
     return (
         <Layout
             meta={post.frontmatter.meta || false}
+            description={post.excerpt || false}
             title={post.frontmatter.title || false}
         >
             <SinglePostTemplate
@@ -117,6 +120,7 @@ export const pageQuery = graphql`
     post: markdownRemark(id: { eq: $id }) {
       ...Meta
       html
+      excerpt
       id
       frontmatter {
         title

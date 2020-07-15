@@ -9,7 +9,7 @@ import ContextProvider from '../provider/ContextProvider'
 import 'modern-normalize/modern-normalize.css'
 import './globalStyles.css'
 
-export default ({ children, meta, title }) => {
+export default ({ children, meta, description, title }) => {
     return (
         <ContextProvider>
             <StaticQuery
@@ -41,7 +41,7 @@ export default ({ children, meta, title }) => {
         }
       `}
                 render={data => {
-                    const { siteTitle, socialMediaCard, googleTrackingId } =
+                    const { siteTitle, siteDescription, socialMediaCard, googleTrackingId } =
                         data.settingsYaml || {},
                         subNav = {
                             posts: data.allPosts.hasOwnProperty('edges')
@@ -57,6 +57,9 @@ export default ({ children, meta, title }) => {
                                 defaultTitle={`${title} | ${siteTitle}`}
                                 titleTemplate={`%s | ${siteTitle}`}
                             >
+                                <meta name="description" content={description||siteDescription} />
+                                <meta name="og:description" content={description||siteDescription} />
+                                <meta name="twitter:description" content={description||siteDescription} />
                                 {title}
                                 <link href="https://ucarecdn.com" rel="preconnect" crossorigin />
                                 <link rel="dns-prefetch" href="https://ucarecdn.com" />
