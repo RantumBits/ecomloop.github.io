@@ -45,6 +45,7 @@ const FormPage = ({ data: { page } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
+    description={page.frontmatter.subtitle || false}
   >
     <FormPageTemplate {...page.frontmatter} body={page.html} />
   </Layout>

@@ -15,7 +15,7 @@ const ProductPage = ({ data }) => {
     const thisEdge = data.allServices.edges.find(edge => edge.node.id === product.id);
 
     return (
-        <Layout title={product.title || false}>
+        <Layout title={product.title || false} description={product.description || false}>
             <article
                 className="SingleService section light"
                 itemScope

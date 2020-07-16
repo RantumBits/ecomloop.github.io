@@ -32,6 +32,7 @@ const DefaultPage = ({ data: { page } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
+    description={page.frontmatter.subtitle || false}
   >
     <DefaultPageTemplate {...page.frontmatter} body={page.html} />
   </Layout>
