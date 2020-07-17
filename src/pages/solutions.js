@@ -6,10 +6,11 @@ import PageHeader from '../components/PageHeader'
 import ProductGrid from '../components/ProductGrid'
 
 const ServicesPage = () => (
-  <Layout title="ecommcerce agency services">
+  <Layout title="ecommerce solutions provider" description="ecommerce solutions provider for uncommon businesses. get ecommerce website solutions from an experienced ecommerce solutions company">
     <PageHeader
-      title="ecommcerce agency services"
-      subtitle="ecommerce agency services are designed to get started right away with a plan fit for your business"
+        title="ecommerce solutions"
+      subtitle="get started today with ecommerce solutions for uncommon businesses"
+
       backgroundImage='../images/ecoomloop_clock_leverage.png'
     />
     <section className="section">
@@ -18,6 +19,10 @@ const ServicesPage = () => (
       </div>
     </section>
     <section className="section">
+    <div className="container">
+    <h4>What are ecommerce solutions?</h4>
+    <p>ecomloop ecommerce solutions are designed to get started quickly in a handful of areas, including CRO, marketing, development, and strategy. Each options includes pakages for businesses at various stages of growth. </p>
+</div>
       <div className="hide">
         <p>Note: text below was generated from an AI writer as part of an experiment. Read more on our blog. </p>
         <p>Setting up an online shop is not easy, because you have to attract the attention of consumers and make them loyal customers, which is difficult. This is a campaign to be developed and run by the nation's absolute best e-commerce marketers. Maximize your reach and turn your shop into the powerhouse of online commerce with the help of one of the best online marketing agencies in the world.
@@ -25,7 +30,7 @@ The partnership with the natural remedy of Rhoviza shows how important multichan
 The award-winning agency has more than 20 years of experience in digital marketing, advertising and digital media marketing for brands and organizations.
 You can hire an e-commerce agency to do all the work you need to get your sales career moving quickly. Founded in 2012, Oneboxhub is an agency that provides SEO services to online sellers, e-commerce companies and online merchants. We want to help sellers achieve their e-commerce goals and help them manage and optimize thousands of products in markets around the world.
 The mission of our company is to help companies measure and maximize their online sales potential and increase traffic to increase sales. The definition of e-commerce marketing drives sales by raising awareness and desire, but without the right metrics this is not possible. SEO services for online sellers, e-commerce companies and online merchants help to maximize exposure and generate repeat sales, and we can also help you.
-Take the opportunity to learn directly from our current and former customers why we are the best Internet marketing company for your needs.
+Take the opportunity to learn ecommerce global soltions directly from our current and former customers why we are the best Internet marketing company for your needs.
 If you own an e-commerce business, you understand how important it is to attract people to your website and treat our business as your own. Everything we do comes from the perspective of a business owner, and we value customer service and satisfaction. Internet marketing makes it easy for potential customers to find you in no time. Online strategy (SEO) is the best way to increase the ranking of your business in search engine results and attract more buyers to the site.
 This requires time, commitment and skills that can overwhelm your team, so it is advisable to outsource it to an e-commerce agency. If you don't know, you should set up a human resources department so that you have extensive knowledge of digital marketing and e-commerce.
 Hiring an e-commerce agency is also inexpensive - effective, so you don't have to hire as many people for different types of work. Let's take a look at some of the best e-commerce agencies that can help you grow your business. E-commerce agencies experience people who specialize in these areas in order to make the business profitable and successful in the future.

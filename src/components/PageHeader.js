@@ -8,6 +8,7 @@ import './PageHeader.css'
 const PageHeader = ({
   title,
   subtitle,
+  description,
   backgroundImage,
   large,
   className = ''
