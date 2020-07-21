@@ -1,16 +1,16 @@
 ---
 template: HomePage
 slug: ''
-title: we help uncommon businesses grow via ecommerce
+title: We help uncommon businesses grow via ecommerce
 featuredImage: '../images/digital-commerce-solutions.png'
 subtitle: >-
   ### We're not a typical ecommerce agency or web development company.
 
 
-  ### Our clients are independent, innovative companies, not small businesses.
+  ### Our clients are independent, innovative companies, not *small* businesses.
 
 
-  ### See how the ecomloop ecommerce agency can help grow your business today.
+  ### Get started with <a href="/solutions">ecommerce agency services today</a> - or <a href="/get-started">join our free email list</a>
 accordion:
   - content: >-
       ecomloop does exceptional work and was a big part of our success. We will be using him for more projects in the future.
@@ -47,4 +47,4 @@ It's crucial for business be *uncommon* by serving the core of segment of their 
 
 Don't let technology inefficiencies limit your organization's opportunities. The ecomloop ecommerce agency helps uncommon grow with via digital commerce.
 
-Check out our [ecommerce solutions](/solutions/) to get started today. 
+Check out our [ecommerce solutions](/solutions/) to get started today.

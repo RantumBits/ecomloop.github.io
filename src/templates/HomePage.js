@@ -42,13 +42,7 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body, accordi
 
 
 
-        {!!services.length && convertServicesToPostFormat(services) && (
-            <section className="section">
-                <div className="container">
-                    <PostSection title= "📈 get started with digital commerce solution today" posts={convertServicesToPostFormat(services)}/>
-                </div>
-            </section>
-        )}
+
 
 
 
@@ -73,6 +67,13 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body, accordi
 
                 </div>
 
+            </section>
+        )}
+        {!!services.length && convertServicesToPostFormat(services) && (
+            <section className="section">
+                <div className="container">
+                    <PostSection title= "📈 digital commerce solutions for growth" posts={convertServicesToPostFormat(services)}/>
+                </div>
             </section>
         )}
 
