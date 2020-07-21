@@ -8,7 +8,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: 'ecomloop',
-    description: 'We help uncommon businesses succeed in the digital economy',
+    description: 'ecommerce agency helping uncommon businesses grow via digital commerce',
     siteUrl: 'https://ecomloop.com'
   },
   plugins: [

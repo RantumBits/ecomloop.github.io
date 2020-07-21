@@ -6,7 +6,7 @@ import PageHeader from '../components/PageHeader'
 import ProductGrid from '../components/ProductGrid'
 
 const ServicesPage = () => (
-  <Layout title="ecommerce solutions provider" description="ecommerce solutions provider for uncommon businesses. get ecommerce website solutions from an experienced ecommerce solutions company">
+  <Layout title="ecommerce solutions" description="ecommerce solutions for uncommon businesses. get help from experienced ecomemrce experts">
     <PageHeader
         title="ecommerce solutions"
       subtitle="get started today with ecommerce solutions for uncommon businesses"

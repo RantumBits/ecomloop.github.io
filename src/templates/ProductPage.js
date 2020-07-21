@@ -15,16 +15,16 @@ import './ProductPage.css'
 const ProductPage = ({ data }) => {
     const product = data.shopifyProduct
     console.log(product)
-    
+
     //find posts corresponding to current product
     const productBlogTagMap = {
       "ecommerce-platform-strategy-plan" : "digital commerce",
       "ecommcerce-conversion-rate-optimization-services" : "conversion rate optimization",
-      "shopify-help" : "shopify",
-      "gatsbyjs" : "gatsbyjs",
+      "shopify-help" : "Shopify",
+      "gatsbyjs" : "gatsby",
       "paid-search-help" : "search"
     };
-    const searchTag = productBlogTagMap[product.handle];    
+    const searchTag = productBlogTagMap[product.handle];
     const postEdges = data.allPosts.edges;
     const filterdPostEdges = [];
     postEdges.map((edge)=>{
@@ -34,8 +34,8 @@ const ProductPage = ({ data }) => {
     });
     console.log("******* searchTag = "+searchTag)
     console.log("******* product.handle = "+product.handle)
-    console.log(filterdPostEdges)    
-    
+    console.log(filterdPostEdges)
+
     const thisEdge = data.allServices.edges.find(edge => edge.node.id === product.id);
 
     return (
@@ -73,7 +73,7 @@ const ProductPage = ({ data }) => {
                                 {!!filterdPostEdges.length && (
                                   <div className="PostSection--Grid" style={{gridGap: "1rem"}}>
                                     {filterdPostEdges.map((post, index) => (
-                                      <PostCard key={index} 
+                                      <PostCard key={index}
                                         featuredImage={`../${post.frontmatter.featuredImage}`}
                                         title={post.frontmatter.title}
                                         excerpt={post.excerpt}
@@ -84,7 +84,7 @@ const ProductPage = ({ data }) => {
                                   </div>
                                 )}
                               </TabPanel>
-                            </Tabs>                            
+                            </Tabs>
                         </div>
 
                         <div className="SingleService--Pagination">
@@ -163,7 +163,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    
+
     allPosts: allMarkdownRemark(
       filter: { fields: { contentType: { eq: "posts" } } }
       sort: { order: DESC, fields: [frontmatter___date] }

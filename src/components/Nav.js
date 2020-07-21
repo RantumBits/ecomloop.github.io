@@ -50,46 +50,12 @@ export class Navigation extends Component {
           </Link>
           <div className="Nav--Links">
 
-            {/*
-            <div
-              className={`Nav--Group ${
-                this.state.activeSubNav === 'posts' ? 'active' : ''
-              }`}
-            >
-              <span
-                className={`NavLink Nav--GroupParent ${
-                  this.props.location.pathname.includes('posts') ||
-                  this.props.location.pathname.includes('blog') ||
-                  this.props.location.pathname.includes('post-categories')
-                    ? 'active'
-                    : ''
-                }`}
-                onClick={() => this.toggleSubNav('posts')}
-              >
-                Blog
-                <div className="Nav--GroupLinks">
-                  <NavLink to="/blog/" className="Nav--GroupLink">
-                    All Posts
-                  </NavLink>
-                  {subNav.posts.map((link, index) => (
-                    <NavLink
-                      to={link.slug}
-                      key={'posts-subnav-link-' + index}
-                      className="Nav--GroupLink"
-                    >
-                      {link.title}
-                    </NavLink>
-                  ))}
-                </div>
-              </span>
-            </div>
-            */}
-            <NavLink to="/solutions/">Solutions</NavLink>
-            <NavLink to="/projects/">Projects</NavLink>
-            <NavLink to="/blog/">Blog</NavLink>
-            <NavLink to="/about/">About</NavLink>
 
-            <NavLink to="/get-started/" className="Nav--CTA animated rubberBand slow delay-5s">Get started today</NavLink>
+            
+            <NavLink to="/projects/" title="ecommerce client projects">Projects</NavLink>
+            <NavLink to="/blog/" title="ecommerce agency blog">Blog</NavLink>
+
+            <NavLink to="/solutions/" title="digital commerce solutions" className="Nav--CTA animated rubberBand slow delay-5s">Get started today</NavLink>
           </div>
           <button
             className="Nav--MenuButton"

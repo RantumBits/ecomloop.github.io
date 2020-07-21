@@ -1,16 +1,16 @@
 ---
 template: HomePage
 slug: ''
-title: Digital commerce solutions for uncommon businesses
+title: we help uncommon businesses grow via ecommerce
 featuredImage: '../images/digital-commerce-solutions.png'
 subtitle: >-
-  ### We're not a typical ecommerce development or marketing agency.
+  ### We're not a typical ecommerce agency or web development company.
 
 
-  ### Our clients are *not small businesses*. they are *innovative, independent* businesses.
+  ### Our clients are independent, innovative companies, not small businesses.
 
 
-  ### We develop digital commerce solutions to help uncommon businesses succeed in the digital economy.
+  ### See how the ecomloop ecommerce agency can help grow your business today.
 accordion:
   - content: >-
       ecomloop does exceptional work and was a big part of our success. We will be using him for more projects in the future.
@@ -34,10 +34,10 @@ accordion:
     title: "went above and beyond to deliver on our expectations"
 meta:
   description: >-
-   We're not a typical ecommerce development or marketing agency. Our clients are *not small businesses*. they are *innovative, independent* businesses. We develop digital commerce solutions to help uncommon businesses succeed in the digital economy.
-  title: ecomloop - digital commerce solutions for uncommon businesses
+   We're not a typical ecommerce agency or web development company. Our clients are not *small businesses*. They are *innovative, independent* businesses looking to grow with ecommerce.
+  title: ecomloop - ecommerce agency helping uncommon businesses grow
 ---
-## Digital commerce solutions for uncommon businesses
+## We help uncommon businesses grow with expert ecommerce agency services
 
 The world is moving to digital commerce at a faster rate than ever before. Well-implemented technology & analytics helps empower organizations to overcome limitations imposed by the traditional, physical economy.
 
@@ -45,4 +45,6 @@ In the digital economy, nearly everyone has access to the same services, goods a
 
 It's crucial for business be *uncommon* by serving the core of segment of their audience in an exceptional manner.
 
-Don't let technology inefficiencies limit your organization's opportunities.
+Don't let technology inefficiencies limit your organization's opportunities. The ecomloop ecommerce agency helps uncommon grow with via digital commerce.
+
+Check out our [ecommerce solutions](/solutions/) to get started today. 
