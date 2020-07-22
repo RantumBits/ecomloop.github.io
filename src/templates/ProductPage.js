@@ -28,11 +28,17 @@ const ProductPage = ({ data }) => {
     const postEdges = data.allPosts.edges;
     const filterdPostEdges = [];
     postEdges.map((edge)=>{
-      if(edge.node.frontmatter.tags && edge.node.frontmatter.tags.indexOf(searchTag)>-1) {
-        filterdPostEdges.push(edge.node)
+      if(edge.node.frontmatter.tags) {
+        edge.node.frontmatter.tags.map((tag)=>{
+          if(tag.toLowerCase().includes(searchTag.toLowerCase()))
+            {
+              filterdPostEdges.push(edge.node)
+              return;
+            }
+        });        
       }
     });
-    console.log("******* searchTag = "+searchTag)
+    console.log("******* searchTag = "+searchTag.toLowerCase())
     console.log("******* product.handle = "+product.handle)
     console.log(filterdPostEdges)
 
@@ -71,7 +77,7 @@ const ProductPage = ({ data }) => {
                               </TabPanel>
                               <TabPanel>
                                 {!!filterdPostEdges.length && (
-                                  <div className="PostSection--Grid" style={{gridGap: "1rem"}}>
+                                  <div className="ProductPostSection--Grid" style={{gridGap: "1rem"}}>
                                     {filterdPostEdges.map((post, index) => (
                                       <PostCard key={index}
                                         featuredImage={`../${post.frontmatter.featuredImage}`}

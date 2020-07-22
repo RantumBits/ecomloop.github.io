@@ -81,3 +81,45 @@
 .SingleService--Pagination--Link.next {
   margin-left: auto;
 }
+
+.ProductPostSection--Grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.ProductPostSection--Grid > * {
+  width: calc(50% - 2rem);
+  margin-bottom: 4rem;
+}
+
+@supports (display: grid) {
+  .ProductPostSection--Grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+  }
+
+  .ProductPostSection--Grid > * {
+    width: auto;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 888px) {
+  .ProductPostSection--Grid > * {
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto 4rem;
+    display: block;
+  }
+
+  @supports (display: grid) {
+    .ProductPostSection--Grid {
+      display: block;
+      grid-template-columns: 1;
+      grid-gap: 0;
+    }
+  }
+}

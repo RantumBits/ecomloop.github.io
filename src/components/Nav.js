@@ -51,7 +51,7 @@ export class Navigation extends Component {
           <div className="Nav--Links">
 
 
-            
+            <NavLink to="/solutions/" title="ecommerce client projects">Solutions</NavLink>
             <NavLink to="/projects/" title="ecommerce client projects">Projects</NavLink>
             <NavLink to="/blog/" title="ecommerce agency blog">Blog</NavLink>
 
