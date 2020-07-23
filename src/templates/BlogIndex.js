@@ -60,6 +60,9 @@ export const BlogIndexTemplate = ({
           post.frontmatter.title.toLowerCase().includes(searchTerm)
         )
       }
+  
+      //fixing the image path issue
+      filteredPosts.forEach(item => item.featuredImage = "../"+item.featuredImage)
 
       return (
         <main className="Blog">

@@ -25,22 +25,40 @@ const ProductPage = ({ data }) => {
       "paid-search-help" : "search"
     };
     const searchTag = productBlogTagMap[product.handle];
-    const postEdges = data.allPosts.edges;
-    const filterdPostEdges = [];
-    postEdges.map((edge)=>{
-      if(edge.node.frontmatter.tags) {
-        edge.node.frontmatter.tags.map((tag)=>{
-          if(tag.toLowerCase().includes(searchTag.toLowerCase()))
-            {
-              filterdPostEdges.push(edge.node)
-              return;
-            }
-        });        
-      }
-    });
-    console.log("******* searchTag = "+searchTag.toLowerCase())
+    console.log("******* searchTag = "+searchTag)
     console.log("******* product.handle = "+product.handle)
-    console.log(filterdPostEdges)
+    const filterdPostEdges = [];
+    const filterdProjectEdges = [];
+    if(searchTag){
+      //Filtering Posts as per the tag
+      const postEdges = data.allPosts.edges;      
+      postEdges.map((edge)=>{
+        if(edge.node.frontmatter.tags) {
+          edge.node.frontmatter.tags.map((tag)=>{
+            if(tag && tag.toLowerCase().includes(searchTag.toLowerCase()))
+              {
+                filterdPostEdges.push(edge.node)
+                return;
+              }
+          });        
+        }
+      });
+      //console.log(filterdPostEdges)
+      //Filtering Projects as per the tag
+      const projectEdges = data.allProjects.edges;      
+      projectEdges.map((edge)=>{
+        if(edge.node.frontmatter.tags) {
+          edge.node.frontmatter.tags.map((tag)=>{
+            if(tag && tag.toLowerCase().includes(searchTag.toLowerCase()))
+              {
+                filterdProjectEdges.push(edge.node)
+                return;
+              }
+          });        
+        }
+      });
+      console.log(filterdProjectEdges)
+    }
 
     const thisEdge = data.allServices.edges.find(edge => edge.node.id === product.id);
 
@@ -71,6 +89,7 @@ const ProductPage = ({ data }) => {
                               <TabList>
                                 <Tab>Description</Tab>
                                 <Tab>Blog Posts</Tab>
+                                <Tab>Projects</Tab>
                               </TabList>
                               <TabPanel>
                                 <div dangerouslySetInnerHTML={{ __html: product.descriptionHtml }} />
@@ -83,6 +102,21 @@ const ProductPage = ({ data }) => {
                                         featuredImage={`../${post.frontmatter.featuredImage}`}
                                         title={post.frontmatter.title}
                                         excerpt={post.excerpt}
+                                        date={post.frontmatter.date}
+                                        slug={post.fields.slug}
+                                      />
+                                    ))}
+                                  </div>
+                                )}
+                              </TabPanel>
+                              <TabPanel>
+                                {!!filterdProjectEdges.length && (
+                                  <div className="ProductPostSection--Grid" style={{gridGap: "1rem"}}>
+                                    {filterdProjectEdges.map((post, index) => (
+                                      <PostCard key={index}
+                                        featuredImage={`../${post.frontmatter.featuredImage}`}
+                                        title={post.frontmatter.title}
+                                        excerpt={post.frontmatter.excerpt}
                                         date={post.frontmatter.date}
                                         slug={post.fields.slug}
                                       />
@@ -192,6 +226,26 @@ export const pageQuery = graphql`
         }
       }
     }
+    
+    allProjects: allMarkdownRemark(filter: {fields: {contentType: {eq: "projects"}}}, sort: {order: DESC, fields: [frontmatter___date]}) {
+    edges {
+      node {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          excerpt: client
+          date(formatString: "MMMM YYYY")
+          categories {
+            category
+          }
+          featuredImage
+          tags
+        }
+      }
+    }
+  }
 
     allServices: allShopifyProduct(sort: {fields: publishedAt, order: DESC}) {
       edges {

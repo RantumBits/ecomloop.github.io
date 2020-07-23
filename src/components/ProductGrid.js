@@ -22,6 +22,7 @@ const ProductGrid = () => {
             node {
               id
               title
+              description
               handle
               createdAt
               images {
@@ -54,7 +55,7 @@ const ProductGrid = () => {
     return (
         <div className="Grid">
             {allShopifyProduct.edges
-                ? allShopifyProduct.edges.map(({ node: { id, handle, title, images: [firstImage], variants: [firstVariant] } }) => (
+                ? allShopifyProduct.edges.map(({ node: { id, handle, title, description, images: [firstImage], variants: [firstVariant] } }) => (
                     <div className="PostCard Product" key={id} >
                         <Link to={`/solution/${handle}/`}>
                             {firstImage && firstImage.localFile &&
@@ -66,6 +67,7 @@ const ProductGrid = () => {
                         </Link>
                         <div className="PostCard--Content">
                             <div className="Title">{title}</div>
+                            <div style={{textAlign:"justify"}}>{description && description.substring(0,140)}...</div>
                             <div className="PriceTag">Starting at {getPrice(firstVariant.price)}</div>
                             <div style={{ paddingTop: '20px' }}>
                                 <Link to={`/solution/${handle}/`} style={{ width: '%' }} className="Nav--CTA">Learn More</Link>
