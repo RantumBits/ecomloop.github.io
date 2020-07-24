@@ -1,7 +1,7 @@
 ---
 template: HomePage
 slug: ''
-title: We help uncommon businesses grow via ecommerce
+title: We help uncommon businesses grow with digital ecommerce
 featuredImage: '../images/digital-commerce-solutions.png'
 subtitle: >-
   ### We're not a typical ecommerce agency or web development company.
@@ -10,7 +10,7 @@ subtitle: >-
   ### Our clients are independent, innovative companies, not *small* businesses.
 
 
-  ### Get started with <a href="/solutions">ecommerce agency services today</a> - or <a href="/get-started">join our free email list</a>
+  ### Get started with ecommerce agency services today or join our free email list
 accordion:
   - content: >-
       ecomloop does exceptional work and was a big part of our success. We will be using him for more projects in the future.
@@ -37,7 +37,7 @@ meta:
    We're not a typical ecommerce agency or web development company. Our clients are not *small businesses*. They are *innovative, independent* businesses looking to grow with ecommerce.
   title: ecomloop - ecommerce agency helping uncommon businesses grow
 ---
-## We help uncommon businesses grow with expert ecommerce agency services
+## We help uncommon businesses grow with ecommerce
 
 The world is moving to digital commerce at a faster rate than ever before. Well-implemented technology & analytics helps empower organizations to overcome limitations imposed by the traditional, physical economy.
 
