@@ -14,7 +14,7 @@ const Tags = ({ data }) => {
     if(edge.node.frontmatter.tags) {
       edge.node.frontmatter.tags.map((tag)=>{
         //tag = tag.trim();
-        if(allUniqueTags.indexOf(tag)<0) allUniqueTags.push(tag);
+        if(allUniqueTags.indexOf(tag.toLowerCase())<0) allUniqueTags.push(tag.toLowerCase());
       });        
     }
   });
@@ -22,10 +22,9 @@ const Tags = ({ data }) => {
   //Now sorting alphabetically
   const sortedUniqueTags = _.sortBy(allUniqueTags, obj=>obj.toLowerCase())
   
-  const filterPostsByTag = (tag) => {
-    return _.filter(postEdges, ({ node }) => node.frontmatter.tags.includes(tag));
-  }
-  
+  const filterPostsByTag = (tag) => {    
+    return _.filter(postEdges, ({ node }) => _.transform(node.frontmatter.tags, function(result, n, key) {result[key] = n.toLowerCase();}).includes(tag.toLowerCase()));
+  }  
   
   return (
     <Layout title="All Tags">            
@@ -33,7 +32,7 @@ const Tags = ({ data }) => {
         {sortedUniqueTags.map((item,index)=>{
           return (
             <>
-              <h2>{item}</h2>
+              <h2>{item} - ({filterPostsByTag(item).length})</h2>
               <ul>
               {filterPostsByTag(item).map(({node})=>(
                 <li><Link to={node.fields.slug}>{node.frontmatter.title}</Link></li>
