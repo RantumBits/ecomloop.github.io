@@ -8,7 +8,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: 'ecomloop',
-    description: 'ecommerce agency helping uncommon businesses grow via digital commerce',
+    description: 'ecommerce agency helping uncommon businesses grow via digital commerce. development + marketing + data analytics + conversion rate optimization partners for growth. Get started today with ecommerce agency services from ecomloop, based in Burlingame, California.',
     siteUrl: 'https://ecomloop.com'
   },
   plugins: [
