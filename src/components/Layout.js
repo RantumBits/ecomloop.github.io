@@ -23,6 +23,14 @@ export default ({ children, meta, description, title }) => {
               image
             }
           }
+          allProducts: allShopifyProduct {
+            edges {
+                node {
+                    title
+                    handle
+                }
+            }
+          }
           allPosts: allMarkdownRemark(
             filter: { fields: { contentType: { eq: "postCategories" } } }
             sort: { order: DESC, fields: [frontmatter___date] }
@@ -44,9 +52,9 @@ export default ({ children, meta, description, title }) => {
                     const { siteTitle, siteDescription, socialMediaCard, googleTrackingId } =
                         data.settingsYaml || {},
                         subNav = {
-                            posts: data.allPosts.hasOwnProperty('edges')
-                                ? data.allPosts.edges.map(post => {
-                                    return { ...post.node.fields, ...post.node.frontmatter }
+                            products: data.allProducts.hasOwnProperty('edges')
+                                ? data.allProducts.edges.map(post => {
+                                    return { ...post.node, ...post.node }
                                 })
                                 : false
                         }
