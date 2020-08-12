@@ -63,7 +63,7 @@ export class Navigation extends Component {
                                         </NavLink>
                                         {subNav.products.map((link, index) => (
                                             <NavLink
-                                            to={`/solution/${link.handle}`}
+                                            to={`/solution/${link.handle}/`}
                                             key={'posts-subnav-link-' + index}
                                             className="Nav--GroupLink"
                                             >
