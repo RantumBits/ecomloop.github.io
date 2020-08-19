@@ -2,10 +2,11 @@ import React, { Fragment } from 'react'
 import _get from 'lodash/get'
 import { Link, graphql } from 'gatsby'
 import { ChevronLeft } from 'react-feather'
-
+import PostSection from '../components/PostSection'
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
+import {getRelatedPosts} from '../components/RelatedPosts'
 import './SinglePost.css'
 
 export const SinglePostTemplate = ({
@@ -92,6 +93,16 @@ const SinglePost = ({ data: { post, allPosts } }) => {
     const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)    
     console.log("**********")
     console.log(post)
+    const relatedPosts = getRelatedPosts(thisEdge, allPosts.edges);
+    console.log(relatedPosts)
+    const relatedPostsFlat = relatedPosts.map(edge => ({
+        ...edge.post.node,
+        ...edge.post.node.frontmatter,
+        ...edge.post.node.fields
+    }))
+    //fixing the image path issue
+    relatedPostsFlat.forEach(item => item.featuredImage = "../"+item.featuredImage)
+    
     return (
         <Layout
             meta={post.frontmatter.meta || false}
@@ -105,6 +116,17 @@ const SinglePost = ({ data: { post, allPosts } }) => {
                 nextPostURL={_get(thisEdge, 'next.fields.slug')}
                 prevPostURL={_get(thisEdge, 'previous.fields.slug')}
             />
+            
+            {!!relatedPostsFlat.length && (
+                <article className="SinglePost section light" style={{padding: "1px"}}>
+                    <div className="container skinny">
+                        <h3>Related Posts</h3>
+                        <div className="SinglePost--Content relative" style={{padding: "0"}}>
+                            <PostSection posts={relatedPostsFlat} />
+                        </div>
+                    </div>
+                </article>
+            )}
         </Layout>
     )
 }
@@ -140,7 +162,20 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          id
+          id          
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            featuredImage
+            date(formatString: "dddd MMMM DD, YYYY")
+            categories {
+              category
+            }
+            tags
+          }
         }
         next {
           fields {
