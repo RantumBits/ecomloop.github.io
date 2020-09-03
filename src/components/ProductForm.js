@@ -143,7 +143,7 @@ const ProductForm = ({ product }) => {
             <button
                 type="submit"
                 className = "Button"
-                style = {{background: "var(--midGrey)", color: "var(--secondary)"}}
+                style = {{background: "var(--primary)", color: "var(--secondary)"}}
                 disabled={!available || adding}
                 onClick={handleAddToCart}
             >

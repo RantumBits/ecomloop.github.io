@@ -53,7 +53,7 @@ export class Navigation extends Component {
                         {
                             <div className={`Nav--Group ${this.state.activeSubNav === 'posts' ? 'active' : ''}`}>
                                 <span
-                                    className={`NavLink Nav--GroupParent ${this.props.location.pathname.includes('solution')? 'active': ''}`}
+                                    className={`Nav--GroupParent ${this.props.location.pathname.includes('solution')? 'active': ''}`}
                                     onClick={() => this.toggleSubNav('posts')}
                                 >
                                     Solutions

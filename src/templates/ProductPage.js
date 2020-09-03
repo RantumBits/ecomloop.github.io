@@ -19,7 +19,7 @@ const ProductPage = ({ data }) => {
     //find posts corresponding to current product
     const productBlogTagMap = {
       "ecommerce-platform-strategy-plan" : "digital commerce",
-      "ecommcerce-conversion-rate-optimization-services" : "conversion rate optimization",
+      "conversion-rate-optimization" : "conversion rate optimization",
       "shopify-help" : "Shopify",
       "gatsbyjs" : "gatsby",
       "paid-search-help" : "search"
@@ -100,6 +100,7 @@ const ProductPage = ({ data }) => {
                                     {filterdPostEdges.map((post, index) => (
                                       <PostCard key={index}
                                         featuredImage={`../${post.frontmatter.featuredImage}`}
+                                        localImage={post.frontmatter.localImage}
                                         title={post.frontmatter.title}
                                         excerpt={post.excerpt}
                                         date={post.frontmatter.date}
@@ -115,6 +116,7 @@ const ProductPage = ({ data }) => {
                                     {filterdProjectEdges.map((post, index) => (
                                       <PostCard key={index}
                                         featuredImage={`../${post.frontmatter.featuredImage}`}
+                                        localImage={post.frontmatter.localImage}
                                         title={post.frontmatter.title}
                                         excerpt={post.frontmatter.excerpt}
                                         date={post.frontmatter.date}
@@ -131,7 +133,7 @@ const ProductPage = ({ data }) => {
                             {thisEdge && thisEdge.previous && thisEdge.previous.handle && (
                                 <Link
                                     className="SingleService--Pagination--Link prev"
-                                    to={`/service/${thisEdge.previous.handle}`}
+                                    to={`/solution/${thisEdge.previous.handle}`}
                                 >
                                     Previous Service
                                 </Link>
@@ -221,6 +223,13 @@ export const pageQuery = graphql`
               category
             }
             featuredImage
+            localImage {
+                childImageSharp {
+                    fluid (srcSetBreakpoints: [200, 400]) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
             tags
           }
         }
