@@ -12,13 +12,15 @@ import './SinglePost.css'
 export const SinglePostTemplate = ({
     title,
     featuredImage,
+    localImage,
     date,
     body,
     nextPostURL,
     prevPostURL,
     categories = []
 }) => {
-    const pageFeaturedImage = featuredImage.startsWith('http')?featuredImage:('../'+featuredImage);
+    let pageFeaturedImage = featuredImage.startsWith('http')?featuredImage:('../'+featuredImage);
+    if(localImage && localImage.childImageSharp) pageFeaturedImage = localImage.childImageSharp.fluid.src;
     return (
         <main>
             <PageHeader
@@ -149,6 +151,13 @@ export const pageQuery = graphql`
         template
         subtitle
         featuredImage
+        localImage {
+            childImageSharp {
+                fluid (srcSetBreakpoints: [200, 400]) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
         date(formatString: "dddd MMMM DD, YYYY")
         categories {
           category
@@ -170,6 +179,13 @@ export const pageQuery = graphql`
           frontmatter {
             title
             featuredImage
+            localImage {
+                childImageSharp {
+                    fluid (srcSetBreakpoints: [200, 400]) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
             date(formatString: "dddd MMMM DD, YYYY")
             categories {
               category

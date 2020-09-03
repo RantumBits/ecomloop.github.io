@@ -23,6 +23,7 @@ export const ProjectIndexTemplate = ({
   title,
   subtitle,
   featuredImage,
+  localImage,
   posts = [],
   enableSearch = true,
   contentType
@@ -35,7 +36,7 @@ export const ProjectIndexTemplate = ({
           <PageHeader
             title={title}
             subtitle={subtitle}
-            backgroundImage={featuredImage}
+            backgroundImage={(localImage&&localImage.childImageSharp?localImage.childImageSharp.fluid.src:featuredImage)}
           />
 
           {!!posts.length && (
@@ -109,6 +110,13 @@ export const pageQuery = graphql`
               category
             }
             featuredImage
+            localImage {
+                childImageSharp {
+                    fluid (srcSetBreakpoints: [200, 400]) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
           }
         }
       }

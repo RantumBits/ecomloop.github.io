@@ -147,6 +147,13 @@ export const pageQuery = graphql`
               category
             }
             featuredImage
+            localImage {
+                childImageSharp {
+                    fluid (srcSetBreakpoints: [200, 400]) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
           }
         }
       }

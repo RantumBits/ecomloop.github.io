@@ -39,6 +39,7 @@ export const BlogIndexTemplate = ({
   title,
   subtitle,
   featuredImage,
+  localImage,
   posts = [],
   postCategories = [],
   enableSearch = true,
@@ -69,7 +70,7 @@ export const BlogIndexTemplate = ({
           <PageHeader
             title={title}
             subtitle={subtitle}
-            backgroundImage={featuredImage}
+            backgroundImage={(localImage && localImage.childImageSharp)?localImage.childImageSharp.fluid.src:featuredImage}
           />
 
           {!!postCategories.length && (
@@ -156,6 +157,13 @@ export const pageQuery = graphql`
               category
             }
             featuredImage
+            localImage {
+                childImageSharp {
+                    fluid (srcSetBreakpoints: [200, 400]) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
           }
         }
       }

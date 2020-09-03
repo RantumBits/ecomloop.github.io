@@ -2,10 +2,12 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Image from './Image'
+import GatsbyImage from 'gatsby-image';
 import './PostCard.css'
 
 const PostCard = ({
   featuredImage,
+  localImage,
   title,
   excerpt,
   date,
@@ -16,7 +18,12 @@ const PostCard = ({
   ...props
 }) => (
   <Link to={slug} className={`PostCard ${className}`}>
-    {featuredImage && (
+    {localImage && (
+      <div className="PostCard--Image relative">
+        <GatsbyImage fluid={localImage.childImageSharp.fluid} alt={title} />
+      </div>
+    )}
+    {!localImage && featuredImage && (
       <div className="PostCard--Image relative">
         <Image background src={featuredImage} alt={title} />
       </div>

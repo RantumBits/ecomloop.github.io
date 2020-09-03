@@ -163,6 +163,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        path: `${__dirname}/static/media`,
+        name: 'media'
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         path: `${__dirname}/content`,
         name: 'pages'
       }
@@ -173,7 +180,7 @@ module.exports = {
     // images
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-
+    'gatsby-plugin-netlify-cms-paths',  
     {
       resolve: 'gatsby-transformer-remark',
       options: {
