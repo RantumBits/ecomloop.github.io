@@ -61,9 +61,18 @@ const ProductPage = ({ data }) => {
     }
 
     const thisEdge = data.allServices.edges.find(edge => edge.node.id === product.id);
+  
+    const solutionEdge = data.allSolutions.edges.find(edge => edge.node.fileAbsolutePath.indexOf(product.handle)>=0)
+    let solutionMetaTitle = "";
+    let solutionMetaDescription = "";
+    if(solutionEdge){
+      solutionMetaTitle = solutionEdge.node.frontmatter.meta_title;
+      solutionMetaDescription = solutionEdge.node.frontmatter.meta_description;
+    }
+    //console.log("**** solutionEdge = ",solutionEdge, solutionMetaTitle)
 
     return (
-        <Layout title={product.title || false} description={product.description || false}>
+        <Layout title={product.title || false} description={solutionMetaDescription || product.description || false}>
             <article
                 className="SingleService section light"
                 itemScope
@@ -88,11 +97,16 @@ const ProductPage = ({ data }) => {
                             <Tabs>
                               <TabList>
                                 <Tab>Description</Tab>
+                                <Tab>Guide</Tab>
                                 <Tab>Blog Posts</Tab>
                                 <Tab>Projects</Tab>
                               </TabList>
                               <TabPanel>
                                 <div dangerouslySetInnerHTML={{ __html: product.descriptionHtml }} />
+                              </TabPanel>
+                              <TabPanel>
+                                <h3>{solutionMetaTitle}</h3>
+                                <p>{solutionMetaDescription}</p>
                               </TabPanel>
                               <TabPanel>
                                 {!!filterdPostEdges.length && (
@@ -231,6 +245,18 @@ export const pageQuery = graphql`
                 }
             }
             tags
+          }
+        }
+      }
+    }
+    
+    allSolutions: allMarkdownRemark(filter: {fields: {contentType: {eq: "solutions"}}}) {
+      edges {
+        node {
+          fileAbsolutePath
+          frontmatter {
+            meta_title
+            meta_description
           }
         }
       }
