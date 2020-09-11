@@ -60,6 +60,15 @@ module.exports = {
       },
     },
     {
+    resolve: 'gatsby-source-google-sheets',
+    options: {
+        spreadsheetId: process.env.SPREADSHEETID,
+        worksheetTitle: 'links',
+        credentials: require(`${__dirname}/client_secret.json`,),
+
+      }
+    },
+    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
@@ -180,7 +189,7 @@ module.exports = {
     // images
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-netlify-cms-paths',  
+    'gatsby-plugin-netlify-cms-paths',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
