@@ -62,8 +62,8 @@ module.exports = {
     {
     resolve: 'gatsby-source-google-sheets',
     options: {
-        spreadsheetId: process.env.SPREADSHEETID,
-        worksheetTitle: 'links',
+        spreadsheetId: '1psGtC4fjtT8AarQ5ZH_1AkV1_F5Q5Bbe_Y_D3SrKjmo',
+        worksheetTitle: 'list',
         credentials: require(`${__dirname}/client_secret.json`,),
 
       }
