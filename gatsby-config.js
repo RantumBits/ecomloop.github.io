@@ -59,7 +59,15 @@ module.exports = {
         enableWebp: false,
       },
     },
-  
+    {
+    resolve: 'gatsby-source-google-sheets',
+    options: {
+        spreadsheetId: process.env.SPREADSHEETID,
+        worksheetTitle: 'links',
+        credentials: require(`${__dirname}/client_secret.json`,),
+
+      }
+    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
