@@ -71,6 +71,7 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     `).then(result => {
+      console.log(`Creating ${result.data.allShopifyProduct.edges.length} Products`)
         result.data.allShopifyProduct.edges.forEach(({ node }) => {
         createPage({
             path: `/solution/${node.handle}/`,
@@ -82,8 +83,36 @@ exports.createPages = ({ actions, graphql }) => {
             },
         })
         })
+      
+        //Creating News Pages
+        return graphql(`
+          {
+            allGoogleSheetListRow {
+              edges {
+                node {
+                  id
+                  title
+                }
+              }
+            }
+          }
+        `).then(result => {
+            console.log(`Creating ${result.data.allGoogleSheetListRow.edges.length} News Posts`)
+            result.data.allGoogleSheetListRow.edges.forEach(({ node }) => {
+              createPage({
+                  path: `/news/${_.kebabCase(node.id)}`,
+                  //path: `/news/${node.id}/`,
+                  component: path.resolve(`./src/templates/NewsPost.js`),
+                  context: {
+                    // Data passed to context is available
+                    // in page queries as GraphQL variables.
+                    id: node.id,
+                  },
+              })
+            })
+        })
     })
-
+ 
   })
 }
 
