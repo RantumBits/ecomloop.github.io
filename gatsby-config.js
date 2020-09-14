@@ -17,7 +17,7 @@ module.exports = {
     resolve: '@fs/gatsby-plugin-drive',
     options: {
       folderId: '1xSLqG_faTddDwktmKdgD8-lxRcvgiIWT',
-      keyFile: `${__dirname}/client_secret.json`,
+      keyFile: `${__dirname}/client_secret_02.json`,
       destination: `${__dirname}/content/posts`,
       exportGDocs: false,
       exportMimeType: ''
@@ -28,7 +28,7 @@ module.exports = {
     resolve: '@fs/gatsby-plugin-drive',
     options: {
       folderId: '1ZUcbDFOxg7UEjyy0f-xmqf7ZGgUkM4rE',
-      keyFile: `${__dirname}/client_secret.json`,
+      keyFile: `${__dirname}/client_secret_02.json`,
       destination: `${__dirname}/static/images`,
       exportGDocs: false,
       exportMimeType: ''
@@ -62,7 +62,7 @@ module.exports = {
     {
     resolve: 'gatsby-source-google-sheets',
     options: {
-        spreadsheetId: '1psGtC4fjtT8AarQ5ZH_1AkV1_F5Q5Bbe_Y_D3SrKjmo',
+        spreadsheetId: '1D-lpUeNB_6DVz8_2IO33lnc74qw6iwdogt6_xYr9gXg',
         worksheetTitle: 'list',
         credentials: require(`${__dirname}/client_secret.json`,),
 
