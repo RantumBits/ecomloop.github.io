@@ -65,11 +65,13 @@ const ProductPage = ({ data }) => {
     const solutionEdge = data.allSolutions.edges.find(edge => edge.node.fileAbsolutePath.indexOf(product.handle)>=0)
     let solutionMetaTitle = "";
     let solutionMetaDescription = "";
+    let solutionContent = null;
     if(solutionEdge){
       solutionMetaTitle = solutionEdge.node.frontmatter.meta_title;
       solutionMetaDescription = solutionEdge.node.frontmatter.meta_description;
+      solutionContent = solutionEdge.node.html;
     }
-    //console.log("**** solutionEdge = ",solutionEdge, solutionMetaTitle)
+    //console.log("**** solutionEdge = ",solutionEdge)
 
     return (
         <Layout title={product.title || false} description={solutionMetaDescription || product.description || false}>
@@ -97,17 +99,20 @@ const ProductPage = ({ data }) => {
                             <Tabs>
                               <TabList>
                                 <Tab>Description</Tab>
-                                <Tab>Guide</Tab>
+                                {solutionContent &&
+                                  <Tab>Guide</Tab>
+                                }
                                 <Tab>Blog Posts</Tab>
                                 <Tab>Projects</Tab>
                               </TabList>
                               <TabPanel>
                                 <div dangerouslySetInnerHTML={{ __html: product.descriptionHtml }} />
                               </TabPanel>
-                              <TabPanel>
-                                <h3>{solutionMetaTitle}</h3>
-                                <p>{solutionMetaDescription}</p>
-                              </TabPanel>
+                              {solutionContent &&
+                                <TabPanel>
+                                  <div dangerouslySetInnerHTML={{__html:solutionContent}} />                                  
+                                </TabPanel>
+                              }
                               <TabPanel>
                                 {!!filterdPostEdges.length && (
                                   <div className="ProductPostSection--Grid" style={{gridGap: "1rem"}}>
@@ -254,6 +259,7 @@ export const pageQuery = graphql`
       edges {
         node {
           fileAbsolutePath
+          html
           frontmatter {
             meta_title
             meta_description

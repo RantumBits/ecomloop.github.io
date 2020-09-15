@@ -14,6 +14,7 @@ export const NewsPostTemplate = ({
     dateadded,
     excerpt,
     extractedkeywords,
+    headerimage,
     highlight,
     highlight2,
     images,
@@ -30,12 +31,14 @@ export const NewsPostTemplate = ({
     body,
     nextPostURL,
     prevPostURL,
-    categories = (extractedkeywords + "," + tags).split(",")
+    categories = (extractedkeywords + "," + tags + "," + keywords).split(",")
 }) => {
-    console.log(categories)
+    //filter out null, and all tags beginning with *
+    categories = _.filter(categories, tag => tag!="null" && !tag.startsWith("*"))
+    //console.log("********** categories ", categories)
     return (
         <main>
-            <PageHeader title={title} />
+            <PageHeader title={title} backgroundImage={headerimage} />
             <article
                 className="SinglePost section light"
                 itemScope
@@ -85,10 +88,10 @@ export const NewsPostTemplate = ({
                         </div>
 
                         <div className="SinglePost--Pagination">
-                            <button href={url} target="_blank" class="Nav--CTA animated jello fadeInDown delay-4s">Read the original post &gt;</button>
+                            <button href={url} target="_blank" className="Nav--CTA animated jello fadeInDown delay-4s">Read the original post &gt;</button>
                         </div>
                         <br/>
-                        {categories && (
+                        {categories && categories.length > 0 && (
                             <Fragment>
                               <i>Tags:
                                 {categories.map((cat, index) => (
@@ -96,7 +99,9 @@ export const NewsPostTemplate = ({
                                         key={cat}
                                         className="SinglePost--Meta--Category"
                                     >
-                                        {cat}
+                                        <a href={`/news/?tag=${cat.trim()}`}>
+                                          {cat.trim()}
+                                        </a>
                                         {/* Add a comma on all but last category */}
                                         {index !== categories.length - 1 ? ',' : ''}
                                     </span>
@@ -161,6 +166,7 @@ export const pageQuery = graphql`
       dateadded
       excerpt
       extractedkeywords
+      headerimage
       highlight
       highlight2
       image

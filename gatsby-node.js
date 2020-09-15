@@ -100,7 +100,7 @@ exports.createPages = ({ actions, graphql }) => {
             console.log(`Creating ${result.data.allGoogleSheetListRow.edges.length} News Posts`)
             result.data.allGoogleSheetListRow.edges.forEach(({ node }) => {
               createPage({
-                  path: `/news/${_.kebabCase(node.id)}`,
+                  path: `/news/${node.id}`,
                   //path: `/news/${node.id}/`,
                   component: path.resolve(`./src/templates/NewsPost.js`),
                   context: {

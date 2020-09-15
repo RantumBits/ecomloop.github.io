@@ -4,10 +4,11 @@ import _ from 'lodash';
 import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
 import Image from '../components/Image'
+import * as queryString from "query-string";
 import '../components/PostSection.css'
 import '../components/PostCard.css'
 
-const NewsPage = ({ data }) => {
+const NewsPage = ({location, data }) => {
 
     const { edges } = data.allGoogleSheetListRow;
     const maxItems = 9;
@@ -17,10 +18,17 @@ const NewsPage = ({ data }) => {
     const increaseLimit = () => {
         setLimit(limit + maxItems);
     }
-
+    
+    let filterEdges = edges;
+    //checking if tag filter is present
+    if(location && location.search) {
+      const { tag } = queryString.parse(location.search);      
+      filterEdges = _.filter(edges, ({node}) => (node.extractedkeywords && node.extractedkeywords.indexOf(tag.trim())>=0) || (node.tags && node.tags.indexOf(tag.trim())>=0) || (node.keywords && node.keywords.indexOf(tag.trim())>=0) )
+    }
+    
     //Now limiting the items as per limit
-    const listEdges = _.slice(edges, 0, limit)
-
+    const listEdges = _.slice(filterEdges, 0, limit)
+    
     return (
         <Layout title="ecommerce news" description="">
             <PageHeader
@@ -32,10 +40,10 @@ const NewsPage = ({ data }) => {
                     <div className="PostSection">
                         <div className="PostSection--Grid">
                             {listEdges && listEdges.map(({ node }, index) => (
-                                <Link key={index} to={`/news/${_.kebabCase(node.id)}`} className="PostCard">
-                                    {node.image && (
+                                <Link key={index} to={`/news/${node.id}`} className="PostCard">
+                                    {node.headerimage && (
                                         <div className="PostCard--Image relative">
-                                            <Image background src={node.image} alt={node.title} />
+                                            <Image background src={node.headerimage} alt={node.title} />
                                         </div>
                                     )}
                                     <div className="PostCard--Content">
@@ -63,7 +71,7 @@ export default NewsPage
 
 export const pageQuery = graphql`
   query MyQuery {
-    allGoogleSheetListRow {
+    allGoogleSheetListRow (sort: {fields: dateadded, order: DESC}) {
       edges {
         node {
           articleid
@@ -72,6 +80,7 @@ export const pageQuery = graphql`
           dateadded
           excerpt
           extractedkeywords
+          headerimage
           highlight
           highlight2
           images
