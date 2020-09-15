@@ -29,6 +29,7 @@
     "gatsby-plugin-sass": "^2.1.20",
     "gatsby-plugin-sharp": "^2.6.36",
     "gatsby-plugin-sitemap": "^2.2.19",
+    "gatsby-react-router-scroll": "^3.0.13",
     "gatsby-remark-images": "^3.2.1",
     "gatsby-remark-relative-images": "^0.2.3",
     "gatsby-remark-responsive-iframe": "^2.2.25",
