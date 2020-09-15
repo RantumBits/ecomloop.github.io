@@ -30,6 +30,7 @@ export const NewsPostTemplate = ({
     url,
     body,
     nextPostURL,
+    articleid,
     prevPostURL,
     categories = (extractedkeywords + "," + tags + "," + keywords).split(",")
 }) => {
@@ -38,7 +39,7 @@ export const NewsPostTemplate = ({
     //console.log("********** categories ", categories)
     return (
         <main>
-            <PageHeader title={title} backgroundImage={headerimage} />
+            <PageHeader title={title} backgroundImage={'https://source.unsplash.com/1600x900/?abstract.'+ articleid} />
             <article
                 className="SinglePost section light"
                 itemScope
@@ -88,7 +89,7 @@ export const NewsPostTemplate = ({
                         </div>
 
                         <div className="SinglePost--Pagination">
-                            <button href={url} target="_blank" className="Nav--CTA animated jello fadeInDown delay-4s">Read the original post &gt;</button>
+                            <a href={url} target="_blank" className="Nav--CTA animated jello fadeInDown delay-2s">Read the original post &gt;</a>
                         </div>
                         <br/>
                         {categories && categories.length > 0 && (

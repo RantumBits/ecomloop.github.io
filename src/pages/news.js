@@ -18,34 +18,35 @@ const NewsPage = ({location, data }) => {
     const increaseLimit = () => {
         setLimit(limit + maxItems);
     }
-    
+
     let filterEdges = edges;
     //checking if tag filter is present
     if(location && location.search) {
-      const { tag } = queryString.parse(location.search);      
+      const { tag } = queryString.parse(location.search);
       filterEdges = _.filter(edges, ({node}) => (node.extractedkeywords && node.extractedkeywords.indexOf(tag.trim())>=0) || (node.tags && node.tags.indexOf(tag.trim())>=0) || (node.keywords && node.keywords.indexOf(tag.trim())>=0) )
     }
-    
+
     //Now limiting the items as per limit
     const listEdges = _.slice(filterEdges, 0, limit)
-    
+
     return (
-        <Layout title="ecommerce news" description="">
+        <Layout title="ecommerce news" description="" >
             <PageHeader
                 title="ecommerce news"
-                subtitle=""
+                subtitle="for uncommon digital commerce brands"
+                backgroundImage="https://source.unsplash.com/1600x900/?abstract"
             />
             <section className="section">
                 <div className="container">
                     <div className="PostSection">
                         <div className="PostSection--Grid">
                             {listEdges && listEdges.map(({ node }, index) => (
-                                <Link key={index} to={`/news/${node.id}`} className="PostCard">
-                                    {node.headerimage && (
+                                <Link key={index} to={`/news/${node.articleid}`} className="PostCard">
+
                                         <div className="PostCard--Image relative">
-                                            <Image background src={node.headerimage} alt={node.title} />
+                                            <Image background src={'https://source.unsplash.com/1600x900/?abstract.'+ node.articleid} alt={node.title} />
                                         </div>
-                                    )}
+
                                     <div className="PostCard--Content">
                                         {node.title && <h3 className="PostCard--Title">{node.title}</h3>}
                                         {node.comment && <div className="PostCard--Excerpt">{node.comment}</div>}

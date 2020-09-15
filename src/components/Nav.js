@@ -56,7 +56,7 @@ export class Navigation extends Component {
                                     className={`Nav--GroupParent ${this.props.location.pathname.includes('solution')? 'active': ''}`}
                                     onClick={() => this.toggleSubNav('posts')}
                                 >
-                                    Solutions
+                                    ecommerce solutions
                                     <div className="Nav--GroupLinks">
                                         <NavLink to="/solutions/" className="Nav--GroupLink">
                                             All Solutions
@@ -75,10 +75,10 @@ export class Navigation extends Component {
                             </div>
                         }
 
-                        <NavLink to="/projects/" title="ecommerce client projects">Projects</NavLink>
-                        <NavLink to="/blog/" title="ecommerce agency blog">Blog</NavLink>
+                        <NavLink to="/news/" title="ecommerce news">ecommerce news</NavLink>
+                        <NavLink to="/blog/" title="ecommerce agency blog">blog</NavLink>
 
-                        <NavLink to="/solutions/" title="digital commerce solutions" className="Nav--CTA animated rubberBand slow delay-5s">Get started today</NavLink>
+                        <NavLink to="/solutions/" title="digital commerce solutions" className="Nav--CTA animated rubberBand slow delay-5s">Get ecommerce help</NavLink>
                     </div>
                     <button
                         className="Nav--MenuButton"
