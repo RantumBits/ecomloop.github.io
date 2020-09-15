@@ -158,7 +158,6 @@ export const pageQuery = graphql`
       articleid
       author
       comment
-      d415A
       dateadded
       excerpt
       extractedkeywords
