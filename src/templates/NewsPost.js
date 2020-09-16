@@ -5,7 +5,9 @@ import { ChevronLeft } from 'react-feather'
 import PostSection from '../components/PostSection'
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
+import Image from '../components/Image'
 import Layout from '../components/Layout'
+import {getRelatedNews} from '../components/RelatedNews'
 import './SinglePost.css'
 
 export const NewsPostTemplate = ({
@@ -32,11 +34,12 @@ export const NewsPostTemplate = ({
     nextPostURL,
     articleid,
     prevPostURL,
+    relatedNews,
     categories = (extractedkeywords + "," + tags + "," + keywords).split(",")
 }) => {
     //filter out null, and all tags beginning with *
     categories = _.filter(categories, tag => tag!="null" && !tag.startsWith("*"))
-    //console.log("********** categories ", categories)
+    console.log("********** relatedNews (in display) ", relatedNews)
     return (
         <main>
             <PageHeader title={title} backgroundImage={'https://source.unsplash.com/1600x900/?abstract.'+ articleid} />
@@ -109,6 +112,24 @@ export const NewsPostTemplate = ({
                                 ))}</i>
                             </Fragment>
                         )}
+                        {relatedNews && relatedNews.length>0 &&
+                            <h2 style={{marginTop: "2rem"}}>Related News</h2>
+                        }
+                        <div className="PostSection">
+                            <div className="PostSection--Grid">
+                                {relatedNews && relatedNews.map(({ news }, index) => (
+                                    <Link key={index} to={`/news/${news.node.articleid}`} className="PostCard">
+                                        <div className="PostCard--Image relative">
+                                            <Image background src={'https://source.unsplash.com/1600x900/?abstract.'+ news.node.articleid} alt={news.node.title} />
+                                        </div>
+                                        <div className="PostCard--Content">
+                                            {news.node.title && <h3 className="PostCard--Title">{news.node.title}</h3>}
+                                            {news.node.comment && <div className="PostCard--Excerpt">{news.node.comment}</div>}
+                                        </div>
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
                         <div className="SinglePost--Pagination">
                             {prevPostURL && (
                                 <Link
@@ -135,18 +156,21 @@ export const NewsPostTemplate = ({
 }
 
 // Export Default NewsPost for front-end
-const NewsPost = ({ data: { post } }) => {
+const NewsPost = ({ data: { news, allNews } }) => {
+    const relatedNews = getRelatedNews(news, allNews.edges);
+    console.log("++++++ relatedNews ",relatedNews)
 
     return (
         <Layout
-            description={post.highlight || false}
-            title={post.title || false}
+            description={news.highlight || false}
+            title={news.title || false}
         >
             <NewsPostTemplate
-                {...post}
-                body={post.text}
-                nextPostURL={_.get(post, 'next.id')}
-                prevPostURL={_.get(post, 'previous.id')}
+                {...news}
+                body={news.text}
+                nextPostURL={_.get(news, 'next.id')}
+                prevPostURL={_.get(news, 'previous.id')}
+                relatedNews={relatedNews}
             />
         </Layout>
     )
@@ -160,7 +184,7 @@ export const pageQuery = graphql`
   ## $id is processed via gatsby-node.js
   ## query name must be unique to this file
   query NewsPost($id: String!) {
-    post: googleSheetListRow(id: { eq: $id }) {
+    news: googleSheetListRow(id: { eq: $id }) {
       articleid
       author
       comment
@@ -182,6 +206,34 @@ export const pageQuery = graphql`
       text
       title
       url
+    }
+    
+    allNews : allGoogleSheetListRow (sort: {fields: dateadded, order: DESC}) {
+      edges {
+        node {
+          articleid
+          author
+          comment
+          dateadded
+          excerpt
+          extractedkeywords
+          headerimage
+          highlight
+          highlight2
+          images
+          image
+          id
+          keywords
+          publishdate
+          relativepopularity
+          source
+          source2
+          tags
+          text
+          title
+          url
+        }
+      }
     }
   }
 `

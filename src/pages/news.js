@@ -13,17 +13,25 @@ const NewsPage = ({location, data }) => {
     const { edges } = data.allGoogleSheetListRow;
     const maxItems = 9;
     const [limit, setLimit] = React.useState(maxItems);
+    const [filter, setFilter] = React.useState("");
     const [showMore, setShowMore] = React.useState(true);
 
     const increaseLimit = () => {
         setLimit(limit + maxItems);
     }
-
-    let filterEdges = edges;
-    //checking if tag filter is present
-    if(location && location.search) {
-      const { tag } = queryString.parse(location.search);
-      filterEdges = _.filter(edges, ({node}) => (node.extractedkeywords && node.extractedkeywords.indexOf(tag.trim())>=0) || (node.tags && node.tags.indexOf(tag.trim())>=0) || (node.keywords && node.keywords.indexOf(tag.trim())>=0) )
+    
+    React.useEffect(() => {
+      //checking if tag filter is present
+      if(location && location.search) {
+        const { tag } = queryString.parse(location.search);
+        setFilter(tag.trim())      
+      }
+    },[]);
+    
+    let filterEdges = edges;    
+    //apply filtertext if its greater than 3 characters
+    if(filter && filter.length>3){
+      filterEdges = _.filter(edges, ({node}) => (node.title && node.title.indexOf(filter)>=0) || (node.extractedkeywords && node.extractedkeywords.indexOf(filter)>=0) || (node.tags && node.tags.indexOf(filter)>=0) || (node.keywords && node.keywords.indexOf(filter)>=0) )      
     }
 
     //Now limiting the items as per limit
@@ -38,6 +46,18 @@ const NewsPage = ({location, data }) => {
             />
             <section className="section">
                 <div className="container">
+                    <div className="section">
+                      <div style={{float: "right"}}>
+                      Search{`  `}
+                      <input
+                        placeholder=" filter news"
+                        value={filter}
+                        onChange={({ target: { value } }) => {
+                          setFilter(value);
+                        }}
+                      />
+                      </div>
+                    </div>
                     <div className="PostSection">
                         <div className="PostSection--Grid">
                             {listEdges && listEdges.map(({ node }, index) => (

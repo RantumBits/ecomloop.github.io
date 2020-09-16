@@ -74,7 +74,7 @@ const ProductPage = ({ data }) => {
     //console.log("**** solutionEdge = ",solutionEdge)
 
     return (
-        <Layout title={product.title || false} description={solutionMetaDescription || product.description || false}>
+        <Layout title={product.title || false} description={solutionMetaDescription || product.description || false} meta={{title: solutionMetaTitle}}>
             <article
                 className="SingleService section light"
                 itemScope
