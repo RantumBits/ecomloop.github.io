@@ -4583,7 +4583,7 @@ acorn-jsx@^5.0.1, acorn-jsx@^5.2.0:
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.2.0.tgz#4c66069173d6fdd68ed85239fc256226182b2ebe"
   integrity sha512-HiUX/+K2YpkpJ+SzBffkM/AQ2YE03S0U1kjTLVpoJdhZMOWy8qvXVN9JdLqv2QsaQ6MPYQIuNmwD8zOiYUofLQ==
 
-acorn@^6.1.1, acorn@^6.2.1, acorn@^6.4.1:
+acorn@^6.1.1, acorn@^6.4.1:
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.1.tgz#531e58ba3f51b9dacb9a6646ca4debf5b14ca474"
   integrity sha512-ZVA9k326Nwrj3Cj9jlh3wGFutC2ZornPNARZwsNYqQYgN0EsV2d53w5RN/co65Ohn4sUAUtb1rSUAOD6XN9idA==
@@ -6493,7 +6493,7 @@ chokidar@3.4.0:
   optionalDependencies:
     fsevents "~2.1.2"
 
-chokidar@^2.0.2, chokidar@^2.0.4, chokidar@^2.1.8:
+chokidar@^2.0.4, chokidar@^2.1.8:
   version "2.1.8"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.1.8.tgz#804b3a7b6a99358c3c5c61e71d8728f041cff917"
   integrity sha512-ZmZUazfOzf0Nve7duiCKD23PFSCs4JPoYyccjUFF3aQkQadqBhfzhjkwBH2mNOG9cTBwhamM37EIsIkZw3nRgg==
@@ -7199,10 +7199,10 @@ copy-text-to-clipboard@^2.0.0:
   resolved "https://registry.yarnpkg.com/copy-text-to-clipboard/-/copy-text-to-clipboard-2.1.1.tgz#5340e8620976d2dd9de0ff11493d13a80d600fd2"
   integrity sha512-oSuMj4ArDGSLcLPsDhzWOhalzOVV0ErCHNfZNNr+spC+iWJ6PVSLzPPrJw/rcdFZyOhugn8iw6O0nrpY/ZrEMg==
 
-copy-webpack-plugin@^5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/copy-webpack-plugin/-/copy-webpack-plugin-5.1.1.tgz#5481a03dea1123d88a988c6ff8b78247214f0b88"
-  integrity sha512-P15M5ZC8dyCjQHWwd4Ia/dm0SgVvZJMYeykVIVYXbGyqO4dWB5oyPHp9i7wjwo5LhtlhKbiBCdS2NvM07Wlybg==
+copy-webpack-plugin@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/copy-webpack-plugin/-/copy-webpack-plugin-5.1.2.tgz#8a889e1dcafa6c91c6cd4be1ad158f1d3823bae2"
+  integrity sha512-Uh7crJAco3AjBvgAy9Z75CjK8IG+gxaErro71THQ+vv/bl4HaQcpkexAY8KVW/T6D2W2IRr+couF/knIRkZMIQ==
   dependencies:
     cacache "^12.0.3"
     find-cache-dir "^2.1.0"
@@ -7214,7 +7214,7 @@ copy-webpack-plugin@^5.1.1:
     normalize-path "^3.0.0"
     p-limit "^2.2.1"
     schema-utils "^1.0.0"
-    serialize-javascript "^2.1.2"
+    serialize-javascript "^4.0.0"
     webpack-log "^2.0.0"
 
 copyfiles@^2.3.0:
@@ -8638,15 +8638,6 @@ engine.io@~3.4.0:
     debug "~4.1.0"
     engine.io-parser "~2.2.0"
     ws "^7.1.2"
-
-enhanced-resolve@^4.1.0:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-4.1.1.tgz#2937e2b8066cd0fe7ce0990a98f0d71a35189f66"
-  integrity sha512-98p2zE+rL7/g/DzMHMTF4zZlCgeVdJ7yr6xzEpJRYwFYrGi9ANdn5DnJURg6RpBkyk60XYDnWIv51VfIhfNGuA==
-  dependencies:
-    graceful-fs "^4.1.2"
-    memory-fs "^0.5.0"
-    tapable "^1.0.0"
 
 enhanced-resolve@^4.3.0:
   version "4.3.0"
@@ -10213,20 +10204,20 @@ gatsby-plugin-netlify-cms-paths@^1.3.0:
     slash "^3.0.0"
     unist-util-select "^1.5.0"
 
-gatsby-plugin-netlify-cms@^4.1.26:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-4.2.1.tgz#f6f35693bda6db923d543e607d49784e60ec6150"
-  integrity sha512-5mqh2uwdqjSw+ydDK3FCms+AeTCnVQ5Up9dE6hulp4VKqSDn0gKz6qHnadNNLVlO6Z/Cfwc4LE3MzlAgz91VeA==
+gatsby-plugin-netlify-cms@^4.3.15:
+  version "4.3.15"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-4.3.15.tgz#d6750c91cd902665b15572e87096568d4953ebb4"
+  integrity sha512-rMKz7HgIuOahHmXf0AOZ59DAoxWffdv3/FNR51+9QCLBPigEPneiYZnW88UStA+Zf413F70MDz6kVYhHIhUMPQ==
   dependencies:
     "@pieh/friendly-errors-webpack-plugin" "1.7.0-chalk-2"
-    copy-webpack-plugin "^5.1.1"
+    copy-webpack-plugin "^5.1.2"
     html-webpack-exclude-assets-plugin "^0.0.7"
     html-webpack-plugin "^3.2.0"
     html-webpack-tags-plugin "^2.0.17"
-    lodash "^4.17.15"
-    mini-css-extract-plugin "^0.8.2"
-    netlify-identity-widget "^1.5.6"
-    webpack "^4.42.0"
+    lodash "^4.17.20"
+    mini-css-extract-plugin "^0.11.2"
+    netlify-identity-widget "^1.9.1"
+    webpack "^4.44.2"
 
 gatsby-plugin-netlify@^2.1.23:
   version "2.2.1"
@@ -14888,16 +14879,6 @@ mini-css-extract-plugin@^0.11.2:
     schema-utils "^1.0.0"
     webpack-sources "^1.1.0"
 
-mini-css-extract-plugin@^0.8.2:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-0.8.2.tgz#a875e169beb27c88af77dd962771c9eedc3da161"
-  integrity sha512-a3Y4of27Wz+mqK3qrcd3VhYz6cU0iW5x3Sgvqzbj+XmlrSizmvu8QQMl5oMYJjgHOC4iyt+w7l4umP+dQeW3bw==
-  dependencies:
-    loader-utils "^1.1.0"
-    normalize-url "1.9.1"
-    schema-utils "^1.0.0"
-    webpack-sources "^1.1.0"
-
 mini-svg-data-uri@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/mini-svg-data-uri/-/mini-svg-data-uri-1.2.3.tgz#e16baa92ad55ddaa1c2c135759129f41910bc39f"
@@ -15637,10 +15618,10 @@ netlify-cms-widget-text@^2.3.0:
   dependencies:
     react-textarea-autosize "^7.1.0"
 
-netlify-identity-widget@^1.5.6:
-  version "1.5.6"
-  resolved "https://registry.yarnpkg.com/netlify-identity-widget/-/netlify-identity-widget-1.5.6.tgz#b841d4d469ad37bdc47e876d87cc2926aba2c302"
-  integrity sha512-DvWVUGuswOd+IwexKjzIpYcqYMrghmnkmflNqCQc4lG4KX55zE3fFjfXziCTr6LibP7hvZp37s067j5N3kRuyw==
+netlify-identity-widget@^1.9.1:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/netlify-identity-widget/-/netlify-identity-widget-1.9.1.tgz#9e716c4b92b9f0cc041074eb86fc962f35295b46"
+  integrity sha512-9oIWjwUSdRk3SkREcZNjZaVuDDx9T/wSIXZNQsQeY4qoXic/FiXVEGgu2RU3IuA4OI3L2652xY1o+PpS03Ugaw==
 
 netlify-redirect-parser@^2.5.0:
   version "2.5.0"
@@ -22615,15 +22596,6 @@ watchpack-chokidar2@^2.0.0:
   dependencies:
     chokidar "^2.1.8"
 
-watchpack@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-1.6.0.tgz#4bc12c2ebe8aa277a71f1d3f14d685c7b446cd00"
-  integrity sha512-i6dHe3EyLjMmDlU1/bGQpEw25XSjkJULPuAVKCbNRefQVq48yXKUpwg538F7AZTf9kyr57zj++pQFltUa5H7yA==
-  dependencies:
-    chokidar "^2.0.2"
-    graceful-fs "^4.1.2"
-    neo-async "^2.5.0"
-
 watchpack@^1.7.4:
   version "1.7.4"
   resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-1.7.4.tgz#6e9da53b3c80bb2d6508188f5b200410866cd30b"
@@ -22762,36 +22734,7 @@ webpack-virtual-modules@^0.2.2:
   dependencies:
     debug "^3.0.0"
 
-webpack@^4.42.0:
-  version "4.42.1"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.42.1.tgz#ae707baf091f5ca3ef9c38b884287cfe8f1983ef"
-  integrity sha512-SGfYMigqEfdGchGhFFJ9KyRpQKnipvEvjc1TwrXEPCM6H5Wywu10ka8o3KGrMzSMxMQKt8aCHUFh5DaQ9UmyRg==
-  dependencies:
-    "@webassemblyjs/ast" "1.9.0"
-    "@webassemblyjs/helper-module-context" "1.9.0"
-    "@webassemblyjs/wasm-edit" "1.9.0"
-    "@webassemblyjs/wasm-parser" "1.9.0"
-    acorn "^6.2.1"
-    ajv "^6.10.2"
-    ajv-keywords "^3.4.1"
-    chrome-trace-event "^1.0.2"
-    enhanced-resolve "^4.1.0"
-    eslint-scope "^4.0.3"
-    json-parse-better-errors "^1.0.2"
-    loader-runner "^2.4.0"
-    loader-utils "^1.2.3"
-    memory-fs "^0.4.1"
-    micromatch "^3.1.10"
-    mkdirp "^0.5.3"
-    neo-async "^2.6.1"
-    node-libs-browser "^2.2.1"
-    schema-utils "^1.0.0"
-    tapable "^1.1.3"
-    terser-webpack-plugin "^1.4.3"
-    watchpack "^1.6.0"
-    webpack-sources "^1.4.1"
-
-webpack@^4.44.1:
+webpack@^4.44.1, webpack@^4.44.2:
   version "4.44.2"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.44.2.tgz#6bfe2b0af055c8b2d1e90ed2cd9363f841266b72"
   integrity sha512-6KJVGlCxYdISyurpQ0IPTklv+DULv05rs2hseIXer6D7KrUicRDLFb4IUM1S6LUAKypPM/nSiVSuv8jHu1m3/Q==
