@@ -32,6 +32,14 @@ module.exports = {
       destination: `${__dirname}/static/images`,
       exportGDocs: false,
       exportMimeType: ''
+    }
+},
+    {
+      resolve: `gatsby-plugin-tidio`,
+      options: {
+        tidioId: "p5v7251q0mhsqtqw1sd8v3wcftqbawjv",
+        // get this from the tidio script widget
+        development: true,
       }
     },
     'gatsby-transformer-yaml',
