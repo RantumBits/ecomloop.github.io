@@ -21,7 +21,14 @@ module.exports = {
       destination: `${__dirname}/content/posts`,
       exportGDocs: false,
       exportMimeType: ''
-    }
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-klaviyo',
+      options: {
+        klaviyoKey: 'V5u3f5',
+        enableDuringDevelop: true, // Optional. Disables Klaviyo when running Gatsby dev server. Defaults to true.
+      },
     },
     'gatsby-plugin-react-helmet',
     {
@@ -32,16 +39,15 @@ module.exports = {
       destination: `${__dirname}/static/images`,
       exportGDocs: false,
       exportMimeType: ''
-    }
-},
-    {
-      resolve: `gatsby-plugin-tidio`,
-      options: {
-        tidioId: "p5v7251q0mhsqtqw1sd8v3wcftqbawjv",
-        // get this from the tidio script widget
-        development: true,
       }
     },
+    {
+    resolve: 'gatsby-plugin-tidio-chat',
+    options: {
+      tidioKey: 'p5v7251q0mhsqtqw1sd8v3wcftqbawjv',
+      enableDuringDevelop: true, // Optional. Disables Tidio chat widget when running Gatsby dev server. Defaults to true.
+    },
+  },
     'gatsby-transformer-yaml',
     {
       resolve: `gatsby-source-shopify`,
