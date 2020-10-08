@@ -19,19 +19,19 @@ const NewsPage = ({location, data }) => {
     const increaseLimit = () => {
         setLimit(limit + maxItems);
     }
-    
+
     React.useEffect(() => {
       //checking if tag filter is present
       if(location && location.search) {
         const { tag } = queryString.parse(location.search);
-        setFilter(tag.trim())      
+        setFilter(tag.trim())
       }
     },[]);
-    
-    let filterEdges = edges;    
+
+    let filterEdges = edges;
     //apply filtertext if its greater than 3 characters
     if(filter && filter.length>3){
-      filterEdges = _.filter(edges, ({node}) => (node.title && node.title.indexOf(filter)>=0) || (node.extractedkeywords && node.extractedkeywords.indexOf(filter)>=0) || (node.tags && node.tags.indexOf(filter)>=0) || (node.keywords && node.keywords.indexOf(filter)>=0) )      
+      filterEdges = _.filter(edges, ({node}) => (node.title && node.title.indexOf(filter)>=0) || (node.extractedkeywords && node.extractedkeywords.indexOf(filter)>=0) || (node.tags && node.tags.indexOf(filter)>=0) || (node.keywords && node.keywords.indexOf(filter)>=0) )
     }
 
     //Now limiting the items as per limit
@@ -69,7 +69,8 @@ const NewsPage = ({location, data }) => {
 
                                     <div className="PostCard--Content">
                                         {node.title && <h3 className="PostCard--Title">{node.title}</h3>}
-                                        {node.comment && <div className="PostCard--Excerpt">{node.comment}</div>}
+                                        {node.source && <p className="PostCard--Source">via {node.source} on {node.publishdate}</p>}
+                                        {node.highlight && <div className="PostCard--Excerpt">{node.highlight}</div>}
                                     </div>
                                 </Link>
                             ))}
