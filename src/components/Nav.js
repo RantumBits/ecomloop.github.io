@@ -75,6 +75,38 @@ export class Navigation extends Component {
                             </div>
                         }
 
+                        {
+                            <div className={`Nav--Group ${this.state.activeSubNav === 'tools' ? 'active' : ''}`}>
+                                <span
+                                    className={`Nav--GroupParent ${this.props.location.pathname.includes('tools')? 'active': ''}`}
+                                    onClick={() => this.toggleSubNav('tools')}
+                                >
+                                    tools
+                                    <div className="Nav--GroupLinks">
+
+
+                                            <NavLink
+                                            to={`https://headless.ecomloop.com/`}
+                                            key={'headless'}
+                                            className="Nav--GroupLink"
+                                            target="_blank"
+                                            >
+                                            Headless // gatsby + shopify theme
+                                            </NavLink>
+                                            <NavLink
+                                            to={`https://www.gatsbyjs.com/plugins/gatsby-plugin-klaviyo/`}
+                                            key={'klatsby'}
+                                            className="Nav--GroupLink"
+                                            target="_blank"
+                                            >
+                                            Klatsby // klayvio plugin for gatsby
+                                            </NavLink>
+
+                                    </div>
+                                </span>
+                            </div>
+                        }
+
                         <NavLink to="/news/" title="ecommerce news">ecommerce news</NavLink>
                         <NavLink to="/blog/" title="ecommerce agency blog">blog</NavLink>
 
