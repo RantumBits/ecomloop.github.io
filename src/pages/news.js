@@ -38,7 +38,7 @@ const NewsPage = ({location, data }) => {
     const listEdges = _.slice(filterEdges, 0, limit)
 
     return (
-        <Layout title="ecommerce news" description="" >
+        <Layout title="ecommerce news" description="ecommerce news for uncommon digial commerce brands" >
             <PageHeader
                 title="ecommerce news"
                 subtitle="for uncommon digital commerce brands"
@@ -68,9 +68,10 @@ const NewsPage = ({location, data }) => {
                                         </div>
 
                                     <div className="PostCard--Content">
-                                        {node.title && <h3 className="PostCard--Title">{node.title}</h3>}
-                                        {node.source && <p className="PostCard--Source">via {node.source} on {node.publishdate}</p>}
-                                        {node.highlight && <div className="PostCard--Excerpt">{node.highlight}</div>}
+                                        {node.title && <h3 className="PostCard--Title">{node.title.substring(0,50)}</h3>}
+                                        {node.source && <em className="PostCard--Source">Source: {node.source.substring(0,28)}<br/></em>}
+                                        {node.source && <em className="PostCard--Date">Date: {node.publishdate}<br/></em>}
+                                        {node.highlight && <div className="PostCard--Excerpt"><br/>{node.highlight.substring(0,280)}</div>}
                                     </div>
                                 </Link>
                             ))}

@@ -101,6 +101,14 @@ export class Navigation extends Component {
                                             >
                                             Klatsby // klayvio plugin for gatsby
                                             </NavLink>
+                                            <NavLink
+                                            to={`#`}
+                                            key={'#'}
+                                            className="Nav--GroupLink"
+                                            target="_blank"
+                                            >
+                                            Shoptomo // shopify analtyics app 
+                                            </NavLink>
 
                                     </div>
                                 </span>
