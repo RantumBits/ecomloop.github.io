@@ -7,11 +7,11 @@ export const getRelatedPosts = (currentPost, allPosts) => {
     const currentCatetory = currentPost.node.frontmatter.categories || "";
     const currentTags = currentPost.node.frontmatter.tags || [];
 
-    //console.log("******** in related post")
+    console.log("******** in related post")
     //console.log(allPosts)
     //console.log(currentPost)
-    //console.log(currentCatetory)
-    //console.log(currentTags)
+    console.log(currentCatetory)
+    console.log(currentTags)
 
     // Don't include the current post in posts list
     allPosts = allPosts.filter((post) => post.node.id !== currentPost.node.id);
@@ -59,7 +59,7 @@ export const getRelatedPosts = (currentPost, allPosts) => {
         arrayIdentityMap, ['points'], ['desc']
     )
 
-    //console.log(similarPosts.splice(0, maxPosts))
+    console.log(similarPosts.splice(0, maxPosts))
     // return the max number posts requested
     return similarPosts.splice(0, maxPosts);
 

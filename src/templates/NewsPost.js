@@ -7,7 +7,9 @@ import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Image from '../components/Image'
 import Layout from '../components/Layout'
-import {getRelatedNews} from '../components/RelatedNews'
+import { getRelatedNews } from '../components/RelatedNews'
+import { getRelatedPosts } from '../components/RelatedPosts'
+import moment from 'moment'
 import './SinglePost.css'
 
 export const NewsPostTemplate = ({
@@ -35,14 +37,15 @@ export const NewsPostTemplate = ({
     articleid,
     prevPostURL,
     relatedNews,
+    relatedPosts,
     categories = (extractedkeywords + "," + tags + "," + keywords).split(",")
 }) => {
     //filter out null, and all tags beginning with *
-    categories = _.filter(categories, tag => tag!="null" && !tag.startsWith("*"))
+    categories = _.filter(categories, tag => tag != "null" && !tag.startsWith("*"))
     console.log("********** relatedNews (in display) ", relatedNews)
     return (
         <main>
-            <PageHeader title={title} backgroundImage={'https://source.unsplash.com/1600x900/?abstract.'+ articleid} />
+            <PageHeader title={title} backgroundImage={'https://source.unsplash.com/1600x900/?abstract.' + articleid} />
             <article
                 className="SinglePost section light"
                 itemScope
@@ -54,7 +57,7 @@ export const NewsPostTemplate = ({
                     </Link>
                     <div className="SinglePost--Content relative">
                         <div className="SinglePost--Meta">
-                            Posted: {dateadded} <br/>
+                            Posted: {dateadded} <br />
 
                         </div>
 
@@ -66,7 +69,7 @@ export const NewsPostTemplate = ({
 
                         {image && (
                             <div className="SinglePost--InnerContent">
-                                <img src={image} title={title} width="100%"/>
+                                <img src={image} title={title} width="100%" />
                             </div>
                         )}
 
@@ -94,17 +97,17 @@ export const NewsPostTemplate = ({
                         <div className="SinglePost--Pagination">
                             <a href={url} target="_blank" className="Nav--CTA animated jello fadeInDown delay-2s">Read the original post &gt;</a>
                         </div>
-                        <br/>
+                        <br />
                         {categories && categories.length > 0 && (
                             <Fragment>
-                              <i>Tags:
+                                <i>Tags:
                                 {categories.map((cat, index) => (
                                     <span
                                         key={cat}
                                         className="SinglePost--Meta--Category"
                                     >
                                         <a href={`/news/?tag=${cat.trim()}`}>
-                                          {cat.trim()}
+                                            {cat.trim()}
                                         </a>
                                         {/* Add a comma on all but last category */}
                                         {index !== categories.length - 1 ? ',' : ''}
@@ -112,24 +115,6 @@ export const NewsPostTemplate = ({
                                 ))}</i>
                             </Fragment>
                         )}
-                        {relatedNews && relatedNews.length>0 &&
-                            <h2 style={{marginTop: "2rem"}}>Related News</h2>
-                        }
-                        <div className="PostSection">
-                            <div className="PostSection--Grid">
-                                {relatedNews && relatedNews.map(({ news }, index) => (
-                                    <Link key={index} to={`/news/${news.node.articleid}`} className="PostCard">
-                                        <div className="PostCard--Image relative">
-                                            <Image background src={'https://source.unsplash.com/1600x900/?abstract.'+ news.node.articleid} alt={news.node.title} />
-                                        </div>
-                                        <div className="PostCard--Content">
-                                            {news.node.title && <h3 className="PostCard--Title">{news.node.title}</h3>}
-                                            {news.node.comment && <div className="PostCard--Excerpt">{news.node.comment}</div>}
-                                        </div>
-                                    </Link>
-                                ))}
-                            </div>
-                        </div>
                         <div className="SinglePost--Pagination">
                             {prevPostURL && (
                                 <Link
@@ -150,15 +135,66 @@ export const NewsPostTemplate = ({
                         </div>
                     </div>
                 </div>
+                <div className="container skinny">
+                    {relatedNews && relatedNews.length > 0 &&
+                        <h3 style={{ marginTop: "2rem" }}>Related News</h3>
+                    }
+                    <div className="PostSection">
+                        <div className="PostSection--Grid" style={{ gridTemplateColumns: "repeat(2, 1fr)" }}>
+                            {relatedNews && relatedNews.map(({ news }, index) => (
+                                <Link key={index} to={`/news/${news.node.articleid}`} className="PostCard">
+                                    <div className="PostCard--Image relative">
+                                        <Image background src={'https://source.unsplash.com/1600x900/?abstract.' + news.node.articleid} alt={news.node.title} />
+                                    </div>
+                                    <div className="PostCard--Content">
+                                        {news.node.title && <h3 className="PostCard--Title">{news.node.title}</h3>}
+                                        {news.node.dateadded && <div className="PostCard--Category">{moment(new Date(news.node.dateadded)).format("dddd MMMM DD, YYYY")}</div>}
+                                        {news.node.comment && <div className="PostCard--Excerpt">{news.node.comment}</div>}
+                                    </div>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+                {!!relatedPosts.length && (
+                    <article className="SinglePost section light" style={{ padding: "1px" }}>
+                        <div className="container skinny">
+                            <h3>Related Posts</h3>
+                            <div className="SinglePost--Content relative" style={{ padding: "0" }}>
+                                <PostSection posts={relatedPosts} />
+                            </div>
+                        </div>
+                    </article>
+                )}
             </article>
         </main>
     )
 }
 
 // Export Default NewsPost for front-end
-const NewsPost = ({ data: { news, allNews } }) => {
-    const relatedNews = getRelatedNews(news, allNews.edges);
-    console.log("++++++ relatedNews ",relatedNews)
+const NewsPost = ({ data: { news, allNews, allPosts } }) => {
+    let relatedNews = getRelatedNews(news, allNews.edges);
+    relatedNews = relatedNews.slice(0, 2);
+    const thisEdge = allNews.edges.find(edge => edge.node.id === news.id)    
+    const allTags = (thisEdge.node.extractedkeywords||"") + "," + (thisEdge.node.keywords||"") + "," + (thisEdge.node.tag||"");
+    const thisEdgeFormatted = {
+        node : {
+            ...thisEdge.node,
+            frontmatter: {
+                categories : "",
+                tags : _.filter(allTags.split(","), tag => tag != "null" && !tag.startsWith("*"))
+            },
+        },
+    }
+    
+    const relatedPosts = getRelatedPosts(thisEdgeFormatted, allPosts.edges);
+    const relatedPostsFlat = relatedPosts.map(edge => ({
+        ...edge.post.node,
+        ...edge.post.node.frontmatter,
+        ...edge.post.node.fields
+    }))
+    //fixing the image path issue
+    relatedPostsFlat.forEach(item => item.featuredImage = "../" + item.featuredImage)
 
     return (
         <Layout
@@ -171,6 +207,7 @@ const NewsPost = ({ data: { news, allNews } }) => {
                 nextPostURL={_.get(news, 'next.id')}
                 prevPostURL={_.get(news, 'previous.id')}
                 relatedNews={relatedNews}
+                relatedPosts={relatedPostsFlat}
             />
         </Layout>
     )
@@ -188,7 +225,7 @@ export const pageQuery = graphql`
       articleid
       author
       comment
-      dateadded
+      dateadded 
       excerpt
       extractedkeywords
       headerimage
@@ -235,5 +272,35 @@ export const pageQuery = graphql`
         }
       }
     }
+    allPosts: allMarkdownRemark(
+        filter: { fields: { contentType: { eq: "posts" } } }
+        sort: { order: DESC, fields: [frontmatter___date] }
+      ) {
+        edges {
+          node {
+            id          
+            excerpt
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              featuredImage
+              localImage {
+                  childImageSharp {
+                      fluid (srcSetBreakpoints: [200, 400]) {
+                          ...GatsbyImageSharpFluid
+                      }
+                  }
+              }
+              date(formatString: "dddd MMMM DD, YYYY")
+              categories {
+                category
+              }
+              tags
+            }
+          }          
+        }
+      }
   }
 `

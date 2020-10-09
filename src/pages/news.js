@@ -61,7 +61,7 @@ const NewsPage = ({location, data }) => {
                     <div className="PostSection">
                         <div className="PostSection--Grid">
                             {listEdges && listEdges.map(({ node }, index) => (
-                                <Link key={index} to={`/news/${node.articleid}`} className="PostCard">
+                                <Link key={index} to={`/news/${node.articleid}/`} className="PostCard">
 
                                         <div className="PostCard--Image relative">
                                             <Image background src={'https://source.unsplash.com/1600x900/?abstract.'+ node.articleid} alt={node.title} />
