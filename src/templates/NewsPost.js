@@ -142,7 +142,7 @@ export const NewsPostTemplate = ({
                     <div className="PostSection">
                         <div className="PostSection--Grid" style={{ gridTemplateColumns: "repeat(2, 1fr)" }}>
                             {relatedNews && relatedNews.map(({ news }, index) => (
-                                <Link key={index} to={`/news/${news.node.articleid}`} className="PostCard">
+                                <Link key={index} to={`/news/${news.node.articleid}/`} className="PostCard">
                                     <div className="PostCard--Image relative">
                                         <Image background src={'https://source.unsplash.com/1600x900/?abstract.' + news.node.articleid} alt={news.node.title} />
                                     </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 import _ from 'lodash';
 import Layout from '../components/Layout'
@@ -39,6 +40,9 @@ const NewsPage = ({location, data }) => {
 
     return (
         <Layout title="ecommerce news" description="ecommerce news for uncommon digial commerce brands" >
+            <Helmet>
+              <link rel='canonical' href={location && location.protocol+"//"+location.host+location.pathname} />
+            </Helmet>
             <PageHeader
                 title="ecommerce news"
                 subtitle="for uncommon digital commerce brands"

@@ -1,12 +1,16 @@
 import React, { Fragment } from 'react'
 import _get from 'lodash/get'
+import _ from 'lodash'
 import { Link, graphql } from 'gatsby'
 import { ChevronLeft } from 'react-feather'
 import PostSection from '../components/PostSection'
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
-import {getRelatedPosts} from '../components/RelatedPosts'
+import Image from '../components/Image'
+import { getRelatedPosts } from '../components/RelatedPosts'
+import { getRelatedNews } from '../components/RelatedNews'
+import moment from 'moment'
 import './SinglePost.css'
 
 export const SinglePostTemplate = ({
@@ -19,8 +23,8 @@ export const SinglePostTemplate = ({
     prevPostURL,
     categories = []
 }) => {
-    let pageFeaturedImage = featuredImage.startsWith('http')?featuredImage:('../'+featuredImage);
-    if(localImage && localImage.childImageSharp) pageFeaturedImage = localImage.childImageSharp.fluid.src;
+    let pageFeaturedImage = featuredImage.startsWith('http') ? featuredImage : ('../' + featuredImage);
+    if (localImage && localImage.childImageSharp) pageFeaturedImage = localImage.childImageSharp.fluid.src;
     return (
         <main>
             <PageHeader
@@ -91,20 +95,30 @@ export const SinglePostTemplate = ({
 }
 
 // Export Default SinglePost for front-end
-const SinglePost = ({ data: { post, allPosts } }) => {
-    const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)    
-    console.log("**********")
-    console.log(post)
+const SinglePost = ({ data: { post, allPosts, allNews } }) => {
+    const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)
     const relatedPosts = getRelatedPosts(thisEdge, allPosts.edges);
-    console.log(relatedPosts)
     const relatedPostsFlat = relatedPosts.map(edge => ({
         ...edge.post.node,
         ...edge.post.node.frontmatter,
         ...edge.post.node.fields
     }))
     //fixing the image path issue
-    relatedPostsFlat.forEach(item => item.featuredImage = "../"+item.featuredImage)
-    
+    relatedPostsFlat.forEach(item => item.featuredImage = "../" + item.featuredImage)
+
+    //relatedNews
+    const thisEdgeFormatted = {
+        ...thisEdge.node,
+        ...thisEdge.node.frontmatter.categories,
+        tags: thisEdge.node.frontmatter.tags.join(","),
+        keywords: _.join(_.map(thisEdge.node.frontmatter.categories, 'category'), ','),
+        extractedkeywords: '',
+    }
+    console.log("thisEdgeFormatted", thisEdgeFormatted);
+    let relatedNews = getRelatedNews(thisEdgeFormatted, allNews.edges);
+    relatedNews = relatedNews.slice(0, 2);
+    console.log("relatedNew", relatedNews);
+
     return (
         <Layout
             meta={post.frontmatter.meta || false}
@@ -118,13 +132,37 @@ const SinglePost = ({ data: { post, allPosts } }) => {
                 nextPostURL={_get(thisEdge, 'next.fields.slug')}
                 prevPostURL={_get(thisEdge, 'previous.fields.slug')}
             />
-            
+
             {!!relatedPostsFlat.length && (
-                <article className="SinglePost section light" style={{padding: "1px"}}>
+                <article className="SinglePost section light" style={{ padding: "1px" }}>
                     <div className="container skinny">
                         <h3>Related Posts</h3>
-                        <div className="SinglePost--Content relative" style={{padding: "0"}}>
+                        <div className="SinglePost--Content relative" style={{ padding: "0" }}>
                             <PostSection posts={relatedPostsFlat} />
+                        </div>
+                    </div>
+                </article>
+            )}
+
+            {!!relatedNews.length && (
+                <article className="SinglePost section light" style={{ padding: "1px" }}>
+                    <div className="container skinny">
+                        <h3>Related News</h3>
+                        <div className="PostSection">
+                            <div className="PostSection--Grid" style={{ gridTemplateColumns: "repeat(2, 1fr)" }}>
+                                {relatedNews && relatedNews.map(({ news }, index) => (
+                                    <Link key={index} to={`/news/${news.node.articleid}/`} className="PostCard">
+                                        <div className="PostCard--Image relative">
+                                            <Image background src={'https://source.unsplash.com/1600x900/?abstract.' + news.node.articleid} alt={news.node.title} />
+                                        </div>
+                                        <div className="PostCard--Content">
+                                            {news.node.title && <h3 className="PostCard--Title">{news.node.title}</h3>}
+                                            {news.node.dateadded && <div className="PostCard--Category">{moment(new Date(news.node.dateadded)).format("dddd MMMM DD, YYYY")}</div>}
+                                            {news.node.comment && <div className="PostCard--Excerpt">{news.node.comment}</div>}
+                                        </div>
+                                    </Link>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -208,6 +246,34 @@ export const pageQuery = graphql`
           frontmatter {
             title
           }
+        }
+      }
+    }
+
+    allNews : allGoogleSheetListRow (sort: {fields: dateadded, order: DESC}) {
+      edges {
+        node {
+            articleid
+            author
+            comment
+            dateadded
+            excerpt
+            extractedkeywords
+            headerimage
+            highlight
+            highlight2
+            images
+            image
+            id
+            keywords
+            publishdate
+            relativepopularity
+            source
+            source2
+            tags
+            text
+            title
+            url
         }
       }
     }

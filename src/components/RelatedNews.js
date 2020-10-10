@@ -7,14 +7,12 @@ export const getRelatedNews = (currentNews, allNews) => {
     const currentCategories = (currentNews.extractedkeywords + "," + currentNews.keywords).split(",") || [];
     const currentTags = currentNews.tags.split(",") || [];
 
-    /*
-    console.log("******** in related news")
-    console.log(allNews)
-    console.log(currentNews)
-    console.log(currentCategories)
-    console.log(currentTags)
-    */
-
+    // console.log("******** in related news")
+    // console.log(allNews)
+    // console.log(currentNews)
+    // console.log(currentCategories)
+    // console.log(currentTags)
+    
     // Don't include the current post in posts list
     allNews = allNews.filter((post) => post.node.id !== currentNews.id);
 
