@@ -175,7 +175,7 @@ export const NewsPostTemplate = ({
 const NewsPost = ({ data: { news, allNews, allPosts } }) => {
     let relatedNews = getRelatedNews(news, allNews.edges);
     relatedNews = relatedNews.slice(0, 2);
-    const thisEdge = allNews.edges.find(edge => edge.node.id === news.id)    
+    const thisEdge = allNews.edges.find(edge => edge.node.id === news.id)
     const allTags = (thisEdge.node.extractedkeywords||"") + "," + (thisEdge.node.keywords||"") + "," + (thisEdge.node.tag||"");
     const thisEdgeFormatted = {
         node : {
@@ -186,7 +186,7 @@ const NewsPost = ({ data: { news, allNews, allPosts } }) => {
             },
         },
     }
-    
+
     const relatedPosts = getRelatedPosts(thisEdgeFormatted, allPosts.edges);
     const relatedPostsFlat = relatedPosts.map(edge => ({
         ...edge.post.node,
@@ -225,7 +225,7 @@ export const pageQuery = graphql`
       articleid
       author
       comment
-      dateadded 
+      dateadded
       excerpt
       extractedkeywords
       headerimage
@@ -244,7 +244,7 @@ export const pageQuery = graphql`
       title
       url
     }
-    
+
     allNews : allGoogleSheetListRow (sort: {fields: dateadded, order: DESC}) {
       edges {
         node {
@@ -278,7 +278,7 @@ export const pageQuery = graphql`
       ) {
         edges {
           node {
-            id          
+            id
             excerpt
             fields {
               slug
@@ -299,7 +299,7 @@ export const pageQuery = graphql`
               }
               tags
             }
-          }          
+          }
         }
       }
   }
