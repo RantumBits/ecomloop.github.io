@@ -46,7 +46,7 @@
     "gatsby-plugin-tidio-chat": "^1.0.0",
     "gatsby-react-router-scroll": "^3.0.15",
     "gatsby-remark-images": "^3.4.2",
-    "gatsby-remark-relative-images": "^2.0.2",
+    "gatsby-remark-relative-images": "^0.3.0",
     "gatsby-remark-relative-images-v2": "^0.1.5",
     "gatsby-remark-responsive-iframe": "^2.4.17",
     "gatsby-source-dropbox": "^0.2.3",
