@@ -205,16 +205,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        postCssPlugins: [
-          postcssPresetEnv({
-            browsers: '> 0.5%, last 2 versions, ie 11'
-          })
-        ]
+      
       }
     },
     {
       resolve: `gatsby-plugin-postcss`,
-    
+      options: {
+        postCssPlugins: [
+          require(`postcss-preset-env`)({
+            browsers: '> 0.5%, last 2 versions, ie 11'
+          })
+        ]
+      }
     },
     {
       resolve: 'gatsby-plugin-nprogress',
