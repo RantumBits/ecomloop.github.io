@@ -3,9 +3,6 @@ import './Footer.css'
 
 export default () => (
   <div>
-  <script>
-    $('head').append("<script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"277e70a8f2b51b7a14830ff3c44fa70f"})});</script>");
-</script>
 
     <footer className="footer">
       <div className="container taCenter">
