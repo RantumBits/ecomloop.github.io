@@ -25,7 +25,9 @@ exports.createPages = ({ actions, graphql }) => {
       }
     }
   `).then(result => {
+      console.log(`Creating ${id}`)
     if (result.errors) {
+
       result.errors.forEach(e => console.error(e.toString()))
       return Promise.reject(result.errors)
     }
@@ -83,6 +85,7 @@ exports.createPages = ({ actions, graphql }) => {
             },
         })
         })
+        })
 
         //Creating News Pages
         return graphql(`
@@ -111,7 +114,7 @@ exports.createPages = ({ actions, graphql }) => {
                   },
               })
             })
-        })
+
     })
 
   })
@@ -127,6 +130,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   // https://github.com/Vagr9K/gatsby-advanced-starter/blob/master/gatsby-node.js
   let slug
   if (node.internal.type === 'MarkdownRemark') {
+    
     const fileNode = getNode(node.parent)
     const parsedFilePath = path.parse(fileNode.relativePath)
 
@@ -165,4 +169,4 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 
 // Random fix for https://github.com/gatsbyjs/gatsby/issues/5700
-module.exports.resolvableExtensions = () => ['.json']
+//module.exports.resolvableExtensions = () => ['.json']

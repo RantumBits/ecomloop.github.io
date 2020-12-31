@@ -1,16 +1,16 @@
 ---
 template: HomePage
 slug: ''
-title: We help uncommon businesses grow with digital ecommerce
+title: Keep technology working hard for you
 featuredImage: '../images/digital-commerce-solutions.png'
 subtitle: >-
-  ### We're not a typical ecommerce agency or web development company.
+  ### Technology breeds opportunity
 
 
-  ### Our clients are independent, innovative companies, not *small* businesses.
+  ### We help uncommon organizations grow with digital commerce
 
 
-  ### Get started with ecommerce agency services today or join our free email list
+  ### Get started with a free consultation
 accordion:
   - content: >-
       ecomloop does exceptional work and was a big part of our success. We will be using him for more projects in the future.
