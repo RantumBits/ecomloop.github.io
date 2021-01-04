@@ -73,7 +73,7 @@ module.exports = {
         verbose: true,
         enableWebp: false,
       },
-    },/*
+    },
     {
     resolve: 'gatsby-source-google-sheets',
     options: {
@@ -82,8 +82,7 @@ module.exports = {
         credentials: require(`${__dirname}/client_secret.json`,),
 
       }
-
-    },*/
+    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
