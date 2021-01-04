@@ -6,6 +6,7 @@ require('dotenv').config({
 })
 
 module.exports = {
+  flags: { QUERY_ON_DEMAND: true,  FAST_DEV: true },
   siteMetadata: {
     title: 'ecomloop',
     description: 'ecommerce agency helping uncommon businesses grow via digital commerce. development + marketing + data analytics + conversion rate optimization partners for growth. Get started today with ecommerce agency services from ecomloop, based in Burlingame, California.',

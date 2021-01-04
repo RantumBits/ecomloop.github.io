@@ -56,7 +56,7 @@ export class Navigation extends Component {
                                     className={`Nav--GroupParent ${this.props.location.pathname.includes('solution')? 'active': ''}`}
                                     onClick={() => this.toggleSubNav('posts')}
                                 >
-                                    ecommerce solutions
+                                    digital marketing services
                                     <div className="Nav--GroupLinks">
                                         <NavLink to="/solutions/" className="Nav--GroupLink">
                                             All Solutions
@@ -107,7 +107,7 @@ export class Navigation extends Component {
                                             className="Nav--GroupLink"
                                             target="_blank"
                                             >
-                                            Shoptomo // shopify analtyics app 
+                                            Shoptomo // shopify analtyics app
                                             </NavLink>
 
                                     </div>

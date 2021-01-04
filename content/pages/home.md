@@ -1,16 +1,13 @@
 ---
 template: HomePage
 slug: ''
-title: Keep technology working hard for you
+title:  Keep technology working for your business
 featuredImage: '../images/digital-commerce-solutions.png'
 subtitle: >-
-  ### Technology breeds opportunity
+  ###  We enable growth with digital marketing services & remote office tech support
 
+  ###  Digital platform growth for uncommon organizations & independent businesses
 
-  ### We help uncommon organizations grow with digital commerce
-
-
-  ### Get started with a free consultation
 accordion:
   - content: >-
       ecomloop does exceptional work and was a big part of our success. We will be using him for more projects in the future.
@@ -34,17 +31,17 @@ accordion:
     title: "went above and beyond to deliver on our expectations"
 meta:
   description: >-
-   We're not a typical ecommerce agency or web development company. Our clients are not *small businesses*. They are *innovative, independent* businesses looking to grow with ecommerce.
-  title: ecomloop - ecommerce agency helping uncommon businesses grow
+   We enable growth with digital marketing services & remote office tech support. Digital platform growth for uncommon organizations & independent businesses looking for the next opportunities enabled by technology.  
+  title: ecomloop - Keep technology working for your business
 ---
-## We help uncommon businesses grow with ecommerce
+## Stop throwing money at tech and start growing your business with it
 
-The world is moving to digital commerce at a faster rate than ever before. Well-implemented technology & analytics helps empower organizations to overcome limitations imposed by the traditional, physical economy.
+The world is moving to digital platforms at a faster rate than ever before. Well-implemented technology empowers organizations of all sizes to overcome limitations of physical commerce.
 
 In the digital economy, nearly everyone has access to the same services, goods and tools. With reputation & trust built and displayed publicly, only the best survive.
 
 It's crucial for business be *uncommon* by serving the core of segment of their audience in an exceptional manner.
 
-Don't let technology inefficiencies limit your organization's opportunities. The ecomloop ecommerce agency helps uncommon grow with via digital commerce.
+Don't let technology inefficiencies limit your organization's opportunities. The ecomloop ecommerce agency helps uncommon organizations of all sizes looking to get the most out of technology
 
 Check out our [ecommerce solutions](/solutions/) to get started today.
