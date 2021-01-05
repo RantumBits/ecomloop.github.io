@@ -1,12 +1,14 @@
 ---
 template: HomePage
 slug: ''
-title:  Keep technology working for your business
+title: Uncommon technology services for uncommon organizations
 featuredImage: '../images/digital-commerce-solutions.png'
 subtitle: >-
-  ###  We enable growth with digital marketing services & remote office tech support
+  ###  We're not a typical digital marketing, web development, or ecommerce agency.
 
-  ###  Digital platform growth for uncommon organizations & independent businesses
+  ###  We help small teams use best-in-class technology solutions for effective growth.
+
+
 
 accordion:
   - content: >-

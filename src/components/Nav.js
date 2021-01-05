@@ -56,8 +56,22 @@ export class Navigation extends Component {
                                     className={`Nav--GroupParent ${this.props.location.pathname.includes('solution')? 'active': ''}`}
                                     onClick={() => this.toggleSubNav('posts')}
                                 >
-                                    digital marketing services
+                                    services
                                     <div className="Nav--GroupLinks">
+                                        <NavLink to="/digital-marketing-services/" className="Nav--GroupLink">
+                                            Digital marketing services
+                                        </NavLink>
+                                        {/*
+                                        <NavLink to="/ecommerce-services/" className="Nav--GroupLink">
+                                            Ecommerce agency services
+                                        </NavLink>
+                                        <NavLink to="/digital-platform-development/" className="Nav--GroupLink">
+                                            Digital platform development
+                                        </NavLink>
+                                        */}
+                                    </div>
+
+                                    {/*<div className="Nav--GroupLinks">
                                         <NavLink to="/solutions/" className="Nav--GroupLink">
                                             All Solutions
                                         </NavLink>
@@ -71,6 +85,7 @@ export class Navigation extends Component {
                                             </NavLink>
                                         ))}
                                     </div>
+                                    */}
                                 </span>
                             </div>
                         }
