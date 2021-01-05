@@ -29,7 +29,7 @@ section2: >-
 
 section3: >-
 
-    ## Uncommon marketing. Uncommon results. 
+    ## Uncommon marketing. Uncommon results.
 
     We’re an uncommonly good fit for your business if you are small team looking expand your reach.   
 

@@ -64,7 +64,7 @@ exports.createPages = ({ actions, graphql }) => {
     //Creating Shopify Product Pages
     return graphql(`
       {
-        allShopifyProduct {
+        allShopifyProduct(limit:1) {
           edges {
             node {
               handle
@@ -89,7 +89,7 @@ exports.createPages = ({ actions, graphql }) => {
         //Creating News Pages
         return graphql(`
           {
-            allGoogleSheetListRow {
+            allGoogleSheetListRow(limit:100) {
               edges {
                 node {
                   id
