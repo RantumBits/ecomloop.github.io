@@ -89,7 +89,7 @@ exports.createPages = ({ actions, graphql }) => {
         //Creating News Pages
         return graphql(`
           {
-            allGoogleSheetListRow(limit:100) {
+            allGoogleSheetListRow(limit:1000) {
               edges {
                 node {
                   id
