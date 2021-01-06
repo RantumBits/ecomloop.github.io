@@ -2,10 +2,15 @@
   background-color: var(--darkGrey);
   color: white;
   padding: 15rem 0;
+  z-index: 1000;
 }
 
 .PageHeader .BackgroundImage {
   opacity: 0.8;
+}
+
+.PageHeader > svg {
+  position: relative;
 }
 
 .PageHeader-large {

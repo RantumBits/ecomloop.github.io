@@ -1,13 +1,14 @@
 ---
 template: HomePage
 slug: ''
-title: Uncommon technology services for uncommon organizations
+title: Uncommon digital services for uncommon businesses
 featuredImage: '../images/digital-commerce-solutions.png'
 subtitle: >-
   ###  We're not a typical digital marketing, web development, or ecommerce agency.
 
-  ###  We help small teams use best-in-class technology solutions for effective growth.
+  ###  We help small teams grow faster with effective technology solutions.
 
+  [Sign up for digital marketing services](/digital-marketing-services/)
 
 
 accordion:
@@ -34,16 +35,22 @@ accordion:
 meta:
   description: >-
    We enable growth with digital marketing services & remote office tech support. Digital platform growth for uncommon organizations & independent businesses looking for the next opportunities enabled by technology.  
-  title: ecomloop - Keep technology working for your business
+  title: ecomloop | Uncommon digital services for uncommon businesses
 ---
-## Stop throwing money at tech and start growing your business with it
+## Expand the capabilities of your team with the right technology solutions
 
-The world is moving to digital platforms at a faster rate than ever before. Well-implemented technology empowers organizations of all sizes to overcome limitations of physical commerce.
+The world is moving to digital platforms at a faster rate than ever before. Well-implemented technology empowers organizations of all sizes to grow faster and expand capabilities.
 
-In the digital economy, nearly everyone has access to the same services, goods and tools. With reputation & trust built and displayed publicly, only the best survive.
+Uncommon organizations don't always have the time or know how to get the most out of tech services. Small teams are already strapped for time, and have their own specialized skills that make it difficult to keep technology services working effectively.
 
-It's crucial for business be *uncommon* by serving the core of segment of their audience in an exceptional manner.
+Whether your business needs help developing a digital platform, growing with digital marketing services, or getting more sales with modern ecommere solutions, Ecomloop is ready to help small teams with solutions for the next phase of business.
 
-Don't let technology inefficiencies limit your organization's opportunities. The ecomloop ecommerce agency helps uncommon organizations of all sizes looking to get the most out of technology
+The best organizations harness technology to be better. In a digital first world, *uncommon* organizations harness technology to provide better services to customer and clients, run internal business processes more efficiently, and expand far beyond what's possible with manual processes.  
 
-Check out our [ecommerce solutions](/solutions/) to get started today.
+It's crucial for business to *uncommon* by serving the core of segment of their audience in an exceptional manner.
+
+Don't let technology inefficiencies limit your organization's opportunities.
+
+Check out our [ecommerce solutions](/digital-marketing-services/) to get started today.
+
+[Note: Monday, Jan 04, 2021: We are in the process of [updating service pages](https://ecomloop.com/posts/new-digital-services-plans-coming-soon/).
