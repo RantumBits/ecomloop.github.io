@@ -130,10 +130,10 @@ export class Navigation extends Component {
                             </div>
                         }
 
-                        <NavLink to="/news/" title="ecommerce news">ecommerce news</NavLink>
-                        <NavLink to="/blog/" title="ecommerce agency blog">blog</NavLink>
 
-                        <NavLink to="/solutions/" title="digital commerce solutions" className="Nav--CTA animated rubberBand slow delay-5s">Get ecommerce help</NavLink>
+                        <NavLink to="/blog/" title="ecomloop blog">blog</NavLink>
+
+                        <NavLink to="https://calendly.com/ecomloop" title="digital commerce solutions" className="Nav--CTA animated rubberBand slow delay-5s">Schedule a free call</NavLink>
                     </div>
                     <button
                         className="Nav--MenuButton"

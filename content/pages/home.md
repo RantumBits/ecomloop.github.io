@@ -8,7 +8,7 @@ subtitle: >-
 
   ###  We help small teams grow faster with effective technology solutions.
 
-  [Sign up for digital marketing services](/digital-marketing-services/)
+
 
 
 accordion:
@@ -51,6 +51,6 @@ It's crucial for business to *uncommon* by serving the core of segment of their 
 
 Don't let technology inefficiencies limit your organization's opportunities.
 
-Check out our [ecommerce solutions](/digital-marketing-services/) to get started today.
+Check out our [digital marketing services](/digital-marketing-services/) or [book a proposal call](https://calendly.com/ecomloop) today.
 
 [Note: Monday, Jan 04, 2021: We are in the process of [updating service pages](https://ecomloop.com/posts/new-digital-services-plans-coming-soon/).
