@@ -26,7 +26,33 @@ export const LandingPageTemplate = ({
   accordion2,
   service,
   body,
-  gallery
+  gallery2,
+  gallery,
+  planTitle_A,
+  planPrice_A,
+  planFeature01_A,
+  planFeature02_A,
+  planFeature03_A,
+  planFeature04_A,
+  planFeature05_A,
+  planTitle_B,
+  planPrice_B,
+  planFeature01_B,
+  planFeature02_B,
+  planFeature03_B,
+  planFeature04_B,
+  planFeature05_B,
+  planFeature06_B,
+  planFeature07_B,
+  planTitle_C,
+  planPrice_C,
+  planFeature01_C,
+  planFeature02_C,
+  planFeature03_C,
+  planFeature04_C,
+  planFeature05_C,
+  planFeature06_C,
+  planFeature07_C
 }) => (
   <main>
 
@@ -78,12 +104,6 @@ export const LandingPageTemplate = ({
       </div>
     </section>
 
-    <section className="section">
-
-
-
-
-</section>
 
     <section className="section">
     <div className="wave-bg-content">
@@ -115,7 +135,12 @@ export const LandingPageTemplate = ({
     </section>
 
 
-
+    <section className="section">
+      <div className="container center">
+        <h2>How our {service} work</h2>
+        <Gallery images={gallery2} />
+      </div>
+    </section>
 
     <div id="generic_price_table">
     <div className="wave">
@@ -126,7 +151,7 @@ export const LandingPageTemplate = ({
   <section>
 
           <div class="container center">
-<h2>{service} Pricing</h2>
+          <h2>{service} Pricing</h2>
               {/*BLOCK ROW START*/}
               <div class="PriceRow">
                   <div class="col-md-4">
@@ -143,7 +168,7 @@ export const LandingPageTemplate = ({
                                 {/*HEAD START*/}
                                   <div class="head_bg"></div>
                                   <div class="head">
-                                      <span>Basic</span>
+                                      <span>{planTitle_A}</span>
                                   </div>
                                   {/*//HEAD END*/}
 
@@ -153,10 +178,11 @@ export const LandingPageTemplate = ({
                               {/*PRICE START*/}
                               <div class="generic_price_tag clearfix">
                                   <span class="price">
-                                      <span class="sign">$</span>
-                                      <span class="currency">99</span>
-                                      <span class="cent">.99</span>
-                                      <span class="month">/MON</span>
+                                  <span class="sign">$</span>
+                                  <span class="currency">{planPrice_A}</span>
+                                  <span class="cent"></span>
+                                  <span class="month">/mo</span>
+                                      <span></span>
                                   </span>
                               </div>
                               {/*//PRICE END*/}
@@ -167,11 +193,12 @@ export const LandingPageTemplate = ({
                           {/*FEATURE LIST START*/}
                           <div class="generic_feature_list">
                             <ul>
-                                <li><span>2GB</span> Bandwidth</li>
-                                  <li><span>150GB</span> Storage</li>
-                                  <li><span>12</span> Accounts</li>
-                                  <li><span>7</span> Host Domain</li>
-                                  <li><span>24/7</span> Support</li>
+                                  <li>{planFeature01_A}</li>
+                                  <li><span></span> {planFeature02_A}</li>
+                                  <li><span></span> {planFeature03_A}</li>
+                                  <li><span>2</span> {planFeature04_A}</li>
+                                  <li><span>5</span> {planFeature05_A}</li>
+
                               </ul>
                           </div>
                           {/*//FEATURE LIST END*/}
@@ -201,7 +228,7 @@ export const LandingPageTemplate = ({
                                 {/*HEAD START*/}
                                   <div class="head_bg"></div>
                                   <div class="head">
-                                      <span>Standard</span>
+                                      <span>{planTitle_B}</span>
                                   </div>
                                   {/*//HEAD END*/}
 
@@ -211,10 +238,11 @@ export const LandingPageTemplate = ({
                               {/*PRICE START*/}
                               <div class="generic_price_tag clearfix">
                                   <span class="price">
-                                      <span class="sign">$</span>
-                                      <span class="currency">199</span>
-                                      <span class="cent">.99</span>
-                                      <span class="month">/MON</span>
+                                  <span class="sign">$</span>
+                                  <span class="currency">{planPrice_B}</span>
+                                  <span class="cent"></span>
+                                  <span class="month">/mo</span>
+                                      <span></span>
                                   </span>
                               </div>
                               {/*//PRICE END*/}
@@ -225,11 +253,12 @@ export const LandingPageTemplate = ({
                           {/*FEATURE LIST START*/}
                           <div class="generic_feature_list">
                             <ul>
-                                <li><span>2GB</span> Bandwidth</li>
-                                  <li><span>150GB</span> Storage</li>
-                                  <li><span>12</span> Accounts</li>
-                                  <li><span>7</span> Host Domain</li>
-                                  <li><span>24/7</span> Support</li>
+                            <li>{planFeature01_B}</li>
+                            <li><span></span> {planFeature02_B}</li>
+                            <li><span></span> {planFeature03_B}</li>
+                            <li><span>5</span> {planFeature04_B}</li>
+                            <li><span>10</span> {planFeature05_B}</li>
+                            <li><span>1</span> {planFeature06_B}</li>
                               </ul>
                           </div>
                           {/*//FEATURE LIST END*/}
@@ -258,7 +287,7 @@ export const LandingPageTemplate = ({
                                 {/*HEAD START*/}
                                   <div class="head_bg"></div>
                                   <div class="head">
-                                      <span>Unlimited</span>
+                                      <span>{planTitle_C}</span>
                                   </div>
                                   {/*//HEAD END*/}
 
@@ -269,9 +298,9 @@ export const LandingPageTemplate = ({
                               <div class="generic_price_tag clearfix">
                                   <span class="price">
                                       <span class="sign">$</span>
-                                      <span class="currency">299</span>
-                                      <span class="cent">.99</span>
-                                      <span class="month">/MON</span>
+                                      <span class="currency">{planPrice_C}</span>
+                                      <span class="cent"></span>
+                                      <span class="month">/mo</span>
                                   </span>
                               </div>
                               {/*//PRICE END*/}
@@ -282,11 +311,13 @@ export const LandingPageTemplate = ({
                           {/*FEATURE LIST START*/}
                           <div class="generic_feature_list">
                             <ul>
-                                <li><span>2GB</span> Bandwidth</li>
-                                  <li><span>150GB</span> Storage</li>
-                                  <li><span>12</span> Accounts</li>
-                                  <li><span>7</span> Host Domain</li>
-                                  <li><span>24/7</span> Support</li>
+                            <li>{planFeature01_C}</li>
+                            <li><span></span> {planFeature02_C}</li>
+                            <li><span></span> {planFeature03_C}</li>
+                            <li><span>10</span> {planFeature04_C}</li>
+                            <li><span>10</span> {planFeature05_C}</li>
+                            <li><span>2</span> {planFeature06_C}</li>
+                            <li><span>1</span> {planFeature07_C}</li>
                               </ul>
                           </div>
                           {/*//FEATURE LIST END*/}
@@ -365,7 +396,31 @@ export const pageQuery = graphql`
         video
         videoPoster
         videoTitle
-        service
+        service,
+        planTitle_A
+        planPrice_A
+        planFeature01_A
+        planFeature02_A
+        planFeature03_A
+        planFeature04_A
+        planFeature05_A
+        planTitle_B
+        planPrice_B
+        planFeature01_B
+        planFeature02_B
+        planFeature03_B
+        planFeature04_B
+        planFeature05_B
+        planFeature06_B
+        planTitle_C
+        planPrice_C
+        planFeature01_C
+        planFeature02_C
+        planFeature03_C
+        planFeature04_C
+        planFeature05_C
+        planFeature06_C
+        planFeature07_C
         accordion {
           title
           description

@@ -124,6 +124,13 @@
     display: block;
 }
 
+.pswp__caption__center{
+  max-width: 50%;
+}
+.pswp__caption {
+  position: fixed;
+  bottom: 25%;
+}
 section.BackgroundVideo-section.section {
   padding: 0 0 5em 0;
   margin: 0px 0 0 0 ;
