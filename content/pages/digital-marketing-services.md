@@ -6,10 +6,11 @@ title: Uncommon digital marketing services for uncommon organizations
 
 subtitle: Grow the reach of your business with full-service digital marketing services designed for small teams
 section1: >-
-  ## We know you can't do everything
+  ## We know your team can't do everything.
 
-  It takes time to create great work like yours. And you don't always have the time or know how to connect with your audience.  
+  It takes focused time to produce great work. And you and your team already have your hands full.
 
+  You don't always have the time or know how to connect with your audience.
 
   That's where we come in. We work with small teams to amplify what you already do and reach your audience effectively.  
 
@@ -91,6 +92,8 @@ gallery2:
 
 planTitle_A: Starter
 planPrice_A: 299
+planCTA_A: Start marketing better
+planLink_A: /123
 planFeature01_A: Live custom marketing plan
 planFeature02_A: Chat and email Q&A
 planFeature03_A: Live analytics dashboard
@@ -100,6 +103,8 @@ planFeature05_A: Custom paid search ads
 
 planTitle_B: Ramper
 planPrice_B: 399
+planCTA_B: Ramp up your marketing
+planLink_B: /123
 planFeature01_B: Live custom marketing plan
 planFeature02_B: Chat and email Q&A
 planFeature03_B: Live analytics dashboard
@@ -110,6 +115,8 @@ planFeature06_B: Monthly review call
 
 planTitle_C: Looper
 planPrice_C: 699
+planCTA_C: Loop ahead of competition
+planLink_C: /123
 planFeature01_C: Custom marketing plan
 planFeature02_C: Chat and email Q&A
 planFeature03_C: Live analytics dashboard

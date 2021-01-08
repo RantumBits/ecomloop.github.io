@@ -10,6 +10,7 @@ import Gallery from '../components/Gallery'
 import Popup from '../components/Popup'
 import Styles from './LandingPage.css'
 
+
 // Export Template for use in CMS preview
 export const LandingPageTemplate = ({
   title,
@@ -30,6 +31,8 @@ export const LandingPageTemplate = ({
   gallery,
   planTitle_A,
   planPrice_A,
+  planCTA_A,
+  planLink_A,
   planFeature01_A,
   planFeature02_A,
   planFeature03_A,
@@ -37,6 +40,8 @@ export const LandingPageTemplate = ({
   planFeature05_A,
   planTitle_B,
   planPrice_B,
+  planCTA_B,
+  planLink_B,
   planFeature01_B,
   planFeature02_B,
   planFeature03_B,
@@ -46,6 +51,8 @@ export const LandingPageTemplate = ({
   planFeature07_B,
   planTitle_C,
   planPrice_C,
+  planCTA_C,
+  planLink_C,
   planFeature01_C,
   planFeature02_C,
   planFeature03_C,
@@ -203,11 +210,15 @@ export const LandingPageTemplate = ({
                           </div>
                           {/*//FEATURE LIST END*/}
 
-                          {/*BUTTON START*/}
-                          <div class="generic_price_btn clearfix">
-                            <a class="" href="">Sign up</a>
-                          </div>
-                          {/*//BUTTON END*/}
+                            {/*BUTTON START*/}
+                            <section className="section">
+                              <div className="container">
+                                <Popup>
+                                  <Content source={section1} />
+                                </Popup>
+                              </div>
+                            </section>
+                            {/*//BUTTON END*/}
 
                       </div>
                       {/*//PRICE CONTENT END*/}
@@ -263,11 +274,15 @@ export const LandingPageTemplate = ({
                           </div>
                           {/*//FEATURE LIST END*/}
 
-                          {/*BUTTON START*/}
-                          <div class="generic_price_btn clearfix">
-                            <a class="" href="">Sign up</a>
-                          </div>
-                          {/*//BUTTON END*/}
+                            {/*BUTTON START*/}
+                            <section className="section">
+                              <div className="container">
+                                <Popup>
+                                  <Content source={section1} />
+                                </Popup>
+                              </div>
+                            </section>
+                            {/*//BUTTON END*/}
 
                       </div>
                       {/*//PRICE CONTENT END*/}
@@ -323,9 +338,13 @@ export const LandingPageTemplate = ({
                           {/*//FEATURE LIST END*/}
 
                           {/*BUTTON START*/}
-                          <div class="generic_price_btn clearfix">
-                            <a class="" href="">Sign up</a>
-                          </div>
+                          <section className="section">
+                            <div className="container">
+                              <Popup>
+                                <Content source={section1} />
+                              </Popup>
+                            </div>
+                          </section>
                           {/*//BUTTON END*/}
 
                       </div>
@@ -365,6 +384,8 @@ export const LandingPageTemplate = ({
   </main>
 )
 
+
+
 const LandingPage = ({ data: { page } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
@@ -399,6 +420,8 @@ export const pageQuery = graphql`
         service,
         planTitle_A
         planPrice_A
+        planCTA_A
+        planLink_A
         planFeature01_A
         planFeature02_A
         planFeature03_A
@@ -406,6 +429,8 @@ export const pageQuery = graphql`
         planFeature05_A
         planTitle_B
         planPrice_B
+        planCTA_B
+        planLink_B
         planFeature01_B
         planFeature02_B
         planFeature03_B
@@ -414,6 +439,8 @@ export const pageQuery = graphql`
         planFeature06_B
         planTitle_C
         planPrice_C
+        planCTA_C
+        planLink_C
         planFeature01_C
         planFeature02_C
         planFeature03_C
@@ -432,4 +459,5 @@ export const pageQuery = graphql`
       }
     }
   }
+
 `
