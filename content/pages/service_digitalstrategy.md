@@ -47,9 +47,9 @@ accordion:
     title: Create a digital strategy for your small team.
   - description: We help small teams develop a solid digital strategy for their next phase of internet marketing. You might be thinking, who needs that?. But if you account for the time and money wasted so far, we know your time is valuable-our expertise will help save both hence helping grow your business.
     title: Engaging web strategy consulting.
-  - description: ecomloop is a digital consultancy who helps you with your web strategy. We use our vast experience and expert knowledge to grow companies through small, strategic initiatives that lead to big changes. We'll do the visual design work for you if you want. It's just one small part of what we offer or it can be commissioned as seperate services
+  - description: ecomloop is a digital consultancy who helps you with your web strategy. We use our vast experience and expert knowledge to grow companies through small, strategic initiatives that lead to big changes. We'll do the visual design work for you if you want. It's just one small part of what we offer or it can be commissioned as separate services.
     title: Develop a digital strategy for your website.
-  - description: ecomloop is a consultative, digital strategy company with one focus: helping small teams. Leveraging market research from local and global data to help understand the taste and preferences of consumers in different countries, ecomloop can provide insightful advice on what gets people talking.
+  - description: ecomloop is a consultative, digital strategy company with one focus - helping small teams. Leveraging market research from local and global data to help understand the taste and preferences of consumers in different countries, ecomloop can provide insightful advice on what gets people talking.
     title: Digital strategy consulting for small teams.
 accordion2:
   - description: All of our services come with a money back guarantee for new clients. Our goal is to build long-term relationships and help your small team achieve long-term success. If you aren't satisfied with any of the services provided, contact us within 10 days for a full refund.
