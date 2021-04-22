@@ -51,5 +51,10 @@
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
+    filter: grayscale(.8);
+  }
+  .Gallery--Item img:hover {
+
+    filter: grayscale(.2);
   }
 }

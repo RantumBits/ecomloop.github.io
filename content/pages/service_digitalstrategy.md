@@ -2,39 +2,37 @@
 template: LandingPage
 slug: digital-strategy-consulting
 service: Digital strategy consulting
-title: Digital strategy consulting
+title: 📋 Digital strategy consulting
 
-subtitle: Digital strategy consulting for small teams. Develop a strong digital strategy for the next phase of the web.
+subtitle: Digital strategy consulting for small teams. Develop a solid digital strategy for the next phase of the web.
 section1: >-
   ## We know your team can't do everything.
 
-  It takes focused time to produce great work. And you and your team already have your hands full.
+  You're scrappy. You do it all - design, development, marketing. Now you have a ton of direct competition and you don't really know what to do moving forward. ecomloop is specialized in digital strategy consulting for small teams and personal budgets - it's time to start winning again!
 
-  We offer a full range of services to support your web 3 development needs.
-
-  We'll work with you from design through implementation, as well as provide ongoing maintenance and updates for the life of your project.
+  We deliver digital strategy consulting for small teams. We'll work with you from design through implementation, as well as provide ongoing maintenance and updates for the life of your project.
 
 section2: >-
 
-  ## Smart contracts made easy.
+  ## Get Your Digital Roadmap Ready
 
-  Whether you're looking for a one-time project or an ongoing partnership, we'll create custom solutions that suit your needs perfectly
+  Every project needs a digital strategy. Not sure where to start with all these platforms and ideas? Let ecomloop be your advisor. Architecting a world-leading digital strategy is what we do best, so you can focus more on your core business activity.
 
 
-  ecomloop is the best way to build a customized web3 application tailored to your business needs and we offer a free consultation with one of our experts.
+  Fortified by over twenty years of experience in digital strategy, our team will provide you with a strategy suited for your business. We'll help you capture the true potential of all the available audience while maximizing on resources and budgets.
 
 
 section3: >-
 
-    ## It's never been easier to be on the cutting edge.
+    ## Simplify Your Digital Strategy with ecomloop
 
-    We’re an uncommonly good fit for your business if you are small team looking to integrate web 3 services in your project.  
-
-
-    At ecomloop, we help small teams with web 3 development and decentralized technology integration for their website. It’s never been easier to be on the cutting edge of technological innovation without having a PhD in computer science.
+    Your team is unique and so are your needs when it comes to online. From teaching you how Google Marketing works to scaling up for new audiences with a clear strategy we set the right goals together.
 
 
-    Your business can't afford to be left behind in the digital age. We offer a full range of services to support your web 3 development needs. Get in touch today to start your {next phase} project.
+    At ecomloop, we do digital strategy for small teams. We help you figure out the next phase of your web that is bold and inspiring.
+
+
+    Grow your audience with insightful consulting which will bridge the gap between theoretical frameworks and compelling design. We work with small teams who want to advance into digital but don't have a lot of process in place or time for focus groups.
 
 
 
@@ -42,95 +40,92 @@ video: https://ucarecdn.com/460980a3-2cbb-4869-8d60-0f99146e48fe/digitalmarketin
 
 
 videoPoster: https://ucarecdn.com/2fef26b3-3d58-4b30-a24e-76a5e6696381/
-videoTitle: Mobile Development & Web 3 Development Services
-date: 2021-04-21
+videoTitle: Digital strategy consulting for small teams.
+date: 2021-04-23
 accordion:
-  - description: Web 3 developers at ecomloop know how to make the best out of blockchain technology. We are a world-class web 3 development company with expertise in developing decentralized applications and integrating blockchain into your website. Find out more about our services
-    title: Get ready for the decentralized web.
-  - description: We are committed to making ecomloop the best partner to create your decentralized, blockchain-powered website.
-    title: Designed for uncommon organizations & small teams
-  - description: Already using other tools? We can work with your existing platforms & systems! We've worked with a countless number of tech tools, SAAS apps, plugins, extensions, APIs and more. We're happy to work with your business' existing tech and processes, then add in web 3 your site.
-    title: Ecomloop works with your existing tech
-  - description: Running into a problem? Just let us know and we'll quickly reply with the exact info you need. We're here for you. We offer live chat, fast email support and most importantly, we want to be your partner in success.
-    title: Personal support - and fast
+  - description: At ecomloop, we help small teams with their digital strategy. We use our expertise to create an online identity that separates you from the competition while establishing your goals and objectives in a modern industry.
+    title: Create a digital strategy for your small team.
+  - description: We help small teams develop a solid digital strategy for their next phase of internet marketing. You might be thinking, who needs that?. But if you account for the time and money wasted so far, we know your time is valuable-our expertise will help save both hence helping grow your business.
+    title: Engaging web strategy consulting.
+  - description: ecomloop is a digital consultancy who helps you with your web strategy. We use our vast experience and expert knowledge to grow companies through small, strategic initiatives that lead to big changes. We'll do the visual design work for you if you want. It's just one small part of what we offer or it can be commissioned as seperate services
+    title: Develop a digital strategy for your website.
+  - description: ecomloop is a consultative, digital strategy company with one focus: helping small teams. Leveraging market research from local and global data to help understand the taste and preferences of consumers in different countries, ecomloop can provide insightful advice on what gets people talking.
+    title: Digital strategy consulting for small teams.
 accordion2:
-  - description: Our experts will help you choose from our pre-defined list of project types, including wallet integration, ICO launch page or custom web design work.
-    title: What are digital marketing services?
-  - description: Ecomloop provides a list of digital marketing services including search engine optimization services, paid search marketing, and email marketing. If you need help with your digital marketing, we can help you with search engine optimization, paid search marketing, and email marketing. This approach helps sect audience through ad-based traffic, organic search traffic, and directly through email marketing.
-    title: What types of services does ecomloop provide?
-  - description: We aim to make our services simple and straightforward because we understand you have much better ways to spend your time. We offer three options of monthly plans designed to fit the needs of your small and growing team. Each plan is available on a monthly basis and may be cancelled at any time, but we sincerely hope you won't. We prefer to establish long-term working relationships with uncommon organizations to help them grow now - and in the future.
-    title: How do digital marketing services work?
-  - description: Digital marketing, in short, is using the internet to market products. Traditional marketing, on the other hand, is marketing products without using the internet. Digital marketing and traditional marketing are the same in that they both use the same process to deliver messages to audiences. With digital marketing, it's far easier to scale and reach people at the best place, including both via digital and physical means.
-    title:  What is the difference between digital marketing and traditional marketing?
-  - description: Digital marketing is important because it's the most effective way to reach your customer base. Digital marketing is a powerful way to reach your audience. It's also a great way to measure just how well your efforts are working. There are a variety of digital marketing channels available to reach your audience, so it allows you to customize your campaign and reach your audience on the channels they use most.
-    title: Why is digital marketing important?
-  - description: Ecomloop works with uncommon businesses and organizations in a range of industries. We've worked with home decor brands, industrial supply businesses, online medicine startups, dozens of consumer product goods businesses, real estate companies and more. Every industry can benefit from digital marketing when done properly and it's almost assured the competition is making more use of digital services to reach customers.
-    title: What types of clients use digital marketing services?
+  - description: All of our services come with a money back guarantee for new clients. Our goal is to build long-term relationships and help your small team achieve long-term success. If you aren't satisfied with any of the services provided, contact us within 10 days for a full refund.
+    title: Does ecomloop provide any money back guarantees?
+  - description: Your small team needs to grow but isn't ready to hire a new developer or digital strategy manager. ecomloop's experienced team is here to help you find the right solutions fast. We'll work as your partner to develop and execute a strategy for digital success.
+    title: How can ecomloop help my small team?
+  - description: Yes, we work with existing platforms & tech stacks! We've worked with a countless number of tech tools, SAAS apps, plugins, extensions, APIs and more. We're happy to work with your business' existing tech and processes. Depending on the situation, we can integrate with existing tech or work to replace and consolidate technologies.
+    title: Does ecomloop work with existing technology platforms?
+  - description: We offer both consulting service and managed services on a monthly basis. With managed services, we do the work to implement changes. With consulting, we advise you on the updates and next steps. In both cases, plans may be canceled at any time. Please cancel plans 7 days in advance of renewal by email or live chat.
+    title: How do ecomloop's services work?
+  - description: Part of a strong partnership is excellent communication. We offer live chat and fast email support, as well as scheduled voice/video calls. Reach out and we'll quickly reply with the info you need. We're here for you, and most importantly, we want to be a partner in your success.
+    title: How does ecomloop provide support?
+  - description: Ecomloop works with uncommon businesses and organizations in a range of industries. We've worked with home decor brands, industrial supply businesses, online medicine startups, dozens of consumer product goods businesses, real estate companies and more. Every industry can benefit from well executed mobile and web 3 development services, whether for a new or existing website project.
+    title: What types of clients does ecomloop service?
 gallery:
-  - alt:
+  - alt: Small teams deserve a strategy too. Our digital strategy consulting is tailored to your needs and helps you develop a solid digital strategy for the next phase of the web.
     image: 'https://ucarecdn.com/a8b74aee-8c8f-4d6f-be29-ae3276ec35c9/'
-    title: SEO Services
-  - alt:
+    title: Digital strategy consulting for small teams.
+  - alt: Do you need a solid digital strategy for the next phase of your web? Let ecomloop do the heavy lifting. We provide top-tier strategy consulting and can handle all aspects of your project, from design to development.
     image: https://ucarecdn.com/6acaba8e-cddc-4085-9b46-131d0b52df90/
-    title: PPC Services
-  - alt:
+    title: The Digital Strategy Experts
+  - alt: Develop a solid digital strategy for the next phase of the web. ecomloop offers in-depth, interactive consulting sessions to develop your digital strategy and build a strong foundation for your business' future success.
     image: https://ucarecdn.com/f4e6fe31-a675-4e63-8baa-e644a27e309c/
-    title: Email Marketing
+    title: Prepare for the next phase
 
 
 gallery2:
-  - alt: Our digital marketing plans are designed to make it easy to get started quickly. We know you have better ways to use your time and want to make it simple. Review the details of the service plans and find the one that best fits your uncommon business at this point. Rest assured knowing you can always change your plan later on. Plans may be cancelled at anytime, though we aim to form long-term client relationships and work together for years!
-    image: 'https://ucarecdn.com/a8b74aee-8c8f-4d6f-be29-ae3276ec35c9/'
-    title: Signup & setup in minutes
-  - alt: After the initial signup, we'll provide a link to the onboarding form to learn more about your business. We'll collect information some simple information about your business including the current status, website address, and social media info. You won't need to install any tracking codes or provide any admin access at this point. Don't worry if you don't have everything. You can always submit more information later.
-    image: https://ucarecdn.com/6acaba8e-cddc-4085-9b46-131d0b52df90/
-    title: Get a marketing plan to match your business     
-  - alt: With your business info on hand, we'll start working on an initial analysis. Based upon the plan selected, we'll
-    image: https://ucarecdn.com/f4e6fe31-a675-4e63-8baa-e644a27e309c/
-    title: Continually improve & sect audience
+  - alt: Our plans are designed to make it easy to get started quickly. We know you have better ways to use your time and want to make it simple. Review the details of the service plans and find the one that fits. Rest assured knowing you can always change your plan later on. Plans may be cancelled at anytime, though we aim to form long-term client relationships and work together for years!
+    image: https://ucarecdn.com/552df791-7ae3-459c-9683-7267fcea99f3/
+    title: Select a plan
+  - alt: After the initial signup, we'll provide a link to the onboarding form to learn more about your project. We'll collect information some simple information including the current status, website address, and goals. You won't need to install any tracking codes or provide any admin access at this point. Don't worry if you don't have everything. You can always submit more information later.
+    image: https://ucarecdn.com/c2b52e3a-d966-495b-83d1-3833caaf8c83/
+    title: Send project details
+  - alt: Once we've gathered some info, we'll get to work on your project and providing initial feedback. We'll map out a recommended plan of action, then discuss with you. Depending upon your plan, we'll put that plan into place or help to guide you.
+    image: https://ucarecdn.com/1ba8237b-212e-4d90-b215-42df5ff24593/
+    title: Start the project
 
 
-planTitle_A: Strategy Consult
-planPrice_A: 500
-planCTA_A: Start marketing better
+planTitle_A: Loop {Consult}
+planPrice_A: 250
+planCTA_A:
 planLink_A: /123
-planFeature00_A:
-planFeature01_A: For new & existing sites
-planFeature02_A: UI/UX optimization report
-planFeature03_A: Market opportunity analysis
+planFeature01_A: Custom digital strategy tips
+planFeature02_A: Detailed steps & guidance
+planFeature03_A: Market opportunity reports
 planFeature04_A: Tech stack recommendations  
-planFeature05_A: HTML/PDF report
+planFeature05_A: Private chat group access
+planFeature06_A: Monthly chat/voice consult
 
-
-planTitle_B: Managed Service
-planPrice_B: 1500
-planCTA_B: Ramp up your marketing
+planTitle_B: Loop {Manage}
+planPrice_B: 1000
+planCTA_B:
 planLink_B: /123
-planFeature01_B: Improve an existing site
-planFeature02_B: Front & backend management
-planFeature03_B: Optimization campaigns
-planFeature04_B: Web 3 implementation
-planFeature05_B: Updates tested & backed up
+planFeature02_B: Loop >> Consult benefits
+planFeature01_B: Managed strategy implemntation
+planFeature03_B: Front & backend development
+planFeature04_B: Development server & backups  
+planFeature05_B: Ongoing project management
 planFeature06_B: Regular chat/voice updates
 
 
-planTitle_C: Custom Project
+planTitle_C: Loop {Custom}
 planPrice_C: 5000
 planCTA_C: Loop ahead of competition
 planLink_C: /123
-planFeature01_C: Start a new custom project
-planFeature02_C: Front & backend design  
-planFeature03_C: Detailed project outline
-planFeature04_C: Includes cost & timeline
-planFeature05_C: Regular projects updates
+planFeature01_C: Custom digital strategy
+planFeature02_C: For new digital projects
+planFeature03_C: Regular projects updates
+planFeature04_C:
+planFeature05_C:
 planFeature06_C:
 planFeature07_C:
 
-
-
 meta:
-  description: At ecomloop, we help small teams with web 3 development and decentralized technology integration for their website. It’s never been easier to be on the cutting edge of technological innovation.
-  title: 👾 Web 3 & Mobile Development Services
+  description: At ecomloop, we help small teams with digital strategy consulting. It’s never been easier to be on the cutting edge of technological innovation.
+  title: 📋 Digital Strategy Consulting Services
 
 
 

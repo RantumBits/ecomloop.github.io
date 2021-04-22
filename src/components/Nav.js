@@ -58,25 +58,31 @@ export class Navigation extends Component {
                                 >
                                     what we do
                                     <div className="Nav--GroupLinks">
-                                    <NavLink to="/web-3-development/" className="Nav--GroupLink">
-                                        mobile & web 3 development
-                                    </NavLink>
-                                    <NavLink to="/digital-strategy-consulting/" className="Nav--GroupLink">
-                                        digital strategy consulting
-                                    </NavLink>
 
-                                        <NavLink to="/api-integration-services/" className="Nav--GroupLink">
-                                            API integration services
-                                        </NavLink>
+
+
                                         <NavLink to="/ai-integration/" className="Nav--GroupLink">
                                             AI integration
                                         </NavLink>
+                                        <NavLink to="/api-integration-services/" className="Nav--GroupLink">
+                                            API integration services
+                                        </NavLink>
                                         <NavLink to="/crypto-consulting/" className="Nav--GroupLink">
-                                            crypto consulting
+                                            Crypto Consulting
+                                        </NavLink>
+                                        <NavLink to="/digital-strategy-consulting/" className="Nav--GroupLink">
+                                            Digital strategy consulting
                                         </NavLink>
 
                                         <NavLink to="/metaverse-vr-consulting/" className="Nav--GroupLink">
-                                            metaverse & vr consulting
+                                            Metaverse & VR consulting
+                                        </NavLink>
+                                        <NavLink to="/web-3-development/" className="Nav--GroupLink">
+                                            Mobile & web 3 development
+                                        </NavLink>
+
+                                        <NavLink to="/nft-consulting/" className="Nav--GroupLink">
+                                            NFT consulting
                                         </NavLink>
 
 

@@ -44,7 +44,7 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body, accordi
         {!!posts.length && (
             <section className="section">
                 <div className="container">
-                    <PostSection title="📝 ecommerce agency blog" posts={posts} />
+                    <PostSection title="📝 latest blog posts" posts={posts} />
 
                 </div>
 
@@ -66,7 +66,7 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body, accordi
         {!!projects.length && (
             <section className="section">
                 <div className="container">
-                    <PostSection title="🗂️ see recent agency projects" posts={projects} />
+                    <PostSection title="🗂️ recent projects" posts={projects} />
                 </div>
             </section>
         )}

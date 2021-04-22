@@ -60,9 +60,64 @@ exports.createPages = ({ actions, graphql }) => {
         })
       })
     })
+    {/*
+    //Creating Shopify Product Pages
+    return graphql(`
+      {
+        allShopifyProduct(limit:1) {
+          edges {
+            node {
+              handle
+            }
+          }
+        }
+      }
+    `).then(result => {
+      console.log(`Creating ${result.data.allShopifyProduct.edges.length} Products`)
+        result.data.allShopifyProduct.edges.forEach(({ node }) => {
+        createPage({
+            path: `/solution/${node.handle}/`,
+            component: path.resolve(`./src/templates/ProductPage.js`),
+            context: {
+            // Data passed to context is available
+            // in page queries as GraphQL variables.
+            handle: node.handle,
+            },
+        })
+        })
 
-    
+        //Creating News Pages
 
+        return graphql(`
+          {
+            allGoogleSheetListRow(limit:1000) {
+              edges {
+                node {
+                  id
+                  articleid
+                  title
+                  publishdate
+                }
+              }
+            }
+          }
+        `).then(result => {
+            console.log(`Creating ${result.data.allGoogleSheetListRow.edges.length} News Posts`)
+            result.data.allGoogleSheetListRow.edges.forEach(({ node }) => {
+              createPage({
+                  path: `/news/${node.articleid}/`,
+                  //path: `/news/${node.id}/`,
+                  component: path.resolve(`./src/templates/NewsPost.js`),
+                  context: {
+                    // Data passed to context is available
+                    // in page queries as GraphQL variables.
+                    id: node.id,
+                  },
+              })
+            })
+            })
+    })
+*/}
   })
 }
 

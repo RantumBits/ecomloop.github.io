@@ -38,6 +38,7 @@ export const LandingPageTemplate = ({
   planFeature03_A,
   planFeature04_A,
   planFeature05_A,
+    planFeature06_A,
   planTitle_B,
   planPrice_B,
   planCTA_B,
@@ -136,7 +137,7 @@ export const LandingPageTemplate = ({
 
     <section className="section">
       <div className="container center">
-      <h2>Uncommon features of our {service}</h2>
+      <h2>{service} service info </h2>
         <Accordion items={accordion} />
       </div>
     </section>
@@ -144,7 +145,8 @@ export const LandingPageTemplate = ({
 
     <section className="section">
       <div className="container center">
-        <h2>How our {service} work</h2>
+        <h2>What to expect</h2>
+        <h3>Select a consult or managed {service} plan below </h3>
         <Gallery images={gallery2} />
       </div>
     </section>
@@ -158,7 +160,8 @@ export const LandingPageTemplate = ({
   <section>
 
           <div class="container center">
-          <h2>{service} Pricing</h2>
+          <h2>ecomloop plans & pricing</h2>
+
               {/*BLOCK ROW START*/}
               <div class="PriceRow">
                   <div class="col-md-4">
@@ -188,7 +191,7 @@ export const LandingPageTemplate = ({
                                   <span class="sign">$</span>
                                   <span class="currency">{planPrice_A}</span>
                                   <span class="cent"></span>
-                                  <span class="month"></span>
+                                  <span class="month">/mo</span>
                                       <span></span>
                                   </span>
                               </div>
@@ -205,6 +208,7 @@ export const LandingPageTemplate = ({
                                   <li><span></span> {planFeature03_A}</li>
                                   <li><span></span> {planFeature04_A}</li>
                                   <li><span></span> {planFeature05_A}</li>
+                                    <li><span></span> {planFeature06_A}</li>
 
                               </ul>
                           </div>
@@ -314,8 +318,8 @@ export const LandingPageTemplate = ({
                                   <span class="price">
                                       <span class="sign">$</span>
                                       <span class="currency">{planPrice_C}</span>
-                                      <span class="cent">+</span>
-                                      <span class="month"></span>
+                                      <span class="cent"></span>
+                                      <span class="month">+</span>
                                   </span>
                               </div>
                               {/*//PRICE END*/}
@@ -427,6 +431,7 @@ export const pageQuery = graphql`
         planFeature03_A
         planFeature04_A
         planFeature05_A
+        planFeature06_A
         planTitle_B
         planPrice_B
         planCTA_B

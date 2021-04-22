@@ -3,38 +3,38 @@ template: LandingPage
 slug: ai-integration
 service: AI Integration
 title: AI integration consulting
+subtitle: Integrate AI and GPT-3 into your next project
 
-subtitle: AI Integration services for small teams. Integrate decentralized protocols for the next phase of the web.
 section1: >-
-  ## We know your team can't do everything.
+  ## AI Integration Consulting for Small Teams
 
-  It takes focused time to produce great work. And you and your team already have your hands full.
+  If you're looking for a way to leverage artificial intelligence in your next project, ecomloop is here to help. We specialize in AI integration consulting for small teams and have the expertise you need to implement GPT-3.
 
-  We offer a full range of services to support your web 3 development needs.
+  Small teams have unique needs. We help you use artificial intelligence and GPT-3 to integrate your product into the next big thing.
 
-  We'll work with you from design through implementation, as well as provide ongoing maintenance and updates for the life of your project.
+  We are a small team of integration consultants who specialize in applying artificial intelligence and machine learning to existing platforms. We have the expertise you need for your next project, whether it's an enterprise-level AI platform or something smaller like integrating GPT-3 into your website.
 
 section2: >-
 
-  ## Smart contracts made easy.
+  ## All the AI and GPT-3 you need for Small Team Projects
 
-  Whether you're looking for a one-time project or an ongoing partnership, we'll create custom solutions that suit your needs perfectly
+  Small teams? We got you. ecomloop has your back and is dedicated to seamlessly implementing GPT-3 technology into your most challenging work without major disruptions or schedule pressure. For your peace of mind, we also track goals and metrics for each project in our platform dashboard – so you can focus on delivering the project on time and within budget with complete peace of mind.
 
 
-  ecomloop is the best way to build a customized web3 application tailored to your business needs and we offer a free consultation with one of our experts.
+  We're an integration consulting company that specializes in AI and GPT-3. Our service is professional, intelligent, with minimal outlay. ecomloop-consulting services are a cost efficiency now!
 
 
 section3: >-
 
-    ## It's never been easier to be on the cutting edge.
+    ## Powerfully integrate AI into your next project.
 
-    We’re an uncommonly good fit for your business if you are small team looking to integrate web 3 services in your project.  
-
-
-    At ecomloop, we help small teams with web 3 development and decentralized technology integration for their website. It’s never been easier to be on the cutting edge of technological innovation without having a PhD in computer science.
+    The road to success is paved with more than hard work. Technology requires time, money, and expertise which are all in short supply for a small business like yours. ecomloop offers free AI consultations to help you save on your next project.
 
 
-    Your business can't afford to be left behind in the digital age. We offer a full range of services to support your web 3 development needs. Get in touch today to start your {next phase} project.
+    Building a standalone AI and the tech that supports it is an arduous, expensive journey. Find engineers to help you build product prototypes quickly with GPT-3 artificial intelligence. You'll learn how to be at the forefront of technology innovation.
+
+
+    Your work time is limited, there's just not enough hours in day to finish. ecomloop's AI integration consulting frees up your design team for more strategic tasks. Work smarter and align with the future of work today
 
 
 
@@ -42,95 +42,100 @@ video: https://ucarecdn.com/460980a3-2cbb-4869-8d60-0f99146e48fe/digitalmarketin
 
 
 videoPoster: https://ucarecdn.com/2fef26b3-3d58-4b30-a24e-76a5e6696381/
-videoTitle: Mobile Development & Web 3 Development Services
-date: 2021-04-21
+videoTitle: Introduce AI power to your project.
+date: 2021-04-22
 accordion:
-  - description: Web 3 developers at ecomloop know how to make the best out of blockchain technology. We are a world-class web 3 development company with expertise in developing decentralized applications and integrating blockchain into your website. Find out more about our services
-    title: Get ready for the decentralized web.
-  - description: We are committed to making ecomloop the best partner to create your decentralized, blockchain-powered website.
-    title: Designed for uncommon organizations & small teams
-  - description: Already using other tools? We can work with your existing platforms & systems! We've worked with a countless number of tech tools, SAAS apps, plugins, extensions, APIs and more. We're happy to work with your business' existing tech and processes, then add in web 3 your site.
-    title: Ecomloop works with your existing tech
-  - description: Running into a problem? Just let us know and we'll quickly reply with the exact info you need. We're here for you. We offer live chat, fast email support and most importantly, we want to be your partner in success.
-    title: Personal support - and fast
+  - description: You have limited resources, but your project needs complicated AI elements. That's where ecomloop comes in. Our menu lets you choose based on your project needs.
+    title: Let ecomloop simplify the process of AI integration consulting.
+  - description: Managing an AI cost an arm and a leg. ecomloop simplifies the process with data modelling and learning services all in one package
+    title: Integrate AI into your next project with an all-in-one consulting service.
+  - description: Your small team is remarkable, but you just don't have the resources or bandwidth to innovate. ecomloop uses a suite of AI integrations with GPT-3 to expand your project's presence and scope. Keep doing excellent work with less effort.
+    title: Get a fast and reliable diagnosis of your project.
+  - description: Face-to-face meetings are exhausting. And you don't want to waste time on something that a machine could do for you. Enter ecomloop - we streamline the process of AI integration and automate your project management tangles with just a click.
+    title: Introduce new technologies like artificial intelligence without the learning curve.
+  - description: It's tough to get started. You need a website and you don't know how to code. ecomloop lets your small team add web 3 technology with ease.
+    title: Your trusted Department of the Future
+
+
+
 accordion2:
-  - description: Our experts will help you choose from our pre-defined list of project types, including wallet integration, ICO launch page or custom web design work.
-    title: What are digital marketing services?
-  - description: Ecomloop provides a list of digital marketing services including search engine optimization services, paid search marketing, and email marketing. If you need help with your digital marketing, we can help you with search engine optimization, paid search marketing, and email marketing. This approach helps sect audience through ad-based traffic, organic search traffic, and directly through email marketing.
-    title: What types of services does ecomloop provide?
-  - description: We aim to make our services simple and straightforward because we understand you have much better ways to spend your time. We offer three options of monthly plans designed to fit the needs of your small and growing team. Each plan is available on a monthly basis and may be cancelled at any time, but we sincerely hope you won't. We prefer to establish long-term working relationships with uncommon organizations to help them grow now - and in the future.
-    title: How do digital marketing services work?
-  - description: Digital marketing, in short, is using the internet to market products. Traditional marketing, on the other hand, is marketing products without using the internet. Digital marketing and traditional marketing are the same in that they both use the same process to deliver messages to audiences. With digital marketing, it's far easier to scale and reach people at the best place, including both via digital and physical means.
-    title:  What is the difference between digital marketing and traditional marketing?
-  - description: Digital marketing is important because it's the most effective way to reach your customer base. Digital marketing is a powerful way to reach your audience. It's also a great way to measure just how well your efforts are working. There are a variety of digital marketing channels available to reach your audience, so it allows you to customize your campaign and reach your audience on the channels they use most.
-    title: Why is digital marketing important?
-  - description: Ecomloop works with uncommon businesses and organizations in a range of industries. We've worked with home decor brands, industrial supply businesses, online medicine startups, dozens of consumer product goods businesses, real estate companies and more. Every industry can benefit from digital marketing when done properly and it's almost assured the competition is making more use of digital services to reach customers.
-    title: What types of clients use digital marketing services?
+  - description: All of our services come with a money back guarantee for new clients. Our goal is to build long-term relationships and help your small team achieve long-term success. If you aren't satisfied with any of the services provided, contact us within 10 days for a full refund.
+    title: Does ecomloop provide any money back guarantees?
+  - description: Your small team needs to grow but isn't ready to hire a new developer or digital strategy manager. ecomloop's experienced team is here to help you find the right solutions fast. We'll work as your partner to develop and execute a strategy for digital success.
+    title: How can ecomloop help my small team?
+  - description: Yes, we work with existing platforms & tech stacks! We've worked with a countless number of tech tools, SAAS apps, plugins, extensions, APIs and more. We're happy to work with your business' existing tech and processes. Depending on the situation, we can integrate with existing tech or work to replace and consolidate technologies.
+    title: Does ecomloop work with existing technology platforms?
+  - description: We offer both consulting service and managed services on a monthly basis. With managed services, we do the work to implement changes. With consulting, we advise you on the updates and next steps. In both cases, plans may be canceled at any time. Please cancel plans 7 days in advance of renewal by email or live chat.
+    title: How do ecomloop's services work?
+  - description: Part of a strong partnership is excellent communication. We offer live chat and fast email support, as well as scheduled voice/video calls. Reach out and we'll quickly reply with the info you need. We're here for you, and most importantly, we want to be a partner in your success.
+    title: How does ecomloop provide support?
+  - description: Ecomloop works with uncommon businesses and organizations in a range of industries. We've worked with home decor brands, industrial supply businesses, online medicine startups, dozens of consumer product goods businesses, real estate companies and more. Every industry can benefit from well executed mobile and web 3 development services, whether for a new or existing website project.
+    title: What types of clients does ecomloop service?
+
+
 gallery:
-  - alt:
-    image: 'https://ucarecdn.com/a8b74aee-8c8f-4d6f-be29-ae3276ec35c9/'
-    title: SEO Services
-  - alt:
-    image: https://ucarecdn.com/6acaba8e-cddc-4085-9b46-131d0b52df90/
-    title: PPC Services
-  - alt:
-    image: https://ucarecdn.com/f4e6fe31-a675-4e63-8baa-e644a27e309c/
-    title: Email Marketing
+  - alt: Ever wanted to implement cutting-edge tech for your small team? There's no wrong platform or strategy, so leverage GPT-3 and artificial intelligence consulting. Our consultations approach every startup’s unique needs
+    image: https://ucarecdn.com/1ba8237b-212e-4d90-b215-42df5ff24593/
+    title: AI integration consulting for small teams.
+  - alt: You want to make your ideas real, but sometimes struggle to discuss specialized topics. ecomloop integrates AI and GPT-3 into customer's supply-chain. Collaborate on the next biggest tech breakthroughs with a user-friendly app.
+    image: https://ucarecdn.com/c2b52e3a-d966-495b-83d1-3833caaf8c83/
+    title: Small team AI consulting with GPT-3 integration.
+  - alt: You always feel the pressure to get what you need without any budget for it. We understand that tight timeline stress. That's why we have fully integrated the most powerful AI into your next project, GPT-3 in our FREE tier. Use it now free of charge to build huge products faster and better.
+    image: https://ucarecdn.com/552df791-7ae3-459c-9683-7267fcea99f3/
+    title: AI integration for your mission
 
 
 gallery2:
-  - alt: Our digital marketing plans are designed to make it easy to get started quickly. We know you have better ways to use your time and want to make it simple. Review the details of the service plans and find the one that best fits your uncommon business at this point. Rest assured knowing you can always change your plan later on. Plans may be cancelled at anytime, though we aim to form long-term client relationships and work together for years!
-    image: 'https://ucarecdn.com/a8b74aee-8c8f-4d6f-be29-ae3276ec35c9/'
-    title: Signup & setup in minutes
-  - alt: After the initial signup, we'll provide a link to the onboarding form to learn more about your business. We'll collect information some simple information about your business including the current status, website address, and social media info. You won't need to install any tracking codes or provide any admin access at this point. Don't worry if you don't have everything. You can always submit more information later.
-    image: https://ucarecdn.com/6acaba8e-cddc-4085-9b46-131d0b52df90/
-    title: Get a marketing plan to match your business     
-  - alt: With your business info on hand, we'll start working on an initial analysis. Based upon the plan selected, we'll
-    image: https://ucarecdn.com/f4e6fe31-a675-4e63-8baa-e644a27e309c/
-    title: Continually improve & sect audience
+  - alt: Our plans are designed to make it easy to get started quickly. We know you have better ways to use your time and want to make it simple. Review the details of the service plans and find the one that fits. Rest assured knowing you can always change your plan later on. Plans may be cancelled at anytime, though we aim to form long-term client relationships and work together for years!
+    image: https://ucarecdn.com/552df791-7ae3-459c-9683-7267fcea99f3/
+    title: Select a plan
+  - alt: After the initial signup, we'll provide a link to the onboarding form to learn more about your project. We'll collect information some simple information including the current status, website address, and goals. You won't need to install any tracking codes or provide any admin access at this point. Don't worry if you don't have everything. You can always submit more information later.
+    image: https://ucarecdn.com/c2b52e3a-d966-495b-83d1-3833caaf8c83/
+    title: Send project details
+  - alt: Once we've gathered some info, we'll get to work on your project and providing initial feedback. We'll map out a recommended plan of action, then discuss with you. Depending upon your plan, we'll put that plan into place or help to guide you.
+    image: https://ucarecdn.com/1ba8237b-212e-4d90-b215-42df5ff24593/
+    title: Start the project
 
 
-planTitle_A: Strategy Consult
-planPrice_A: 500
-planCTA_A: Start marketing better
+planTitle_A: Loop {Consult}
+planPrice_A: 250
+planCTA_A:
 planLink_A: /123
-planFeature00_A:
-planFeature01_A: For new & existing sites
-planFeature02_A: UI/UX optimization report
-planFeature03_A: Market opportunity analysis
+planFeature01_A: Custom AI integration tips
+planFeature02_A: Detailed steps & guidance
+planFeature03_A: Market opportunity reports
 planFeature04_A: Tech stack recommendations  
-planFeature05_A: HTML/PDF report
+planFeature05_A: Private chat group access
+planFeature06_A: Monthly chat/voice consult
 
-
-planTitle_B: Managed Service
-planPrice_B: 1500
-planCTA_B: Ramp up your marketing
+planTitle_B: Loop {Manage}
+planPrice_B: 1000
+planCTA_B:
 planLink_B: /123
-planFeature01_B: Improve an existing site
-planFeature02_B: Front & backend management
-planFeature03_B: Optimization campaigns
-planFeature04_B: Web 3 implementation
-planFeature05_B: Updates tested & backed up
+planFeature02_B: Loop >> Consult benefits
+planFeature01_B: Managed AI integration
+planFeature03_B: Front & backend development
+planFeature04_B: Development server & backups  
+planFeature05_B: Ongoing project management
 planFeature06_B: Regular chat/voice updates
 
 
-planTitle_C: Custom Project
+planTitle_C: Loop {Custom}
 planPrice_C: 5000
 planCTA_C: Loop ahead of competition
 planLink_C: /123
-planFeature01_C: Start a new custom project
-planFeature02_C: Front & backend design  
-planFeature03_C: Detailed project outline
-planFeature04_C: Includes cost & timeline
-planFeature05_C: Regular projects updates
+planFeature01_C: Full service AI integration
+planFeature02_C: For new web 3 projects
+planFeature03_C: Regular projects updates
+planFeature04_C:
+planFeature05_C:
 planFeature06_C:
 planFeature07_C:
 
 
-
 meta:
-  description: At ecomloop, we help small teams with web 3 development and decentralized technology integration for their website. It’s never been easier to be on the cutting edge of technological innovation.
-  title: 👾 Web 3 & Mobile Development Services
+  description:
+  title: 🤖 AI Integration Services | Artificial Intelligence Consulting
 
 
 

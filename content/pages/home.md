@@ -1,7 +1,7 @@
 ---
 template: HomePage
 slug: ''
-title: '{next phase} digital services'
+title: '{next phase} digital services for small teams'
 featuredImage: '../images/digital-commerce-solutions.png'
 subtitle: >-
   ###  >> not a typical digital marketing, web development, or ecommerce agency
@@ -35,7 +35,7 @@ accordion:
 meta:
   description: >-
    eComloop is a digtal agency that specializes in providing AI, crypto, Web 3, and metaverse solutions. We work with a variety of small teams to make sure their needs are met. With a focus on the future, ecomloop is adapting to  changing technology transformations.
-  title: ecomloop | digital solutions for the {next phase}
+  title: 🦾 {next phase} digital solutions for small teams
 ---
 ## ecomloop helps small teams deploy AI, crypto, web 3 & metaverse solutions
 
