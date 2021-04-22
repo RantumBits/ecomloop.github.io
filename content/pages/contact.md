@@ -1,13 +1,13 @@
 ---
 template: ContactPage
 slug: contact
-title: Get in Touch
-featuredImage: '../images/ecomloop_ecommerce_development_header_wall_shadow.png'
-subtitle: Have an interesting project? Let's talk!
+title: Start your {next phase} project
+
+subtitle: ecomloop helps small teams deploy AI, crypto, web 3 & metaverse solutions
 address: |-
   329 Primrose Ave #117181
   Burlingame, California 94010
-phone: 508-332-4418
+phone: (415) 909-4050
 email: hello@ecomloop.com
 locations:
   - lat: '37.5780511'
@@ -15,12 +15,11 @@ locations:
     mapLink: ''
 meta:
   description: >-
-    Do you have an uncommon business that needs helps growing via technology?
-    Get in touch!
-  title: Contact Page
+    Start your {next phase} project with Ecomloop today. Fill out the contact form and we'll get back to you within a few business hours.
+  title: Contact Page | Start your {next phase} project
 ---
-# Get in touch
+# Start your {next phase} project
 
-Do you have an uncommon business that needs helps growing via technology?
+Start your {next phase} project with Ecomloop today.
 
 Send us more info and we'll get back to you shortly if it's a good fit.

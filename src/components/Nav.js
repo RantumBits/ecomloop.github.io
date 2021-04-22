@@ -56,11 +56,32 @@ export class Navigation extends Component {
                                     className={`Nav--GroupParent ${this.props.location.pathname.includes('solution')? 'active': ''}`}
                                     onClick={() => this.toggleSubNav('posts')}
                                 >
-                                    services
+                                    what we do
                                     <div className="Nav--GroupLinks">
-                                        <NavLink to="/digital-marketing-services/" className="Nav--GroupLink">
-                                            Digital marketing services
+                                    <NavLink to="/web-3-development/" className="Nav--GroupLink">
+                                        mobile & web 3 development
+                                    </NavLink>
+                                    <NavLink to="/digital-strategy-consulting/" className="Nav--GroupLink">
+                                        digital strategy consulting
+                                    </NavLink>
+
+                                        <NavLink to="/api-integration-services/" className="Nav--GroupLink">
+                                            API integration services
                                         </NavLink>
+                                        <NavLink to="/ai-integration/" className="Nav--GroupLink">
+                                            AI integration
+                                        </NavLink>
+                                        <NavLink to="/crypto-consulting/" className="Nav--GroupLink">
+                                            crypto consulting
+                                        </NavLink>
+
+                                        <NavLink to="/metaverse-vr-consulting/" className="Nav--GroupLink">
+                                            metaverse & vr consulting
+                                        </NavLink>
+
+
+
+
                                         {/*
                                         <NavLink to="/ecommerce-services/" className="Nav--GroupLink">
                                             Ecommerce agency services
@@ -133,7 +154,7 @@ export class Navigation extends Component {
 
                         <NavLink to="/blog/" title="ecomloop blog">blog</NavLink>
 
-                        <NavLink to="https://calendly.com/ecomloop" title="digital commerce solutions" className="Nav--CTA animated rubberBand slow delay-5s">Schedule a free call</NavLink>
+                        <NavLink to="/contact/" title="digital commerce solutions" className="Nav--CTA animated rubberBand slow delay-5s">  start &#123;next&#125; project</NavLink>
                     </div>
                     <button
                         className="Nav--MenuButton"

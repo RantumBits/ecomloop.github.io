@@ -9,7 +9,7 @@ import Content from '../components/Content'
 import Layout from '../components/Layout'
 import Image from '../components/Image'
 import { getRelatedPosts } from '../components/RelatedPosts'
-import { getRelatedNews } from '../components/RelatedNews'
+// import { getRelatedNews } from '../components/RelatedNews'
 import moment from 'moment'
 import './SinglePost.css'
 
@@ -105,7 +105,6 @@ const SinglePost = ({ data: { post, allPosts, allNews } }) => {
     }))
     //fixing the image path issue
     relatedPostsFlat.forEach(item => item.featuredImage = "../" + item.featuredImage)
-
     //relatedNews
     const thisEdgeFormatted = {
         ...thisEdge.node,
@@ -115,9 +114,9 @@ const SinglePost = ({ data: { post, allPosts, allNews } }) => {
         extractedkeywords: '',
     }
     console.log("thisEdgeFormatted", thisEdgeFormatted);
-    let relatedNews = getRelatedNews(thisEdgeFormatted, allNews.edges);
-    relatedNews = relatedNews.slice(0, 2);
-    console.log("relatedNew", relatedNews);
+    //let relatedNews = getRelatedNews(thisEdgeFormatted, allNews.edges);
+    //relatedNews = relatedNews.slice(0, 2);
+    //console.log("relatedNew", relatedNews);
 
     return (
         <Layout
@@ -144,7 +143,8 @@ const SinglePost = ({ data: { post, allPosts, allNews } }) => {
                 </article>
             )}
 
-            {!!relatedNews.length && (
+{/*
+         {!!relatedNews.length && (
                 <article className="SinglePost section light" style={{ padding: "1px" }}>
                     <div className="container skinny">
                         <h3>Related News</h3>
@@ -167,6 +167,8 @@ const SinglePost = ({ data: { post, allPosts, allNews } }) => {
                     </div>
                 </article>
             )}
+            */}
+
         </Layout>
     )
 }
@@ -209,7 +211,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          id          
+          id
           excerpt
           fields {
             slug
@@ -266,7 +268,6 @@ export const pageQuery = graphql`
             image
             id
             keywords
-            publishdate
             relativepopularity
             source
             source2

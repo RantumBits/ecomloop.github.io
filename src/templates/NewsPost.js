@@ -25,7 +25,7 @@ export const NewsPostTemplate = ({
     image,
     id,
     keywords,
-    publishdate,
+
     relativepopularity,
     source,
     source2,
@@ -235,7 +235,7 @@ export const pageQuery = graphql`
       images
       id
       keywords
-      publishdate
+
       relativepopularity
       source
       source2
@@ -261,7 +261,7 @@ export const pageQuery = graphql`
           image
           id
           keywords
-          publishdate
+          
           relativepopularity
           source
           source2

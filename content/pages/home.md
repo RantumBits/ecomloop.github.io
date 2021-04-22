@@ -1,12 +1,12 @@
 ---
 template: HomePage
 slug: ''
-title: Uncommon digital services for uncommon businesses
+title: '{next phase} digital services'
 featuredImage: '../images/digital-commerce-solutions.png'
 subtitle: >-
-  ###  We're not a typical digital marketing, web development, or ecommerce agency.
+  ###  >> not a typical digital marketing, web development, or ecommerce agency
 
-  ###  We help small teams grow faster with effective technology solutions.
+  ###  >> we help small teams deploy AI, crypto, web 3 & metaverse solutions
 
 
 
@@ -34,23 +34,13 @@ accordion:
     title: "went above and beyond to deliver on our expectations"
 meta:
   description: >-
-   We enable growth with digital marketing services & remote office tech support. Digital platform growth for uncommon organizations & independent businesses looking for the next opportunities enabled by technology.  
-  title: ecomloop | Uncommon digital services for uncommon businesses
+   eComloop is a digtal agency that specializes in providing AI, crypto, Web 3, and metaverse solutions. We work with a variety of small teams to make sure their needs are met. With a focus on the future, ecomloop is adapting to  changing technology transformations.
+  title: ecomloop | digital solutions for the {next phase}
 ---
-## Expand the capabilities of your team with the right technology solutions
+## ecomloop helps small teams deploy AI, crypto, web 3 & metaverse solutions
 
-The world is moving to digital platforms at a faster rate than ever before. Well-implemented technology empowers organizations of all sizes to grow faster and expand capabilities.
+The world is moving to digital platforms at a faster rate than ever and numerous technologies are converging to form new possibilities. Whether it be artificial intelligence, crypto, Web 3, or the metaverse, new opportunities arise on a regular basis.
 
-Uncommon organizations don't always have the time or know how to get the most out of tech services. Small teams are already strapped for time, and have their own specialized skills that make it difficult to keep technology services working effectively.
+Small teams often don't have the time or knowledge to get the most out of the latest technology development. Fortunately, more of these services are readily available for teams of all sizes.
 
-Whether your business needs help developing a digital platform, growing with digital marketing services, or getting more sales with modern ecommere solutions, Ecomloop is ready to help small teams with solutions for the next phase of business.
-
-The best organizations harness technology to be better. In a digital first world, *uncommon* organizations harness technology to provide better services to customer and clients, run internal business processes more efficiently, and expand far beyond what's possible with manual processes.  
-
-It's crucial for business to *uncommon* by serving the core of segment of their audience in an exceptional manner.
-
-Don't let technology inefficiencies limit your organization's opportunities.
-
-Check out our [digital marketing services](/digital-marketing-services/) or [book a proposal call](https://calendly.com/ecomloop) today.
-
-[Note: Monday, Jan 04, 2021: We are in the process of [updating service pages](https://ecomloop.com/posts/new-digital-services-plans-coming-soon/).
+In a digital first world, it's crucial that *uncommon* organizations harness technology quickly to take advantage of the latest technology developments.

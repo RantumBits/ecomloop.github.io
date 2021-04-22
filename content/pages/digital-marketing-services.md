@@ -91,7 +91,7 @@ gallery2:
 
 
 planTitle_A: Starter
-planPrice_A: 299
+planPrice_A: 
 planCTA_A: Start marketing better
 planLink_A: /123
 planFeature01_A: Live custom marketing plan

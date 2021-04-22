@@ -6,10 +6,10 @@ import PageHeader from '../components/PageHeader'
 import ProductGrid from '../components/ProductGrid'
 
 const ServicesPage = () => (
-  <Layout title="Uncommon digital marketing for ecommerce" description="We help uncommon organizations grow with digital marketing services tailored specifically for ecommerce.">
+  <Layout title="digital agency services for small teams" description="ecomloop helps small teams deploy AI, crypto, web 3 & metaverse solutions">
     <PageHeader
-        title="Uncommon digital marketing services for ecommerce"
-      subtitle="We help uncommon organizations grow with digital marketing services tailored specifically for ecommerce."
+        title="digital agency services for small teams"
+      subtitle="ecomloop helps small teams deploy AI, crypto, web 3 & metaverse solutions"
 
       backgroundImage='../images/ecoomloop_clock_leverage.png'
     />

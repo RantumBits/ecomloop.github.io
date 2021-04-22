@@ -114,7 +114,7 @@ export const pageQuery = graphql`
           image
           id
           keywords
-          publishdate
+          
           relativepopularity
           source
           source2

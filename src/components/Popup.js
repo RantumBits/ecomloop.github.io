@@ -21,7 +21,7 @@ class Popup extends Component {
       <Fragment>
         <div className="taCenter">
           <div class="Button" onClick={this.togglePopup.bind(this)}>
-            Grow your reach
+            start &#123;next&#125; project
           </div>
         </div>
 

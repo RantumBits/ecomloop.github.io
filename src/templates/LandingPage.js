@@ -188,7 +188,7 @@ export const LandingPageTemplate = ({
                                   <span class="sign">$</span>
                                   <span class="currency">{planPrice_A}</span>
                                   <span class="cent"></span>
-                                  <span class="month">/mo</span>
+                                  <span class="month"></span>
                                       <span></span>
                                   </span>
                               </div>
@@ -203,8 +203,8 @@ export const LandingPageTemplate = ({
                                   <li>{planFeature01_A}</li>
                                   <li><span></span> {planFeature02_A}</li>
                                   <li><span></span> {planFeature03_A}</li>
-                                  <li><span>2</span> {planFeature04_A}</li>
-                                  <li><span>5</span> {planFeature05_A}</li>
+                                  <li><span></span> {planFeature04_A}</li>
+                                  <li><span></span> {planFeature05_A}</li>
 
                               </ul>
                           </div>
@@ -251,7 +251,7 @@ export const LandingPageTemplate = ({
                                   <span class="price">
                                   <span class="sign">$</span>
                                   <span class="currency">{planPrice_B}</span>
-                                  <span class="cent"></span>
+                                  <span class="cent">+</span>
                                   <span class="month">/mo</span>
                                       <span></span>
                                   </span>
@@ -267,9 +267,9 @@ export const LandingPageTemplate = ({
                             <li>{planFeature01_B}</li>
                             <li><span></span> {planFeature02_B}</li>
                             <li><span></span> {planFeature03_B}</li>
-                            <li><span>5</span> {planFeature04_B}</li>
-                            <li><span>10</span> {planFeature05_B}</li>
-                            <li><span>1</span> {planFeature06_B}</li>
+                            <li><span></span> {planFeature04_B}</li>
+                            <li><span></span> {planFeature05_B}</li>
+                            <li><span></span> {planFeature06_B}</li>
                               </ul>
                           </div>
                           {/*//FEATURE LIST END*/}
@@ -314,8 +314,8 @@ export const LandingPageTemplate = ({
                                   <span class="price">
                                       <span class="sign">$</span>
                                       <span class="currency">{planPrice_C}</span>
-                                      <span class="cent"></span>
-                                      <span class="month">/mo</span>
+                                      <span class="cent">+</span>
+                                      <span class="month"></span>
                                   </span>
                               </div>
                               {/*//PRICE END*/}
@@ -329,10 +329,10 @@ export const LandingPageTemplate = ({
                             <li>{planFeature01_C}</li>
                             <li><span></span> {planFeature02_C}</li>
                             <li><span></span> {planFeature03_C}</li>
-                            <li><span>10</span> {planFeature04_C}</li>
-                            <li><span>10</span> {planFeature05_C}</li>
-                            <li><span>2</span> {planFeature06_C}</li>
-                            <li><span>1</span> {planFeature07_C}</li>
+                            <li><span></span> {planFeature04_C}</li>
+                            <li><span></span> {planFeature05_C}</li>
+                            <li><span></span> {planFeature06_C}</li>
+                            <li><span></span> {planFeature07_C}</li>
                               </ul>
                           </div>
                           {/*//FEATURE LIST END*/}

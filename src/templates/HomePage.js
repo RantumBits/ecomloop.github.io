@@ -50,6 +50,8 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body, accordi
 
             </section>
         )}
+
+    {/*
         {!!services.length && convertServicesToPostFormat(services) && (
             <section className="section">
                 <div className="container">
@@ -57,7 +59,7 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body, accordi
                 </div>
             </section>
         )}
-
+*/}
 
 
 
