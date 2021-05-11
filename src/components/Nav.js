@@ -67,6 +67,10 @@ export class Navigation extends Component {
                                         <NavLink to="/api-integration-services/" className="Nav--GroupLink">
                                             API integration services
                                         </NavLink>
+                                        <NavLink to="/nft-consulting/" className="Nav--GroupLink">
+                                          Conversion Rate Optimization
+                                        </NavLink>
+
                                         <NavLink to="/crypto-consulting/" className="Nav--GroupLink">
                                             Crypto Consulting
                                         </NavLink>
