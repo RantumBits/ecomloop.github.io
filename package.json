@@ -70,7 +70,7 @@
     "netlify-cms-media-library-uploadcare": "^0.5.5",
     "netlify-cms-ui-default": "^2.11.6",
     "netlify-cms-widget-code": "^1.2.4",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "postcss-preset-env": "^6.7.0",
     "prop-types": "^15.7.2",
     "query-string": "^6.13.2",
