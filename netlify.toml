@@ -1,8 +1,8 @@
 [build]
-  publish = "public"
-  command = "npm run build"
-  [[plugins]]
-  package = "netlify-plugin-gatsby-cache"
+  publish = "site"
+  command = "echo 'static site, no build step'"
+
 [build.environment]
-  YARN_VERSION = "1.3.2"
-  YARN_FLAGS = "--no-ignore-optional"
+  # skip npm install of the retired Gatsby tree
+  NPM_FLAGS = "--version"
+  NODE_VERSION = "20"
