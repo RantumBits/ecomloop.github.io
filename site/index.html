@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conversion Rate Optimization for Shopify Brands | ecomloop</title>
+<meta name="description" content="ecomloop helps Shopify and DTC brands find where they lose revenue and fix it with structured A/B testing and tracking audits.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/images/logo.png" type="image/png">
+<link rel="canonical" href="https://ecomloop.com/">
+<meta property="og:title" content="Conversion Rate Optimization for Shopify Brands | ecomloop">
+<meta property="og:description" content="Find where your store is losing revenue, then fix it with structured A/B testing and tracking audits.">
+<meta property="og:image" content="https://ecomloop.com/images/hero.jpg">
+<meta property="og:url" content="https://ecomloop.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ecomloop">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#00c2bd; --secondary:#000; --lightGrey:whitesmoke; --midGrey:#cacaca; --darkGrey:#272727;
+  --borderRadius:3px; --container:110rem;
+}
+*{box-sizing:border-box}
+html{font-size:62.5%;min-height:100%;background:var(--lightGrey);scroll-behavior:smooth}
+body{margin:0;font-family:'Inconsolata',monospace;background:#fff;color:var(--secondary);font-size:1.6em;font-weight:400;letter-spacing:.01em;line-height:1.6;-webkit-font-smoothing:antialiased}
+::selection{background:rgba(0,194,189,.6)}
+a{color:var(--primary)}
+p{margin:0 0 1em}
+h1,h2{margin:0 0 .5em;font-family:'Montserrat',sans-serif;font-weight:600;line-height:1.2}
+h3,h4{font-family:'Inconsolata',monospace;font-weight:700;margin:0 0 .5em}
+h2{font-size:2.6rem}
+.container{max-width:var(--container);margin:0 auto;padding:0 2rem}
+.taCenter{text-align:center}
+.section{padding:5rem 0}
+.section h2.emoji{text-align:center;margin-bottom:3rem}
+
+/* nav */
+.Nav{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.Nav .container{display:flex;align-items:center;gap:2.4rem;height:5.2rem}
+.Logo{display:block;width:3.2rem;height:3.2rem;background:url(/images/logo.png) center/contain no-repeat;flex:none}
+.Nav--Links{display:flex;align-items:center;gap:1.8rem;margin-left:auto}
+.NavLink{color:var(--secondary);text-decoration:none;font-size:1.5rem}
+.NavLink:hover{color:var(--primary)}
+.Nav--CTA{background:var(--primary);color:#fff;text-transform:uppercase;font-size:1.2rem;letter-spacing:.06em;padding:.7rem 1.2rem;border-radius:var(--borderRadius)}
+.Nav--CTA:hover{color:#fff;background:#00a9a4}
+@media (max-width:640px){.Nav--Links .NavLink:not(.Nav--CTA){display:none}}
+
+/* hero */
+.PageHeader{position:relative;background:var(--darkGrey);color:#fff;padding:12rem 0 30rem;overflow:hidden}
+.PageHeader .BackgroundImage{position:absolute;inset:0;background:linear-gradient(90deg,rgba(39,39,39,.6),rgba(39,39,39,.2)),url(/images/hero.jpg) center/cover no-repeat;opacity:.9}
+.PageHeader .container{position:relative;animation:fadeIn .5s ease-out}
+.PageHeader--Title{font-size:5.6rem;margin-bottom:2rem;color:#fff;text-wrap:balance;max-width:20ch}
+.PageHeader--Subtitle{font-weight:700;font-size:1.8rem;margin:0 0 .6em;color:#fff}
+.PageHeader--Subtitle::before{content:">> "}
+.PageHeader > svg{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:22rem;display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (max-width:600px){.PageHeader{padding:6rem 0 14rem}.PageHeader--Title{font-size:3.2rem}.PageHeader > svg{height:10rem}}
+@media (prefers-reduced-motion:reduce){.PageHeader .container{animation:none}}
+
+/* intro */
+.Intro p{max-width:78ch}
+.Intro .who{background:var(--lightGrey);border-left:3px solid var(--primary);padding:1.2rem 1.6rem;border-radius:var(--borderRadius);max-width:78ch}
+
+/* card grid */
+.Grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(26rem,1fr));gap:3rem}
+.Grid.two{grid-template-columns:repeat(auto-fit,minmax(36rem,1fr))}
+.Grid.two .Card img{height:22rem}
+.Card{background:#fff;border-radius:var(--borderRadius);box-shadow:0 2px 12px rgba(0,0,0,.08);overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:inherit}
+.Card img{width:100%;height:18rem;object-fit:cover;display:block}
+.Card--Body{padding:2rem 2rem 2.2rem;display:flex;flex-direction:column;gap:.6rem}
+.Card--Title{font-family:'Inconsolata',monospace;font-weight:700;font-size:1.7rem;margin:0}
+.Card--Meta{font-size:1.2rem;color:#555;margin:0}
+.Card--Tag{display:inline-block;font-size:1.1rem;text-transform:uppercase;letter-spacing:.06em;padding:.2rem .7rem;border-radius:99px;background:var(--lightGrey);color:#333;align-self:flex-start}
+.Card--Tag.cro{background:rgba(0,194,189,.18);color:#00726f}
+.Card p{margin:0;font-size:1.45rem}
+.Services .Card--Body{padding-top:2.4rem}
+.Services .Card--Title{font-family:'Montserrat',sans-serif;font-weight:600;font-size:1.8rem}
+
+/* accordion */
+.Accordion{max-width:88rem;margin:0 auto;display:flex;flex-direction:column;gap:1.6rem}
+.Accordion details{background:#fff;border-radius:var(--borderRadius);box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.Accordion summary{list-style:none;cursor:pointer;padding:2rem 2.4rem;font-family:'Montserrat',sans-serif;font-weight:600;font-size:1.3rem;text-transform:uppercase;letter-spacing:.02em;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.Accordion summary::-webkit-details-marker{display:none}
+.Accordion summary::after{content:"";width:.8rem;height:.8rem;border-right:2px solid #333;border-bottom:2px solid #333;transform:rotate(45deg);flex:none;transition:transform .2s}
+.Accordion details[open] summary::after{transform:rotate(-135deg)}
+.Accordion .body{padding:0 2.4rem 2.2rem;font-size:1.5rem}
+.Accordion .body cite{display:block;margin-top:.8rem;font-style:normal;font-weight:700}
+
+/* white-label band */
+.Band{background:var(--darkGrey);color:#fff}
+.Band h2{color:#fff}
+.Band p{max-width:72ch}
+.Band a.btn{display:inline-block;background:var(--primary);color:#fff;text-decoration:none;text-transform:uppercase;font-size:1.3rem;letter-spacing:.06em;padding:1rem 1.6rem;border-radius:var(--borderRadius);margin-top:1rem}
+
+/* contact */
+.Contact form{max-width:60rem;margin:0 auto;display:grid;gap:1.4rem}
+.Contact label{display:grid;gap:.4rem;font-size:1.4rem;font-weight:700}
+.Contact input,.Contact textarea{font:inherit;font-size:1.5rem;padding:1rem;border:1px solid var(--midGrey);border-radius:var(--borderRadius);width:100%}
+.Contact input:focus,.Contact textarea:focus{outline:2px solid var(--primary);border-color:var(--primary)}
+.Contact button{font:inherit;background:var(--primary);color:#fff;border:0;text-transform:uppercase;letter-spacing:.06em;font-size:1.3rem;padding:1.1rem 1.6rem;border-radius:var(--borderRadius);cursor:pointer;justify-self:start}
+.Contact .alt{text-align:center;font-size:1.4rem;margin-top:2rem}
+
+/* footer */
+.footer{padding:2.4rem 0;background:var(--lightGrey);font-size:1.2rem;line-height:1.9}
+.footer a{color:#000;text-decoration:none;margin:0 .3rem}
+.footer a:hover{color:var(--primary)}
+</style>
+</head>
+<body>
+
+<nav class="Nav">
+  <div class="container">
+    <a href="/" class="Logo" aria-label="ecomloop home"></a>
+    <div class="Nav--Links">
+      <a class="NavLink" href="#what-we-do">what I do</a>
+      <a class="NavLink" href="#case-studies">case studies</a>
+      <a class="NavLink" href="#agencies">for agencies</a>
+      <a class="NavLink Nav--CTA" href="#contact">start {next} test</a>
+    </div>
+  </div>
+</nav>
+
+<header class="PageHeader">
+  <div class="BackgroundImage" role="presentation"></div>
+  <div class="container">
+    <h1 class="PageHeader--Title">conversion rate optimization for Shopify brands</h1>
+    <p class="PageHeader--Subtitle">find where your checkout and ad spend are losing money</p>
+    <p class="PageHeader--Subtitle">fix it with structured A/B testing and clean tracking</p>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true"><path fill="#fff" d="M0,160L48,181.3C96,203,192,245,288,229.3C384,213,480,139,576,106.7C672,75,768,85,864,106.7C960,128,1056,160,1152,192C1248,224,1344,256,1392,272L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</header>
+
+<main>
+  <section class="section Intro">
+    <div class="container">
+      <h2>most Shopify stores don't know where they're losing sales</h2>
+      <p>Published ecommerce conversion benchmarks land somewhere between 1 and 3%, depending on who is measuring. The gap between that and what a store could do is rarely a mystery once someone looks: a checkout step people abandon, a product page that doesn't answer the one question shoppers have, or tracking that doesn't match what's really happening in the store.</p>
+      <p>Finding it takes structured testing and real data analysis. A redesign based on a hunch usually moves the numbers in the wrong direction.</p>
+      <p class="who"><strong>who's behind this:</strong> ecomloop is Andrew Maury, a data scientist who has built and optimized Shopify stores since 2018, including his own apparel brand. One person, no account managers, no handoffs.</p>
+    </div>
+  </section>
+
+  <section class="section Services" id="what-we-do" style="background:var(--lightGrey)">
+    <div class="container">
+      <h2 class="emoji"><span aria-hidden="true">🔍</span> what I do</h2>
+      <div class="Grid">
+        <div class="Card"><div class="Card--Body">
+          <h3 class="Card--Title">A/B testing done properly</h3>
+          <p>Structured tests on the pages that matter most: product pages, cart, checkout. Sample sizes and significance thresholds are set before the test starts, so the result means something.</p>
+        </div></div>
+        <div class="Card"><div class="Card--Body">
+          <h3 class="Card--Title">Tracking and analytics audits</h3>
+          <p>Many stores have a gap between what their analytics report and what Shopify shows in revenue. I find the gap and fix the tracking so decisions rest on real numbers.</p>
+        </div></div>
+        <div class="Card"><div class="Card--Body">
+          <h3 class="Card--Title">Customer research and data analysis</h3>
+          <p>Before testing anything, I look at what customers do: survey data, funnel drop-off, session behavior. Every test targets a problem visible in the data.</p>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="case-studies">
+    <div class="container">
+      <h2 class="emoji"><span aria-hidden="true">🗂</span> case studies</h2>
+      <div class="Grid two">
+        <a class="Card" href="https://www.skishaggys.com/" target="_blank" rel="noopener">
+          <img src="/images/shaggys.jpg" alt="The Shaggy's team outside their Copper Country ski shop">
+          <div class="Card--Body">
+            <span class="Card--Tag cro">conversion optimization</span>
+            <h3 class="Card--Title">Shaggy's Copper Country Skis</h3>
+            <p class="Card--Meta">independent ski brand, Shopify</p>
+            <p>Surveyed hundreds of real customers, analyzed their Google Analytics data to find the weakest points in the conversion path, then ran A/B tests against those findings. Outcome: a homepage redesign driven by test results, a simplified product page and checkout, and new markets identified for demo events.</p>
+          </div>
+        </a>
+        <a class="Card" href="https://www.shakawear.com/" target="_blank" rel="noopener">
+          <img src="/images/shakawear.jpg" alt="">
+          <div class="Card--Body">
+            <span class="Card--Tag">shopify development</span>
+            <h3 class="Card--Title">Shaka Wear</h3>
+            <p class="Card--Meta">streetwear brand, retail + wholesale; stocked at Zumiez, Amazon and S&amp;S Activewear</p>
+            <p>Built a new Shopify theme with separate retail and wholesale channels: wholesale application and approval flow, tiered pricing, Klaviyo email integration and Google Sheets inventory updates.</p>
+          </div>
+        </a>
+        <a class="Card" href="https://nexwear.com/" target="_blank" rel="noopener">
+          <img src="/images/nexwear.jpg" alt="">
+          <div class="Card--Body">
+            <span class="Card--Tag">subscription setup</span>
+            <h3 class="Card--Title">Nexwear</h3>
+            <p class="Card--Meta">direct-to-consumer brand, Shopify + Recharge</p>
+            <p>Configured the Shopify and Recharge subscription integration, with ongoing Shopify development over a seven-month engagement.</p>
+          </div>
+        </a>
+        <a class="Card" href="https://duffysupply.com/" target="_blank" rel="noopener">
+          <img src="/images/duffy.jpg" alt="">
+          <div class="Card--Body">
+            <span class="Card--Tag cro">conversion optimization</span>
+            <h3 class="Card--Title">Duffy Supply Company</h3>
+            <p class="Card--Meta">fire and rescue equipment supplier (now Howell Rescue Supply), WooCommerce</p>
+            <p>First hired in 2019 for conversion rate optimization, then brought back in 2020 to stand up a new WooCommerce site integrated with Google Ads on a tight timeline. A repeat client.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--lightGrey)">
+    <div class="container">
+      <h2 class="emoji"><span aria-hidden="true">✨</span> client feedback</h2>
+      <div class="Accordion">
+        <details>
+          <summary>exceptional work and a big part of our success</summary>
+          <div class="body">ecomloop does exceptional work and was a big part of our success. We will be using him for more projects in the future.<cite>Duffy Supply Company</cite></div>
+        </details>
+        <details>
+          <summary>went above and beyond to deliver on our expectations</summary>
+          <div class="body">Ecomloop was an absolute pleasure to work with. They went above and beyond, searching out new requirements we hadn't thought to ensure the project was a success. I very highly recommend working with ecomloop.<cite>Pour Vida Coffee</cite></div>
+        </details>
+        <details>
+          <summary>great communication, very detail oriented, major skills</summary>
+          <div class="body">ecomloop is great to work with. Great communication, very detail oriented, major skills, couldn't be happier with their leadership in developing a shopify store. The store that we are building has an increasing number of components that are being constantly added and ecomloop is able to utilize and incorporate a number of apps to get the job done. They are also very creative problem solvers and have come up with novel solutions along the way.<cite>SkipTheBookstore</cite></div>
+        </details>
+        <details>
+          <summary>communicative, patient, would definitely work with ecomloop again</summary>
+          <div class="body">ecomloop was a pleasure to work with. They were able to deliver on the job, building us a new product detail page for our Shopify site. They were communicative and patient and went above and beyond to deliver on our expectations. I would definitely work with ecomloop again.<cite>Davka Sandals</cite></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section Band" id="agencies">
+    <div class="container">
+      <h2><span aria-hidden="true">🤝</span> white-label CRO for agencies</h2>
+      <p>If your agency runs paid media or email for Shopify brands but doesn't have testing or analytics in-house, ecomloop works behind the scenes as your testing and reporting partner. You keep the client relationship. I design the tests, run them properly, and hand you a report you can put your name on.</p>
+      <a class="btn" href="#contact">talk about a partnership</a>
+    </div>
+  </section>
+
+  <section class="section Contact" id="contact">
+    <div class="container">
+      <h2 class="emoji"><span aria-hidden="true">📬</span> start {next} test</h2>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+        <input type="hidden" name="form-name" value="contact">
+        <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+        <label>name <input type="text" name="name" id="name" required autocomplete="name"></label>
+        <label>email <input type="email" name="email" id="email" required autocomplete="email"></label>
+        <label>store or agency URL <input type="url" name="url" id="url" placeholder="https://" autocomplete="url"></label>
+        <label>what's going on <textarea name="message" id="message" rows="5" placeholder="Where do you think you're losing conversions?"></textarea></label>
+        <button type="submit">send</button>
+      </form>
+      <p class="alt">Prefer Upwork? <a href="https://www.upwork.com/freelancers/andrewmaury" target="_blank" rel="noopener">Hire ecomloop through Upwork</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container taCenter">
+    <a href="#contact">contact</a> | <a href="https://github.com/RantumBits" target="_blank" rel="noopener noreferrer">github</a> | <a href="https://www.upwork.com/freelancers/andrewmaury" target="_blank" rel="noopener noreferrer">upwork</a> | <a href="https://www.linkedin.com/company/ecomloop/" target="_blank" rel="noopener noreferrer">linkedin</a>
+    <br>© 2026 ecomloop. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
