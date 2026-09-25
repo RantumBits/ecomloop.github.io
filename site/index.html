@@ -46,6 +46,12 @@ h2{font-size:2.6rem}
 .NavLink:hover{color:var(--primary)}
 .Nav--CTA{background:var(--primary);color:#fff;text-transform:uppercase;font-size:1.2rem;letter-spacing:.06em;padding:.7rem 1.2rem;border-radius:var(--borderRadius)}
 .Nav--CTA:hover{color:#fff;background:#00a9a4}
+.Hero--CTAs{display:flex;flex-wrap:wrap;gap:1.2rem;margin-top:1.6rem}
+.Hero--CTAs a{display:inline-block;text-decoration:none;text-transform:uppercase;font-size:1.2rem;letter-spacing:.06em;padding:1rem 1.6rem;border-radius:var(--borderRadius)}
+.Hero--CTAs a.primary{background:var(--primary);color:#fff}
+.Hero--CTAs a.primary:hover{background:#00a9a4}
+.Hero--CTAs a.secondary{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.5)}
+.Hero--CTAs a.secondary:hover{background:rgba(255,255,255,.22)}
 @media (max-width:640px){.Nav--Links .NavLink:not(.Nav--CTA){display:none}}
 
 /* hero */
@@ -129,6 +135,10 @@ h2{font-size:2.6rem}
     <h1 class="PageHeader--Title">conversion rate optimization for Shopify brands</h1>
     <p class="PageHeader--Subtitle">find where your checkout and ad spend are losing money</p>
     <p class="PageHeader--Subtitle">fix it with structured A/B testing and clean tracking</p>
+    <div class="Hero--CTAs">
+      <a class="primary" href="/offer.html">see the $1,750 tracking &amp; profit audit</a>
+      <a class="secondary" href="#contact">start {next} test</a>
+    </div>
   </div>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true"><path fill="#fff" d="M0,160L48,181.3C96,203,192,245,288,229.3C384,213,480,139,576,106.7C672,75,768,85,864,106.7C960,128,1056,160,1152,192C1248,224,1344,256,1392,272L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 </header>
