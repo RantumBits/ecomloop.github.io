@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shopify Tracking &amp; Profit Audit | ecomloop</title>
+<meta name="description" content="A fixed-price, 10-business-day audit of your Shopify store's tracking and ad-spend attribution, with the 1-2 tests worth running next.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/images/logo.png" type="image/png">
+<link rel="canonical" href="https://ecomloop.com/offer.html">
+<meta property="og:title" content="Shopify Tracking & Profit Audit | ecomloop">
+<meta property="og:description" content="A fixed-price, 10-business-day audit of your Shopify store's tracking and ad-spend attribution, with the 1-2 tests worth running next.">
+<meta property="og:image" content="https://ecomloop.com/images/hero.jpg">
+<meta property="og:url" content="https://ecomloop.com/offer.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ecomloop">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#00c2bd; --secondary:#000; --lightGrey:whitesmoke; --midGrey:#cacaca; --darkGrey:#272727;
+  --borderRadius:3px; --container:110rem;
+}
+*{box-sizing:border-box}
+html{font-size:62.5%;min-height:100%;background:var(--lightGrey);scroll-behavior:smooth}
+body{margin:0;font-family:'Inconsolata',monospace;background:#fff;color:var(--secondary);font-size:1.6em;font-weight:400;letter-spacing:.01em;line-height:1.6;-webkit-font-smoothing:antialiased}
+::selection{background:rgba(0,194,189,.6)}
+a{color:var(--primary)}
+p{margin:0 0 1em}
+h1,h2{margin:0 0 .5em;font-family:'Montserrat',sans-serif;font-weight:600;line-height:1.2}
+h3,h4{font-family:'Inconsolata',monospace;font-weight:700;margin:0 0 .5em}
+h2{font-size:2.6rem}
+.container{max-width:var(--container);margin:0 auto;padding:0 2rem}
+.taCenter{text-align:center}
+.section{padding:5rem 0}
+.section h2.emoji{text-align:center;margin-bottom:3rem}
+
+/* nav */
+.Nav{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.Nav .container{display:flex;align-items:center;gap:2.4rem;height:5.2rem}
+.Logo{display:block;width:3.2rem;height:3.2rem;background:url(/images/logo.png) center/contain no-repeat;flex:none}
+.Nav--Links{display:flex;align-items:center;gap:1.8rem;margin-left:auto}
+.NavLink{color:var(--secondary);text-decoration:none;font-size:1.5rem}
+.NavLink:hover{color:var(--primary)}
+.Nav--CTA{background:var(--primary);color:#fff;text-transform:uppercase;font-size:1.2rem;letter-spacing:.06em;padding:.7rem 1.2rem;border-radius:var(--borderRadius)}
+.Nav--CTA:hover{color:#fff;background:#00a9a4}
+@media (max-width:640px){.Nav--Links .NavLink:not(.Nav--CTA){display:none}}
+
+/* hero */
+.PageHeader{position:relative;background:var(--darkGrey);color:#fff;padding:9rem 0 20rem;overflow:hidden}
+.PageHeader .BackgroundImage{position:absolute;inset:0;background:linear-gradient(90deg,rgba(39,39,39,.75),rgba(39,39,39,.4)),url(/images/hero.jpg) center/cover no-repeat;opacity:.9}
+.PageHeader .container{position:relative;animation:fadeIn .5s ease-out}
+.PageHeader--Title{font-size:4.6rem;margin-bottom:1.6rem;color:#fff;text-wrap:balance;max-width:24ch}
+.PageHeader--Subtitle{font-weight:700;font-size:1.8rem;margin:0 0 .6em;color:#fff;max-width:56ch}
+.PageHeader--Subtitle::before{content:">> "}
+.PageHeader > svg{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:16rem;display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (max-width:600px){.PageHeader{padding:6rem 0 12rem}.PageHeader--Title{font-size:3rem}.PageHeader > svg{height:9rem}}
+@media (prefers-reduced-motion:reduce){.PageHeader .container{animation:none}}
+
+.Intro p{max-width:78ch}
+
+/* offer ladder */
+.PriceCard{background:#fff;border-radius:var(--borderRadius);box-shadow:0 2px 20px rgba(0,0,0,.1);padding:3rem;max-width:60rem;margin:0 auto}
+.PriceCard--Price{font-family:'Montserrat',sans-serif;font-weight:600;font-size:4rem;margin:0}
+.PriceCard--Price small{font-family:'Inconsolata',monospace;font-weight:400;font-size:1.5rem;display:block;color:#555}
+.PriceCard ul{padding-left:1.8rem;margin:1.6rem 0}
+.PriceCard li{margin-bottom:.8rem}
+.PriceCard .credit{background:var(--lightGrey);border-left:3px solid var(--primary);padding:1.2rem 1.6rem;border-radius:var(--borderRadius);font-size:1.4rem;margin-top:1.6rem}
+
+.Grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(26rem,1fr));gap:3rem}
+.Card{background:#fff;border-radius:var(--borderRadius);box-shadow:0 2px 12px rgba(0,0,0,.08);overflow:hidden;display:flex;flex-direction:column}
+.Card--Body{padding:2.4rem 2rem 2.2rem;display:flex;flex-direction:column;gap:.6rem}
+.Card--Title{font-family:'Inconsolata',monospace;font-weight:700;font-size:1.7rem;margin:0}
+.Card p{margin:0;font-size:1.45rem}
+
+.Example{background:var(--lightGrey);border-left:3px solid var(--primary);padding:2rem 2.4rem;border-radius:var(--borderRadius);max-width:78ch}
+.Example h4{margin-bottom:.6rem}
+
+/* contact */
+.Contact form{max-width:60rem;margin:0 auto;display:grid;gap:1.4rem}
+.Contact label{display:grid;gap:.4rem;font-size:1.4rem;font-weight:700}
+.Contact input,.Contact textarea{font:inherit;font-size:1.5rem;padding:1rem;border:1px solid var(--midGrey);border-radius:var(--borderRadius);width:100%}
+.Contact input:focus,.Contact textarea:focus{outline:2px solid var(--primary);border-color:var(--primary)}
+.Contact button{font:inherit;background:var(--primary);color:#fff;border:0;text-transform:uppercase;letter-spacing:.06em;font-size:1.3rem;padding:1.1rem 1.6rem;border-radius:var(--borderRadius);cursor:pointer;justify-self:start}
+.Contact .alt{text-align:center;font-size:1.4rem;margin-top:2rem}
+
+/* footer */
+.footer{padding:2.4rem 0;background:var(--lightGrey);font-size:1.2rem;line-height:1.9}
+.footer a{color:#000;text-decoration:none;margin:0 .3rem}
+.footer a:hover{color:var(--primary)}
+</style>
+</head>
+<body>
+
+<nav class="Nav">
+  <div class="container">
+    <a href="/" class="Logo" aria-label="ecomloop home"></a>
+    <div class="Nav--Links">
+      <a class="NavLink" href="/#what-we-do">what I do</a>
+      <a class="NavLink" href="/#case-studies">case studies</a>
+      <a class="NavLink" href="/offer.html">the audit</a>
+      <a class="NavLink Nav--CTA" href="#audit-contact">start the audit</a>
+    </div>
+  </div>
+</nav>
+
+<header class="PageHeader">
+  <div class="BackgroundImage" role="presentation"></div>
+  <div class="container">
+    <h1 class="PageHeader--Title">the Shopify Tracking &amp; Profit Audit</h1>
+    <p class="PageHeader--Subtitle">find out what your tracking is getting wrong before you spend another dollar on ads against it</p>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true"><path fill="#fff" d="M0,160L48,181.3C96,203,192,245,288,229.3C384,213,480,139,576,106.7C672,75,768,85,864,106.7C960,128,1056,160,1152,192C1248,224,1344,256,1392,272L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</header>
+
+<main>
+  <section class="section Intro">
+    <div class="container">
+      <h2>a fixed-price audit, not a pitch for a retainer</h2>
+      <p>Most stores have a gap between what their analytics report and what Shopify shows in actual orders: a duplicate Purchase event, a Meta CAPI send with no de-duplication against the browser pixel, a Google Ads tag left over from an old account. Every one of those quietly inflates or deflates the numbers a platform's Smart Bidding optimizes toward, and the ROAS a founder reads on a dashboard.</p>
+      <p>The audit finds exactly what's wrong, tells you what it's costing you, and hands you the 1 or 2 tests your traffic can actually decide in the next 30 days &mdash; with the math behind each one. No redesign, no retainer required to see it.</p>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--lightGrey)">
+    <div class="container">
+      <div class="PriceCard">
+        <p class="PriceCard--Price">$1,750 <small>fixed price &middot; 10 business days from full access</small></p>
+        <p><strong>What's checked:</strong></p>
+        <ul>
+          <li>Purchase events reconciled across GA4, Meta pixel, Meta CAPI and Google Ads against your real Shopify order data &mdash; the overcounting or undercounting found, named exactly</li>
+          <li>Every script and app on your top pages, with the page-speed cost of each one and what's safe to cut</li>
+          <li>The 1 or 2 A/B tests your current traffic can reach significance on within 30 days, with the sample-size math shown</li>
+          <li>A 30-minute recorded walkthrough of the findings you can share with your team</li>
+        </ul>
+        <p class="credit">If you move forward on a monthly retainer afterward, the $1,750 is credited toward it in full.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="emoji"><span aria-hidden="true">🔎</span> what this usually finds</h2>
+      <div class="Example">
+        <h4>example, from a recent teardown</h4>
+        <p>A product page was firing two separate Google Ads conversion tags &mdash; an old account still counting next to the current one. Every purchase on that page was being reported twice to Google Ads, which meant Smart Bidding was optimizing against a conversion rate that was never real. Confirmed live in about ten seconds with a tag inspector; the fix took an afternoon.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--lightGrey)">
+    <div class="container">
+      <h2 class="emoji"><span aria-hidden="true">🧭</span> how it runs</h2>
+      <div class="Grid">
+        <div class="Card"><div class="Card--Body">
+          <h3 class="Card--Title">1. Access</h3>
+          <p>You share read access to GA4, Google Tag Manager, Meta Ads and Shopify admin. No code changes needed to start.</p>
+        </div></div>
+        <div class="Card"><div class="Card--Body">
+          <h3 class="Card--Title">2. Audit</h3>
+          <p>Every purchase and add-to-cart event traced through each platform and checked against a real order, plus a pass on every script loading on your top pages.</p>
+        </div></div>
+        <div class="Card"><div class="Card--Body">
+          <h3 class="Card--Title">3. Report</h3>
+          <p>A written report and a 30-minute recorded walkthrough: what's broken, what it's costing, and the tests worth running next. Yours either way.</p>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section Contact" id="audit-contact">
+    <div class="container">
+      <h2 class="emoji"><span aria-hidden="true">📬</span> start the audit</h2>
+      <form name="audit" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+        <input type="hidden" name="form-name" value="audit">
+        <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+        <label>name <input type="text" name="name" id="name" required autocomplete="name"></label>
+        <label>email <input type="email" name="email" id="email" required autocomplete="email"></label>
+        <label>store URL <input type="url" name="url" id="url" placeholder="https://" required autocomplete="url"></label>
+        <label>anything you already suspect is off <textarea name="message" id="message" rows="4" placeholder="Optional"></textarea></label>
+        <button type="submit">request the audit</button>
+      </form>
+      <p class="alt">Prefer Upwork? <a href="https://www.upwork.com/freelancers/andrewmaury" target="_blank" rel="noopener">Hire ecomloop through Upwork</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container taCenter">
+    <a href="/#contact">contact</a> | <a href="https://github.com/RantumBits" target="_blank" rel="noopener noreferrer">github</a> | <a href="https://www.upwork.com/freelancers/andrewmaury" target="_blank" rel="noopener noreferrer">upwork</a> | <a href="https://www.linkedin.com/company/ecomloop/" target="_blank" rel="noopener noreferrer">linkedin</a>
+    <br>© 2026 ecomloop. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
