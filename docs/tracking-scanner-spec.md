@@ -287,3 +287,86 @@ at this file and say: "Build capture, detect, report and the CLI, record fixture
 the 10 stores, and pause to show me the reports. Then build the server, page,
 guards and email gate. Stop before deploy." Review the 10 reports by hand at the
 checkpoint. Wrong claims are fixed in the detectors, not the copy.
+
+---
+
+# Build log (v3)
+
+Built at `~/dev/ecomloop-scanner`, a separate repository. The CLI and the web
+layer were done in one push, as decided. What follows is what changed once real
+stores were in front of the detectors.
+
+## What shipped
+
+Capture, detect and report as three layers that never import each other
+backwards, a CLI, a Fastify server, fixtures for all ten audited brands, and 34
+tests. Deployment config for Cloud Run is written but nothing is deployed.
+
+## Where the build differs from this spec, and why
+
+1. **The reverse pixel mismatch is a note, not a finding.** The spec asked to
+   flag Google Ads without Meta *and* Meta without Google Ads. Shopify installs
+   a Meta pixel free through its Facebook and Instagram channel, so a Meta pixel
+   is weak evidence of any ad spend. Flagging it would nag most stores for
+   nothing. Google Ads without Meta is still a finding, because a Google Ads
+   conversion tag is always deliberate.
+
+2. **Duplicate-firing findings are grouped per vendor and ID, not per page.**
+   Reported per page, Crown Affair produced eight findings that were really
+   five problems, and it read like padding.
+
+3. **Two Klaviyo accounts is now a finding.** Crown Affair has two. Split
+   browsing and signup data is the same leftover-agency problem as two GA4
+   properties.
+
+4. **A bot check is only believed when the real browser hits it.** The plain
+   pre-flight fetch has no browser fingerprint, so bot protection blocks it far
+   more often than it blocks Chromium. Three of the ten brands were refused on
+   that basis and scanned fine once the refusal moved to the rendered page.
+
+5. **The cart page is reached by an AJAX add, not a cart permalink.** The
+   `/cart/<variant>:1` permalink now redirects straight to checkout on many
+   stores. Any redirect into `/checkouts/` aborts that page, since checkout is
+   out of scope.
+
+6. **New finding: tags configured but silent.** Chamberlain Coffee has GA4, GTM,
+   Meta and TikTok configured and a CookieYes banner that blocks all of them.
+   Reporting that store as clean would have been the most misleading thing the
+   tool could do.
+
+## Two capture details that the detectors depend on
+
+Both were wrong in the first working version and produced false negatives that
+looked exactly like clean stores.
+
+- **The Meta pixel posts to `/tr/` with no query string.** The pixel ID and the
+  event name are in a multipart form body. Reading only the URL finds nothing.
+- **Shopify's web pixel frame is served from the store's own origin** at
+  `/web-pixels@<id>`, not from a URL containing `web-pixels-manager`. Requests
+  have to be recorded on the browser context, not the page, and attributed by
+  that frame URL. This is what lets a report say which copy of a doubled tag
+  comes from a sales-channel app.
+
+## Results across the ten audited brands
+
+Five have findings: Crown Affair, Fair Harbor, Copper Cow Coffee, Four Sigmatic
+and Maude. Five look clean from outside: Chamberlain Coffee, Momentous, Native
+Pet, Sunski and Brightland. None were refused.
+
+## The launch gate is not met yet
+
+The spec says the tool must reproduce the manual findings documented in the
+Client Acquisition Plan (Schedule tab) before it goes public. That document was
+not available during the build, so the comparison has not been done. Reading
+those ten reports against the manual notes is the next step, and it is Andrew's,
+not the build's.
+
+## Before it can go live
+
+- Compare the ten reports against the manual findings. Fix detectors, not
+  thresholds.
+- Create the Cloud Run service and Firestore database, set a real `IP_SALT`
+  secret, add a TTL policy on `expiresAt`, then run `./deploy.sh`.
+- Point `scan.ecomloop.com` at the Cloud Run domain mapping.
+- Run the breadth check on twenty more stores from the outreach list and read
+  every report by hand.

@@ -195,5 +195,17 @@ h2{font-size:2.6rem}
   </div>
 </footer>
 
+<script>
+// A link from the tracking scanner carries ?store=<host>, so the audit form
+// arrives with the store already filled in.
+(() => {
+  const store = new URLSearchParams(location.search).get('store');
+  if (!store) return;
+  const field = document.getElementById('url');
+  if (!field || field.value) return;
+  field.value = /^https?:\/\//i.test(store) ? store : 'https://' + store;
+})();
+</script>
+
 </body>
 </html>
