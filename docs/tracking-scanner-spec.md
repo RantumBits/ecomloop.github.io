@@ -259,6 +259,50 @@ record of stores scanned and any email you give us so we can follow up."
    Cloudflare challenge, a dead domain, a private IP. Each returns a friendly message
    in under 10 seconds.
 
+## Launch and feedback **[v3]**
+
+The first public round is for finding wrong claims, not for finding leads. Paid
+domain enrichment (Store Leads, BuiltWith, Apollo and the like) is deferred until the
+scan log holds a few hundred real hosts and the question becomes who to email first.
+Until then, store size from `/products.json`, theme name and detected apps are enough
+to sort the list by hand.
+
+**Gate.** Nothing is posted until the launch gate in the Testing plan passes: all
+manual findings on the 10 audited stores reproduced, no false positive that would
+embarrass a cold email. A wrong claim in front of a merchant forum costs more than a
+week's delay.
+
+**Where to post, in order of audience fit:**
+
+1. Shopify Community forums (ecommerce marketing and technical Q&A boards). Reply to
+   existing "why is my pixel firing twice" threads with the tool rather than opening a
+   launch thread.
+2. r/shopify and r/ecommerce. Frame as "I built this, it's free, tell me what's
+   wrong". Lead with a redacted example report, not the URL.
+3. The Shopify developer forums (`community.shopify.dev`) and the Shopify
+   Entrepreneurs Facebook group (run by the HeyCarson agency, 100k+ members). The
+   old Partners Slack is being sunset and takes no new members; the dev forums are
+   its replacement. Agencies and freelancers there will run it on client stores and
+   say bluntly when it is wrong. That is the feedback wanted. Both ban unsolicited
+   links, so answer existing tracking questions and post the example report, not
+   the URL, until asked.
+4. Indie Hackers and Show HN. Low merchant density, useful for crashes and odd stores.
+
+**The ask, verbatim in every post:** "Paste your store, then tell me if any finding
+is wrong." Surface false positives, not praise.
+
+**Feedback capture.** Add a one-line "Was anything here wrong?" link under each report
+that opens a mailto to the EcomLoop address with the permalink prefilled in the
+subject. No form, no new storage. Replies are read against the scan log entry.
+
+**What this round produces.** Every store that comes through lands in the scan log,
+so the posting round is the real breadth check, replacing the 20 random stores in
+step 4 of the Testing plan if it yields more than that. Read every report by hand,
+same rule as before: a wrong claim is fixed in the detector, not the copy.
+
+**Exit.** Revisit enrichment and outreach prioritisation once the log has a few
+hundred hosts and reports have gone a week without a correction.
+
 ## Effort estimate **[v2]**
 
 - CLI scanner with fixtures and validated detectors: 2 days.
@@ -276,6 +320,8 @@ Call it one working week. The CLI is useful on its own after day 2.
 - **Scope:** CLI and web layer in one push. Build order is still capture, detect,
   report, CLI, fixtures, then server and page, with a review checkpoint after the
   CLI reports for the 10 stores exist.
+- **Enrichment:** no paid domain-data APIs in v1. Deferred until the scan log has a
+  few hundred hosts (see Launch and feedback).
 
 ## Still to do (Andrew)
 
