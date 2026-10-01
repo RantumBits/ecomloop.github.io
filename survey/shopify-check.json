@@ -1,0 +1,358 @@
+[
+ {
+  "host": "chamberlaincoffee.com",
+  "shopify": true,
+  "cf": true,
+  "controls": true,
+  "edge": {
+   "oai": false,
+   "cgu": false,
+   "ppx": false,
+   "gpt": false
+  },
+  "robotsNamesAI": [
+   "oai-searchbot"
+  ],
+  "robotsCustom": true,
+  "productsJson": 0,
+  "productTypes": []
+ },
+ {
+  "host": "crownaffair.com",
+  "shopify": true,
+  "cf": true,
+  "controls": true,
+  "edge": {
+   "oai": false,
+   "cgu": false,
+   "ppx": false,
+   "gpt": false
+  },
+  "robotsNamesAI": [],
+  "robotsCustom": false,
+  "productsJson": 72,
+  "productTypes": [
+   "Formula",
+   "Bundle",
+   "Set",
+   "Tool",
+   "Accessory"
+  ],
+  "product": {
+   "type": "Product",
+   "brand": true,
+   "gtin": true,
+   "image": true,
+   "description": true,
+   "offersN": 1,
+   "price": true,
+   "currency": true,
+   "availability": "InStock",
+   "aggregateRating": true,
+   "reviewCount": "1",
+   "ratingValue": "5.0"
+  },
+  "availabilityMatch": true,
+  "reviewApp": "yotpo",
+  "productSchemaCount": 2
+ },
+ {
+  "host": "fairharborclothing.com",
+  "shopify": false,
+  "cf": true,
+  "controls": false,
+  "edge": {
+   "oai": true,
+   "cgu": true,
+   "ppx": true,
+   "gpt": true
+  },
+  "robotsNamesAI": [],
+  "robotsCustom": false,
+  "productsJson": 250,
+  "productTypes": [
+   "Flannels",
+   "Sweaters",
+   "Sweatshirts",
+   "Swim",
+   "Button Downs"
+  ],
+  "product": null,
+  "availabilityMatch": null,
+  "reviewApp": "none",
+  "productSchemaCount": 0
+ },
+ {
+  "host": "livemomentous.com",
+  "shopify": true,
+  "cf": true,
+  "controls": true,
+  "edge": {
+   "oai": false,
+   "cgu": false,
+   "ppx": false,
+   "gpt": false
+  },
+  "robotsNamesAI": [],
+  "robotsCustom": false,
+  "productsJson": 90,
+  "productTypes": [
+   "Product",
+   "Merch",
+   "Vitamins & Supplements",
+   "Powder",
+   "Capsule"
+  ],
+  "product": {
+   "type": "Product",
+   "brand": true,
+   "gtin": true,
+   "image": true,
+   "description": true,
+   "offersN": 4,
+   "price": true,
+   "currency": true,
+   "availability": "InStock",
+   "aggregateRating": true,
+   "reviewCount": "12",
+   "ratingValue": "5.0"
+  },
+  "availabilityMatch": true,
+  "reviewApp": "yotpo",
+  "productSchemaCount": 1
+ },
+ {
+  "host": "nativepet.com",
+  "shopify": true,
+  "cf": true,
+  "controls": true,
+  "edge": {
+   "oai": false,
+   "cgu": false,
+   "ppx": false,
+   "gpt": false
+  },
+  "robotsNamesAI": [],
+  "robotsCustom": false,
+  "productsJson": 46,
+  "productTypes": [
+   "Finished Good",
+   "Merchandise",
+   "Bundle",
+   "Virtual Bundle",
+   "Gift Cards"
+  ],
+  "product": {
+   "type": "Product",
+   "brand": true,
+   "gtin": true,
+   "image": true,
+   "description": true,
+   "offersN": 1,
+   "price": true,
+   "currency": true,
+   "availability": "InStock",
+   "aggregateRating": true,
+   "reviewCount": "10",
+   "ratingValue": "4.9"
+  },
+  "availabilityMatch": true,
+  "reviewApp": "yotpo",
+  "productSchemaCount": 1
+ },
+ {
+  "host": "sunski.com",
+  "shopify": true,
+  "cf": true,
+  "controls": true,
+  "edge": {
+   "oai": false,
+   "cgu": false,
+   "ppx": false,
+   "gpt": false
+  },
+  "robotsNamesAI": [],
+  "robotsCustom": false,
+  "productsJson": 141,
+  "productTypes": [
+   "Sunscreen",
+   "Lens Kit",
+   "Sunglass",
+   "Screw Kit",
+   "Accessory"
+  ],
+  "product": {
+   "type": "ProductGroup",
+   "brand": true,
+   "gtin": false,
+   "image": true,
+   "description": true,
+   "offersN": 1,
+   "price": true,
+   "currency": true,
+   "availability": "InStock",
+   "aggregateRating": false,
+   "reviewCount": null,
+   "ratingValue": null
+  },
+  "availabilityMatch": true,
+  "reviewApp": "yotpo",
+  "productSchemaCount": 0
+ },
+ {
+  "host": "coppercowcoffee.com",
+  "shopify": true,
+  "cf": true,
+  "controls": true,
+  "edge": {
+   "oai": false,
+   "cgu": false,
+   "ppx": false,
+   "gpt": false
+  },
+  "robotsNamesAI": [],
+  "robotsCustom": false,
+  "productsJson": 39,
+  "productTypes": [
+   "Coffee",
+   "Creamer",
+   "Shirt",
+   "Kettles",
+   "Glass Mug"
+  ],
+  "product": {
+   "type": "Product",
+   "brand": true,
+   "gtin": true,
+   "image": true,
+   "description": true,
+   "offersN": 1,
+   "price": true,
+   "currency": true,
+   "availability": "InStock",
+   "aggregateRating": true,
+   "reviewCount": "23",
+   "ratingValue": "5.0"
+  },
+  "availabilityMatch": true,
+  "reviewApp": "yotpo",
+  "productSchemaCount": 1
+ },
+ {
+  "host": "brightland.co",
+  "shopify": true,
+  "cf": true,
+  "controls": true,
+  "edge": {
+   "oai": false,
+   "cgu": false,
+   "ppx": false,
+   "gpt": false
+  },
+  "robotsNamesAI": [],
+  "robotsCustom": false,
+  "productsJson": 44,
+  "productTypes": [
+   "Gift Set",
+   "Spices + Salt",
+   "Bundles",
+   "Vinegar",
+   "Flavored Olive Oil"
+  ],
+  "product": {
+   "type": "Product",
+   "brand": true,
+   "gtin": true,
+   "image": true,
+   "description": true,
+   "offersN": 1,
+   "price": true,
+   "currency": true,
+   "availability": "InStock",
+   "aggregateRating": false,
+   "reviewCount": null,
+   "ratingValue": null
+  },
+  "availabilityMatch": true,
+  "reviewApp": "yotpo",
+  "productSchemaCount": 2
+ },
+ {
+  "host": "foursigmatic.com",
+  "shopify": true,
+  "cf": true,
+  "controls": true,
+  "edge": {
+   "oai": false,
+   "cgu": false,
+   "ppx": false,
+   "gpt": false
+  },
+  "robotsNamesAI": [],
+  "robotsCustom": false,
+  "productsJson": 94,
+  "productTypes": [
+   "Instant Coffee",
+   "Ground Coffee",
+   "Creamer",
+   "Tea",
+   "Coffee Pod"
+  ],
+  "product": {
+   "type": "Product",
+   "brand": true,
+   "gtin": true,
+   "image": true,
+   "description": true,
+   "offersN": 1,
+   "price": true,
+   "currency": true,
+   "availability": "InStock",
+   "aggregateRating": false,
+   "reviewCount": null,
+   "ratingValue": null
+  },
+  "availabilityMatch": true,
+  "reviewApp": "yotpo",
+  "productSchemaCount": 1
+ },
+ {
+  "host": "getmaude.com",
+  "shopify": true,
+  "cf": true,
+  "controls": true,
+  "edge": {
+   "oai": false,
+   "cgu": false,
+   "ppx": false,
+   "gpt": false
+  },
+  "robotsNamesAI": [],
+  "robotsCustom": false,
+  "productsJson": 56,
+  "productTypes": [
+   "Bath & Body",
+   "Bundle",
+   "Lubricants",
+   "Merch",
+   "Accessory"
+  ],
+  "product": {
+   "type": "Product",
+   "brand": true,
+   "gtin": false,
+   "image": true,
+   "description": false,
+   "offersN": 1,
+   "price": true,
+   "currency": true,
+   "availability": "InStock",
+   "aggregateRating": false,
+   "reviewCount": null,
+   "ratingValue": null
+  },
+  "availabilityMatch": true,
+  "reviewApp": "yotpo",
+  "productSchemaCount": 1
+ }
+]

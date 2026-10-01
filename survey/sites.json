@@ -1,0 +1,5784 @@
+[
+ {
+  "host": "romaitalian.com",
+  "url": "https://romaitalian.com/",
+  "name": "Roma Ristorante Italiano",
+  "category": "restaurant",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "broadleafbeer.com",
+  "url": "https://broadleafbeer.com/menu/",
+  "name": "Broad Leaf Brewery & Spirits",
+  "category": "restaurant",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "raleigh.sirwaltercoffee.com",
+  "url": "https://raleigh.sirwaltercoffee.com/",
+  "name": "Sir Walter Coffee",
+  "category": "cafe",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "alwayspoweryoga.com",
+  "url": "https://alwayspoweryoga.com",
+  "name": "AlwaysPower Yoga",
+  "category": "fitness_centre",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "acctspecialists.com",
+  "url": "https://acctspecialists.com",
+  "name": "Accounting Specialists of Asheville LLC",
+  "category": "accountant",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "olympiacycleomaha.com",
+  "url": "https://www.olympiacycleomaha.com/",
+  "name": "Olympia Cycle",
+  "category": "bicycle",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "richmonddentistryforchildren.com",
+  "url": "http://www.richmonddentistryforchildren.com",
+  "name": "Richmond Dentistry For Children",
+  "category": "dentist",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "order.cpk.com",
+  "url": "https://order.cpk.com/menu/california-pizza-kitchen-short-pump/",
+  "name": "California Pizza Kitchen",
+  "category": "restaurant",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "idahofitnessfactory.com",
+  "url": "https://idahofitnessfactory.com/",
+  "name": "Idaho Fitness Factory",
+  "category": "fitness_centre",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "papasandbeerasheville.net",
+  "url": "https://www.papasandbeerasheville.net/",
+  "name": "Papa's & Beer",
+  "category": "restaurant",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "vbarbershop.com",
+  "url": "https://vbarbershop.com/locations/ten-mile-creek-meridian/",
+  "name": "V's Barbershop",
+  "category": "hairdresser",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "branchrestaurants.com",
+  "url": "https://branchrestaurants.com/",
+  "name": "Branch Breakfast Company",
+  "category": "restaurant",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "northwestpets.com",
+  "url": "https://northwestpets.com/",
+  "name": "Northwest Pets",
+  "category": "pet",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "idahomongolianbbq.com",
+  "url": "https://www.idahomongolianbbq.com/",
+  "name": "The Original Mongolian BBQ",
+  "category": "restaurant",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "carmenscafetroy.com",
+  "url": "https://carmenscafetroy.com/",
+  "name": "Carmen's",
+  "category": "restaurant",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "pizzeria-fifty-four.hub.biz",
+  "url": "https://pizzeria-fifty-four.hub.biz",
+  "name": "Pizzeria 54",
+  "category": "restaurant",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "mrfisher.net",
+  "url": "https://mrfisher.net",
+  "name": "State Farm",
+  "category": "insurance",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "janjou.com",
+  "url": "https://www.janjou.com/",
+  "name": "Janjou Pâtisserie",
+  "category": "cafe",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "oizaca.com",
+  "url": "https://oizaca.com/",
+  "name": "O-iza",
+  "category": "restaurant",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "ontzcafe1920fresno.com",
+  "url": "https://www.ontzcafe1920fresno.com/",
+  "name": "Ontz Cafe 1920",
+  "category": "cafe",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "donnasitalian.com",
+  "url": "https://www.donnasitalian.com/",
+  "name": "Donna's Italian",
+  "category": "restaurant",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "horchroofing.com",
+  "url": "https://horchroofing.com/",
+  "name": "Horch Roofing",
+  "category": "roofer",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "moonskitchenboise.org",
+  "url": "https://moonskitchenboise.org/",
+  "name": "Moon's Kitchen Cafe",
+  "category": "restaurant",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "northernburner.com",
+  "url": "https://www.northernburner.com/",
+  "name": "Northern Burner Supply",
+  "category": "electrician",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "sugafootsalbanyny.com",
+  "url": "http://www.sugafootsalbanyny.com",
+  "name": "Suga Foot's Soul Kitchen",
+  "category": "restaurant",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "lamplightercoffee.com",
+  "url": "https://www.lamplightercoffee.com/",
+  "name": "Lamplighter Roasting Company",
+  "category": "cafe",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "swkidsdentistry.com",
+  "url": "https://www.swkidsdentistry.com/",
+  "name": "Southwest Kids Dentistry",
+  "category": "dentist",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "nonesuchriverbrewing.com",
+  "url": "https://www.nonesuchriverbrewing.com/",
+  "name": "Nonesuch River Brewing",
+  "category": "restaurant",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "farmer-boy.com",
+  "url": "http://www.farmer-boy.com",
+  "name": "Farmer Boy Diner",
+  "category": "restaurant",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "makabeauty.com",
+  "url": "https://www.makabeauty.com",
+  "name": "MAKA Beauty Systems",
+  "category": "beauty",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "familyncosmeticdentist.com",
+  "url": "https://www.familyncosmeticdentist.com/",
+  "name": "Family And Cosmetic Dentistry",
+  "category": "dentist",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "tipsychefcafe.com",
+  "url": "https://tipsychefcafe.com/",
+  "name": "Tipsy Chef Cafe",
+  "category": "cafe",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "motoroilcoffee.com",
+  "url": "https://motoroilcoffee.com/albany-state-street/",
+  "name": "Motor Oil Coffee",
+  "category": "cafe",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "experiencemainemade.com",
+  "url": "https://experiencemainemade.com/",
+  "name": "Experience Maine Market",
+  "category": "cafe",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "harvestov.com",
+  "url": "https://www.harvestov.com/",
+  "name": "Harvest",
+  "category": "restaurant",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "liftcoffeeshop.com",
+  "url": "http://www.liftcoffeeshop.com/",
+  "name": "Lift Coffee Shop",
+  "category": "cafe",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "tingsrichmond.com",
+  "url": "https://www.tingsrichmond.com/",
+  "name": "Ting's Chinese Restaurant",
+  "category": "restaurant",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "theanimalhouse.net",
+  "url": "https://www.theanimalhouse.net/westbrook",
+  "name": "The Animal House",
+  "category": "pet",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "rotarysushiid.com",
+  "url": "https://www.rotarysushiid.com/",
+  "name": "Rotary Sushi",
+  "category": "restaurant",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "tastedcg.com",
+  "url": "https://tastedcg.com/",
+  "name": "DCG - District Chicken and Gyro",
+  "category": "restaurant",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "kingindianfresno.com",
+  "url": "https://kingindianfresno.com/",
+  "name": "King Indian Restaurant",
+  "category": "restaurant",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "misterbagel.com",
+  "url": "https://misterbagel.com/",
+  "name": "Mister Bagel",
+  "category": "restaurant",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "myazlawyers.com",
+  "url": "https://myazlawyers.com/tucson",
+  "name": "My AZ Lawyers, PLC",
+  "category": "lawyer",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "theoldeenglishny.com",
+  "url": "https://theoldeenglishny.com/",
+  "name": "The Olde English Pub and Pantry",
+  "category": "restaurant",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "allspeed.com",
+  "url": "https://www.allspeed.com/",
+  "name": "Allspeed",
+  "category": "bicycle",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "pepperjacksalbany.com",
+  "url": "https://www.pepperjacksalbany.com",
+  "name": "Pepper Jack's",
+  "category": "restaurant",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "sushixloungelatham.com",
+  "url": "https://www.sushixloungelatham.com/",
+  "name": "Sushi X Lounge",
+  "category": "restaurant",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "eighthandmaingym.com",
+  "url": "https://www.eighthandmaingym.com/",
+  "name": "The Gym at Eighth & Main",
+  "category": "fitness_centre",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "richmondpizzaplace.com",
+  "url": "http://www.richmondpizzaplace.com/",
+  "name": "The Pizza Place",
+  "category": "restaurant",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "teahousealbany.com",
+  "url": "https://www.teahousealbany.com/",
+  "name": "Prince Tea House",
+  "category": "cafe",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "midwestderm.com",
+  "url": "https://midwestderm.com/",
+  "name": "Midwest Dermatology Clinic",
+  "category": "doctors",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "larkhallalbany.com",
+  "url": "https://larkhallalbany.com/the-eleven-at-lark-hall/",
+  "name": "The Eleven at Lark Hall",
+  "category": "restaurant",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "pastahouseva.com",
+  "url": "https://www.pastahouseva.com/",
+  "name": "Pasta House: Italian Restaurant",
+  "category": "restaurant",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "stjoescafe.com",
+  "url": "http://www.stjoescafe.com/",
+  "name": "Saint Joe's Café",
+  "category": "cafe",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "smokedportland.com",
+  "url": "https://smokedportland.com/",
+  "name": "Smoked Portland",
+  "category": "restaurant",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "cheeburger.com",
+  "url": "https://cheeburger.com/",
+  "name": "Cheeburger Cheeburger",
+  "category": "restaurant",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "ymcawnc.org",
+  "url": "https://www.ymcawnc.org/locations/centers/reuter",
+  "name": "Reuter Family YMCA",
+  "category": "fitness_centre",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "waysidetavernmaine.com",
+  "url": "https://www.waysidetavernmaine.com/",
+  "name": "Wayside Tavern",
+  "category": "restaurant",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "myinsurancedoctor.com",
+  "url": "https://www.myinsurancedoctor.com/short-pump/",
+  "name": "Insurance Doctor",
+  "category": "insurance",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "appslive.com",
+  "url": "https://appslive.com",
+  "name": "APPS",
+  "category": "insurance",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "litsterfrost.com",
+  "url": "https://litsterfrost.com",
+  "name": "Litster Frost Injury Lawyers",
+  "category": "lawyer",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "taqueriayarelis.net",
+  "url": "https://taqueriayarelis.net/",
+  "name": "Taqueria Yarelis",
+  "category": "restaurant",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "ccfboise.com",
+  "url": "https://www.ccfboise.com/",
+  "name": "Capital City Florist",
+  "category": "florist",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "riversidegolfcourseme.com",
+  "url": "https://www.riversidegolfcourseme.com/",
+  "name": "Riverside Grill",
+  "category": "restaurant",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "aycarambamexican.com",
+  "url": "http://aycarambamexican.com/",
+  "name": "Ay Caramba Mexican Food",
+  "category": "restaurant",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "backwoodzbbq.com",
+  "url": "https://www.backwoodzbbq.com/",
+  "name": "Backwoodz BBQ",
+  "category": "restaurant",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "blueridgecyclery.com",
+  "url": "https://www.blueridgecyclery.com/",
+  "name": "Blue Ridge Cyclery",
+  "category": "bicycle",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "bombayboise.com",
+  "url": "https://www.bombayboise.com/",
+  "name": "Bombay Grill",
+  "category": "restaurant",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "victoriancafebend.com",
+  "url": "https://www.victoriancafebend.com//",
+  "name": "The Victorian Café",
+  "category": "restaurant",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "bendburger.com",
+  "url": "https://www.bendburger.com/",
+  "name": "Bend Burger Company",
+  "category": "restaurant",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "myrevnow.com",
+  "url": "https://www.myrevnow.com/",
+  "name": "The Revolution",
+  "category": "fitness_centre",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "johnspizza.com",
+  "url": "https://johnspizza.com/",
+  "name": "John's Incredible Pizza",
+  "category": "restaurant",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "indulgeright.com",
+  "url": "https://indulgeright.com/thebakery/",
+  "name": "The Bakery by Indulge Right",
+  "category": "bakery",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "meridianidahogyms.com",
+  "url": "https://www.meridianidahogyms.com/",
+  "name": "Uplifted Gym",
+  "category": "fitness_centre",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "westbrookhairdesign.com",
+  "url": "https://www.westbrookhairdesign.com",
+  "name": "Westbrook Hair Design",
+  "category": "hairdresser",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "nahmboise.com",
+  "url": "https://nahmboise.com/",
+  "name": "Nahm Thai & Burmese Cuisine",
+  "category": "restaurant",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "fourseasonschinese.site",
+  "url": "https://fourseasonschinese.site/",
+  "name": "Four Seasons Chinese Restaurant",
+  "category": "restaurant",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "eatlazeez.com",
+  "url": "https://www.eatlazeez.com/",
+  "name": "Lazeez",
+  "category": "restaurant",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "bicas.org",
+  "url": "https://bicas.org",
+  "name": "BICAS (Bicycle Inter-Community Art & Salvage)",
+  "category": "bicycle",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "cyclebar.com",
+  "url": "https://cyclebar.com/location/fresno",
+  "name": "CycleBar",
+  "category": "fitness_centre",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "spiritmadecakes.com",
+  "url": "https://www.spiritmadecakes.com/",
+  "name": "Spirit Made Cakes",
+  "category": "bakery",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "malaprops.com",
+  "url": "https://www.malaprops.com/",
+  "name": "Malaprop's",
+  "category": "cafe",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "luminaryhairco.com",
+  "url": "https://www.luminaryhairco.com/",
+  "name": "Luminary Hair Co.",
+  "category": "hairdresser",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "cleopatrassalon.com",
+  "url": "https://www.cleopatrassalon.com/",
+  "name": "Cleopatra's Salon",
+  "category": "hairdresser",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "oilchangers.com",
+  "url": "https://oilchangers.com/locations/ca/fresno-costco-parking-lot/",
+  "name": "Oil Changers",
+  "category": "car_repair",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "moderndent.com",
+  "url": "https://moderndent.com/",
+  "name": "Modern Dental",
+  "category": "dentist",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "eaglerundental.com",
+  "url": "https://www.eaglerundental.com/",
+  "name": "Eagle Run West Dental Group",
+  "category": "dentist",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "bobaaddict.com",
+  "url": "https://www.bobaaddict.com/",
+  "name": "Boba Addict",
+  "category": "cafe",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "clkcpa.com",
+  "url": "https://clkcpa.com/",
+  "name": "Carol L. King & Associates",
+  "category": "accountant",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "purecaredentalofbend.com",
+  "url": "http://www.purecaredentalofbend.com/",
+  "name": "PureCare Dental",
+  "category": "dentist",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "crossfitthrice.com",
+  "url": "http://www.crossfitthrice.com/",
+  "name": "CrossFit Thrice",
+  "category": "fitness_centre",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "importservicectr.com",
+  "url": "https://www.importservicectr.com/",
+  "name": "Import Service Center",
+  "category": "car_repair",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "boise-dentist.com",
+  "url": "https://www.boise-dentist.com/",
+  "name": "Boise Integrative Dentistry",
+  "category": "dentist",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "bowensportsperformance.com",
+  "url": "https://bowensportsperformance.com/",
+  "name": "Bowen Sports Performance",
+  "category": "fitness_centre",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "skinspecialistscr.com",
+  "url": "https://skinspecialistscr.com",
+  "name": "Skincare Specialists of the Capital Region",
+  "category": "doctors",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "slowbyslow.com",
+  "url": "https://www.slowbyslow.com/",
+  "name": "Slow by Slow Coffee",
+  "category": "cafe",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "creativexperiencesalon.com",
+  "url": "http://creativexperiencesalon.com/",
+  "name": "Totally Polished",
+  "category": "beauty",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "curves.com",
+  "url": "https://www.curves.com/",
+  "name": "Curves",
+  "category": "fitness_centre",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "oohlalanailsandspa.com",
+  "url": "https://oohlalanailsandspa.com/",
+  "name": "Ooh La La Nails & Spa",
+  "category": "beauty",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "apexracketandfitness.com",
+  "url": "https://apexracketandfitness.com/",
+  "name": "APEX Racket and Fitness",
+  "category": "fitness_centre",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "qualitytiremedford.com",
+  "url": "https://qualitytiremedford.com/",
+  "name": "Quality Tire",
+  "category": "car_repair",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "fresnopedicureservice.com",
+  "url": "https://www.fresnopedicureservice.com/",
+  "name": "Young Nail & Spa",
+  "category": "beauty",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "deserthillspc.com",
+  "url": "http://deserthillspc.com",
+  "name": "Desert Hills Pet Clinic",
+  "category": "veterinary",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "vaphysicians.com",
+  "url": "https://vaphysicians.com/",
+  "name": "Cold Harbor Family Medicine",
+  "category": "doctors",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "cpollardlaw.com",
+  "url": "https://cpollardlaw.com/",
+  "name": "Corey Pollard Law",
+  "category": "lawyer",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "iwantproof.com",
+  "url": "https://www.iwantproof.com/",
+  "name": "Proof Eyewear",
+  "category": "optician",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "kinkycardio.com",
+  "url": "https://kinkycardio.com",
+  "name": "Kinky Cardio",
+  "category": "fitness_centre",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "coffmanvision.com",
+  "url": "https://www.coffmanvision.com/",
+  "name": "Coffman Vision Clinic",
+  "category": "optician",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "theprincesslounge.glossgenius.com",
+  "url": "https://theprincesslounge.glossgenius.com",
+  "name": "The Princess Lounge",
+  "category": "beauty",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "prostylessalons.com",
+  "url": "http://prostylessalons.com/",
+  "name": "ProStyles Salon",
+  "category": "hairdresser",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "superpermandcuts.com",
+  "url": "http://www.superpermandcuts.com/",
+  "name": "Super Perm & Cuts",
+  "category": "beauty",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "larsencriminaldefense.com",
+  "url": "https://larsencriminaldefense.com/",
+  "name": "Larsen Law Office",
+  "category": "lawyer",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "germanautorepairfresno.com",
+  "url": "http://germanautorepairfresno.com/",
+  "name": "German Auto Repair",
+  "category": "car_repair",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "deomaha.com",
+  "url": "https://deomaha.com/",
+  "name": "Diabetes & Endocrine Associates",
+  "category": "doctors",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "sogyn.com",
+  "url": "https://www.sogyn.com/",
+  "name": "Southern Oregon Gynecology",
+  "category": "doctors",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "bendautoglass.net",
+  "url": "https://www.bendautoglass.net/",
+  "name": "B&D Auto Glass",
+  "category": "car_repair",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "jrsautobodyshopbendoregon.biz",
+  "url": "https://jrsautobodyshopbendoregon.biz/",
+  "name": "JR's",
+  "category": "car_repair",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "palateacoffeebar.com",
+  "url": "https://www.palateacoffeebar.com",
+  "name": "Palate",
+  "category": "cafe",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "clipperhandz.com",
+  "url": "https://clipperhandz.com/",
+  "name": "ClipperHandz Barber Lounge",
+  "category": "hairdresser",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "prudential.com",
+  "url": "https://www.prudential.com/advisor/bob-bayze",
+  "name": "Prudential Financial",
+  "category": "insurance",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "pennsylvaniadentalboise.com",
+  "url": "https://www.pennsylvaniadentalboise.com/",
+  "name": "Pennsylvania Dental",
+  "category": "dentist",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "ziebart.com",
+  "url": "https://www.ziebart.com/spokane",
+  "name": "Ziebart",
+  "category": "car_repair",
+  "metro": "Spokane WA"
+ },
+ {
+  "host": "freytagortho.com",
+  "url": "https://freytagortho.com/",
+  "name": "Freytag Orthodontics",
+  "category": "dentist",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "organicnailspafresno.com",
+  "url": "https://organicnailspafresno.com/",
+  "name": "Organic Nails & Spa",
+  "category": "beauty",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "toweryogafrresno.com",
+  "url": "http://www.toweryogafrresno.com/",
+  "name": "Tower Yoga",
+  "category": "fitness_centre",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "thegreatamericanbarbershop.com",
+  "url": "https://www.thegreatamericanbarbershop.com/",
+  "name": "The Great American Barbershop",
+  "category": "hairdresser",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "eddiesbakerycafe.com",
+  "url": "https://www.eddiesbakerycafe.com/",
+  "name": "Eddie's Bakery Cafe",
+  "category": "bakery",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "starbucks.ca",
+  "url": "https://www.starbucks.ca/store-locator/store/1031788/copper-maple-2088-e-copper-ave-fresno-ca-93730-us",
+  "name": "Starbucks",
+  "category": "cafe",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "vfdentist.com",
+  "url": "https://vfdentist.com/",
+  "name": "Village Family Dentistry",
+  "category": "dentist",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "jahnkeheatingandair.com",
+  "url": "https://www.jahnkeheatingandair.com/",
+  "name": "Jahnke Heating and Air Conditioning",
+  "category": "hvac",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "certifiedboise.com",
+  "url": "https://www.certifiedboise.com/",
+  "name": "Certified Kitchen + Bakery",
+  "category": "bakery",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "apollosalon.com",
+  "url": "http://www.apollosalon.com/",
+  "name": "Nature Roots Spa",
+  "category": "hairdresser",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "lambergoodnow.com",
+  "url": "https://lambergoodnow.com/tucson/personal-injury-lawyers-tucson/",
+  "name": "Lamber Goodnow Injury Lawyers Tucson",
+  "category": "lawyer",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "heemee.online",
+  "url": "https://www.heemee.online/",
+  "name": "HeeMee Coffee + Bakery on University",
+  "category": "cafe",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "orthoprostucson.com",
+  "url": "https://orthoprostucson.com/",
+  "name": "OrthoPros",
+  "category": "dentist",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "goettl.com",
+  "url": "https://www.goettl.com/location/tucson-arizona/",
+  "name": "Goettl Air Conditioning and Plumbing - Tucson AZ",
+  "category": "hvac",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "formandfunctioncoffee.com",
+  "url": "https://formandfunctioncoffee.com/",
+  "name": "Form & Function",
+  "category": "cafe",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "grannycsbakery.com",
+  "url": "https://www.grannycsbakery.com/",
+  "name": "Granny C's Bakery",
+  "category": "bakery",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "ahuvabagels.com",
+  "url": "http://ahuvabagels.com/",
+  "name": "Ahuva Bagels",
+  "category": "cafe",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "coccadotts.com",
+  "url": "http://www.coccadotts.com/",
+  "name": "Coccadott's Cake Shop",
+  "category": "bakery",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "lacorte.com",
+  "url": "https://www.lacorte.com",
+  "name": "LaCorte Companies, Inc.",
+  "category": "electrician",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "ashevillebikecompany.com",
+  "url": "https://www.ashevillebikecompany.com/",
+  "name": "Asheville Bicycle Company",
+  "category": "bicycle",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "secureitnew.com",
+  "url": "https://secureitnew.com/",
+  "name": "Secure It New",
+  "category": "car_repair",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "estanciadayspa.com",
+  "url": "https://www.estanciadayspa.com/",
+  "name": "Estancia Day Spa & Salon",
+  "category": "beauty",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "mrmius.com",
+  "url": "http://www.mrmius.com",
+  "name": "Mehmood Risk Management",
+  "category": "insurance",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "crossroadsrva.com",
+  "url": "https://crossroadsrva.com/",
+  "name": "Crossroads Coffee & Ice Cream",
+  "category": "cafe",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "eastboiseinsurance.com",
+  "url": "https://www.eastboiseinsurance.com",
+  "name": "State Farm",
+  "category": "insurance",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "panaderia-natalie.poi.place",
+  "url": "https://panaderia-natalie.poi.place/",
+  "name": "Panaderia Natalie",
+  "category": "bakery",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "zaneslaw.com",
+  "url": "https://zaneslaw.com/south-tucson-injury/",
+  "name": "Zanes Law Injury Lawyers",
+  "category": "lawyer",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "unitedserviceautomotive.com",
+  "url": "https://unitedserviceautomotive.com/",
+  "name": "United Service Automotive",
+  "category": "car_repair",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "americanglass1.com",
+  "url": "https://www.americanglass1.com/",
+  "name": "American Glass Company",
+  "category": "car_repair",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "discoverbendchiro.com",
+  "url": "https://www.discoverbendchiro.com/",
+  "name": "Discover Chiropractic",
+  "category": "doctors",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "qualityplumbing.co",
+  "url": "https://www.qualityplumbing.co/",
+  "name": "Quality Plumbing",
+  "category": "plumber",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "toothbearykids.com",
+  "url": "https://www.toothbearykids.com/",
+  "name": "Toothbeary Pediatric Dentistry",
+  "category": "dentist",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "lawtonsautomotive.webs.com",
+  "url": "https://lawtonsautomotive.webs.com/",
+  "name": "Lawtons Automotive and Tire Center",
+  "category": "car_repair",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "hurlessbros.com",
+  "url": "https://hurlessbros.com/",
+  "name": "Hurless Brothers Foreign Car Service",
+  "category": "car_repair",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "spillnthebeans.com",
+  "url": "https://spillnthebeans.com/",
+  "name": "Stacks Espresso Bar",
+  "category": "cafe",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "flexelectric.com",
+  "url": "http://www.flexelectric.com/",
+  "name": "Flex Electric LLC",
+  "category": "electrician",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "tucsonkavabar.com",
+  "url": "https://www.tucsonkavabar.com",
+  "name": "The Kava Bar",
+  "category": "cafe",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "fitstudiotucson.com",
+  "url": "https://www.fitstudiotucson.com/",
+  "name": "FIT Studio",
+  "category": "fitness_centre",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "tomcoelectric.com",
+  "url": "https://www.tomcoelectric.com/",
+  "name": "Tomco Electric",
+  "category": "electrician",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "ilovemosaiccafe.com",
+  "url": "http://ilovemosaiccafe.com",
+  "name": "Mosaic Cafe",
+  "category": "cafe",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "fitbodybootcamp.com",
+  "url": "https://fitbodybootcamp.com/locations/woodward-fresno-ca/",
+  "name": "Fit Body Boot Camp",
+  "category": "fitness_centre",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "shieldstonepethospital.com",
+  "url": "http://www.shieldstonepethospital.com/",
+  "name": "Shield Stone Pet Hospital",
+  "category": "veterinary",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "capitalandautobody.com",
+  "url": "https://www.capitalandautobody.com/",
+  "name": "Capitaland Auto Body",
+  "category": "car_repair",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "amorenaillounge.com",
+  "url": "https://amorenaillounge.com/",
+  "name": "Amore Nail Lounge",
+  "category": "beauty",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "adawestdermatology.com",
+  "url": "https://adawestdermatology.com/",
+  "name": "Ada West Dermatology",
+  "category": "doctors",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "dentistry24hrs.com",
+  "url": "https://www.dentistry24hrs.com/",
+  "name": "A Dental Care 24 Hrs",
+  "category": "dentist",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "myterrio.com",
+  "url": "https://myterrio.com/",
+  "name": "Terrio Physical Therapy & Fitness",
+  "category": "physiotherapist",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "advantabrokers.com",
+  "url": "https://www.advantabrokers.com/",
+  "name": "Advanta Insurance Brokers",
+  "category": "insurance",
+  "metro": "Spokane WA"
+ },
+ {
+  "host": "slocumpainting.com",
+  "url": "https://www.slocumpainting.com/",
+  "name": "Slocum Painting",
+  "category": "painter",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "dailygrind.com",
+  "url": "https://www.dailygrind.com/",
+  "name": "The Daily Grind",
+  "category": "cafe",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "jroyalsbarber.com",
+  "url": "https://www.jroyalsbarber.com/",
+  "name": "JRoyals Barbershop",
+  "category": "hairdresser",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "paintworxcollisionctr.com",
+  "url": "https://www.paintworxcollisionctr.com/",
+  "name": "Paintworx Collision Center",
+  "category": "car_repair",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "towervelo.com",
+  "url": "https://towervelo.com/",
+  "name": "Tower Velo",
+  "category": "bicycle",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "scarboroughanimalhospital.com",
+  "url": "https://www.scarboroughanimalhospital.com/",
+  "name": "Scarborough Animal Hospital",
+  "category": "veterinary",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "doubledscoffee.com",
+  "url": "https://www.doubledscoffee.com/",
+  "name": "Double D's Coffee & Desserts",
+  "category": "cafe",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "athletico.com",
+  "url": "https://www.athletico.com/locations/tucson-miramonte/",
+  "name": "Athletico Physical Therapy",
+  "category": "physiotherapist",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "manicaveappointments.as.me",
+  "url": "https://manicaveappointments.as.me/",
+  "name": "The Mani-Cave",
+  "category": "beauty",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "bestfitnessgyms.com",
+  "url": "https://bestfitnessgyms.com/albany-ny-central/",
+  "name": "Best Fitness Albany",
+  "category": "fitness_centre",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "importconcepts2.com",
+  "url": "https://importconcepts2.com/",
+  "name": "Import Concepts 2",
+  "category": "car_repair",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "businessattorneyboise.com",
+  "url": "https://businessattorneyboise.com/",
+  "name": "Belnap Legal, Pllc",
+  "category": "lawyer",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "deitzfamilydental.com",
+  "url": "https://deitzfamilydental.com/",
+  "name": "Deitz Family Dental",
+  "category": "dentist",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "vetinomaha.com",
+  "url": "https://vetinomaha.com/",
+  "name": "All About Pets Veterinary Center",
+  "category": "veterinary",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "wellcoffeehouseclovis.com",
+  "url": "https://wellcoffeehouseclovis.com/",
+  "name": "Coffeehouse and Student Center",
+  "category": "cafe",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "xteamfitness.com",
+  "url": "https://xteamfitness.com/",
+  "name": "X-Team Fitness",
+  "category": "fitness_centre",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "starbodyworks.com",
+  "url": "https://starbodyworks.com/ashland-location/",
+  "name": "Star Collision Center",
+  "category": "car_repair",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "jandjbodyshop.com",
+  "url": "https://jandjbodyshop.com/",
+  "name": "J&J Body Shop & Automotive",
+  "category": "car_repair",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "villagepointetoyota.com",
+  "url": "https://www.villagepointetoyota.com/",
+  "name": "Village Pointe Toyota",
+  "category": "car_repair",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "azurasalonspabend.com",
+  "url": "https://www.azurasalonspabend.com/",
+  "name": "Azurá",
+  "category": "hairdresser",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "callmyplumbers.com",
+  "url": "https://www.callmyplumbers.com/",
+  "name": "My Plumbers, LLC",
+  "category": "plumber",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "sagebrushcycles.net",
+  "url": "http://www.sagebrushcycles.net/",
+  "name": "Sagebrush Cycles",
+  "category": "bicycle",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "heartspacealbany.com",
+  "url": "https://heartspacealbany.com/",
+  "name": "Heartspace Community Yoga & Wellness",
+  "category": "fitness_centre",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "itsbobatime.com",
+  "url": "https://itsbobatime.com/",
+  "name": "It's Boba Time",
+  "category": "cafe",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "medvet.com",
+  "url": "https://www.medvet.com/location/westvet-boise/",
+  "name": "WestVet",
+  "category": "veterinary",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "keitercpa.com",
+  "url": "https://keitercpa.com",
+  "name": "Keiter",
+  "category": "accountant",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "backporchcoffeeroasters.com",
+  "url": "https://www.backporchcoffeeroasters.com/",
+  "name": "Backporch Coffee Roasters",
+  "category": "cafe",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "bendpetexpress.com",
+  "url": "https://bendpetexpress.com/",
+  "name": "Bend Pet Express",
+  "category": "pet",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "insure-id.com",
+  "url": "https://insure-id.com/",
+  "name": "Insure Idaho",
+  "category": "insurance",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "rechargesport.com",
+  "url": "http://www.rechargesport.com/",
+  "name": "Recharge",
+  "category": "fitness_centre",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "nailsalonscoupons.com",
+  "url": "https://www.nailsalonscoupons.com/",
+  "name": "Fancy Nails & Spa",
+  "category": "beauty",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "stretchzone.com",
+  "url": "https://www.stretchzone.com/locations/short-pump-va",
+  "name": "Stretch Zone",
+  "category": "fitness_centre",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "staycaffinated.com",
+  "url": "https://www.staycaffinated.com/",
+  "name": "The Daily Grind",
+  "category": "cafe",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "mountainareapeds.com",
+  "url": "https://mountainareapeds.com/",
+  "name": "Mountain Area Pediatric",
+  "category": "doctors",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "hairportsalonandbeautysupply.com",
+  "url": "https://www.hairportsalonandbeautysupply.com/",
+  "name": "Hairport Salon",
+  "category": "hairdresser",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "tristateelectric.org",
+  "url": "http://tristateelectric.org/",
+  "name": "Tri State Electric",
+  "category": "electrician",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "customwoodworkinc.com",
+  "url": "http://www.customwoodworkinc.com/",
+  "name": "Custom Woodwork, Inc.",
+  "category": "carpenter",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "luminouswell-being.com",
+  "url": "https://luminouswell-being.com/",
+  "name": "Luminous Wellbeing",
+  "category": "beauty",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "flywheelbicycles.com",
+  "url": "https://www.flywheelbicycles.com/",
+  "name": "Flywheel Bicycle Solutions",
+  "category": "bicycle",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "sparklepediatricdentistry.com",
+  "url": "http://www.sparklepediatricdentistry.com/",
+  "name": "Sparkle Pediatric Dentistry",
+  "category": "dentist",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "haasesgreenhouse.com",
+  "url": "https://www.haasesgreenhouse.com/",
+  "name": "Haase's Greenhouse",
+  "category": "florist",
+  "metro": "Spokane WA"
+ },
+ {
+  "host": "hajocarichmond.com",
+  "url": "https://hajocarichmond.com/",
+  "name": "Hajoca",
+  "category": "hvac",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "forestavevethospital.com",
+  "url": "http://www.forestavevethospital.com/",
+  "name": "",
+  "category": "veterinary",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "wuc.red",
+  "url": "https://wuc.red/",
+  "name": "Wake Up Call",
+  "category": "cafe",
+  "metro": "Spokane WA"
+ },
+ {
+  "host": "joneshacker.com",
+  "url": "https://joneshacker.com/",
+  "name": "E. Stewart Jones Hacker Murphy",
+  "category": "lawyer",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "wizardautospecialties.com",
+  "url": "https://www.wizardautospecialties.com/",
+  "name": "Wizard Auto Specialties",
+  "category": "car_repair",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "spaonemedspa.com",
+  "url": "https://www.spaonemedspa.com/",
+  "name": "SPA ONE at The Plastic Surgery Group",
+  "category": "doctors",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "riverboundvet.com",
+  "url": "http://riverboundvet.com/",
+  "name": "Riverbound Veterinary Clinic",
+  "category": "veterinary",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "shelbybendchiropractic.com",
+  "url": "http://shelbybendchiropractic.com/",
+  "name": "Shelby Chiropractic",
+  "category": "doctors",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "mccluredentallabdesign.com",
+  "url": "https://mccluredentallabdesign.com/",
+  "name": "McClure Dental Lab Design",
+  "category": "dentist",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "automotiverepairboise.com",
+  "url": "https://www.automotiverepairboise.com/",
+  "name": "Automotive Technical Services",
+  "category": "car_repair",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "pacclaims.com",
+  "url": "http://pacclaims.com/contact/",
+  "name": "Pacific Claims Management",
+  "category": "insurance",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "legendsbarberandbeauty.com",
+  "url": "https://legendsbarberandbeauty.com",
+  "name": "Legends Barber & Beauty",
+  "category": "beauty",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "zagdining.sodexomyway.com",
+  "url": "https://zagdining.sodexomyway.com/dining-near-me/resident-dining",
+  "name": "1887 at Cataldo",
+  "category": "cafe",
+  "metro": "Spokane WA"
+ },
+ {
+  "host": "gb3clubs.com",
+  "url": "https://www.gb3clubs.com/fresno---palm",
+  "name": "Gb3",
+  "category": "fitness_centre",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "colescollision.com",
+  "url": "https://colescollision.com/auto-body-shop-north-greenbush/",
+  "name": "Cole's Collision",
+  "category": "car_repair",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "redcarpetcarwash.com",
+  "url": "https://www.redcarpetcarwash.com/lube-and-smog",
+  "name": "Red Carpet Quick Lube",
+  "category": "car_repair",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "laboufresno.com",
+  "url": "https://www.laboufresno.com/",
+  "name": "La Boulangerie",
+  "category": "bakery",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "scdsmiles.com",
+  "url": "https://scdsmiles.com/",
+  "name": "Stone Creek Dental",
+  "category": "dentist",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "whalenautomotive.com",
+  "url": "https://www.whalenautomotive.com/",
+  "name": "Whalen Automotive",
+  "category": "car_repair",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "hayjaycafe.com",
+  "url": "https://www.hayjaycafe.com/",
+  "name": "Hay Jay Cafe & Coffee",
+  "category": "cafe",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "springhilldentalomaha.com",
+  "url": "http://www.springhilldentalomaha.com/",
+  "name": "SpringHill Dental",
+  "category": "dentist",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "dedicatedgf.com",
+  "url": "https://www.dedicatedgf.com/",
+  "name": "dedicated.",
+  "category": "bakery",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "infullbloomfresno.com",
+  "url": "https://www.infullbloomfresno.com/",
+  "name": "In Full Bloom",
+  "category": "florist",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "circlesquaresalon.com",
+  "url": "https://www.circlesquaresalon.com/",
+  "name": "Circle Square Salon",
+  "category": "hairdresser",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "atozmuffler.com",
+  "url": "https://atozmuffler.com/",
+  "name": "A to Z Muffler",
+  "category": "car_repair",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "1800theeagle.com",
+  "url": "https://1800theeagle.com/locations/east-tucson",
+  "name": "Goldberg & Osborne",
+  "category": "lawyer",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "richmondimportservice.com",
+  "url": "https://richmondimportservice.com/",
+  "name": "Richmond Import Service",
+  "category": "car_repair",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "lapawanimalhospital.com",
+  "url": "https://www.lapawanimalhospital.com/",
+  "name": "Westside Animal Hospital",
+  "category": "veterinary",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "valleycustomclosets.com",
+  "url": "https://valleycustomclosets.com",
+  "name": "Valley Custom Closets",
+  "category": "carpenter",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "emergeortho.com",
+  "url": "https://emergeortho.com/blue-ridge-region/",
+  "name": "EmergeOrtho",
+  "category": "doctors",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "horseshoecouncilbluffs.com",
+  "url": "http://www.horseshoecouncilbluffs.com/casinos/horseshoe-council-bluffs/restaurants-dining/jbs-cafe-detail.html",
+  "name": "JB's Cafe",
+  "category": "cafe",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "loveatfirstflightclovis.com",
+  "url": "https://www.loveatfirstflightclovis.com/",
+  "name": "Love At First Flight",
+  "category": "fitness_centre",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "kokeetea.com",
+  "url": "https://kokeetea.com/",
+  "name": "Kokee Tea",
+  "category": "cafe",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "portlandpoweryoga.com",
+  "url": "https://www.portlandpoweryoga.com/",
+  "name": "Portland Power Yoga",
+  "category": "fitness_centre",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "dominicanhairsalonocoa-websites.tattoostudio.site",
+  "url": "https://dominicanhairsalonocoa-websites.tattoostudio.site/",
+  "name": "Enve Hair Salon",
+  "category": "hairdresser",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "greasemonkey.com",
+  "url": "https://www.greasemonkey.com/locations/ca/fresno/6504-north-blackstone-avenue",
+  "name": "Grease Monkey",
+  "category": "car_repair",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "vmfa.museum",
+  "url": "https://www.vmfa.museum/visit/dining/best-cafe/",
+  "name": "Best Café",
+  "category": "cafe",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "spadaforelaw.com",
+  "url": "https://www.spadaforelaw.com/",
+  "name": "Spadafore Law",
+  "category": "lawyer",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "lemondropsalon.com",
+  "url": "https://www.lemondropsalon.com/",
+  "name": "Lemon Drop",
+  "category": "hairdresser",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "grismertire.com",
+  "url": "https://www.grismertire.com",
+  "name": "Grismer Tire & Auto Service",
+  "category": "car_repair",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "tracysnailstucson.com",
+  "url": "https://tracysnailstucson.com",
+  "name": "Tracy's Nails",
+  "category": "beauty",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "johnpattersonagency.com",
+  "url": "https://www.johnpattersonagency.com/",
+  "name": "John Patterson - State Farm",
+  "category": "insurance",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "phoenixanimalhospital.com",
+  "url": "https://www.phoenixanimalhospital.com/",
+  "name": "Phoenix Animal Hospital",
+  "category": "veterinary",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "rabbitholeasheville.com",
+  "url": "https://www.rabbitholeasheville.com/",
+  "name": "Rabbit Hole",
+  "category": "cafe",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "kokosbraidingsalon.com",
+  "url": "https://kokosbraidingsalon.com",
+  "name": "Koko's African Braiding Salon",
+  "category": "hairdresser",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "medfordfood.coop",
+  "url": "https://medfordfood.coop/cafe",
+  "name": "The café",
+  "category": "cafe",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "peachnails7308.simplepos.us",
+  "url": "https://peachnails7308.simplepos.us",
+  "name": "Peach Nails",
+  "category": "beauty",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "goldsgym.com",
+  "url": "https://www.goldsgym.com/richmondsouthsideva/",
+  "name": "Gold's Gym",
+  "category": "fitness_centre",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "westparkbarber.com",
+  "url": "https://westparkbarber.com/",
+  "name": "Premier Barber Shop",
+  "category": "hairdresser",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "crimsoncup.com",
+  "url": "https://www.crimsoncup.com/",
+  "name": "Crimson Cup Coffee Shop",
+  "category": "cafe",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "limenbasilca.com",
+  "url": "https://www.limenbasilca.com/",
+  "name": "TeaZona",
+  "category": "cafe",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "jtechconst.com",
+  "url": "https://jtechconst.com/",
+  "name": "J-Tech Construction and Solar",
+  "category": "roofer",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "prontoinsurance.com",
+  "url": "https://www.prontoinsurance.com/agentdetail/fresno-car-insurance-n-blackstone-ave",
+  "name": "Pronto Insurance Agency",
+  "category": "insurance",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "professionalautobodybend.com",
+  "url": "https://www.professionalautobodybend.com/",
+  "name": "Professional Auto Body",
+  "category": "car_repair",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "revecyclingstudio.com",
+  "url": "https://www.revecyclingstudio.com/",
+  "name": "Rêve Cycling Studio",
+  "category": "fitness_centre",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "sbi-omaha.com",
+  "url": "https://www.sbi-omaha.com/sw/swchannel/homepage/internet/schomepage.asp?traffictype=Direct",
+  "name": "Ambition Salon",
+  "category": "hairdresser",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "azsmiledentist.com",
+  "url": "https://azsmiledentist.com/",
+  "name": "AZ Smile Dentist",
+  "category": "dentist",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "whitecastleroofing.com",
+  "url": "https://whitecastleroofing.com/",
+  "name": "White Castle Roofing",
+  "category": "roofer",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "supri.us",
+  "url": "https://supri.us/",
+  "name": "Supri",
+  "category": "cafe",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "cavilipoasheville.com",
+  "url": "https://cavilipoasheville.com",
+  "name": "Cavi-Lipo Asheville",
+  "category": "beauty",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "briankreulmd.com",
+  "url": "https://briankreulmd.com/",
+  "name": "Brian Kreul, MD, PC",
+  "category": "doctors",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "castrolawgrp.com",
+  "url": "http://www.castrolawgrp.com/",
+  "name": "Castro Law Group, PC",
+  "category": "lawyer",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "rootscafeme.com",
+  "url": "https://rootscafeme.com/",
+  "name": "Roots Cafe",
+  "category": "cafe",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "caminosecopetclinic.com",
+  "url": "https://caminosecopetclinic.com",
+  "name": "Camino Seco Pet Clinic",
+  "category": "veterinary",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "ymcarichmond.org",
+  "url": "https://www.ymcarichmond.org/locations/frank-j-thornton-ymca-aquatic-center",
+  "name": "Frank J. Thornton YMCA Aquatic Center",
+  "category": "fitness_centre",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "oberers.com",
+  "url": "http://www.oberers.com/columbus-oh-florists.html",
+  "name": "Oberer's Flowers",
+  "category": "florist",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "nightmovesbread.com",
+  "url": "https://nightmovesbread.com/",
+  "name": "Night Moves Bread",
+  "category": "bakery",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "parkerautoaz.com",
+  "url": "https://www.parkerautoaz.com",
+  "name": "Parker Automotive",
+  "category": "car_repair",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "starr-law.com",
+  "url": "https://starr-law.com/",
+  "name": "Law Office of Leonard E. Starr, III,",
+  "category": "lawyer",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "waxxpot.com",
+  "url": "https://waxxpot.com/locations/short-north/",
+  "name": "Waxxpoint",
+  "category": "beauty",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "regissalons.com",
+  "url": "https://www.regissalons.com/",
+  "name": "Regis",
+  "category": "hairdresser",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "bendbrows.com",
+  "url": "https://www.BendBrows.com",
+  "name": "Bend Brows and Beauty",
+  "category": "beauty",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "spa-w.com",
+  "url": "https://spa-w.com/",
+  "name": "Spa W",
+  "category": "beauty",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "glenallendentalarts.com",
+  "url": "https://www.glenallendentalarts.com/",
+  "name": "Glen Allen Dental Arts",
+  "category": "dentist",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "bywoops.com",
+  "url": "https://www.bywoops.com/az-tucson-maingate/",
+  "name": "Woops!",
+  "category": "bakery",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "gcpcmedford.com",
+  "url": "https://www.gcpcmedford.com",
+  "name": "Gastroenterology Consultants, PC",
+  "category": "doctors",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "elcontinentalbarbers.com",
+  "url": "https://www.elcontinentalbarbers.com/",
+  "name": "El Continental Barber Shop",
+  "category": "hairdresser",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "acucascadia.com",
+  "url": "https://www.acucascadia.com/",
+  "name": "Acupuncture Cascadia",
+  "category": "doctors",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "acmeautoradiatorservice.com",
+  "url": "https://www.acmeautoradiatorservice.com/",
+  "name": "Acme Auto Radiator Services, Inc.",
+  "category": "car_repair",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "ashevillemedpeds.com",
+  "url": "https://www.ashevillemedpeds.com/",
+  "name": "Asheville Medicine & Pediatrics",
+  "category": "doctors",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "youngbloodbicycles.com",
+  "url": "https://www.youngbloodbicycles.com/",
+  "name": "Youngblood Bicycles",
+  "category": "bicycle",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "tomadeberry.com",
+  "url": "https://tomadeberry.com",
+  "name": "Tom DeBerry Insurance Agency Inc",
+  "category": "insurance",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "retrofitness.com",
+  "url": "https://retrofitness.com/location/albanynycolonie/",
+  "name": "Retro Fitness",
+  "category": "fitness_centre",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "grangeinsurance.com",
+  "url": "https://www.grangeinsurance.com",
+  "name": "Grange Insurance",
+  "category": "insurance",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "cwccpas.com",
+  "url": "https://cwccpas.com/",
+  "name": "Culver CPA Group",
+  "category": "accountant",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "makeupbysonia.net",
+  "url": "https://makeupbysonia.net/",
+  "name": "Sonia Tello",
+  "category": "beauty",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "dan-the-baker.com",
+  "url": "https://dan-the-baker.com",
+  "name": "Dan the Baker",
+  "category": "bakery",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "recyclebikeshop.net",
+  "url": "https://recyclebikeshop.net",
+  "name": "Re-CYCLE Bike Shop",
+  "category": "bicycle",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "dentistexam.com",
+  "url": "https://dentistexam.com/",
+  "name": "Lovik Mirzaeian DDS",
+  "category": "dentist",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "mwg.aaa.com",
+  "url": "https://mwg.aaa.com/agent-office-locations/ca/fresno/aaa-fresno-fig-garden-village-branch",
+  "name": "AAA Insurance",
+  "category": "insurance",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "target.com",
+  "url": "https://www.target.com/sl/columbus-nw/666",
+  "name": "Target Optical",
+  "category": "optician",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "gordosbakery.com",
+  "url": "https://www.gordosbakery.com/",
+  "name": "Gordos Bakery",
+  "category": "bakery",
+  "metro": "Chattanooga TN"
+ },
+ {
+  "host": "midwesthealthins.com",
+  "url": "https://www.midwesthealthins.com",
+  "name": "Health Insurance Experts LLC",
+  "category": "insurance",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "hurstmechanical.com",
+  "url": "https://www.hurstmechanical.com",
+  "name": "Hurst Mechanical",
+  "category": "hvac",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "autowrecking.com",
+  "url": "https://www.autowrecking.com/",
+  "name": "B&R Autowrecking",
+  "category": "car_repair",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "yankeecustomtruck.com",
+  "url": "https://www.yankeecustomtruck.com/",
+  "name": "Yankee Custom",
+  "category": "car_repair",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "grovesmiles.com",
+  "url": "https://www.grovesmiles.com/",
+  "name": "Grove Avenue Family Dentistry",
+  "category": "dentist",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "litlifeyoga.com",
+  "url": "https://litlifeyoga.com/",
+  "name": "LIT Life + Yoga",
+  "category": "fitness_centre",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "blissanimaleyecare.com",
+  "url": "https://www.blissanimaleyecare.com/",
+  "name": "Bliss Animal Eye Care",
+  "category": "veterinary",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "worldofinsurancemedford.com",
+  "url": "https://www.worldofinsurancemedford.com/",
+  "name": "World of Insurance",
+  "category": "insurance",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "nailyeah.com",
+  "url": "https://nailyeah.com/",
+  "name": "Nail Yeah",
+  "category": "beauty",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "electricraystanning.com",
+  "url": "https://www.electricraystanning.com/boise",
+  "name": "Electric Rays Tanning",
+  "category": "beauty",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "landownerattorneys.com",
+  "url": "https://landownerattorneys.com/",
+  "name": "Sever Storey, LLP",
+  "category": "lawyer",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "copcp.com",
+  "url": "https://copcp.com",
+  "name": "Family Medicine North",
+  "category": "doctors",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "roll.shop",
+  "url": "https://www.roll.shop/about/roll-bexley-pg194.htm#",
+  "name": "Roll",
+  "category": "bicycle",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "canyonroofing.com",
+  "url": "https://www.canyonroofing.com",
+  "name": "Canyon Roofing",
+  "category": "roofer",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "reservations.waxcenter.com",
+  "url": "https://reservations.waxcenter.com/webstoreNew/services/d3d8ac20-9782-42c8-955a-f33353c26c54",
+  "name": "European Wax Center",
+  "category": "beauty",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "oakheartvet.com",
+  "url": "https://oakheartvet.com/south-saunders/",
+  "name": "Oak Heart Veterinary Hospital",
+  "category": "veterinary",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "thebikeunion.org",
+  "url": "http://www.thebikeunion.org/",
+  "name": "The Bike Union",
+  "category": "bicycle",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "carolinaendocrine.com",
+  "url": "https://www.carolinaendocrine.com/contact-us/",
+  "name": "Carolina Endocrine PA",
+  "category": "doctors",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "tmnailsparaleigh.com",
+  "url": "https://tmnailsparaleigh.com/",
+  "name": "TM nail spa",
+  "category": "beauty",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "cafefrancaisaz.com",
+  "url": "https://www.cafefrancaisaz.com/",
+  "name": "Cafe Francais",
+  "category": "bakery",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "puppydognursery.com",
+  "url": "https://puppydognursery.com/",
+  "name": "Puppy Dog Nursery",
+  "category": "pet",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "advanceddentistryofrichmond.com",
+  "url": "https://advanceddentistryofrichmond.com/",
+  "name": "Advanced Dentistry of Richmond",
+  "category": "dentist",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "makaibylemonshark.com",
+  "url": "https://makaibylemonshark.com/",
+  "name": "Paris Baguette",
+  "category": "bakery",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "nfinsure.com",
+  "url": "https://nfinsure.com/",
+  "name": "National Fidelity Insurance Inc.",
+  "category": "insurance",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "raleighheatingandair.com",
+  "url": "https://www.raleighheatingandair.com/",
+  "name": "Raleigh Heating & Air, Inc.",
+  "category": "hvac",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "tritechmultisport.com",
+  "url": "http://www.tritechmultisport.com/",
+  "name": "Tri Tech Multisport",
+  "category": "bicycle",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "unleashedmutt.com",
+  "url": "https://www.unleashedmutt.com/crabtree-valley-mall",
+  "name": "Unleashed, the Dog & Cat Store",
+  "category": "pet",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "braid-designer.com",
+  "url": "https://braid-designer.com/",
+  "name": "Braids And Dreds",
+  "category": "hairdresser",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "craighowardinsurance.com",
+  "url": "https://www.craighowardinsurance.com/",
+  "name": "Craig Howard Insurance Agency",
+  "category": "insurance",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "spokanepediatrics.org",
+  "url": "https://www.spokanepediatrics.org/",
+  "name": "Spokane Pediatrics",
+  "category": "doctors",
+  "metro": "Spokane WA"
+ },
+ {
+  "host": "plattdentalstudio.com",
+  "url": "https://www.plattdentalstudio.com/",
+  "name": "Platt Dental Studio",
+  "category": "dentist",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "thresakosanouvong.glossgenius.com",
+  "url": "https://thresakosanouvong.glossgenius.com/",
+  "name": "Lotus Rising Mind Body Soul",
+  "category": "beauty",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "hiltzheimer.com",
+  "url": "https://www.hiltzheimer.com/raleigh-criminal-defense/",
+  "name": "Hiltzheimer Law Office, PLLC",
+  "category": "lawyer",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "bullardmarksveterinarymedicalcenter.com",
+  "url": "https://bullardmarksveterinarymedicalcenter.com/",
+  "name": "Bullard Marks Veterinary Medical Center",
+  "category": "veterinary",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "dirkwinklerlaw.com",
+  "url": "https://dirkwinklerlaw.com/",
+  "name": "Winkler Legal",
+  "category": "lawyer",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "nidentistry.com",
+  "url": "https://nidentistry.com/",
+  "name": "New Image Dentistry",
+  "category": "dentist",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "butterthebread.com",
+  "url": "https://butterthebread.com/",
+  "name": "Bread and Butter",
+  "category": "bakery",
+  "metro": "Chattanooga TN"
+ },
+ {
+  "host": "ramsowersauto.com",
+  "url": "https://www.ramsowersauto.com/",
+  "name": "Ramsowers Automotive",
+  "category": "car_repair",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "injuredworkerslawfirm.com",
+  "url": "https://www.injuredworkerslawfirm.com",
+  "name": "Injured Workers Law Firm",
+  "category": "lawyer",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "hubercars.net",
+  "url": "https://www.hubercars.net/",
+  "name": "Huber Chevrolet Service",
+  "category": "car_repair",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "butchershopfitness.com",
+  "url": "https://www.butchershopfitness.com",
+  "name": "The Butcher Shop Fitness",
+  "category": "fitness_centre",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "phagans-schools.com",
+  "url": "https://www.phagans-schools.com/",
+  "name": "Phagans' Central Oregon Beauty College",
+  "category": "beauty",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "andingfamilydental.com",
+  "url": "https://andingfamilydental.com/",
+  "name": "Anding Family Dental - Omaha",
+  "category": "dentist",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "boulevardanimal.com",
+  "url": "https://www.boulevardanimal.com/",
+  "name": "Boulevard Animal Hospital",
+  "category": "veterinary",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "hubercadillac.net",
+  "url": "http://www.hubercadillac.net/service",
+  "name": "Huber Cadillac Service",
+  "category": "car_repair",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "bluemoonfitness.com",
+  "url": "https://bluemoonfitness.com/",
+  "name": "Blue Moon Fitness",
+  "category": "fitness_centre",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "northcarolinahealth.org",
+  "url": "https://www.northcarolinahealth.org/",
+  "name": "Osborne Insurance Services",
+  "category": "insurance",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "pacdentalgroup.com",
+  "url": "https://www.pacdentalgroup.com/",
+  "name": "Pacific Dental Group",
+  "category": "dentist",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "dbgcrossfit.com",
+  "url": "https://www.dbgcrossfit.com/",
+  "name": "DBG CrossFit",
+  "category": "fitness_centre",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "solterrahome.us",
+  "url": "https://solterrahome.us",
+  "name": "SolTerra",
+  "category": "roofer",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "karenhamiltonlaw.com",
+  "url": "https://www.karenhamiltonlaw.com/",
+  "name": "Karen E. Hamilton",
+  "category": "lawyer",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "evanjosephsalon.com",
+  "url": "https://www.evanjosephsalon.com/",
+  "name": "Evan Joseph Salon",
+  "category": "hairdresser",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "johnsonair.com",
+  "url": "https://johnsonair.com/",
+  "name": "Johnson Air Products",
+  "category": "hvac",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "goodmedicinecollective.org",
+  "url": "https://goodmedicinecollective.org/",
+  "name": "Good Medicine",
+  "category": "fitness_centre",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "divas-hair-salon.lany.io",
+  "url": "https://divas-hair-salon.lany.io/",
+  "name": "Diva's Hair Salon",
+  "category": "hairdresser",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "lakewayvetor.com",
+  "url": "https://lakewayvetor.com/",
+  "name": "Lakeway Veterinary Hospital",
+  "category": "veterinary",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "dermatologyboise.com",
+  "url": "https://www.dermatologyboise.com/locations/curtis-road",
+  "name": "Treasure Valley Dermatology",
+  "category": "doctors",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "asiridental.com",
+  "url": "http://asiridental.com/",
+  "name": "Asiri Dental",
+  "category": "dentist",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "phenixsalonsuites.com",
+  "url": "https://phenixsalonsuites.com/locations-list/",
+  "name": "Phenix Salon Suites",
+  "category": "hairdresser",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "hudsonhair.gallery",
+  "url": "http://hudsonhair.gallery/",
+  "name": "Hudson Hair Gallery",
+  "category": "hairdresser",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "gentledentalnorthgate.com",
+  "url": "http://www.gentledentalnorthgate.com/",
+  "name": "Gentle Dental",
+  "category": "dentist",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "mikeherd.com",
+  "url": "https://www.mikeherd.com",
+  "name": "Mike Herd",
+  "category": "insurance",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "haircarriganhair.com",
+  "url": "https://www.haircarriganhair.com/",
+  "name": "Hair Carrigan",
+  "category": "hairdresser",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "veritext.com",
+  "url": "https://www.veritext.com/fresno/",
+  "name": "Veritext Legal Solutions",
+  "category": "lawyer",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "khistidentalcenter.com",
+  "url": "https://www.khistidentalcenter.com/",
+  "name": "Khisti Dental Center",
+  "category": "dentist",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "californiaduis.com",
+  "url": "https://californiaduis.com",
+  "name": "Lance Daniel Attorney at Law",
+  "category": "lawyer",
+  "metro": "Sacramento CA"
+ },
+ {
+  "host": "tmcone.com",
+  "url": "https://tmcone.com/en/locations/tmcone-harrison-27",
+  "name": "TMCOne",
+  "category": "doctors",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "collegeviewbarbershop.com",
+  "url": "https://collegeviewbarbershop.com/",
+  "name": "College View Barber Shop & Salon",
+  "category": "hairdresser",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "bigskymotorcycles.com",
+  "url": "https://www.bigskymotorcycles.com/",
+  "name": "Big Sky Motorcylces",
+  "category": "car_repair",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "skinandcancerinstitute.com",
+  "url": "https://skinandcancerinstitute.com/location/fresno/",
+  "name": "Skin and Cancer Institute - Fresno (104)",
+  "category": "doctors",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "bloomingrove.vetstreet.com",
+  "url": "http://bloomingrove.vetstreet.com/",
+  "name": "Bloomingrove Veterinary Hospital",
+  "category": "veterinary",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "travismortonlaw.com",
+  "url": "http://travismortonlaw.com",
+  "name": "Law Offices of Travis Morton, PLLC",
+  "category": "lawyer",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "carefirstanimalhospital.com",
+  "url": "https://www.carefirstanimalhospital.com/",
+  "name": "Care First Animal Hospital",
+  "category": "veterinary",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "idahofitnessacademy.com",
+  "url": "https://idahofitnessacademy.com/",
+  "name": "Idaho Fitness Academy",
+  "category": "fitness_centre",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "fergusonsbikeshop.com",
+  "url": "https://www.fergusonsbikeshop.com/",
+  "name": "Ferguson's Bike Shop",
+  "category": "bicycle",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "meredith.edu",
+  "url": "https://www.meredith.edu/on_campus_services/health_services",
+  "name": "Carroll Health Center",
+  "category": "doctors",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "budgetautomotivetucson.com",
+  "url": "https://budgetautomotivetucson.com/",
+  "name": "Budget Automotive Transmission Repair",
+  "category": "car_repair",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "russoddsraleigh.com",
+  "url": "https://russoddsraleigh.com/",
+  "name": "Russo Dentistry",
+  "category": "dentist",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "chanailspachattanooga.com",
+  "url": "https://chanailspachattanooga.com/",
+  "name": "Cha Nails & Spa",
+  "category": "beauty",
+  "metro": "Chattanooga TN"
+ },
+ {
+  "host": "thedowntowndentists.com",
+  "url": "https://www.thedowntowndentists.com/",
+  "name": "Downtown Dental",
+  "category": "dentist",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "lashdimensions.glossgenius.com",
+  "url": "https://lashdimensions.glossgenius.com",
+  "name": "Lash Dimensions",
+  "category": "beauty",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "arizonabloodandcancerspecialists.com",
+  "url": "https://www.arizonabloodandcancerspecialists.com/arizona-blood-and-cancer-specialists-oro-valley/",
+  "name": "Arizona Blood & Cancer Specialists",
+  "category": "doctors",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "costcutters.com",
+  "url": "https://www.costcutters.com/locations/nearme/haircut/az/tucson/120-s-houghton-rd-ste-102/15572",
+  "name": "Cost Cutters",
+  "category": "hairdresser",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "sopainting.com",
+  "url": "https://www.sopainting.com/",
+  "name": "Southern Oregon Painting",
+  "category": "painter",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "roguecommunityhealth.org",
+  "url": "https://roguecommunityhealth.org/locations/medford-royal-ct-dental/",
+  "name": "Medford Royal Ct. Dental",
+  "category": "dentist",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "stapletondentistry.com",
+  "url": "https://stapletondentistry.com/",
+  "name": "Stapleton Dentistry",
+  "category": "dentist",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "sceniccityneuro.com",
+  "url": "http://www.sceniccityneuro.com/",
+  "name": "Scenic City Neurotherapy",
+  "category": "doctors",
+  "metro": "Chattanooga TN"
+ },
+ {
+  "host": "coxlawboise.com",
+  "url": "https://coxlawboise.com/",
+  "name": "Cox Law, PLLC",
+  "category": "lawyer",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "omgocps.com",
+  "url": "https://www.omgocps.com/",
+  "name": "OMG OCPS",
+  "category": "bakery",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "gentilesflowers.com",
+  "url": "https://www.gentilesflowers.com/",
+  "name": "Lou Gentile's Flower Basket",
+  "category": "florist",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "cncbakery.com",
+  "url": "https://cncbakery.com/",
+  "name": "Cake N Cafe Bakery",
+  "category": "bakery",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "summitdentalhealth.net",
+  "url": "https://summitdentalhealth.net/",
+  "name": "Summit Dental Health",
+  "category": "dentist",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "kalonsalonandspa.us",
+  "url": "https://kalonsalonandspa.us",
+  "name": "Kalon Salon and Spa",
+  "category": "beauty",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "mahoroba-japanese-bakery.myshopify.com",
+  "url": "http://mahoroba-japanese-bakery.myshopify.com",
+  "name": "Mahoroba Japanese Bakery",
+  "category": "bakery",
+  "metro": "Sacramento CA"
+ },
+ {
+  "host": "judytorel.com",
+  "url": "https://judytorel.com/",
+  "name": "Judy Torel Coaching & Training",
+  "category": "fitness_centre",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "velvetgoldminecollective.com",
+  "url": "https://velvetgoldminecollective.com/",
+  "name": "Velvet Goldmine Collective",
+  "category": "beauty",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "purrfectcarevet.com",
+  "url": "https://purrfectcarevet.com/",
+  "name": "Purrfect Care",
+  "category": "veterinary",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "calibratedmechanicalsystems.com",
+  "url": "https://calibratedmechanicalsystems.com",
+  "name": "Calibrated Mechanical Systems LLC",
+  "category": "hvac",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "alvernonoptical-casas-adobes.com",
+  "url": "https://alvernonoptical-casas-adobes.com/?y_source=1_MTU0OTU5MDQtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+  "name": "",
+  "category": "optician",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "sleeplessincolumbus.com",
+  "url": "http://www.sleeplessincolumbus.com",
+  "name": "Saribalas Clinic",
+  "category": "doctors",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "fiestainsurance.com",
+  "url": "https://fiestainsurance.com/stores/fiesta-insurance-and-tax-fresno-california-ca128/",
+  "name": "Fiesta Auto Insurance & Tax Service",
+  "category": "insurance",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "ohiolaw.net",
+  "url": "https://www.ohiolaw.net/",
+  "name": "Wolfe Legal Services - Attorney George Wolfe",
+  "category": "lawyer",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "riseauthenticbaking.com",
+  "url": "https://www.riseauthenticbaking.com/",
+  "name": "Rise Authentic Baking Co.",
+  "category": "bakery",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "hillsrenaut.com",
+  "url": "https://www.hillsrenaut.com/",
+  "name": "Hills Renaut Homen & Hughes",
+  "category": "accountant",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "kellyodom.com",
+  "url": "https://www.kellyodom.com/",
+  "name": "Kelly Odom",
+  "category": "florist",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "clovisinsuranceageny.com",
+  "url": "http://clovisinsuranceageny.com",
+  "name": "Clovis Insurance Agency",
+  "category": "insurance",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "amerititledowntown.com",
+  "url": "https://www.amerititledowntown.com/",
+  "name": "AmeriTitle Downtown",
+  "category": "insurance",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "donnerflower.com",
+  "url": "https://www.donnerflower.com/",
+  "name": "Donner Flower Shop",
+  "category": "florist",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "oakstreet.dental",
+  "url": "https://oakstreet.dental/",
+  "name": "Oak Street Dental",
+  "category": "dentist",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "perfectnailsmedford.com",
+  "url": "https://perfectnailsmedford.com/",
+  "name": "Perfect Nails",
+  "category": "beauty",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "auncurology.com",
+  "url": "https://www.auncurology.com/",
+  "name": "Associated Urologists of North Carolina",
+  "category": "doctors",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "safelite.com",
+  "url": "https://www.safelite.com/stores/Latham",
+  "name": "Safelite AutoGlass",
+  "category": "car_repair",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "ivyrehab.com",
+  "url": "https://www.ivyrehab.com/",
+  "name": "Ivyrehab Physical Therapy",
+  "category": "physiotherapist",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "beicapelli.com",
+  "url": "https://www.beicapelli.com/",
+  "name": "Bei Capelli",
+  "category": "hairdresser",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "goldiedieselaz.com",
+  "url": "http://www.goldiedieselaz.com/",
+  "name": "",
+  "category": "car_repair",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "petvittles.com",
+  "url": "https://petvittles.com/",
+  "name": "Pet Vittles and Wild Bird West",
+  "category": "pet",
+  "metro": "Spokane WA"
+ },
+ {
+  "host": "temcoair.com",
+  "url": "https://temcoair.com/",
+  "name": "Temco AC Repair & Replacement",
+  "category": "hvac",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "stokersstudio.com",
+  "url": "https://www.stokersstudio.com/",
+  "name": "Stokers Studio",
+  "category": "bicycle",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "salonviprva.com",
+  "url": "https://www.salonviprva.com/",
+  "name": "SalonVIP",
+  "category": "hairdresser",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "quickstopautoandtire.com",
+  "url": "https://www.quickstopautoandtire.com/",
+  "name": "Quick Stop Auto & Tire",
+  "category": "car_repair",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "watersedgedentalboise.com",
+  "url": "http://www.watersedgedentalboise.com/",
+  "name": "Water's Edge Dental",
+  "category": "dentist",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "ophthalmicconsultants.com",
+  "url": "https://www.ophthalmicconsultants.com/",
+  "name": "Ophthalmic Consultants of the Capital Region",
+  "category": "doctors",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "springspetmed.com",
+  "url": "https://springspetmed.com/",
+  "name": "Springs Pet Medical Care",
+  "category": "veterinary",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "cool-cuts.edan.io",
+  "url": "https://cool-cuts.edan.io",
+  "name": "Cool Cuts",
+  "category": "hairdresser",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "medicaleyecenter.com",
+  "url": "https://www.medicaleyecenter.com/",
+  "name": "Medical Eye Center",
+  "category": "doctors",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "chroniccareofrichmond.com",
+  "url": "https://chroniccareofrichmond.com/",
+  "name": "Chronic Care of Richmond & Regenerative Medicine",
+  "category": "doctors",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "thephysioshops.com",
+  "url": "https://thephysioshops.com/",
+  "name": "The Physio Shop",
+  "category": "physiotherapist",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "aloyalcompanion.com",
+  "url": "https://aloyalcompanion.com/",
+  "name": "A Loyal Companion",
+  "category": "veterinary",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "atrium-obgyn.com",
+  "url": "http://www.atrium-obgyn.com/",
+  "name": "Atrium Obstetrics & Gynecology",
+  "category": "doctors",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "saintalphonsus.org",
+  "url": "https://www.saintalphonsus.org/location/saint-alphonsus-trauma-services-999-building",
+  "name": "Saint Alphonsus Trauma Services",
+  "category": "doctors",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "adirondackorthodontics.com",
+  "url": "https://adirondackorthodontics.com/",
+  "name": "Adirondack Orthodontics",
+  "category": "dentist",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "kaylorelectric.com",
+  "url": "http://www.kaylorelectric.com/",
+  "name": "Kaylor Electric",
+  "category": "electrician",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "1sourceportableair.com",
+  "url": "https://1sourceportableair.com/",
+  "name": "1 Source Portable Air",
+  "category": "hvac",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "vangolds.com",
+  "url": "https://vangolds.com/",
+  "name": "Vangolds",
+  "category": "insurance",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "turnersbarbershop.com",
+  "url": "https://turnersbarbershop.com/home/",
+  "name": "Turner's Barber Shop",
+  "category": "hairdresser",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "apsaraspa.com",
+  "url": "https://apsaraspa.com/",
+  "name": "Apsara Spa",
+  "category": "beauty",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "whhcpas.com",
+  "url": "https://whhcpas.com/",
+  "name": "Wieve Hinton Hambalek, LLP",
+  "category": "accountant",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "larsenlaw.com",
+  "url": "https://larsenlaw.com/",
+  "name": "Larsen Law",
+  "category": "lawyer",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "greenstreetcycles.com",
+  "url": "https://greenstreetcycles.com/",
+  "name": "Greenstreet Cycles",
+  "category": "bicycle",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "shoptheflowergirl.com",
+  "url": "https://www.shoptheflowergirl.com/",
+  "name": "The Flower Girl",
+  "category": "florist",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "bevibrantmedspa.com",
+  "url": "https://bevibrantmedspa.com/",
+  "name": "Vibrant Med Spa",
+  "category": "beauty",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "theblowoutbar.com",
+  "url": "https://theblowoutbar.com",
+  "name": "The Blowout Bar",
+  "category": "hairdresser",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "parpeds.com",
+  "url": "https://parpeds.com/",
+  "name": "Pediatric Associates of Richmond",
+  "category": "doctors",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "beautiful-nails-fresno.edan.io",
+  "url": "https://beautiful-nails-fresno.edan.io/",
+  "name": "",
+  "category": "beauty",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "josiecatalina.glossgenius.com",
+  "url": "https://josiecatalina.glossgenius.com/",
+  "name": "Divine Esthetics",
+  "category": "beauty",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "voguelashesandspa.com",
+  "url": "https://voguelashesandspa.com/richmond/",
+  "name": "Vogue Lashes & Spa",
+  "category": "hairdresser",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "stantscombustion.com",
+  "url": "https://stantscombustion.com/",
+  "name": "Stants Combustion",
+  "category": "hvac",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "kindlingcompany.com",
+  "url": "https://www.kindlingcompany.com/",
+  "name": "The Kindling Company",
+  "category": "florist",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "proactivept.com",
+  "url": "https://proactivept.com/find-a-location/oro-valley",
+  "name": "ProActive Physical Therapy",
+  "category": "physiotherapist",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "pinestreetbarbershop.com",
+  "url": "http://www.pinestreetbarbershop.com/",
+  "name": "Pine Street Barber Shop",
+  "category": "hairdresser",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "yellowdogbread.com",
+  "url": "http://yellowdogbread.com",
+  "name": "Yellow Dog Bread Company",
+  "category": "bakery",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "geelawfirm.com",
+  "url": "https://geelawfirm.com/",
+  "name": "Gee Law Firm",
+  "category": "lawyer",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "garlandanimalclinic.com",
+  "url": "https://www.garlandanimalclinic.com/",
+  "name": "Garland Animal Clinic",
+  "category": "veterinary",
+  "metro": "Spokane WA"
+ },
+ {
+  "host": "battistiansbro.com",
+  "url": "https://battistiansbro.com",
+  "name": "Battisti & Ansbro",
+  "category": "lawyer",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "citystationdental.com",
+  "url": "https://www.citystationdental.com/",
+  "name": "City Station Dental",
+  "category": "dentist",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "bendpilates.net",
+  "url": "https://bendpilates.net/",
+  "name": "Bend Pilates",
+  "category": "fitness_centre",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "mediterraneanbakeryanddeli.net",
+  "url": "http://mediterraneanbakeryanddeli.net/",
+  "name": "Mediterranean Bakery and Deli",
+  "category": "bakery",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "bestfriendstalent.com",
+  "url": "http://bestfriendstalent.com/",
+  "name": "Best Friends Animal Hospital",
+  "category": "veterinary",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "brenovationshvac.com",
+  "url": "https://brenovationshvac.com/",
+  "name": "Brenovations HVAC",
+  "category": "hvac",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "thebeautycovesalon.com",
+  "url": "https://thebeautycovesalon.com/",
+  "name": "The Beauty Cove",
+  "category": "beauty",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "ptsdlawyers.com",
+  "url": "https://ptsdlawyers.com",
+  "name": "Berry Law",
+  "category": "lawyer",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "dsmontessori.org",
+  "url": "https://www.dsmontessori.org/",
+  "name": "Burn Boot Camp",
+  "category": "fitness_centre",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "idemploymentlawyers.com",
+  "url": "https://www.idemploymentlawyers.com/",
+  "name": "Idaho Employment Lawyers",
+  "category": "lawyer",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "stores.pearlevision.com",
+  "url": "http://stores.pearlevision.com/21088977/columbus-oh/",
+  "name": "Pearle Vision",
+  "category": "optician",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "coastalpaintingrva.com",
+  "url": "https://www.coastalpaintingrva.com/",
+  "name": "Coastal Painting",
+  "category": "painter",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "primedentalaz.com",
+  "url": "https://www.primedentalaz.com",
+  "name": "Prime Dental",
+  "category": "dentist",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "robertaxleproject.com",
+  "url": "https://robertaxleproject.com/",
+  "name": "The Robert Axle Project",
+  "category": "bicycle",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "mannysaenz.com",
+  "url": "https://www.mannysaenz.com/",
+  "name": "State Farm",
+  "category": "insurance",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "gritton.com",
+  "url": "https://gritton.com/",
+  "name": "Gritton",
+  "category": "hvac",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "uavethospital.com",
+  "url": "https://www.uavethospital.com/",
+  "name": "Upper Arlington Veterinary Hospital",
+  "category": "veterinary",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "pattonavenuepet.com",
+  "url": "https://www.pattonavenuepet.com/locations/west-asheville/",
+  "name": "Patton Avenue Pet Company",
+  "category": "pet",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "reed-cycle.com",
+  "url": "http://www.reed-cycle.com/",
+  "name": "Reed Cycle",
+  "category": "bicycle",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "mytucsoninsurance.com",
+  "url": "https://www.mytucsoninsurance.com/",
+  "name": "State Farm",
+  "category": "insurance",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "rutlandanimalhospital.com",
+  "url": "https://www.rutlandanimalhospital.com/",
+  "name": "Rutland Animal Hospital",
+  "category": "veterinary",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "enterpriseinsagency.com",
+  "url": "http://enterpriseinsagency.com",
+  "name": "Enterprise Insurance Agency",
+  "category": "insurance",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "tucsoncolorspecialist.com",
+  "url": "https://tucsoncolorspecialist.com/",
+  "name": "Desert Beauty Salon & Spa",
+  "category": "beauty",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "aecspokane.com",
+  "url": "https://www.aecspokane.com/",
+  "name": "Animal Emergency Clinic",
+  "category": "veterinary",
+  "metro": "Spokane WA"
+ },
+ {
+  "host": "rocksandropes.com",
+  "url": "https://rocksandropes.com/",
+  "name": "The BLOC climbing + fitness",
+  "category": "fitness_centre",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "dnapersonaltraining.com",
+  "url": "https://dnapersonaltraining.com/",
+  "name": "DNA Personal Training",
+  "category": "fitness_centre",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "drakespaint.com",
+  "url": "https://drakespaint.com/",
+  "name": "Drake's Paint & Supply",
+  "category": "painter",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "4vlaw.com",
+  "url": "http://www.4vlaw.com/",
+  "name": "VLR Law Office",
+  "category": "lawyer",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "avalonsuitesomaha.com",
+  "url": "https://www.avalonsuitesomaha.com/",
+  "name": "Avalon Suites Salon & Spa",
+  "category": "hairdresser",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "idahoveterinarysurgery.com",
+  "url": "https://idahoveterinarysurgery.com/",
+  "name": "Veterinary Orthopedic & Surgical Care Center",
+  "category": "veterinary",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "zachsbarbershop.com",
+  "url": "https://zachsbarbershop.com",
+  "name": "Zach's Barbershop",
+  "category": "hairdresser",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "locations.acceptance.com",
+  "url": "https://locations.acceptance.com/tucson-az-85716/",
+  "name": "Acceptance Insurance",
+  "category": "insurance",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "firstladynails.net",
+  "url": "http://firstladynails.net/",
+  "name": "First Lady Nails",
+  "category": "beauty",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "logan-inc.com",
+  "url": "https://www.logan-inc.com",
+  "name": "Logan Services A/C, Heat & Plumbing",
+  "category": "hvac",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "aaaactionpainting.com",
+  "url": "https://www.aaaactionpainting.com/",
+  "name": "AAA Action Painting",
+  "category": "painter",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "salonsbyjc.com",
+  "url": "https://www.salonsbyjc.com",
+  "name": "Salons by JC",
+  "category": "hairdresser",
+  "metro": "Chattanooga TN"
+ },
+ {
+  "host": "youthfulbeginnings.com",
+  "url": "https://youthfulbeginnings.com/",
+  "name": "Youthful Beginnings Medi Spa",
+  "category": "beauty",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "wnclawyers.com",
+  "url": "https://wnclawyers.com",
+  "name": "Scott K. Dillin, Attorney at Law;Asheville Area Attorneys",
+  "category": "lawyer",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "brackettstveterinaryclinic.com",
+  "url": "http://www.brackettstveterinaryclinic.com/",
+  "name": "Brackett Street Veterinary Clinic",
+  "category": "veterinary",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "arborplumbing.com",
+  "url": "https://arborplumbing.com/",
+  "name": "Arbor Plumbing & NC Backflow",
+  "category": "plumber",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "veritasintegrativemedicine.com",
+  "url": "https://veritasintegrativemedicine.com/",
+  "name": "Veritas Integrative Medicine",
+  "category": "doctors",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "efbrooks.com",
+  "url": "https://efbrooks.com/",
+  "name": "Edwin F. Brooks, Attorney at Law",
+  "category": "lawyer",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "belllapcycleworks.com",
+  "url": "https://belllapcycleworks.com/lafayette-village/",
+  "name": "Bell Lap Cycleworks",
+  "category": "bicycle",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "dogmagrooming.com",
+  "url": "https://www.dogmagrooming.com/",
+  "name": "Dogma Grooming & Pet Needs",
+  "category": "pet",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "wmyhealth.org",
+  "url": "https://www.wmyhealth.org",
+  "name": "Whiteney & Young Health",
+  "category": "doctors",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "tucsonveterinaryurgentcare.com",
+  "url": "https://tucsonveterinaryurgentcare.com/",
+  "name": "Tucson Veterinary Urgent Care",
+  "category": "veterinary",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "ilovekickboxing.com",
+  "url": "https://www.ilovekickboxing.com/boise",
+  "name": "iLoveKickboxing",
+  "category": "fitness_centre",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "bitethisbyannie.com",
+  "url": "https://www.bitethisbyannie.com",
+  "name": "Bite This",
+  "category": "bakery",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "columbuslaser.com",
+  "url": "https://columbuslaser.com/",
+  "name": "Columbus Laser & Cataract Center",
+  "category": "doctors",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "merrimonflorist.com",
+  "url": "https://www.merrimonflorist.com/",
+  "name": "Merrimon Florist",
+  "category": "florist",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "kdroofing.com",
+  "url": "https://kdroofing.com/",
+  "name": "K D Roofing Inc",
+  "category": "roofer",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "nailholixdublin.com",
+  "url": "https://nailholixdublin.com/",
+  "name": "Nailholix",
+  "category": "beauty",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "zubakery.com",
+  "url": "https://www.zubakery.com",
+  "name": "Zu Bakery",
+  "category": "bakery",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "conroysflowersfresno.com",
+  "url": "https://www.conroysflowersfresno.com/",
+  "name": "Conroy's Flowers",
+  "category": "florist",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "allamericanfamilybarbershop.com",
+  "url": "http://www.allamericanfamilybarbershop.com/",
+  "name": "All American Family Barbershop",
+  "category": "hairdresser",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "flowersbyzoie.com",
+  "url": "https://www.flowersbyzoie.com/",
+  "name": "Flowers By Zoie",
+  "category": "florist",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "allusionshairandnails.com",
+  "url": "http://www.allusionshairandnails.com/",
+  "name": "Allusions Hair and Nails",
+  "category": "hairdresser",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "roofrepairtucson.com",
+  "url": "https://roofrepairtucson.com",
+  "name": "Franco Roofing Systems",
+  "category": "roofer",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "dukesbarbershop.com",
+  "url": "https://www.dukesbarbershop.com/",
+  "name": "Dukes Barber Shop of Albany",
+  "category": "hairdresser",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "theexpertaccountant.com",
+  "url": "https://theexpertaccountant.com",
+  "name": "The Expert Accountant",
+  "category": "accountant",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "mygreenform.com",
+  "url": "https://mygreenform.com/",
+  "name": "GreenForm Construction",
+  "category": "roofer",
+  "metro": "Chattanooga TN"
+ },
+ {
+  "host": "booboobeancafe.com",
+  "url": "http://www.booboobeancafe.com/",
+  "name": "Boo Boo Bean",
+  "category": "bakery",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "irstaxpros.com",
+  "url": "https://irstaxpros.com/",
+  "name": "Timothy S Hart Law Group, P.C.",
+  "category": "lawyer",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "germanvillagechiro.com",
+  "url": "https://www.germanvillagechiro.com/",
+  "name": "German Village Chiropractors",
+  "category": "doctors",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "exspurtplumbingomaha.com",
+  "url": "http://exspurtplumbingomaha.com",
+  "name": "Exspurt Plumbing, Inc.",
+  "category": "plumber",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "debenedittoattorneycolumbus.com",
+  "url": "http://debenedittoattorneycolumbus.com",
+  "name": "Umberto Debeneditto Attorney At Law",
+  "category": "lawyer",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "wildcatcrossfit.com",
+  "url": "https://www.wildcatcrossfit.com/",
+  "name": "Wildcat Crossfit",
+  "category": "fitness_centre",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "precisionheatingandcooling.com",
+  "url": "https://www.precisionheatingandcooling.com",
+  "name": "Precision Heating and Cooling",
+  "category": "hvac",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "tanefflaw.com",
+  "url": "https://tanefflaw.com",
+  "name": "Thomas Taneff Co., LPA",
+  "category": "lawyer",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "prr247.com",
+  "url": "https://www.prr247.com/",
+  "name": "Point Roofing",
+  "category": "roofer",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "lawofficeoffosteraglass.com",
+  "url": "https://www.lawofficeoffosteraglass.com/",
+  "name": "Law Office of Foster A. Glass",
+  "category": "lawyer",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "bensonspet.com",
+  "url": "https://bensonspet.com/",
+  "name": "Benson's Pet Center",
+  "category": "pet",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "therapeuticassociates.com",
+  "url": "https://www.therapeuticassociates.com/locations/oregon/southern-oregon/north-medford/",
+  "name": "North Medford Physical Therapy",
+  "category": "physiotherapist",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "juliewhitaker.com",
+  "url": "https://www.juliewhitaker.com/",
+  "name": "State Farm - Julie Whitaker",
+  "category": "insurance",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "mustashevillebikes.com",
+  "url": "https://www.mustashevillebikes.com/",
+  "name": "MustAsheville Bikes",
+  "category": "bicycle",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "brezelpower.com",
+  "url": "http://www.brezelpower.com",
+  "name": "Brezel",
+  "category": "bakery",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "puntolatinoinsurance.com",
+  "url": "https://puntolatinoinsurance.com",
+  "name": "Punto Latino Insurance",
+  "category": "insurance",
+  "metro": "Chattanooga TN"
+ },
+ {
+  "host": "medford.naturespetmarket.com",
+  "url": "https://medford.naturespetmarket.com/medford/",
+  "name": "Natures Pet Market",
+  "category": "pet",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "brosdoughs.com",
+  "url": "https://brosdoughs.com/",
+  "name": "Bro's doughs",
+  "category": "bakery",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "asucculentday.com",
+  "url": "https://www.asucculentday.com/",
+  "name": "A Succulent Day",
+  "category": "florist",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "farbureauinsurance-mi.com",
+  "url": "https://www.farbureauinsurance-mi.com",
+  "name": "Clark Agency",
+  "category": "insurance",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "larryhamphysicaltherapy.com",
+  "url": "https://www.larryhamphysicaltherapy.com/",
+  "name": "Larry Ham and Associates Physical Therapy",
+  "category": "physiotherapist",
+  "metro": "Spokane WA"
+ },
+ {
+  "host": "markperison.com",
+  "url": "https://www.markperison.com/",
+  "name": "Mark D. Perison, P.A.",
+  "category": "lawyer",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "peakmetal.com",
+  "url": "http://www.peakmetal.com/",
+  "name": "Peak Metal Products",
+  "category": "roofer",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "law.creighton.edu",
+  "url": "https://law.creighton.edu/clinics/abrahams-legal-clinic",
+  "name": "Abrahams Legal Clinc",
+  "category": "lawyer",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "josafatflowers.com",
+  "url": "https://josafatflowers.com/",
+  "name": "Josafat Flowers",
+  "category": "florist",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "lippmanrecupero.com",
+  "url": "https://lippmanrecupero.com",
+  "name": "Lippman Recupero",
+  "category": "lawyer",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "roofcoatingspecialistaz.com",
+  "url": "https://roofcoatingspecialistaz.com",
+  "name": "Roof Coating Specialist Inc.",
+  "category": "roofer",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "levesquelaw.us",
+  "url": "https://www.levesquelaw.us/",
+  "name": "Levesque Law, PLLC",
+  "category": "lawyer",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "vafb.com",
+  "url": "https://www.vafb.com/offices/glen-allen",
+  "name": "Virginia Farm Bureau Insurance;Farm Bureau Insurance",
+  "category": "insurance",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "bulldogins.com",
+  "url": "https://www.bulldogins.com/",
+  "name": "Bulldog Insurance Agency",
+  "category": "insurance",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "dongrantcollcroofing.com",
+  "url": "http://dongrantcollcroofing.com",
+  "name": "Don Grant Co LLC Roofing and Repairs",
+  "category": "roofer",
+  "metro": "Chattanooga TN"
+ },
+ {
+  "host": "getbasicbiscuits.com",
+  "url": "https://getbasicbiscuits.com",
+  "name": "Basic Biscuits, Kindness, and Coffee",
+  "category": "bakery",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "fredloya.com",
+  "url": "https://www.fredloya.com/",
+  "name": "Fred Loya Insurance",
+  "category": "insurance",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "nclawteam.com",
+  "url": "https://nclawteam.com/raleigh-criminal-defense-attorney/sex-crimes/",
+  "name": "Marcilliat & Mills, PLLC",
+  "category": "lawyer",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "melonelawpc.com",
+  "url": "https://www.melonelawpc.com/richmond-va/family-lawyer/",
+  "name": "Melone Hatley, P.C.",
+  "category": "lawyer",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "floraandferndesign.com",
+  "url": "https://www.floraandferndesign.com/",
+  "name": "Flora + Fern Design Co",
+  "category": "florist",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "okfeedaz.com",
+  "url": "https://okfeedaz.com/",
+  "name": "Ok Feed & Supply",
+  "category": "pet",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "tarasoptical.com",
+  "url": "http://www.tarasoptical.com/",
+  "name": "Taras Optical",
+  "category": "optician",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "calltriplecheck.com",
+  "url": "https://www.calltriplecheck.com/",
+  "name": "Triple Check Electric",
+  "category": "electrician",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "servicejohnsonelectrical.com",
+  "url": "https://servicejohnsonelectrical.com",
+  "name": "Johnson Electrical",
+  "category": "electrician",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "tcibenefits.com",
+  "url": "https://www.tcibenefits.com/",
+  "name": "TCI Benefits",
+  "category": "insurance",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "ovenjustice.com",
+  "url": "https://ovenjustice.com/",
+  "name": "Oven Justice Custom Cookies",
+  "category": "bakery",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "locations.cinnabon.com",
+  "url": "https://locations.cinnabon.com/wa/spokane/3709-s-geiger-blvd",
+  "name": "Cinnabon",
+  "category": "bakery",
+  "metro": "Spokane WA"
+ },
+ {
+  "host": "acadiainsurance.com",
+  "url": "https://www.acadiainsurance.com/",
+  "name": "Acadia Insurance",
+  "category": "insurance",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "tucson.thesunnyplumber.com",
+  "url": "http://tucson.thesunnyplumber.com",
+  "name": "The Sunny Plumber Tucson",
+  "category": "plumber",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "myeyedr.com",
+  "url": "https://www.myeyedr.com/",
+  "name": "MyEyeDr.",
+  "category": "optician",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "signatureheatingandcooling.com",
+  "url": "https://www.signatureheatingandcooling.com",
+  "name": "Signature Heating, Cooling & Plumbing",
+  "category": "hvac",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "jc-pt.com",
+  "url": "https://jc-pt.com/",
+  "name": "Jackson County Physical Therapy",
+  "category": "physiotherapist",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "animalclinicgrandrapids.com",
+  "url": "https://www.animalclinicgrandrapids.com/",
+  "name": "Animal Clinic, Inc. Grand Rapids",
+  "category": "veterinary",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "site.krispykreme.com",
+  "url": "https://site.krispykreme.com/tn/chattanooga/5609-brainerd-rd",
+  "name": "Krispy Kreme",
+  "category": "bakery",
+  "metro": "Chattanooga TN"
+ },
+ {
+  "host": "clovisbicycles.com",
+  "url": "https://clovisbicycles.com",
+  "name": "Clovis Bicycle Company",
+  "category": "bicycle",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "thehubcyclerybend.com",
+  "url": "https://thehubcyclerybend.com/",
+  "name": "The Hub Cyclery",
+  "category": "bicycle",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "perfectbalancecpa.com",
+  "url": "https://www.perfectbalancecpa.com/",
+  "name": "Perfect Balance",
+  "category": "accountant",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "gemstateroofing.com",
+  "url": "https://www.gemstateroofing.com/",
+  "name": "Gem State Roofing",
+  "category": "roofer",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "primpainting.com",
+  "url": "https://primpainting.com",
+  "name": "Prim Painting",
+  "category": "painter",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "bendcounseling.com",
+  "url": "http://www.bendcounseling.com/",
+  "name": "Bend Counseling",
+  "category": "doctors",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "grossiflorist.com",
+  "url": "https://grossiflorist.com",
+  "name": "G Rossi Florist Inc",
+  "category": "florist",
+  "metro": "Sacramento CA"
+ },
+ {
+  "host": "stlukesonline.org",
+  "url": "https://www.stlukesonline.org/communities-and-locations/facilities/clinics/st-lukes-surgery-center-boise",
+  "name": "St. Luke's Surgery Center",
+  "category": "doctors",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "bffcpa.com",
+  "url": "https://www.bffcpa.com/",
+  "name": "Freeman Jr Brent F CPA",
+  "category": "accountant",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "paradisegarage.com",
+  "url": "https://www.paradisegarage.com/",
+  "name": "Paradise Garage",
+  "category": "bicycle",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "islermedford.com",
+  "url": "http://www.islermedford.com/",
+  "name": "Isler Medford, LLC",
+  "category": "accountant",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "westmichiganbike.com",
+  "url": "https://www.westmichiganbike.com",
+  "name": "West Michigan Bike and Fitness",
+  "category": "bicycle",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "riversidevetbend.com",
+  "url": "https://www.riversidevetbend.com/",
+  "name": "Riverside Animal Hospital",
+  "category": "veterinary",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "animalhospitaleast.com",
+  "url": "https://animalhospitaleast.com/",
+  "name": "Animal Hospital East",
+  "category": "veterinary",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "dannynewton.com",
+  "url": "https://dannynewton.com",
+  "name": "State Farm",
+  "category": "insurance",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "prairiegrainbreadco.com",
+  "url": "https://www.prairiegrainbreadco.com/",
+  "name": "Prairie Grain Bread Co.",
+  "category": "bakery",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "shandysbakery.com",
+  "url": "https://shandysbakery.com",
+  "name": "Shandy's Bakery",
+  "category": "bakery",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "bassplumbing.net",
+  "url": "https://bassplumbing.net/",
+  "name": "S.C. Bass Plumbing",
+  "category": "plumber",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "scarborough.wbu.com",
+  "url": "https://scarborough.wbu.com/",
+  "name": "Wild Birds Unlimited",
+  "category": "pet",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "thewilliamsbakery.com",
+  "url": "https://www.thewilliamsbakery.com/",
+  "name": "Williams Bakery",
+  "category": "bakery",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "communitycarehealth.org",
+  "url": "https://www.communitycarehealth.org/",
+  "name": "Community Care Health Plan",
+  "category": "insurance",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "lamagiebakery.com",
+  "url": "http://www.lamagiebakery.com/",
+  "name": "La Magie",
+  "category": "bakery",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "sacbikekitchen.org",
+  "url": "https://www.sacbikekitchen.org/",
+  "name": "Sacramento Bicycle Kitchen",
+  "category": "bicycle",
+  "metro": "Sacramento CA"
+ },
+ {
+  "host": "theomahachiropractor.com",
+  "url": "https://www.theomahachiropractor.com/",
+  "name": "Clark Chiropractic Clinic",
+  "category": "doctors",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "mikeparvis.com",
+  "url": "https://www.mikeparvis.com",
+  "name": "Mike Parvis",
+  "category": "insurance",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "whitiespets.com",
+  "url": "https://whitiespets.com/",
+  "name": "Whitie's Pets",
+  "category": "pet",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "poetpets.com",
+  "url": "https://www.poetpets.com/",
+  "name": "Best Friends Animal Hospital Of East Medford",
+  "category": "veterinary",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "europeanbakerymaine.com",
+  "url": "https://www.europeanbakerymaine.com/",
+  "name": "European Bakery",
+  "category": "bakery",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "subrosabakery.com",
+  "url": "http://www.subrosabakery.com/menu/",
+  "name": "Sub Rosa Bakery",
+  "category": "bakery",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "mwlbakery.com",
+  "url": "https://www.mwlbakery.com/",
+  "name": "Made With Love Bakery",
+  "category": "bakery",
+  "metro": "Spokane WA"
+ },
+ {
+  "host": "gorhambike.com",
+  "url": "https://www.gorhambike.com/",
+  "name": "Gorham Bike and Ski",
+  "category": "bicycle",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "chinaprairie.com",
+  "url": "http://chinaprairie.com",
+  "name": "China Prairie Products",
+  "category": "pet",
+  "metro": "Sacramento CA"
+ },
+ {
+  "host": "myrooterman.com",
+  "url": "https://www.myrooterman.com/",
+  "name": "Rooter Man",
+  "category": "plumber",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "mricrop.com",
+  "url": "http://www.mricrop.com/",
+  "name": "Mary Roach Insurance Agency, Inc",
+  "category": "insurance",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "burneyssweetsandmore.com",
+  "url": "https://www.burneyssweetsandmore.com/raleigh",
+  "name": "Burney's Sweets & More",
+  "category": "bakery",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "stores.sunglasshut.com",
+  "url": "https://stores.sunglasshut.com/us/ca/fresno/95-e-via-del-oro?cid=YEXT_A907&y_source=1_MzE2ODk2ODYtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+  "name": "Sunglass Hut",
+  "category": "optician",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "pcimashland.com",
+  "url": "https://pcimashland.com/",
+  "name": "Pacific Crest Integrative Medicine",
+  "category": "doctors",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "kolacherepublic.com",
+  "url": "https://kolacherepublic.com/",
+  "name": "Kolache Republic",
+  "category": "bakery",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "buckinblooms.com",
+  "url": "https://www.buckinblooms.com/",
+  "name": "Buckin' Blooms",
+  "category": "florist",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "waterhouseanimalhospital.com",
+  "url": "https://www.waterhouseanimalhospital.com/",
+  "name": "Waterhouse Animal Hospital",
+  "category": "veterinary",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "velvetpawsrva.com",
+  "url": "https://www.velvetpawsrva.com/",
+  "name": "Velvet Paws",
+  "category": "pet",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "ultimateheatingandair.com",
+  "url": "https://ultimateheatingandair.com/",
+  "name": "Ultimate Heating, Air, & Plumbing",
+  "category": "plumber",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "bent.coffee",
+  "url": "https://www.bent.coffee/",
+  "name": "Chariot Bike Shop",
+  "category": "bicycle",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "inwelectric.com",
+  "url": "https://inwelectric.com/",
+  "name": "Inland Northwest Electric",
+  "category": "electrician",
+  "metro": "Spokane WA"
+ },
+ {
+  "host": "bluepearlvet.com",
+  "url": "https://bluepearlvet.com/",
+  "name": "BluePearl",
+  "category": "veterinary",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "bendaccounting.com",
+  "url": "https://www.bendaccounting.com/",
+  "name": "Bend Accounting",
+  "category": "accountant",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "hutchsbicycles.com",
+  "url": "https://www.hutchsbicycles.com/",
+  "name": "Hutch's Bicycles",
+  "category": "bicycle",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "covenantairesolutions.com",
+  "url": "https://covenantairesolutions.com",
+  "name": "Covenant Aire Solutions",
+  "category": "hvac",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "thebikelibrary.com",
+  "url": "https://thebikelibrary.com/",
+  "name": "",
+  "category": "bicycle",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "schnackel.com",
+  "url": "https://schnackel.com/",
+  "name": "Schnackel Engineers Inc.",
+  "category": "electrician",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "companionpetclinics.com",
+  "url": "http://www.companionpetclinics.com/",
+  "name": "Companion Pet Clinic",
+  "category": "veterinary",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "thereptilezone.com",
+  "url": "http://thereptilezone.com/",
+  "name": "The Reptile Zone",
+  "category": "pet",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "thebicyclethriftshop.org",
+  "url": "https://thebicyclethriftshop.org/",
+  "name": "The Bicycle Thrift Shop",
+  "category": "bicycle",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "pawtownvet.com",
+  "url": "https://pawtownvet.com/",
+  "name": "Pawtown Veterinary Care",
+  "category": "veterinary",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "projectbikebend.com",
+  "url": "https://www.projectbikebend.com/",
+  "name": "Project Bike",
+  "category": "bicycle",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "mudbay.com",
+  "url": "https://mudbay.com/",
+  "name": "Mud Bay",
+  "category": "pet",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "b1bicycles.com",
+  "url": "http://www.b1bicycles.com/",
+  "name": "B1 Bicycles",
+  "category": "bicycle",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "coutureeyeweargallery.com",
+  "url": "https://coutureeyeweargallery.com/",
+  "name": "Couture Eyewear Gallery",
+  "category": "optician",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "covepetcare.com",
+  "url": "https://covepetcare.com",
+  "name": "COVE Pet Care - Columbus",
+  "category": "veterinary",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "foxandfernstyle.com",
+  "url": "https://www.foxandfernstyle.com/",
+  "name": "Fox & Fern Botanical Styling",
+  "category": "florist",
+  "metro": "Chattanooga TN"
+ },
+ {
+  "host": "acorshvac.com",
+  "url": "http://www.acorshvac.com/",
+  "name": "Acors Heating & Air Conditioning",
+  "category": "hvac",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "wellesleyah.com",
+  "url": "https://www.wellesleyah.com",
+  "name": "Wellesley Animal Hospital",
+  "category": "veterinary",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "handlebarashland.com",
+  "url": "https://www.handlebarashland.com/",
+  "name": "The Handlebar",
+  "category": "bicycle",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "dwaynedillscpa.com",
+  "url": "http://www.dwaynedillscpa.com",
+  "name": "Dwayne M Dills CPA PC",
+  "category": "accountant",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "marketbloomscolumbus.com",
+  "url": "https://www.marketbloomscolumbus.com",
+  "name": "Market Blooms",
+  "category": "florist",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "secondwindbend.com",
+  "url": "https://www.secondwindbend.com",
+  "name": "Secondwind",
+  "category": "bicycle",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "bendveterinaryclinic.com",
+  "url": "http://www.bendveterinaryclinic.com/",
+  "name": "Bend Veterinary Clinic",
+  "category": "veterinary",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "vikingair.net",
+  "url": "https://vikingair.net/ac-repair-installation-tucson/",
+  "name": "Viking Heating & Air - AC Repair, Service & Installation of Tucson",
+  "category": "hvac",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "doddroofs.com",
+  "url": "https://www.doddroofs.com/",
+  "name": "Dodd Roofing",
+  "category": "roofer",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "nationwidevision.com",
+  "url": "https://www.nationwidevision.com/locations/az/tucson/tucson-broadway-rd",
+  "name": "Nationwide Vision",
+  "category": "optician",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "bloomsbymarie.com",
+  "url": "https://bloomsbymarie.com/",
+  "name": "Blooms By Marie",
+  "category": "florist",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "northcountryheatcool.com",
+  "url": "http://northcountryheatcool.com",
+  "name": "North Country Heat Air and Appliance Repair",
+  "category": "hvac",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "stoneledgeanimalhospital.com",
+  "url": "https://stoneledgeanimalhospital.com",
+  "name": "Stoneledge Animal Hospital",
+  "category": "veterinary",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "pinemountainsports.com",
+  "url": "https://pinemountainsports.com/",
+  "name": "Pine Mountain Sports",
+  "category": "bicycle",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "motionmakers.com",
+  "url": "https://motionmakers.com/",
+  "name": "Motion Makers Bicycle Shop",
+  "category": "bicycle",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "thirdhand.org",
+  "url": "https://thirdhand.org/",
+  "name": "Third Hand Bicycle Co-op",
+  "category": "bicycle",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "minipetmart.net",
+  "url": "https://minipetmart.net/",
+  "name": "Mini Pet Mart",
+  "category": "pet",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "ashevillehumane.org",
+  "url": "https://ashevillehumane.org",
+  "name": "Asheville Humane Society",
+  "category": "pet",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "tdsmanufacturingllc.com",
+  "url": "https://www.tdsmanufacturingllc.com/",
+  "name": "TDS Manufacturing LLC",
+  "category": "carpenter",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "bendoregonflowershop.com",
+  "url": "https://www.bendoregonflowershop.com/",
+  "name": "Autry's 4 Seasons Florist",
+  "category": "florist",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "biketrikeomaha.com",
+  "url": "https://biketrikeomaha.com",
+  "name": "Bike & Trike Outlet of Omaha",
+  "category": "bicycle",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "capstoneaccounting.com",
+  "url": "https://capstoneaccounting.com/our-offices/medford/",
+  "name": "Capstone Accounting and Tax",
+  "category": "accountant",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "olsencpa.com",
+  "url": "https://olsencpa.com/",
+  "name": "Olsen Hendricks Cpas",
+  "category": "accountant",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "arizonaelectricians.pro",
+  "url": "https://arizonaelectricians.pro/",
+  "name": "Arizona Electricians",
+  "category": "electrician",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "familyvisioncareofrichmond.com",
+  "url": "http://www.FamilyVisionCareOfRichmond.com",
+  "name": "Family Vision Care of Richmond",
+  "category": "optician",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "opticone.com",
+  "url": "http://www.opticone.com/",
+  "name": "Optic One",
+  "category": "optician",
+  "metro": "Spokane WA"
+ },
+ {
+  "host": "chadwickorchids.com",
+  "url": "https://www.chadwickorchids.com/",
+  "name": "Chadwick & Son Orchids, Inc.",
+  "category": "florist",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "raleighresidentialcontractor.com",
+  "url": "https://www.raleighresidentialcontractor.com/",
+  "name": "Otto's Exteriors",
+  "category": "roofer",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "accurateheatingcooling.com",
+  "url": "https://accurateheatingcooling.com/",
+  "name": "Accurate Heating & Cooling",
+  "category": "hvac",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "backlundplumbing.com",
+  "url": "https://backlundplumbing.com/",
+  "name": "Backlund Plumbing",
+  "category": "plumber",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "masterrooter.com",
+  "url": "https://masterrooter.com/home/southwest-idaho-plumbers/meridian-plumbing-services/",
+  "name": "Master Plumbing",
+  "category": "plumber",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "thebarkinglot-hub.com",
+  "url": "https://thebarkinglot-hub.com",
+  "name": "The Barking Lot",
+  "category": "pet",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "leashandcollarsacramento.com",
+  "url": "https://leashandcollarsacramento.com/",
+  "name": "Leash and Collar",
+  "category": "pet",
+  "metro": "Sacramento CA"
+ },
+ {
+  "host": "roguevalleyelectric.com",
+  "url": "https://www.roguevalleyelectric.com/",
+  "name": "Rogue Valley Electric",
+  "category": "electrician",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "alloccasionflowers.com",
+  "url": "http://www.alloccasionflowers.com/",
+  "name": "All Occasion Flowers & Gifts",
+  "category": "florist",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "mydefinitivevision.com",
+  "url": "https://www.mydefinitivevision.com/",
+  "name": "Definitive Vision",
+  "category": "optician",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "sunnysidesports.com",
+  "url": "https://www.sunnysidesports.com/",
+  "name": "Sunnyside Sports",
+  "category": "bicycle",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "healthyhounds.com",
+  "url": "http://healthyhounds.com",
+  "name": "Healthy Hounds Kitchen",
+  "category": "pet",
+  "metro": "Sacramento CA"
+ },
+ {
+  "host": "roofingcontractorsboiseid.com",
+  "url": "https://roofingcontractorsboiseid.com",
+  "name": "Bartlett Homes & Roofing",
+  "category": "roofer",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "focus-pt.com",
+  "url": "https://www.focus-pt.com/",
+  "name": "Focus Physical Therapy",
+  "category": "physiotherapist",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "moderneyesomaha.com",
+  "url": "https://www.moderneyesomaha.com",
+  "name": "ModernEyes Eyecare & Eyewear",
+  "category": "optician",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "seeeyewear.com",
+  "url": "https://www.seeeyewear.com/locations/columbus",
+  "name": "SEE",
+  "category": "optician",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "ride-home.com",
+  "url": "https://www.ride-home.com/",
+  "name": "RIDEHome",
+  "category": "bicycle",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "maynorservices.com",
+  "url": "https://maynorservices.com/",
+  "name": "Maynor",
+  "category": "hvac",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "expressplumbingidaho.com",
+  "url": "https://expressplumbingidaho.com/",
+  "name": "Express Plumbing Heating & Air",
+  "category": "plumber",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "medford.wbu.com",
+  "url": "https://medford.wbu.com/",
+  "name": "Wild Birds Unlimited",
+  "category": "pet",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "healthypetcenters.com",
+  "url": "https://healthypetcenters.com/",
+  "name": "Healthy Pet Center",
+  "category": "pet",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "flowertyme.com",
+  "url": "https://flowertyme.com/",
+  "name": "FlowerTyme on the Plaza",
+  "category": "florist",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "coreyrobbins.com",
+  "url": "https://coreyrobbins.com",
+  "name": "Corey Robbins Painting Company",
+  "category": "painter",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "davidvadneydesigns.com",
+  "url": "https://davidvadneydesigns.com",
+  "name": "David Vadney Designs",
+  "category": "carpenter",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "themagicteam.com",
+  "url": "https://www.themagicteam.com/boise/",
+  "name": "Magic Electric, Plumbing, Heating + Air",
+  "category": "electrician",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "independentroofing.net",
+  "url": "https://www.independentroofing.net/",
+  "name": "Independent Roofing Co.",
+  "category": "roofer",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "columbuseyeworks.com",
+  "url": "https://www.columbuseyeworks.com/",
+  "name": "Columbus Eyeworks",
+  "category": "optician",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "rainbowflowersfresno.com",
+  "url": "http://rainbowflowersfresno.com",
+  "name": "Rainbow Flowers",
+  "category": "florist",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "espinozaheatingandcoolingllc.com",
+  "url": "https://espinozaheatingandcoolingllc.com",
+  "name": "Espinoza Heating and Cooling LLC",
+  "category": "hvac",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "papertrailbookkeepers.com",
+  "url": "https://papertrailbookkeepers.com/",
+  "name": "Paper Trail Bookkeeping",
+  "category": "accountant",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "secsupply.com",
+  "url": "https://www.secsupply.com/albany/",
+  "name": "Security Plumbing & Heating Supply",
+  "category": "plumber",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "elderselectric.com",
+  "url": "http://www.elderselectric.com",
+  "name": "Elder's Electric",
+  "category": "electrician",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "tomwhitecarpentry.com",
+  "url": "https://tomwhitecarpentry.com/",
+  "name": "Tom White Carpentry",
+  "category": "carpenter",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "cmcelectrical.com",
+  "url": "https://cmcelectrical.com/raleigh-electrical-services/",
+  "name": "CMC Electrical & Generator Repair",
+  "category": "electrician",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "rwbandco.com",
+  "url": "https://rwbandco.com/",
+  "name": "RWB & Co.",
+  "category": "accountant",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "benchmarkpt.com",
+  "url": "https://www.benchmarkpt.com/locations/medford/",
+  "name": "BenchMark Physical Therapy",
+  "category": "physiotherapist",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "mechanicsvilleflorist.com",
+  "url": "https://www.mechanicsvilleflorist.com/",
+  "name": "Fruits & Flowers",
+  "category": "florist",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "vogueflowers.com",
+  "url": "https://www.vogueflowers.com/",
+  "name": "Vogue Flower Market",
+  "category": "florist",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "nationalheatandair.com",
+  "url": "https://www.nationalheatandair.com/",
+  "name": "National Heating and Air Conditioning, Inc.",
+  "category": "hvac",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "woolffarming.com",
+  "url": "https://www.woolffarming.com/",
+  "name": "Woolf Enterprises",
+  "category": "accountant",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "visionworks.com",
+  "url": "https://www.visionworks.com/",
+  "name": "Visionworks",
+  "category": "optician",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "centralohioeyecare.com",
+  "url": "https://www.centralohioeyecare.com/",
+  "name": "Central Ohio Eyecare",
+  "category": "optician",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "gx3reptiles.com",
+  "url": "https://www.gx3reptiles.com",
+  "name": "Gx3 Reptiles",
+  "category": "pet",
+  "metro": "Sacramento CA"
+ },
+ {
+  "host": "eyestyles.com",
+  "url": "https://www.eyestyles.com/",
+  "name": "Eye Styles",
+  "category": "optician",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "physicaltherapysolutions.net",
+  "url": "https://physicaltherapysolutions.net",
+  "name": "Physical Therapy Solutions Downtown",
+  "category": "physiotherapist",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "valleyvaluations.com",
+  "url": "https://www.valleyvaluations.com/",
+  "name": "Valley Valuations",
+  "category": "accountant",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "pyramidroof.com",
+  "url": "https://pyramidroof.com/",
+  "name": "Pyramid Roofing, Inc.",
+  "category": "roofer",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "accentonvision.com",
+  "url": "https://www.accentonvision.com/",
+  "name": "Accent on Vision",
+  "category": "optician",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "reichenspergercpa.com",
+  "url": "https://reichenspergercpa.com/",
+  "name": "Fred Reichensperger, CPA",
+  "category": "accountant",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "ashlandpartners.com",
+  "url": "https://ashlandpartners.com/",
+  "name": "Ashland Partners",
+  "category": "accountant",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "dandlroses.com",
+  "url": "https://www.dandlroses.com/",
+  "name": "D & L Flowers",
+  "category": "florist",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "meridian.wbu.com",
+  "url": "https://meridian.wbu.com/",
+  "name": "Wild Birds Unlimited",
+  "category": "pet",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "omahadogpro.com",
+  "url": "https://omahadogpro.com/",
+  "name": "Dog Pro Underground Fences",
+  "category": "carpenter",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "mbsaccountancy.com",
+  "url": "https://mbsaccountancy.com",
+  "name": "MBS Accountancy Corporation",
+  "category": "accountant",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "veteranscontractingllc.com",
+  "url": "https://veteranscontractingllc.com/raleigh-nc/",
+  "name": "V.C. Veterans Contracting LLC",
+  "category": "roofer",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "hvacacs.com",
+  "url": "http://hvacacs.com",
+  "name": "Air Comfort Systems, Inc.",
+  "category": "hvac",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "thompsonknows.com",
+  "url": "https://www.thompsonknows.com/",
+  "name": "Thompson",
+  "category": "electrician",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "skoolzoffish.com",
+  "url": "https://www.skoolzoffish.com/",
+  "name": "Skoolz of Fish",
+  "category": "pet",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "bluffsservices.com",
+  "url": "https://bluffsservices.com/",
+  "name": "Bluffs Electric",
+  "category": "electrician",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "plumberoftucson.com",
+  "url": "https://plumberoftucson.com",
+  "name": "Plumber of Tucson",
+  "category": "plumber",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "evolvepttucson.com",
+  "url": "https://www.evolvepttucson.com",
+  "name": "Evolve",
+  "category": "physiotherapist",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "einsteinplumbing.com",
+  "url": "https://einsteinplumbing.com/",
+  "name": "Einstein Plumbing",
+  "category": "plumber",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "locations.myeyedr.com",
+  "url": "https://locations.myeyedr.com/va/henrico/12241-w-broad-st",
+  "name": "MyEyeDr.",
+  "category": "optician",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "rosebredl.com",
+  "url": "https://rosebredl.com",
+  "name": "Rose Bredl",
+  "category": "florist",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "optimalvisioncare.org",
+  "url": "https://optimalvisioncare.org/",
+  "name": "Optimal Vision Care",
+  "category": "optician",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "bendydog.com",
+  "url": "https://www.bendydog.com/",
+  "name": "Bendy Dog",
+  "category": "pet",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "tailsinfresno.com",
+  "url": "http://www.tailsinfresno.com/",
+  "name": "Tails",
+  "category": "pet",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "mtcheatingandairconditioning.com",
+  "url": "https://mtcheatingandairconditioning.com/",
+  "name": "MTC Heating and Air Conditioning",
+  "category": "hvac",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "nauglercpa.com",
+  "url": "https://www.nauglercpa.com/",
+  "name": "Robert R. Naugler, CPA, PA",
+  "category": "accountant",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "theurbancanine.com",
+  "url": "https://www.theurbancanine.com/",
+  "name": "The Urban Canine",
+  "category": "pet",
+  "metro": "Spokane WA"
+ },
+ {
+  "host": "tmlservice.com",
+  "url": "https://www.tmlservice.com/",
+  "name": "TML Service Experts",
+  "category": "hvac",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "laneplumbingraleigh.com",
+  "url": "https://laneplumbingraleigh.com",
+  "name": "Lane Plumbing",
+  "category": "plumber",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "mypropertyrevolution.com",
+  "url": "https://mypropertyrevolution.com/areas-served/kentwood-mi/",
+  "name": "Property Revolution Roofing and Decks",
+  "category": "roofer",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "jolijardin.co",
+  "url": "https://jolijardin.co/",
+  "name": "Joli Jarden Flower Shop",
+  "category": "florist",
+  "metro": "Chattanooga TN"
+ },
+ {
+  "host": "marineelectric.biz",
+  "url": "https://marineelectric.biz/",
+  "name": "Marine Electric",
+  "category": "electrician",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "sosplumbing.net",
+  "url": "https://www.sosplumbing.net/",
+  "name": "SOS Plumbing and Drain Services",
+  "category": "plumber",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "wildflowersoforegon.net",
+  "url": "https://wildflowersoforegon.net/",
+  "name": "Wild Flowers of Oregon",
+  "category": "florist",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "tbearsfloristandgifts.co",
+  "url": "http://www.tbearsfloristandgifts.co/",
+  "name": "T. Bears Florist & Chocolatier",
+  "category": "florist",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "padgettbusinessservices.com",
+  "url": "https://www.padgettbusinessservices.com",
+  "name": "Padgett Business Services",
+  "category": "accountant",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "sullivanmi.com",
+  "url": "https://sullivanmi.com/",
+  "name": "Sullivan Heating Cooling Plumbing",
+  "category": "hvac",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "stemsmarket.com",
+  "url": "https://www.stemsmarket.com",
+  "name": "Stems Market",
+  "category": "florist",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "centerforpt.net",
+  "url": "https://www.centerforpt.net/",
+  "name": "Center For Physical Therapy and Sports Medicine",
+  "category": "physiotherapist",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "ncllcpa.com",
+  "url": "https://ncllcpa.com/",
+  "name": "Norton Collar Lund Lilley, PLLC",
+  "category": "accountant",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "accessheating.com",
+  "url": "https://accessheating.com",
+  "name": "Access Heating & Air Conditioning",
+  "category": "hvac",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "peach-electric.com",
+  "url": "https://www.peach-electric.com/",
+  "name": "Peach Electric",
+  "category": "electrician",
+  "metro": "Sacramento CA"
+ },
+ {
+  "host": "centraloregoneyecare.com",
+  "url": "https://www.centraloregoneyecare.com/",
+  "name": "Central Oregon Eye Care",
+  "category": "optician",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "shamrockroofer.com",
+  "url": "https://shamrockroofer.com/location/omaha/",
+  "name": "Shamrock Roofing and Construction",
+  "category": "roofer",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "bend.wbu.com",
+  "url": "https://bend.wbu.com/",
+  "name": "Wild Birds Unlimited",
+  "category": "pet",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "indoortemp.com",
+  "url": "https://www.indoortemp.com/",
+  "name": "Fire & Ice Columbus",
+  "category": "hvac",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "jackspets.com",
+  "url": "https://www.jackspets.com/",
+  "name": "Jack's Pets & Aquarium",
+  "category": "pet",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "osbornepainting.com",
+  "url": "https://www.osbornepainting.com/",
+  "name": "Osborne Painting",
+  "category": "painter",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "thesummitpt.com",
+  "url": "https://thesummitpt.com/locations/fig-garden/",
+  "name": "THE SUMMIT Physical Therapy - Fig Garden",
+  "category": "physiotherapist",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "slakey.com",
+  "url": "https://www.slakey.com/",
+  "name": "Slakey Brothers",
+  "category": "hvac",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "dogwashetc.com",
+  "url": "https://dogwashetc.com",
+  "name": "The Dog Wash Etc.",
+  "category": "pet",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "theshinglemaster.com",
+  "url": "https://www.theshinglemaster.com/",
+  "name": "The Shingle Master",
+  "category": "roofer",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "am-cpas.com",
+  "url": "https://am-cpas.com/",
+  "name": "Anatasi, Moore & Martin",
+  "category": "accountant",
+  "metro": "Spokane WA"
+ },
+ {
+  "host": "stranges.com",
+  "url": "https://www.stranges.com/",
+  "name": "Strange's Florist",
+  "category": "florist",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "local.targetoptical.com",
+  "url": "https://local.targetoptical.com/oh/hilliard/4211-trueman-blvd.html",
+  "name": "Target Optical",
+  "category": "optician",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "thecakehound.com",
+  "url": "https://thecakehound.com",
+  "name": "The Cakehound",
+  "category": "pet",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "midtownoptometrync.com",
+  "url": "https://www.midtownoptometrync.com/",
+  "name": "Midtown Optometry",
+  "category": "optician",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "nelsoncontractingllc.com",
+  "url": "https://www.nelsoncontractingllc.com/",
+  "name": "Nelson Contracting LLC",
+  "category": "roofer",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "allfloplumbing.com",
+  "url": "https://www.allfloplumbing.com",
+  "name": "All-Flo Plumbing",
+  "category": "plumber",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "harpercpaplus.com",
+  "url": "https://www.harpercpaplus.com/",
+  "name": "Harper & Company CPA Plus",
+  "category": "accountant",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "adobehvac.com",
+  "url": "https://adobehvac.com",
+  "name": "Adobe HVAC Supply",
+  "category": "hvac",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "oakley.com",
+  "url": "https://www.oakley.com/en/store-finder/store-details/o-store/169-easton-town-center-suite-a102-ohio-columbus-432196074/?storeId=137S137&q=43219",
+  "name": "Oakley",
+  "category": "optician",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "jamesrivermfr.com",
+  "url": "https://jamesrivermfr.com",
+  "name": "James River Myofascial Release",
+  "category": "physiotherapist",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "degreeabovenc.com",
+  "url": "https://www.degreeabovenc.com/",
+  "name": "Degree Above Heating and Air",
+  "category": "hvac",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "stepandspine.urpt.com",
+  "url": "https://stepandspine.urpt.com/locations/bend/",
+  "name": "Step & Spine",
+  "category": "physiotherapist",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "theloveofpete.com",
+  "url": "https://www.theloveofpete.com/",
+  "name": "for the love of pete!",
+  "category": "pet",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "boise.wbu.com",
+  "url": "https://boise.wbu.com/",
+  "name": "Wild Birds Unlimited",
+  "category": "pet",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "prestigioflowers.com",
+  "url": "https://prestigioflowers.com/",
+  "name": "Prestigo Flowers",
+  "category": "florist",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "empireaquatics.com",
+  "url": "https://empireaquatics.com",
+  "name": "empire aquatics",
+  "category": "pet",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "elevatedair.co",
+  "url": "https://www.elevatedair.co",
+  "name": "Elevated Air LLC",
+  "category": "hvac",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "vaeye.com",
+  "url": "http://www.vaeye.com/locations/short-pump-office/",
+  "name": "Virginia Eye Institute",
+  "category": "optician",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "lasermeister.com",
+  "url": "https://www.lasermeister.com/bitcoin.html",
+  "name": "NVision Sacramento (f/k/a Meister Eye & Laser Center)",
+  "category": "optician",
+  "metro": "Sacramento CA"
+ },
+ {
+  "host": "corepttraining.com",
+  "url": "https://corepttraining.com/",
+  "name": "Core Physical Therapy & Training",
+  "category": "physiotherapist",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "enterpriseelectricboise.com",
+  "url": "https://enterpriseelectricboise.com",
+  "name": "Enterprise Electric",
+  "category": "electrician",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "wildbirdjunction.com",
+  "url": "https://www.wildbirdjunction.com/",
+  "name": "Wildbird Junction",
+  "category": "pet",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "pivotphysicaltherapy.com",
+  "url": "https://www.pivotphysicaltherapy.com/locations/raleigh-nc-wake-forest-road/",
+  "name": "Pivot Physical Therapy",
+  "category": "physiotherapist",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "electricianboiseid.com",
+  "url": "https://electricianboiseid.com/",
+  "name": "High Ground Electric",
+  "category": "electrician",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "tkelectricnc.com",
+  "url": "https://www.tkelectricnc.com/",
+  "name": "TK Electric LLC",
+  "category": "electrician",
+  "metro": "Asheville NC"
+ },
+ {
+  "host": "rinkoveyecare.com",
+  "url": "https://www.rinkoveyecare.com/locations/oh/columbus/downtown/",
+  "name": "Rinkov Eyecare Centers",
+  "category": "optician",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "lilliansflowers.placeweb.site",
+  "url": "http://lilliansflowers.placeweb.site/",
+  "name": "Lillian's Flowers",
+  "category": "florist",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "indivisualeyes.com",
+  "url": "https://indivisualeyes.com/",
+  "name": "IndiVisiual Eyes",
+  "category": "optician",
+  "metro": "Sacramento CA"
+ },
+ {
+  "host": "bearcreekphysicaltherapy.com",
+  "url": "https://bearcreekphysicaltherapy.com/",
+  "name": "Bear Creek Physical Therapy",
+  "category": "physiotherapist",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "payneandcompany.com",
+  "url": "https://www.payneandcompany.com",
+  "name": "Payne & Company CPAs, LLC",
+  "category": "accountant",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "arizonapristineroofing.com",
+  "url": "https://www.arizonapristineroofing.com/roofers-near-me/tucson",
+  "name": "Arizona Pristine Roofing LLC",
+  "category": "roofer",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "ridgelinecomfort.com",
+  "url": "https://ridgelinecomfort.com/",
+  "name": "Ridgeline Heating & Cooling",
+  "category": "hvac",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "h2health.com",
+  "url": "https://www.h2health.com/locations/h2-health/richmond-va/",
+  "name": "H2 Rehabilitation",
+  "category": "physiotherapist",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "chatflorist.com",
+  "url": "https://chatflorist.com",
+  "name": "Chattanooga Florist Inc.",
+  "category": "florist",
+  "metro": "Chattanooga TN"
+ },
+ {
+  "host": "sayco.com",
+  "url": "https://sayco.com/",
+  "name": "SAYCO Heating and Air Conditioning",
+  "category": "hvac",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "airmaintenancehvac.com",
+  "url": "https://airmaintenancehvac.com/",
+  "name": "Air Maintenance Heating & Cooling",
+  "category": "hvac",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "fresnocpas.com",
+  "url": "http://www.fresnocpas.com/",
+  "name": "Brar Accountancy Corporation",
+  "category": "accountant",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "aprilsflowersandgifts.com",
+  "url": "https://www.aprilsflowersandgifts.com/",
+  "name": "April's Flowers & Gifts",
+  "category": "florist",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "buckeyecpa.com",
+  "url": "https://buckeyecpa.com/",
+  "name": "Buckeye CPA",
+  "category": "accountant",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "mrelectric.com",
+  "url": "https://mrelectric.com/tucson-southern-az",
+  "name": "Mr. Electric",
+  "category": "electrician",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "nwmartin.com",
+  "url": "https://nwmartin.com",
+  "name": "N. W. Martin & Brothers, Inc.",
+  "category": "roofer",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "cw1924.com",
+  "url": "https://www.cw1924.com/",
+  "name": "Chewning + Wilmer",
+  "category": "electrician",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "vesselmenshealth.com",
+  "url": "https://www.vesselmenshealth.com",
+  "name": "Vessel Men's Health",
+  "category": "physiotherapist",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "centimark.com",
+  "url": "https://www.centimark.com/locations/boise-idaho",
+  "name": "CentiMark",
+  "category": "roofer",
+  "metro": "Boise ID"
+ },
+ {
+  "host": "rinconac.com",
+  "url": "https://www.rinconac.com",
+  "name": "Rincon Air Conditioning & Heating Co.",
+  "category": "hvac",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "ashlandpt.com",
+  "url": "https://ashlandpt.com/",
+  "name": "Ashland Physical Therapy",
+  "category": "physiotherapist",
+  "metro": "Medford OR"
+ },
+ {
+  "host": "giddurdunn.com",
+  "url": "https://giddurdunn.com",
+  "name": "GiddurDunn",
+  "category": "plumber",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "5thavefloral.com",
+  "url": "http://www.5thavefloral.com/",
+  "name": "The 5th Ave Floral Co",
+  "category": "florist",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "mysheetmetalshop.com",
+  "url": "https://mysheetmetalshop.com/",
+  "name": "My Sheet Metal Shop",
+  "category": "hvac",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "rileywiglecpas.com",
+  "url": "https://www.rileywiglecpas.com/",
+  "name": "Riley Wigle",
+  "category": "accountant",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "greatvision.osu.edu",
+  "url": "https://greatvision.osu.edu/",
+  "name": "College of Optometry Clinic",
+  "category": "optician",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "secondchancenc.org",
+  "url": "https://www.secondchancenc.org/",
+  "name": "Second Chance Pet Adoptions",
+  "category": "pet",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "trane.com",
+  "url": "https://www.trane.com",
+  "name": "Trane",
+  "category": "hvac",
+  "metro": "Spokane WA"
+ },
+ {
+  "host": "odmva.com",
+  "url": "https://odmva.com",
+  "name": "Old Dominion Mechanical",
+  "category": "hvac",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "richmond.wbu.com",
+  "url": "https://richmond.wbu.com/",
+  "name": "Wild Birds Unlimited",
+  "category": "pet",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "louiesrestorationplumbing.com",
+  "url": "https://www.louiesrestorationplumbing.com/",
+  "name": "Louies Water Damage & Plumbing",
+  "category": "plumber",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "warbyparker.com",
+  "url": "https://www.warbyparker.com/retail/columbus/601-n-high-st",
+  "name": "Warby Parker",
+  "category": "optician",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "hy-techroofing.com",
+  "url": "https://hy-techroofing.com/",
+  "name": "Hy-Tech Roofing LLC",
+  "category": "roofer",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "stores.warbyparker.com",
+  "url": "https://stores.warbyparker.com/oh/columbus/4049-the-strand-e",
+  "name": "Warby Parker",
+  "category": "optician",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "roofschris.com",
+  "url": "https://roofschris.com/",
+  "name": "Roofs Chris Exteriors",
+  "category": "roofer",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "portlandrenovations.com",
+  "url": "https://portlandrenovations.com/",
+  "name": "Portland Renovations",
+  "category": "carpenter",
+  "metro": "Portland ME"
+ },
+ {
+  "host": "nanasflowershop.com",
+  "url": "https://nanasflowershop.com/",
+  "name": "Nana's Flower Shop",
+  "category": "florist",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "kentgroupcpa.com",
+  "url": "http://kentgroupcpa.com",
+  "name": "The Kent Group",
+  "category": "accountant",
+  "metro": "Tucson AZ"
+ },
+ {
+  "host": "liteitupelectricllc.com",
+  "url": "https://liteitupelectricllc.com/",
+  "name": "Lite It Up Electric",
+  "category": "electrician",
+  "metro": "Spokane WA"
+ },
+ {
+  "host": "theoptical.co",
+  "url": "https://www.theoptical.co",
+  "name": "The Optical Co.",
+  "category": "optician",
+  "metro": "Columbus OH"
+ },
+ {
+  "host": "bsktaxadvisors.com",
+  "url": "https://bsktaxadvisors.com/",
+  "name": "BSK Tax & Accounting Advisors, LLC",
+  "category": "accountant",
+  "metro": "Spokane WA"
+ },
+ {
+  "host": "eyesonwallstbend.com",
+  "url": "https://www.eyesonwallstbend.com/",
+  "name": "Eyes on Wall Street",
+  "category": "optician",
+  "metro": "Bend OR"
+ },
+ {
+  "host": "tomkirklandopticiansrva.com",
+  "url": "http://www.tomkirklandopticiansrva.com/",
+  "name": "Tom Kirkland Opticians",
+  "category": "optician",
+  "metro": "Richmond VA"
+ },
+ {
+  "host": "shopko.com",
+  "url": "https://www.shopko.com/eye-care/ne/omaha/store-044/",
+  "name": "Shopko Optical",
+  "category": "optician",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "rhino-roof.com",
+  "url": "https://rhino-roof.com/",
+  "name": "Rhino Roofing",
+  "category": "roofer",
+  "metro": "Raleigh NC"
+ },
+ {
+  "host": "fixed-rite.com",
+  "url": "https://fixed-rite.com",
+  "name": "Fixed-Rite",
+  "category": "painter",
+  "metro": "Sacramento CA"
+ },
+ {
+  "host": "2020fresno.com",
+  "url": "https://www.2020fresno.com/",
+  "name": "Clovis Vision Center",
+  "category": "optician",
+  "metro": "Fresno CA"
+ },
+ {
+  "host": "wolverineelectrical.com",
+  "url": "https://www.wolverineelectrical.com",
+  "name": "Wolverine Electrical Contracting",
+  "category": "electrician",
+  "metro": "Grand Rapids MI"
+ },
+ {
+  "host": "summit-therapy.com",
+  "url": "https://www.summit-therapy.com/location/hixson/",
+  "name": "Summit Physical Therapy",
+  "category": "physiotherapist",
+  "metro": "Chattanooga TN"
+ },
+ {
+  "host": "scottstackrow.com",
+  "url": "https://www.scottstackrow.com/",
+  "name": "Scott, Stackrow & Co., P.C.",
+  "category": "accountant",
+  "metro": "Albany NY"
+ },
+ {
+  "host": "robertmaxopticians.com",
+  "url": "https://www.robertmaxopticians.com/",
+  "name": "Robert Max Opticians",
+  "category": "optician",
+  "metro": "Omaha NE"
+ },
+ {
+  "host": "azframedoctor.com",
+  "url": "https://www.azframedoctor.com/",
+  "name": "The Frame Doctor",
+  "category": "optician",
+  "metro": "Tucson AZ"
+ }
+]
