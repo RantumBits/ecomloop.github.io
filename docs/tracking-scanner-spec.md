@@ -361,6 +361,31 @@ not available during the build, so the comparison has not been done. Reading
 those ten reports against the manual notes is the next step, and it is Andrew's,
 not the build's.
 
+## Bugs found in review and fixed
+
+Seven, ranked by how badly they would have bitten.
+
+1. **Attribution blamed the theme for tags it did not own.** It searched the
+   rendered DOM, which Tag Manager injects into, so everything looked
+   hard-coded. It now reads the document as the server sent it. Confirmed
+   wrong on live stores before the fix.
+2. **Evidence exceeded Firestore's 1 MiB document limit** on four of ten
+   stores, so permalinks would have failed outright. Stored bundles are now
+   reduced to the requests detection reads.
+3. **The rate limit was silently disabled in production.** Counting the scan
+   log needed a composite index nobody had created; the query threw and the
+   swallowed throw read as "no scans yet". It now reads a counter document and
+   fails closed.
+4. **The client address was spoofable**, so one header reset anyone's quota.
+5. **Deployment ran the in-memory job queue across two instances**, left CPU
+   throttled while scans run after their request returns, and queued progress
+   polls behind the scan they polled.
+6. **A missing-pixel finding could fire while consent gating held every tag
+   back**, telling a store it had no Meta pixel when it had one.
+7. **Nothing waiting on a page had a time ceiling.** Reading a response body
+   and `page.evaluate` both block forever on a slow store, so one store could
+   hold a scan slot open indefinitely.
+
 ## Before it can go live
 
 - Compare the ten reports against the manual findings. Fix detectors, not
