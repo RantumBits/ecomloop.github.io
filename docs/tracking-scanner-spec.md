@@ -278,17 +278,36 @@ week's delay.
 
 Work the tiers top down. One tier per week is enough; the scan log and the
 "was anything wrong" replies from one tier should be read before the next opens.
-Decided 2026-10-01: Tier 1 opens the week of 2026-10-05, after the gate work
-(ground-truth check on the 10 stores, feedback link, API spend limit) lands.
+Tier 1 opened 2026-10-02, the day the gate work (ground-truth check on the 10
+stores, feedback link, API spend limit) reached production as Cloud Run revision
+`tracking-scanner-00009`. The seven-day clock for Tier 2 runs from that date.
 
 *Tier 1: answer existing threads (best fit).*
 
-1. Shopify Community forums (`community.shopify.com`, boards: Ecommerce Marketing,
-   Technical Q&A, Shopify Apps). Reply to existing "why is my pixel firing twice"
-   threads rather than opening a launch thread. Live threads at time of writing:
-   Meta pixel counting one page view as two (t/399974), Events duplication Meta
-   (ecommerce-marketing/m-p/2715903), GA4 purchase firing twice in a GTM store
-   (t/148983), Facebook Ads deduplication (t/401996).
+1. Shopify Community forums (`community.shopify.com`). Reply to existing threads
+   rather than opening a launch thread, and only to threads active in the last
+   month: the four candidates researched on 2026-10-01 turned out to be 18 months
+   to 4 years old, and one URL was dead. Find live ones with the forum's own
+   search (`/search.json?q=<terms> after:<date> order:latest` lists reply counts
+   and last-post dates). Posted 2026-10-02 as `andrew_ecomloop`: "How do you catch
+   it when your Meta Pixel / GA4 / CAPI quietly stops firing?" (t/666988, with
+   link), "Your Shopify store made 20 sales, Meta says 14, Google says 11"
+   (t/683256, with link), "Purchase event fires on homepage load" (t/678989, no
+   link: the scanner does not yet flag a Meta Purchase on a browsing page), and one
+   stale thread (t/399974) before the age rule was set. Agencies are working the
+   same threads by hand with "here is what your page loads" replies, so a reply
+   has to answer the question, not just carry the link.
+
+   Second pass the same day, after scanning the stores named in active threads
+   with the CLI: "Is my store ready for conversions?" (t/607458, arvaneleather.com,
+   no link: Pinterest and Microsoft Ads each sent twice, channel pixel plus a second
+   Customer-events pixel) and "Comprehensive review of my Shopify store" (t/682313,
+   safeina.com, with link: Google Ads run with no conversion tag, no GA4, Clarity
+   returning 400). Scanning the store first and replying with its findings is the
+   reply that beats the agencies' hand-made ones. Caveat learned on arvaneleather:
+   read the saved request URLs before posting a count, because the report
+   overcounted Pinterest and pointed at theme code when both senders were web
+   pixels (detector fix spun off 2026-10-02).
 2. Shopify Developer Forums (`community.shopify.dev`). Guidelines remove unsolicited
    promotion. Answer first, link when asked.
 3. The official Shopify Developers Discord (~21k members). The live replacement for
