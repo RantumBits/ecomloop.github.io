@@ -162,7 +162,9 @@ Not:
 Under the findings: a collapsed "what we saw" section listing every vendor and ID
 detected per page, so the report is verifiable and looks credible.
 
-**[v2] CTA.** Link to `https://ecomloop.com/offer.html?store=<host>#audit-contact`.
+**[v2] CTA.** Link to `https://ecomloop.com/offer.html?store=<host>&src=report#audit-contact`.
+The `src=report` part is set by the scanner's `ctaUrl()` (`src/report/copy.js`) so metric 3
+in Converting the log can count report-driven submissions.
 The offer page's Netlify form already has a `url` field. Add a five-line script to
 `offer.html` that prefills it from the `store` query parameter.
 
@@ -419,6 +421,13 @@ proof route returns a 404 when no checkout screenshot was kept; drop that line i
 it does. Read the finding's detail text in the report and copy its hedge; the email never
 claims more than the report does.
 
+**The offer link.** `{offer link}` is always
+`https://ecomloop.com/offer.html?store={host}&src={source}#audit-contact`, where
+`{source}` is `warm` or `cold` per the rule above and `watch` in the watch email.
+The `store` part prefills the form's URL field; `src` fills its hidden `source`
+field, which is what metric 3 below counts. Any other `src` value leaves the
+field empty, so a typo shows up as an unsourced submission rather than a new bucket.
+
 **Template A, a pixel firing twice.** Under 120 words. Show the ID. The closing line
 is the feedback ask; it need not be a question.
 
@@ -438,7 +447,8 @@ is the feedback ask; it need not be a question.
 > A ticket for whoever manages your tags: {permalink}/ticket.txt
 >
 > Is anything in the report wrong? If you want the purchase side checked against
-> your real orders as well, the audit does that: {offer link}.
+> your real orders as well, the audit does that:
+> https://ecomloop.com/offer.html?store={host}&src={source}#audit-contact
 >
 > Andrew, ecomloop
 > {postal address}. Reply no and I will not write again.
@@ -458,7 +468,8 @@ is the feedback ask; it need not be a question.
 > Report: {permalink}. Ticket: {permalink}/ticket.txt
 >
 > Whether the purchase event itself arrives is not something a storefront scan can
-> see. That is the question the audit answers, against your orders: {offer link}.
+> see. That is the question the audit answers, against your orders:
+> https://ecomloop.com/offer.html?store={host}&src={source}#audit-contact
 > Tell me if we got anything wrong.
 >
 > Andrew, ecomloop
@@ -475,7 +486,8 @@ email leading with the first finding in the report, never two.
 
 **The watch email.** It is the only recurring touch in the system and carries no
 offer. Append one sentence, the same every time: "The audit traces purchases
-through to your orders if you want that checked: {offer link}."
+through to your orders if you want that checked:
+https://ecomloop.com/offer.html?store={host}&src=watch#audit-contact".
 
 **Funnel numbers.** Four counts, read weekly from the log, written into the Client
 Acquisition Plan alongside the manual outreach numbers.
@@ -484,12 +496,13 @@ Acquisition Plan alongside the manual outreach numbers.
 2. Email capture rate: `via: web` rows with an email over all `via: web` rows.
    Watch and MCP rows are excluded, and cached scans never create rows, so this
    counts first scans of a host within a day, not visits.
-3. Offer-form submissions by source. This needs a site change: the offer page adds
-   a hidden `source` form field filled from a `src` query parameter, and each
-   link variant carries its own value (`report` for the report CTA, `warm`, `cold`,
-   `watch` for the emails). Until that lands, this metric does not exist and is not
-   estimated from total submissions, which all carry a URL because the field is
-   required.
+3. Offer-form submissions by source. The offer page carries a hidden `source` form
+   field filled from the `src` query parameter (`site/offer.html`), and each link
+   variant carries its own value: `report` for the report CTA, `warm`, `cold` and
+   `watch` for the emails; the scanner's `ctaUrl()` sends `src=report`. The field only
+   counts once both the page and the scanner are deployed; until then, this metric
+   is not estimated from total submissions, which all carry a URL because that
+   field is required.
 4. Audits booked, by the same source value.
 
 No targets until four weeks of data exist. The first decision the numbers make is

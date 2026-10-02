@@ -178,6 +178,7 @@ h2{font-size:2.6rem}
       <h2 class="emoji"><span aria-hidden="true">📬</span> start the audit</h2>
       <form name="audit" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
         <input type="hidden" name="form-name" value="audit">
+        <input type="hidden" name="source" id="source">
         <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
         <label>name <input type="text" name="name" id="name" required autocomplete="name"></label>
         <label>email <input type="email" name="email" id="email" required autocomplete="email"></label>
@@ -199,13 +200,18 @@ h2{font-size:2.6rem}
 
 <script>
 // A link from the tracking scanner carries ?store=<host>, so the audit form
-// arrives with the store already filled in.
+// arrives with the store already filled in. ?src= names the link that brought
+// the visitor (report, warm, cold, watch) and lands in the hidden source field.
 (() => {
-  const store = new URLSearchParams(location.search).get('store');
-  if (!store) return;
+  const params = new URLSearchParams(location.search);
+  const store = params.get('store');
   const field = document.getElementById('url');
-  if (!field || field.value) return;
-  field.value = /^https?:\/\//i.test(store) ? store : 'https://' + store;
+  if (store && field && !field.value) {
+    field.value = /^https?:\/\//i.test(store) ? store : 'https://' + store;
+  }
+  const src = params.get('src');
+  const source = document.getElementById('source');
+  if (source && ['report', 'warm', 'cold', 'watch'].includes(src)) source.value = src;
 })();
 </script>
 
