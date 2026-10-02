@@ -3,6 +3,5 @@
   command = "echo 'static site, no build step'"
 
 [build.environment]
-  # skip npm install of the retired Gatsby tree
-  NPM_FLAGS = "--version"
+  # The Netlify UI still pins Node 10, which the current build image cannot install.
   NODE_VERSION = "20"
