@@ -272,21 +272,64 @@ manual findings on the 10 audited stores reproduced, no false positive that woul
 embarrass a cold email. A wrong claim in front of a merchant forum costs more than a
 week's delay.
 
-**Where to post, in order of audience fit:**
+**Where to post, in order of audience fit [v4, researched 2026-10-01]:**
 
-1. Shopify Community forums (ecommerce marketing and technical Q&A boards). Reply to
-   existing "why is my pixel firing twice" threads with the tool rather than opening a
-   launch thread.
-2. r/shopify and r/ecommerce. Frame as "I built this, it's free, tell me what's
-   wrong". Lead with a redacted example report, not the URL.
-3. The Shopify developer forums (`community.shopify.dev`) and the Shopify
-   Entrepreneurs Facebook group (run by the HeyCarson agency, 100k+ members). The
-   old Partners Slack is being sunset and takes no new members; the dev forums are
-   its replacement. Agencies and freelancers there will run it on client stores and
-   say bluntly when it is wrong. That is the feedback wanted. Both ban unsolicited
-   links, so answer existing tracking questions and post the example report, not
-   the URL, until asked.
-4. Indie Hackers and Show HN. Low merchant density, useful for crashes and odd stores.
+Work the tiers top down. One tier per week is enough; the scan log and the
+"was anything wrong" replies from one tier should be read before the next opens.
+Decided 2026-10-01: Tier 1 opens the week of 2026-10-05, after the gate work
+(ground-truth check on the 10 stores, feedback link, API spend limit) lands.
+
+*Tier 1: answer existing threads (best fit).*
+
+1. Shopify Community forums (`community.shopify.com`, boards: Ecommerce Marketing,
+   Technical Q&A, Shopify Apps). Reply to existing "why is my pixel firing twice"
+   threads rather than opening a launch thread. Live threads at time of writing:
+   Meta pixel counting one page view as two (t/399974), Events duplication Meta
+   (ecommerce-marketing/m-p/2715903), GA4 purchase firing twice in a GTM store
+   (t/148983), Facebook Ads deduplication (t/401996).
+2. Shopify Developer Forums (`community.shopify.dev`). Guidelines remove unsolicited
+   promotion. Answer first, link when asked.
+3. The official Shopify Developers Discord (~21k members). The live replacement for
+   the sunset Partners Slack, with the agency and freelancer density wanted for blunt
+   feedback. Same rule: help in a tracking channel, then share.
+4. Talk Shop Discord (`letstalkshop.com`). Shopify builders and merchants; it also
+   runs a daily newsletter that features tools.
+
+*Tier 2: analytics practitioners (fastest false-positive finders).*
+
+5. Measure Slack (`join.measure.chat`, ~15k+). No self-promotion culture, but
+   "built this, run it on a store you know and tell me what is wrong" in a GA4 or
+   GTM channel fits. Never cross-post channels.
+6. Analytics Mania GTM and GA4 Facebook groups (Julius Fedorovicius). Rules allow
+   GTM-related products when the post is useful. Two strikes and out, so one post
+   each.
+7. Analytics for Marketers Slack (Trust Insights, 4,500+ GA4 audit practitioners).
+8. r/GoogleTagManager, r/GoogleAnalytics, r/PPC, r/FacebookAds. Reply to "firing
+   twice" threads. Read each sidebar first; rules were not verified.
+
+*Tier 3: merchant and DTC communities.*
+
+9. r/shopify and r/ecommerce. Promotion-free, strictly enforced, karma gate.
+   Comment replies only, never the same ask in several subs on one day. Lead with a
+   redacted example report, not the URL.
+10. Shopify Entrepreneurs Facebook group (HeyCarson, 100k+). Non-partners pay $250
+    per promotional post, and links to services competing with HeyCarson or
+    Storetasker are banned outright, which a tracking audit offer likely trips.
+    Comment-only or skip.
+11. eCommTalk Slack (~4k, free, Shopify-centric), Shopbrew (curated Shopify founders
+    and agency partners), DTC Wonderland Discord (~1.8k, free, agencies welcome).
+12. Skip: eCommerceFuel excludes agencies. Limited Supply is in-house operators
+    only. Elevar's GA4 Slack is competitor-run and stale.
+
+*Tier 4: launch directories (crashes and odd stores).*
+
+13. Show HN and Indie Hackers. Show HN qualifies: usable in under a minute with no
+    signup; three free scans before the email gate is fine.
+14. Uneed, Peerlist Launchpad, BetaList, SaaSHub, AlternativeTo, Launching Next.
+    Free, permanent listing, low merchant density.
+15. MCP registries, only if the `/mcp` endpoint is meant to be public (the landing
+    page does not mention it). Official MCP Registry first, since Glama and others
+    crawl it, then Smithery.
 
 **The ask, verbatim in every post:** "Paste your store, then tell me if any finding
 is wrong." Surface false positives, not praise.
@@ -302,6 +345,159 @@ same rule as before: a wrong claim is fixed in the detector, not the copy.
 
 **Exit.** Revisit enrichment and outreach prioritisation once the log has a few
 hundred hosts and reports have gone a week without a correction.
+
+## Converting the log **[v4, revised after critic review 2026-10-01]**
+
+The scan log is the lead list. This section says what a lead is, what gets sent,
+when, and how we know whether any of it works. The report's rule applies to every
+email: no number we would have to retract. No money-lost estimate, no score, and no
+claim about ad spend beyond what the merchant told us or what is installed.
+
+**What a log row holds today.** Timestamp, host, IP hash, email if given, result id,
+finding keys and rules (raw, before personalisation), finding count, user agent.
+Watch re-scans write a row with a null IP hash. Cached scans write no row.
+
+**Five fields to add to the row.** None of these exist yet.
+
+- `platforms`: the merchant's own answer to "which platforms do you spend on". It is
+  already stored on the result document but not on the log row.
+- `adVendors`: which of Meta, Google Ads, TikTok, Pinterest, Snap, Microsoft have an
+  entry in the inventory. Derivable from the result; not stored as a field today.
+- `apps`: tracking apps detected (Elevar, Analyzify, Littledata, Triple Whale,
+  Northbeam). Today the log keeps only the bare `note-apps` key with no app name.
+- `productCount`: not captured anywhere today. The products feed is fetched with a
+  limit of three only to find a product URL. Add one request to
+  `/products.json?limit=250` in preflight and store the length, capped at 250.
+- `via`: `web`, `mcp` or `watch`. The CLI writes no log row. Needed for the skip
+  rule and metric 2.
+
+**Qualification rule.** A store is worth an email when all of these hold:
+
+1. The scan succeeded. A row with an `error` field is not evidence.
+2. The merchant named at least one platform in `platforms`, or at least one ad
+   pixel is in `adVendors`. The audit's main work is reconciling purchase events
+   against ad platforms, and a store with neither has little of that to do.
+3. At least one finding survives personalisation with a rule other than `note`.
+   Apply the same filter the report applies: a `missing-pixel` finding for a vendor
+   the merchant said they do not spend on is retired to a note and does not count.
+   Qualifying on raw rules would email "you have no TikTok pixel" to someone who
+   said they do not run TikTok ads.
+4. `productCount` is at least 50, or `apps` is non-empty. A null count means the
+   feed could not be fetched (blocked, timed out, or not JSON), which is unknown,
+   not zero; such a store qualifies on `apps` alone or goes to the hand pile. Both thresholds are starting
+   guesses, revised after four weeks of replies.
+
+Skip: hosts already on the outreach list, which runs on its own cadence; and rows
+with `via: web` whose IP hash scanned five or more distinct hosts in a week, which
+is usually an agency or a freelancer scanning clients, though a merchant with
+several stores also fits. MCP rows are exempt from that test because hosted
+assistants share a few egress addresses, and the hash is keyed on email only when
+one is given, so one hash can be many people.
+
+**Warm or cold.** An email given at the gate or on a watch is warm. The address was
+never verified, so the opener names the host and the date rather than assuming the
+reader scanned it: "Someone scanned {host} with this address on {date}." No name;
+the log holds none. A row with no email is cold: it is a pre-scanned outreach
+target and the email goes to the store's public contact exactly as cold outreach
+already does, with the name from the store's contact or about page, or no greeting
+if none is found.
+
+**Every email, both kinds, is commercial.** The footer carries EcomLoop's postal
+address and a one-line opt-out ("Reply no and I will not write again"). A "no"
+goes into a Suppressed tab in the Client Acquisition Plan before anything else, and
+the hand sort checks that tab first. The watch email already has an unsubscribe
+link; these do not, until this is added. A watch address already receives the
+watch email with its offer line, so it gets no Template A or B on top; its opener,
+if ever written to directly, is "This address asked to watch {host}".
+
+**Timing.** Within two business days of the scan. The permalink expires after 30
+days and the cache lasts 24 hours, so any lead older than three weeks is
+re-scanned before sending, never sent with a link about to expire.
+
+**Send checklist.** Open the permalink and, for Template B, the proof image. The
+proof route returns a 404 when no checkout screenshot was kept; drop that line if
+it does. Read the finding's detail text in the report and copy its hedge; the email never
+claims more than the report does.
+
+**Template A, a pixel firing twice.** Under 120 words. Show the ID. The closing line
+is the feedback ask; it need not be a question.
+
+> Subject: {host}: Meta pixel {id} fires {times}
+>
+> {greeting per the rule above}
+>
+> On {where}, Meta pixel {id} sent {times} separate page-view events for one
+> visit, so each page view reaches Meta more than once. {times} and {where} are
+> taken from the finding's headline, which may say "3 times" or "2 to 3 times" and
+> name the pages or "every page we checked". The copies look like they come from {sources as the report
+> recorded them: theme code, Tag Manager, a Shopify sales-channel app, or "we could
+> not tell where"}. The purchase event itself, and anything sent from your server,
+> is what we cannot see from outside.
+>
+> What we saw: {permalink}
+> A ticket for whoever manages your tags: {permalink}/ticket.txt
+>
+> Is anything in the report wrong? If you want the purchase side checked against
+> your real orders as well, the audit does that: {offer link}.
+>
+> Andrew, ecomloop
+> {postal address}. Reply no and I will not write again.
+
+**Template B, a tag that stops at checkout.**
+
+> Subject: {host}: {vendor} tag {id} is missing from checkout
+> (when the finding names several vendors, the subject is the report headline)
+>
+> {greeting per the rule above}
+>
+> Your {vendor} tag ({id}) is on your storefront pages and absent on the first
+> checkout step. Shopify's checkout only runs tags installed through its own pixel
+> system, so a tag added in theme code stops at that door. Here is the checkout as
+> a shopper saw it, next to the beacons that fired there: {permalink}/proof.png
+>
+> Report: {permalink}. Ticket: {permalink}/ticket.txt
+>
+> Whether the purchase event itself arrives is not something a storefront scan can
+> see. That is the question the audit answers, against your orders: {offer link}.
+> Tell me if we got anything wrong.
+>
+> Andrew, ecomloop
+> {postal address}. Reply no and I will not write again.
+
+Every other rule gets an email built from the report itself: the finding's
+headline as the subject, its detail text as the first paragraph, the cause
+paragraph only when the report set one (today that is the Shopify "Optimized"
+explanation and nothing else), the ticket link, and a closing line that may be a
+statement. The audit link is omitted from these; the report page they link to
+already carries the audit CTA, and leaving it out keeps the final paragraph from
+being the same shape in every send. Nothing in those is composed fresh. A store with two findings gets one
+email leading with the first finding in the report, never two.
+
+**The watch email.** It is the only recurring touch in the system and carries no
+offer. Append one sentence, the same every time: "The audit traces purchases
+through to your orders if you want that checked: {offer link}."
+
+**Funnel numbers.** Four counts, read weekly from the log, written into the Client
+Acquisition Plan alongside the manual outreach numbers.
+
+1. Fresh scans that succeeded, and how many qualified under the rule above.
+2. Email capture rate: `via: web` rows with an email over all `via: web` rows.
+   Watch and MCP rows are excluded, and cached scans never create rows, so this
+   counts first scans of a host within a day, not visits.
+3. Offer-form submissions by source. This needs a site change: the offer page adds
+   a hidden `source` form field filled from a `src` query parameter, and each
+   link variant carries its own value (`report` for the report CTA, `warm`, `cold`,
+   `watch` for the emails). Until that lands, this metric does not exist and is not
+   estimated from total submissions, which all carry a URL because the field is
+   required.
+4. Audits booked, by the same source value.
+
+No targets until four weeks of data exist. The first decision the numbers make is
+whether the thresholds in rule 4 are too tight or too loose.
+
+**Exit.** When the log holds a few hundred qualified hosts, the hand sort stops
+scaling and paid enrichment (see Launch and feedback) is revisited to decide who
+to email first.
 
 ## Effort estimate **[v2]**
 
