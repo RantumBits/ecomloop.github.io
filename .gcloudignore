@@ -1,0 +1,5 @@
+.git
+.gcloudignore
+.claude
+docs
+*.md

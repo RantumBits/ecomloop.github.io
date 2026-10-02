@@ -1,0 +1,16 @@
+{
+  "name": "ecomloop-site",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "@fastify/formbody": "^8.0.2",
+    "@fastify/static": "^8.0.4",
+    "fastify": "^5.2.1"
+  }
+}
