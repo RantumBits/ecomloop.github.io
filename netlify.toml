@@ -1,3 +1,7 @@
 [build]
   publish = "site"
   command = "echo 'static site, no build step'"
+
+[build.environment]
+  # The Netlify UI still pins Node 10, which the current build image cannot install.
+  NODE_VERSION = "20"
