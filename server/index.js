@@ -1,7 +1,7 @@
 // Static site + form handling, replacing what Netlify did for free: serving
 // site/, the old-Gatsby-route redirects in site/_redirects, and the two
 // data-netlify forms (audit request, contact). No build step — site/ is
-// served as-is, same as netlify.toml's `publish = "site"`.
+// served as-is.
 
 import Fastify from 'fastify';
 import fastifyStatic from '@fastify/static';
