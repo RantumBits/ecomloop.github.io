@@ -63,12 +63,24 @@ h2{font-size:2.6rem}
 .Intro p{max-width:78ch}
 
 /* offer ladder */
-.PriceCard{background:#fff;border-radius:var(--borderRadius);box-shadow:0 2px 20px rgba(0,0,0,.1);padding:3rem;max-width:60rem;margin:0 auto}
-.PriceCard--Price{font-family:'Montserrat',sans-serif;font-weight:600;font-size:4rem;margin:0}
-.PriceCard--Price small{font-family:'Inconsolata',monospace;font-weight:400;font-size:1.5rem;display:block;color:#555}
-.PriceCard ul{padding-left:1.8rem;margin:1.6rem 0}
-.PriceCard li{margin-bottom:.8rem}
-.PriceCard .credit{background:var(--lightGrey);border-left:3px solid var(--primary);padding:1.2rem 1.6rem;border-radius:var(--borderRadius);font-size:1.4rem;margin-top:1.6rem}
+.Tiers--Lead{max-width:70ch;margin:0 auto 3rem;text-align:center;font-size:1.5rem}
+.Tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(28rem,1fr));gap:2.4rem;align-items:stretch}
+.Tier{background:#fff;border:1px solid var(--midGrey);border-radius:var(--borderRadius);padding:2.6rem 2.2rem;display:flex;flex-direction:column}
+.Tier--Featured{border:2px solid var(--primary);box-shadow:0 2px 20px rgba(0,0,0,.12);position:relative}
+.Tier--Badge{position:absolute;top:-1.2rem;left:2.2rem;background:var(--primary);color:#fff;text-transform:uppercase;font-size:1.1rem;letter-spacing:.06em;padding:.4rem 1rem;border-radius:var(--borderRadius)}
+.Tier--Name{font-family:'Inconsolata',monospace;font-weight:700;font-size:1.7rem;margin:0 0 .4em}
+.Tier--Price{font-family:'Montserrat',sans-serif;font-weight:600;font-size:3.4rem;margin:0 0 .6em;line-height:1}
+.Tier--Price small{font-family:'Inconsolata',monospace;font-weight:400;font-size:1.4rem;display:block;color:#555;margin-top:.6rem;line-height:1.5}
+.Tier--Access{font-size:1.4rem;font-weight:700;background:var(--lightGrey);padding:1rem 1.2rem;border-radius:var(--borderRadius);margin:0 0 1.4rem}
+.Tier ul{padding-left:1.7rem;margin:0 0 1.4rem;font-size:1.45rem}
+.Tier li{margin-bottom:.7rem}
+.Tier--Limit{font-size:1.35rem;color:#555;margin:0 0 1.4rem}
+.Tier--For{font-size:1.35rem;margin:auto 0 1.6rem;padding-top:1.2rem;border-top:1px solid var(--midGrey)}
+.Tier--CTA{display:block;background:var(--primary);color:#fff;text-decoration:none;text-transform:uppercase;font-size:1.2rem;letter-spacing:.06em;padding:.9rem 1.4rem;border-radius:var(--borderRadius);text-align:center}
+.Tier--CTA:hover{color:#fff;background:#00a9a4}
+.Tier--CTA.alt{background:#fff;color:var(--secondary);border:1px solid var(--midGrey)}
+.Tier--CTA.alt:hover{color:var(--secondary);border-color:var(--primary)}
+.credit{background:#fff;border-left:3px solid var(--primary);padding:1.4rem 1.8rem;border-radius:var(--borderRadius);font-size:1.45rem;margin:3rem auto 0;max-width:78ch}
 
 .Grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(26rem,1fr));gap:3rem}
 .Card{background:#fff;border-radius:var(--borderRadius);box-shadow:0 2px 12px rgba(0,0,0,.08);overflow:hidden;display:flex;flex-direction:column}
@@ -82,8 +94,8 @@ h2{font-size:2.6rem}
 /* contact */
 .Contact form{max-width:60rem;margin:0 auto;display:grid;gap:1.4rem}
 .Contact label{display:grid;gap:.4rem;font-size:1.4rem;font-weight:700}
-.Contact input,.Contact textarea{font:inherit;font-size:1.5rem;padding:1rem;border:1px solid var(--midGrey);border-radius:var(--borderRadius);width:100%}
-.Contact input:focus,.Contact textarea:focus{outline:2px solid var(--primary);border-color:var(--primary)}
+.Contact input,.Contact textarea,.Contact select{font:inherit;font-size:1.5rem;padding:1rem;border:1px solid var(--midGrey);border-radius:var(--borderRadius);width:100%;background:#fff}
+.Contact input:focus,.Contact textarea:focus,.Contact select:focus{outline:2px solid var(--primary);border-color:var(--primary)}
 .Contact button{font:inherit;background:var(--primary);color:#fff;border:0;text-transform:uppercase;letter-spacing:.06em;font-size:1.3rem;padding:1.1rem 1.6rem;border-radius:var(--borderRadius);cursor:pointer;justify-self:start}
 .Contact .alt{text-align:center;font-size:1.4rem;margin-top:2rem}
 
@@ -123,23 +135,65 @@ h2{font-size:2.6rem}
       <h2>a fixed-price audit, not a pitch for a retainer</h2>
       <p>Most stores have a gap between what their analytics report and what their order records actually say: a duplicate Purchase event, a Meta CAPI send with no de-duplication against the browser pixel, a Google Ads tag left over from an old account. Every one of those quietly inflates or deflates the numbers a platform's Smart Bidding optimizes toward, and the ROAS a founder reads on a dashboard. Shopify, Magento, BigCommerce, a custom cart: the defects are the same, and so is the reconciliation.</p>
       <p>The audit finds exactly what's wrong, tells you what it's costing you, and shows you the sample-size math on which tests, if any, your current traffic can decide inside 30 days. Sometimes that math says to wait, and you get the number rather than a guess. No redesign, no retainer required to see it.</p>
-      <p>Not sure you need it? <a href="https://scan.ecomloop.com">Run the free scanner</a> on your storefront first. It finds duplicate, dead and missing tags from the outside in about a minute. The audit is what comes after, against your real order data.</p>
+      <p>Start wherever you want to start. <a href="https://scan.ecomloop.com">The free scanner</a> finds duplicate, dead and missing tags on your storefront in about a minute, from the outside. From there it goes three steps deeper, and <a href="#pricing">each step is credited in full toward the next one</a>.</p>
     </div>
   </section>
 
-  <section class="section" style="background:var(--lightGrey)">
+  <section class="section" style="background:var(--lightGrey)" id="pricing">
     <div class="container">
-      <div class="PriceCard">
-        <p class="PriceCard--Price">$1,750 <small>fixed price &middot; 10 business days from the day access lands</small></p>
-        <p><strong>What's checked:</strong></p>
-        <ul>
-          <li>Purchase events reconciled across GA4, Meta pixel, Meta CAPI and Google Ads against your real order records, with the overcounting or undercounting found and named exactly</li>
-          <li>Every script and app on your top pages, with the page-speed cost of each one and what's safe to cut</li>
-          <li>The sample-size math on what your current traffic can and cannot settle in 30 days, and the 1 or 2 tests worth running if it can</li>
-          <li>A 30-minute recorded walkthrough of the findings you can share with your team</li>
-        </ul>
-        <p class="credit">If you move forward on a monthly retainer afterward, the $1,750 is credited toward it in full.</p>
+      <h2 class="emoji taCenter"><span aria-hidden="true">💵</span> three ways in</h2>
+      <p class="Tiers--Lead">They differ by how far in I can see, which depends on what you give me access to. Start at the top of the list and you have handed over nothing at all.</p>
+
+      <div class="Tiers">
+
+        <div class="Tier">
+          <h3 class="Tier--Name">the Scan Read</h3>
+          <p class="Tier--Price">$250 <small>3 business days</small></p>
+          <p class="Tier--Access">No access. Nothing to log into, nothing to hand over.</p>
+          <ul>
+            <li>Every defect the free scanner finds on your storefront, ranked by what each one is costing you rather than by how it looks</li>
+            <li>Which ad platform each defect sits in, so you can tell the expensive ones from the harmless ones</li>
+            <li>A short recorded walkthrough and a one-page written summary</li>
+          </ul>
+          <p class="Tier--Limit">This reads your public storefront. It cannot see checkout or purchase events, and it cannot compare anything to your real orders.</p>
+          <p class="Tier--For"><strong>Best for</strong> stores under $2,000/month in ad spend, or anyone who wants this proved before granting access to anything.</p>
+          <a class="Tier--CTA alt" href="#audit-contact" data-tier="scan-read">start here</a>
+        </div>
+
+        <div class="Tier">
+          <h3 class="Tier--Name">the Ad Spend Check</h3>
+          <p class="Tier--Price">$750 <small>5 business days</small></p>
+          <p class="Tier--Access">Read-only on your ad accounts and GA4. Nothing touching your store or your orders.</p>
+          <ul>
+            <li>Everything in the Scan Read</li>
+            <li>Which of the duplicate, stale or conflicting tags are <em>actually spending money</em>, read from the accounts themselves rather than guessed from the outside</li>
+            <li>A 45-minute working session on the findings, with you</li>
+            <li>A written summary of what to fix first and what to ignore</li>
+          </ul>
+          <p class="Tier--Limit">Still no order data, so the numbers here are what the platforms report, rather than what you actually sold.</p>
+          <p class="Tier--For"><strong>Best for</strong> $2,000 to $10,000/month in ad spend, where one duplicated conversion is already worth more than this costs.</p>
+          <a class="Tier--CTA alt" href="#audit-contact" data-tier="ad-spend-check">start here</a>
+        </div>
+
+        <div class="Tier Tier--Featured">
+          <span class="Tier--Badge">recommended</span>
+          <h3 class="Tier--Name">the Tracking &amp; Profit Audit</h3>
+          <p class="Tier--Price">$1,750 <small>10 business days from the day access lands</small></p>
+          <p class="Tier--Access">The above, plus an export of your recent orders. No full admin account.</p>
+          <ul>
+            <li>Purchase events reconciled across GA4, Meta pixel, Meta CAPI and Google Ads against your real order records, with the overcounting or undercounting found and named exactly</li>
+            <li>Every script and app on your top pages, with the page-speed cost of each one and what's safe to cut</li>
+            <li>The sample-size math on what your current traffic can and cannot settle in 30 days, and the 1 or 2 tests worth running if it can</li>
+            <li>A 30-minute recorded walkthrough of the findings you can share with your team</li>
+          </ul>
+          <p class="Tier--Limit">This is the only one that compares what your tracking reported to what you actually sold. That comparison is where the money usually turns out to be.</p>
+          <p class="Tier--For"><strong>Best for</strong> $10,000/month in ad spend and up, where the gap between reported and real is large enough to be steering your bidding.</p>
+          <a class="Tier--CTA" href="#audit-contact" data-tier="audit">start the audit</a>
+        </div>
+
       </div>
+
+      <p class="credit"><strong>Each one is credited in full toward the next.</strong> The Scan Read comes off the Ad Spend Check, the Ad Spend Check comes off the Audit, and the Audit comes off your first month if you go on to a monthly retainer. Starting small costs you nothing if you decide to go further.</p>
     </div>
   </section>
 
@@ -155,7 +209,7 @@ h2{font-size:2.6rem}
 
   <section class="section" style="background:var(--lightGrey)">
     <div class="container">
-      <h2 class="emoji"><span aria-hidden="true">🧭</span> how it runs</h2>
+      <h2 class="emoji"><span aria-hidden="true">🧭</span> how the audit runs</h2>
       <div class="Grid">
         <div class="Card"><div class="Card--Body">
           <h3 class="Card--Title">1. Access</h3>
@@ -175,7 +229,7 @@ h2{font-size:2.6rem}
 
   <section class="section Contact" id="audit-contact">
     <div class="container">
-      <h2 class="emoji"><span aria-hidden="true">📬</span> start the audit</h2>
+      <h2 class="emoji"><span aria-hidden="true">📬</span> get started</h2>
       <form name="audit" method="POST" action="/submit">
         <input type="hidden" name="form-name" value="audit">
         <input type="hidden" name="source" id="source">
@@ -183,8 +237,14 @@ h2{font-size:2.6rem}
         <label>name <input type="text" name="name" id="name" required autocomplete="name"></label>
         <label>email <input type="email" name="email" id="email" required autocomplete="email"></label>
         <label>store URL <input type="url" name="url" id="url" placeholder="https://" required autocomplete="url"></label>
+        <label>which one <select name="tier" id="tier">
+            <option value="audit">the Tracking &amp; Profit Audit, $1,750</option>
+            <option value="ad-spend-check">the Ad Spend Check, $750</option>
+            <option value="scan-read">the Scan Read, $250</option>
+            <option value="unsure">Not sure yet, tell me which fits</option>
+          </select></label>
         <label>anything you already suspect is off <textarea name="message" id="message" rows="4" placeholder="Optional"></textarea></label>
-        <button type="submit">request the audit</button>
+        <button type="submit">send it</button>
       </form>
       <p class="alt">Prefer Upwork? <a href="https://www.upwork.com/freelancers/andrewmaury" target="_blank" rel="noopener">Hire ecomloop through Upwork</a>.</p>
     </div>
@@ -212,6 +272,17 @@ h2{font-size:2.6rem}
   const src = params.get('src');
   const source = document.getElementById('source');
   if (source && ['report', 'warm', 'cold', 'watch'].includes(src)) source.value = src;
+
+  // The tier buttons jump to the form and preselect what they asked for. With
+  // JS off the link still jumps; it just arrives on whatever the select shows.
+  const tierField = document.getElementById('tier');
+  const setTier = (value) => {
+    if (tierField && [...tierField.options].some((o) => o.value === value)) tierField.value = value;
+  };
+  setTier(params.get('tier'));
+  for (const link of document.querySelectorAll('[data-tier]')) {
+    link.addEventListener('click', () => setTier(link.dataset.tier));
+  }
 })();
 </script>
 

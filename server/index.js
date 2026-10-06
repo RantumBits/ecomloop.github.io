@@ -106,6 +106,15 @@ app.post('/submit', async (req, reply) => {
   const url = String(body.url || '').trim();
   const source = String(body.source || '').trim();
   const message = String(body.message || '').trim();
+  // Which rung of the offer ladder they picked. Allow-listed rather than
+  // echoed, so the notification can never carry attacker-chosen text.
+  const TIERS = {
+    'scan-read': 'the Scan Read ($250)',
+    'ad-spend-check': 'the Ad Spend Check ($750)',
+    audit: 'the Tracking & Profit Audit ($1,750)',
+    unsure: 'not sure yet',
+  };
+  const tier = TIERS[String(body.tier || '').trim()] || '';
 
   // The page this was submitted from was served with a signed timestamp. No
   // token, a forged one, a reused one, or one under MIN_FILL_SECONDS old means
@@ -121,6 +130,7 @@ app.post('/submit', async (req, reply) => {
     `name: ${name}`,
     `email: ${email}`,
     url && `url: ${url}`,
+    tier && `wants: ${tier}`,
     source && `source: ${source}`,
     '',
     message || '(no message)',
