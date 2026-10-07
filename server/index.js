@@ -112,6 +112,8 @@ app.post('/submit', async (req, reply) => {
     'scan-read': 'the Scan Read ($250)',
     'ad-spend-check': 'the Ad Spend Check ($750)',
     audit: 'the Tracking & Profit Audit ($1,750)',
+    watch: 'Tracking Watch ($1,750/mo)',
+    'watch-testing': 'Tracking Watch + Testing ($4,000/mo)',
     unsure: 'not sure yet',
   };
   const tier = TIERS[String(body.tier || '').trim()] || '';
