@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Google Tag Manager Audit: A 14-Point Checklist | ecomloop</title>
+<meta name="description" content="A real Google Tag Manager audit checklist: duplicate GA4 properties, dead tags, double-firing pixels, consent mode, checkout blind spots. Free scan, no login.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/images/logo.png" type="image/png">
+<link rel="canonical" href="https://ecomloop.com/gtm-audit.html">
+<meta property="og:title" content="Google Tag Manager Audit: A 14-Point Checklist | ecomloop">
+<meta property="og:description" content="A real Google Tag Manager audit checklist: duplicate GA4 properties, dead tags, double-firing pixels, consent mode, checkout blind spots. Free scan, no login.">
+<meta property="og:image" content="https://ecomloop.com/images/hero.jpg">
+<meta property="og:url" content="https://ecomloop.com/gtm-audit.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ecomloop">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#00c2bd; --secondary:#000; --lightGrey:whitesmoke; --midGrey:#cacaca; --darkGrey:#272727;
+  --borderRadius:3px; --container:110rem;
+}
+*{box-sizing:border-box}
+html{font-size:62.5%;min-height:100%;background:var(--lightGrey);scroll-behavior:smooth}
+body{margin:0;font-family:'Inconsolata',monospace;background:#fff;color:var(--secondary);font-size:1.6em;font-weight:400;letter-spacing:.01em;line-height:1.6;-webkit-font-smoothing:antialiased}
+::selection{background:rgba(0,194,189,.6)}
+a{color:var(--primary)}
+p{margin:0 0 1em}
+h1,h2{margin:0 0 .5em;font-family:'Montserrat',sans-serif;font-weight:600;line-height:1.2}
+h3,h4{font-family:'Inconsolata',monospace;font-weight:700;margin:0 0 .5em}
+h2{font-size:2.6rem}
+.container{max-width:var(--container);margin:0 auto;padding:0 2rem}
+.taCenter{text-align:center}
+.section{padding:5rem 0}
+.section h2.emoji{text-align:center;margin-bottom:3rem}
+
+/* nav */
+.Nav{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.Nav .container{display:flex;align-items:center;gap:2.4rem;height:5.2rem}
+.Logo{display:block;width:3.2rem;height:3.2rem;background:url(/images/logo.png) center/contain no-repeat;flex:none}
+.Nav--Links{display:flex;align-items:center;gap:1.8rem;margin-left:auto}
+.NavLink{color:var(--secondary);text-decoration:none;font-size:1.5rem}
+.NavLink:hover{color:var(--primary)}
+.Nav--CTA{background:var(--primary);color:#fff;text-transform:uppercase;font-size:1.2rem;letter-spacing:.06em;padding:.7rem 1.2rem;border-radius:var(--borderRadius)}
+.Nav--CTA:hover{color:#fff;background:#00a9a4}
+.Hero--CTAs{display:flex;flex-wrap:wrap;gap:1.2rem;margin-top:1.6rem}
+.Hero--CTAs a{display:inline-block;text-decoration:none;text-transform:uppercase;font-size:1.2rem;letter-spacing:.06em;padding:1rem 1.6rem;border-radius:var(--borderRadius)}
+.Hero--CTAs a.primary{background:var(--primary);color:#fff}
+.Hero--CTAs a.primary:hover{background:#00a9a4}
+.Hero--CTAs a.secondary{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.5)}
+.Hero--CTAs a.secondary:hover{background:rgba(255,255,255,.22)}
+@media (max-width:640px){.Nav--Links .NavLink:not(.Nav--CTA){display:none}}
+
+/* hero */
+.PageHeader{position:relative;background:var(--darkGrey);color:#fff;padding:9rem 0 20rem;overflow:hidden}
+.PageHeader .BackgroundImage{position:absolute;inset:0;background:linear-gradient(90deg,rgba(39,39,39,.75),rgba(39,39,39,.4)),url(/images/hero.jpg) center/cover no-repeat;opacity:.9}
+.PageHeader .container{position:relative;animation:fadeIn .5s ease-out}
+.PageHeader--Title{font-size:4.6rem;margin-bottom:1.6rem;color:#fff;text-wrap:balance;max-width:28ch}
+.PageHeader--Subtitle{font-weight:700;font-size:1.8rem;margin:0 0 .6em;color:#fff;max-width:60ch}
+.PageHeader--Subtitle::before{content:">> "}
+.PageHeader > svg{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:16rem;display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (max-width:600px){.PageHeader{padding:6rem 0 12rem}.PageHeader--Title{font-size:3rem}.PageHeader > svg{height:9rem}}
+@media (prefers-reduced-motion:reduce){.PageHeader .container{animation:none}}
+
+.Intro p,.Checklist--Lead{max-width:78ch}
+.Intro .who{background:var(--lightGrey);border-left:3px solid var(--primary);padding:1.2rem 1.6rem;border-radius:var(--borderRadius);max-width:78ch;font-size:1.45rem}
+.Intro .toc{font-size:1.4rem;color:#444}
+.Intro .toc a{margin:0 .2rem}
+
+/* checklist groups */
+.Checklist{max-width:88rem;margin:0 auto}
+.Checklist--Group{margin-bottom:3.6rem}
+.Checklist--Group h2{font-size:2.1rem}
+.Checklist--Group p.Checklist--GroupNote{max-width:78ch;color:#444;margin-bottom:1.6rem}
+.Checklist--Item{background:#fff;border-left:3px solid var(--primary);border-radius:var(--borderRadius);box-shadow:0 2px 12px rgba(0,0,0,.06);padding:1.8rem 2.2rem;margin-bottom:1.4rem}
+.Checklist--Item h3{font-size:1.6rem;margin-bottom:.5em}
+.Checklist--Item p{font-size:1.45rem;margin:0;max-width:74ch}
+
+.Example{background:var(--lightGrey);border-left:3px solid var(--primary);padding:2rem 2.4rem;border-radius:var(--borderRadius);max-width:78ch;margin:0 auto}
+.Example h4{margin-bottom:.6rem}
+
+.DIY{max-width:78ch;margin:0 auto}
+.DIY ul{padding-left:1.8rem;font-size:1.5rem}
+.DIY li{margin-bottom:.9rem}
+
+/* accordion (FAQ) */
+.Accordion{max-width:88rem;margin:0 auto;display:flex;flex-direction:column;gap:1.6rem}
+.Accordion details{background:#fff;border-radius:var(--borderRadius);box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.Accordion summary{list-style:none;cursor:pointer;padding:2rem 2.4rem;font-family:'Montserrat',sans-serif;font-weight:600;font-size:1.3rem;text-transform:uppercase;letter-spacing:.02em;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.Accordion summary::-webkit-details-marker{display:none}
+.Accordion summary::after{content:"";width:.8rem;height:.8rem;border-right:2px solid #333;border-bottom:2px solid #333;transform:rotate(45deg);flex:none;transition:transform .2s}
+.Accordion details[open] summary::after{transform:rotate(-135deg)}
+.Accordion .body{padding:0 2.4rem 2.2rem;font-size:1.5rem;max-width:74ch}
+
+/* CTA band */
+.Band{background:var(--darkGrey);color:#fff}
+.Band h2{color:#fff}
+.Band p{max-width:72ch}
+
+/* footer */
+.footer{padding:2.4rem 0;background:var(--lightGrey);font-size:1.2rem;line-height:1.9}
+.footer a{color:#000;text-decoration:none;margin:0 .3rem}
+.footer a:hover{color:var(--primary)}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Google Tag Manager Audit: A 14-Point Checklist",
+  "description": "What a Google Tag Manager audit actually checks: duplicate containers, multiple GA4 properties, dead Universal Analytics tags, pixel double-firing, consent mode and checkout blind spots.",
+  "author": { "@type": "Person", "name": "Andrew Maury" },
+  "publisher": { "@type": "Organization", "name": "ecomloop", "logo": { "@type": "ImageObject", "url": "https://ecomloop.com/images/logo.png" } },
+  "datePublished": "2026-10-08",
+  "dateModified": "2026-10-08",
+  "mainEntityOfPage": "https://ecomloop.com/gtm-audit.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does a Google Tag Manager audit check?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Google Tag Manager audit checks for duplicate containers or tags firing the same event twice, more than one GA4 property or ad pixel active in parallel, dead tags like Universal Analytics still loading, whether tracking actually reaches checkout and not just the storefront, whether consent mode is wired up correctly, and whether conversions are being counted accurately rather than over- or undercounted."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between a GTM audit and a GA4 audit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google Tag Manager is the delivery mechanism; GA4 is one of the things it delivers. A GTM audit covers everything running through the container, including GA4, ad pixels and conversion tags. A GA4 audit usually means the same checklist narrowed to the GA4 property itself: duplicate properties, missing events, and consent wiring. Most GA4 problems turn out to be GTM problems once you trace them back to the container."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a GTM audit take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A free automated scan of the public storefront takes about a minute. Checking it properly yourself, using GTM Preview mode, GA4 DebugView and a test purchase, takes a few hours. A full paid audit that reconciles tracking against your real order records runs on a fixed 10-business-day turnaround."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I audit my own GTM container for free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. GTM's own Preview mode and GA4's DebugView cover the first pass for free. What they will not tell you on their own is whether a duplicate pixel from a previous setup is still live, whether a dead tag is adding page weight for nothing, or whether what your tracking reports actually matches what you sold. A free automated scanner can check the public-facing part of that in about a minute; comparing it to your real orders is what a paid audit is for."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="Nav">
+  <div class="container">
+    <a href="/" class="Logo" aria-label="ecomloop home"></a>
+    <div class="Nav--Links">
+      <a class="NavLink" href="/#what-we-do">what I do</a>
+      <a class="NavLink" href="https://scan.ecomloop.com">free scanner</a>
+      <a class="NavLink" href="/offer.html">the audit</a>
+      <a class="NavLink" href="/#case-studies">case studies</a>
+      <a class="NavLink Nav--CTA" href="https://scan.ecomloop.com">run free scan</a>
+    </div>
+  </div>
+</nav>
+
+<header class="PageHeader">
+  <div class="BackgroundImage" role="presentation"></div>
+  <div class="container">
+    <h1 class="PageHeader--Title">Google Tag Manager audit: what it actually checks</h1>
+    <p class="PageHeader--Subtitle">a 14-point checklist, not a sales pitch. run it yourself, or let the free scanner do the first pass</p>
+    <div class="Hero--CTAs">
+      <a class="primary" href="https://scan.ecomloop.com">run the free scanner</a>
+      <a class="secondary" href="/offer.html">see the $1,750 tracking audit</a>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true"><path fill="#fff" d="M0,160L48,181.3C96,203,192,245,288,229.3C384,213,480,139,576,106.7C672,75,768,85,864,106.7C960,128,1056,160,1152,192C1248,224,1344,256,1392,272L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</header>
+
+<main>
+  <section class="section Intro">
+    <div class="container">
+      <h2>what a GTM audit is actually for</h2>
+      <p>Google Tag Manager is a container, not a tracking system. Open most stores' containers and you find the actual problems sitting inside: a GA4 tag left over from an old agency next to the current one, a conversion tag that never got removed when an ad account changed, a consent setting nobody wired up when the cookie banner went in. GTM doesn't cause any of that, but it's where all of it lives, so it's the first place to look.</p>
+      <p>This is the checklist I actually run through, grouped the way the problems show up rather than by which tag happens to cause them: what's being counted wrong, where tracking can't see, what's left over from a previous setup, and whether conversions are accurate. Below it, there's a short section on where a GA4-specific audit overlaps with this and where it doesn't, and a few ways to check each item yourself before paying anyone to do it for you.</p>
+      <p class="who">Written by Andrew Maury, who built the <a href="https://scan.ecomloop.com">free scanner</a> these checks come from and runs the <a href="/offer.html">paid audit</a> when a store wants it checked against real order data too. More on <a href="/#who">who's behind ecomloop</a> and the stores it's worked with. Checked against the scanner's live detection rules, last reviewed October 2026.</p>
+      <p class="toc"><strong>jump to:</strong> <a href="#checklist">the checklist</a> &middot; <a href="#ga4-audit">GTM audit vs. GA4 audit</a> &middot; <a href="#diy">check it yourself</a> &middot; <a href="#faq">FAQ</a></p>
+    </div>
+  </section>
+
+  <section class="section" id="checklist" style="background:var(--lightGrey)">
+    <div class="container">
+      <h2 class="emoji taCenter"><span aria-hidden="true">✅</span> the checklist, 14 points</h2>
+      <div class="Checklist">
+
+        <div class="Checklist--Group">
+          <h2>what's being counted wrong</h2>
+          <p class="Checklist--GroupNote">Duplication is the single most common thing a GTM audit turns up. It inflates whatever a platform reports and quietly steers automated bidding toward a conversion rate that was never real.</p>
+
+          <div class="Checklist--Item">
+            <h3>1. More than one GA4 property collecting the same traffic</h3>
+            <p>Two measurement IDs (G-XXXXXXXXXX) both firing on the same pages, usually because a previous agency or app installed its own and the old one was never removed. The two properties will never agree with each other, and there's no way to tell from inside GA4 alone which number is the real one.</p>
+          </div>
+          <div class="Checklist--Item">
+            <h3>2. More than one GTM container running at once</h3>
+            <p>Same story, one layer up: an old container that was never removed when a new one went in. Tags inside each container can trigger independently, so the same event gets a chance to fire twice.</p>
+          </div>
+          <div class="Checklist--Item">
+            <h3>3. A single tag firing a page view twice on one page</h3>
+            <p>One ID, two beacons, same page load. Every visit gets counted more than once in that platform, which throws off traffic, conversion rate and cost per acquisition together. This one is usually a single tag that needs removing, not anything that needs rebuilding.</p>
+          </div>
+          <div class="Checklist--Item">
+            <h3>4. More than one Meta pixel, Google Ads conversion ID, or TikTok pixel active at once</h3>
+            <p>Conversions get split between them, so no single pixel has the full picture and whichever platform you're running ads in is optimizing against part of your data instead of all of it.</p>
+          </div>
+        </div>
+
+        <div class="Checklist--Group">
+          <h2>where tracking can't see</h2>
+          <p class="Checklist--GroupNote">These are gaps, not duplicates, and they're easy to miss because the tag looks installed and working right up until the part of the funnel that actually matters.</p>
+
+          <div class="Checklist--Item">
+            <h3>5. Tags that run on the storefront but go quiet at checkout</h3>
+            <p>A pixel shows up fine on the homepage and product pages, then never fires a single event through checkout, the one place a purchase actually happens. Whatever platform that tag feeds has no data at all on the one event you actually need it to count.</p>
+          </div>
+          <div class="Checklist--Item">
+            <h3>6. Consent mode that isn't actually wired up</h3>
+            <p>A cookie banner exists, but it's never connected to Google Consent Mode, so Google has no signal about what a visitor accepted or declined. GA4's DebugView shows the consent state attached to every hit, which is the fastest way to tell whether yours is doing anything.</p>
+          </div>
+          <div class="Checklist--Item">
+            <h3>7. A tag that's installed but never reports a specific event</h3>
+            <p>The base script loads fine, but the trigger wired to a specific event (an add-to-cart, a page view on one page type) never fires. Usually a trigger built against the wrong page or the wrong element, so the tag sits there looking connected and reporting nothing for that step.</p>
+          </div>
+          <div class="Checklist--Item">
+            <h3>8. A tag that runs on desktop but goes silent on mobile, or the other way around</h3>
+            <p>Hides in plain sight, because the blended number across both devices still looks fine. Split event counts by device in GA4 over the last 30 days and the gap shows up immediately if it's there.</p>
+          </div>
+        </div>
+
+        <div class="Checklist--Group">
+          <h2>leftovers from a previous setup</h2>
+          <p class="Checklist--GroupNote">None of this corrupts your numbers. It just sits there costing you page speed for zero return.</p>
+
+          <div class="Checklist--Item">
+            <h3>9. A dead Universal Analytics tag still loading</h3>
+            <p>UA stopped collecting data in July 2023. If it's still loading on your pages, it is pure page weight with nothing behind it, and it's a reliable sign nobody has touched your tracking since the GA4 migration.</p>
+          </div>
+          <div class="Checklist--Item">
+            <h3>10. An empty GTM container: loads, fires nothing</h3>
+            <p>You're paying the page-speed cost of loading Tag Manager itself and getting no tags, no data, and nothing back for it. GTM's own Preview mode will show this directly: if nothing lights up when you load the page, the container is either empty or every trigger inside it is broken.</p>
+          </div>
+          <div class="Checklist--Item">
+            <h3>11. Placeholder IDs still live</h3>
+            <p>A theme setting or a pasted snippet left at its sample value (G-XXXXXXXXXX, AW-0000000000) that nobody ever filled in. It can still send real traffic to an ID that doesn't exist, which means whatever it was supposed to measure has been measuring nothing the entire time.</p>
+          </div>
+        </div>
+
+        <div class="Checklist--Group">
+          <h2>whether conversions are accurate</h2>
+          <p class="Checklist--GroupNote">These are the ones that actually move ad spend, because they feed straight into whatever a platform's automated bidding is optimizing toward.</p>
+
+          <div class="Checklist--Item">
+            <h3>12. A Google Ads conversion tag firing with a price attached on the wrong page</h3>
+            <p>Every one of those is a conversion value reported where no sale happened, which overstates what Smart Bidding is told to chase.</p>
+          </div>
+          <div class="Checklist--Item">
+            <h3>13. A Meta pixel reporting a Purchase event where no purchase happened</h3>
+            <p>Sometimes a leftover rule in Meta's own Event Setup Tool, created automatically during a Shopify-Meta connection, counting a Purchase every time a particular page loads rather than when an order actually completes. Merchants have reported finding exactly this, unprompted, on Shopify's own community forum.</p>
+          </div>
+          <div class="Checklist--Item">
+            <h3>14. Multiple pixels disagreeing about how the same product is identified</h3>
+            <p>If GA4 and Meta (or two Meta pixels) use different IDs for the same SKU, the platforms can't reconcile what actually sold, and anything built on top of that, like server-side matching, degrades along with it.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ga4-audit">
+    <div class="container">
+      <h2>what about a GA4 audit, specifically?</h2>
+      <p>Most of what breaks in GA4 actually breaks in GTM, because GTM is usually what's loading the GA4 tag in the first place. If what brought you here was "GA4 audit" rather than "GTM audit," the overlap is points 1, 6, 7 and 8 above: the duplicate-property check, the consent check, the missing-event check, and the device-split check. Those are the GA4-specific version of the same problems.</p>
+      <p>The part that's genuinely GA4-only, and the part a storefront scan can't do from the outside: whether the events arriving in GA4 actually match what your reports assume, like purchase value lining up with what you actually sold. That comparison needs your real order records, not just what the tag reports about itself, which is the gap the paid audit closes.</p>
+    </div>
+  </section>
+
+  <section class="section" id="diy" style="background:var(--lightGrey)">
+    <div class="container">
+      <h2 class="emoji taCenter"><span aria-hidden="true">🧰</span> how to check each of these yourself</h2>
+      <div class="DIY">
+        <ul>
+          <li><strong>GTM Preview mode,</strong> run against your own store, shows exactly which tags fire and which triggers never match. The fastest way to catch an empty container or a trigger wired to the wrong page.</li>
+          <li><strong>GA4 DebugView,</strong> walking through your own site, shows events arriving in real time, including the consent state attached to each one.</li>
+          <li><strong>Meta Events Manager's Test Events tab</strong> shows what a pixel is actually receiving, including anything sent from your server that a browser-only check would never see.</li>
+          <li><strong>A device split in GA4</strong> over the last 30 days (desktop vs. mobile event counts) catches a tag that only runs on one of them.</li>
+          <li><strong>Searching your theme settings and app embeds</strong> for the exact string of a suspicious-looking ID is usually how a placeholder value gets found.</li>
+        </ul>
+        <p>That's the manual version, and it works. It also takes a few hours to do properly across every page type, and it still won't tell you whether what's reported lines up with what you actually sold.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="Example">
+        <h4>the pattern this catches most often</h4>
+        <p>It's rarely one dramatic break. The most common version: two GA4 properties running side by side on the same pages, one from the current setup and one an old agency or app never removed. Both collect the same traffic, neither one matches the other, and there's no way to tell from inside GA4 alone which number is real. The fix is almost always deleting the old property and checking nothing still depends on it, not rebuilding anything.</p>
+      </div>
+      <div class="Example" style="margin-top:2rem">
+        <h4>what the report actually looks like</h4>
+        <p>Every finding the scanner reports carries a confidence label, not a made-up severity score: <strong>Confirmed</strong> for something watched happening in the network traffic or the page source itself, <strong>Likely</strong> for something that should be there and wasn't (which can sometimes mean server-side tracking that isn't visible from outside), and <strong>Worth checking</strong> for anything with more than one ordinary explanation. That's the actual format behind every item on this checklist, not a description of one.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section Band">
+    <div class="container">
+      <h2><span aria-hidden="true">🔍</span> run it instead of reading it</h2>
+      <p>The free scanner runs the storefront half of this checklist against your actual store in about a minute, no login needed, and tells you which of the above apply to you, not which ones theoretically could. If you want the checkout and real-order-record half checked too, the part nothing can see from outside, that's the $1,750 Tracking &amp; Profit Audit, a fixed 10-business-day turnaround.</p>
+      <div class="Hero--CTAs">
+        <a class="primary" href="https://scan.ecomloop.com">run the free scanner</a>
+        <a class="secondary" href="/offer.html">see the $1,750 audit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <h2 class="emoji taCenter"><span aria-hidden="true">❓</span> questions people actually ask</h2>
+      <div class="Accordion">
+        <details>
+          <summary>what does a Google Tag Manager audit check?</summary>
+          <div class="body">Duplicate containers or tags firing the same event twice, more than one GA4 property or ad pixel active in parallel, dead tags like Universal Analytics still loading, whether tracking actually reaches checkout and not just the storefront, whether consent mode is wired up correctly, and whether conversions are counted accurately rather than over- or undercounted. The full checklist is above.</div>
+        </details>
+        <details>
+          <summary>what's the difference between a GTM audit and a GA4 audit?</summary>
+          <div class="body">Google Tag Manager is the delivery mechanism; GA4 is one of the things it delivers. A GTM audit covers everything running through the container, including GA4, ad pixels and conversion tags. A GA4 audit usually means the same checklist narrowed to the GA4 property itself: duplicate properties, missing events, consent wiring. Most GA4 problems turn out to be GTM problems once you trace them back to the container.</div>
+        </details>
+        <details>
+          <summary>how long does a GTM audit take?</summary>
+          <div class="body">The free automated scan of your public storefront takes about a minute. Checking it properly yourself, with GTM Preview mode, GA4 DebugView and a test purchase, takes a few hours. The paid audit, which reconciles tracking against your real order records, runs on a fixed 10-business-day turnaround from the day access lands.</div>
+        </details>
+        <details>
+          <summary>can I audit my own GTM container for free?</summary>
+          <div class="body">Yes. GTM's own Preview mode and GA4's DebugView cover the first pass for free, and the "how to check this yourself" section above walks through it. What they won't tell you on their own is whether a duplicate pixel from a previous setup is still live, whether a dead tag is adding page weight for nothing, or whether what's reported matches what you actually sold. The free scanner checks the public-facing part of that in about a minute; comparing it to your real orders is what the paid audit is for.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container taCenter">
+    <a href="/#contact">contact</a> | <a href="https://scan.ecomloop.com">free scanner</a> | <a href="/gtm-audit.html">gtm audit checklist</a> | <a href="https://github.com/RantumBits" target="_blank" rel="noopener noreferrer">github</a> | <a href="https://www.upwork.com/freelancers/andrewmaury" target="_blank" rel="noopener noreferrer">upwork</a> | <a href="https://www.linkedin.com/company/ecomloop/" target="_blank" rel="noopener noreferrer">linkedin</a>
+    <br>© 2026 ecomloop. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
