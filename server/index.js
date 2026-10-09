@@ -55,9 +55,18 @@ app.addHook('onRequest', async (req, reply) => {
   if (req.url === '/offer') return reply.redirect('/offer.html', 301);
 });
 
+// A 404/410 rule serves the 404 page with that status instead of redirecting:
+// Google reads a redirect to an unrelated page as a soft 404 and keeps the old
+// URL around, while a real 410 drops it from the index.
+const GONE_BODY = readFileSync(path.join(SITE_DIR, '404.html'));
+
 app.addHook('onRequest', async (req, reply) => {
   const rule = redirects.find((r) => req.url === r.prefix.replace(/\/$/, '') || req.url.startsWith(r.prefix));
-  if (rule) return reply.redirect(rule.to, rule.status);
+  if (!rule) return;
+  if (rule.status === 404 || rule.status === 410) {
+    return reply.code(rule.status).type('text/html; charset=utf-8').send(GONE_BODY);
+  }
+  return reply.redirect(rule.to, rule.status);
 });
 
 // --------------------------------------------------------------- form submit
