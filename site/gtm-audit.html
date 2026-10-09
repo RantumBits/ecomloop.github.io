@@ -236,7 +236,7 @@ h2{font-size:2.6rem}
           </div>
           <div class="Checklist--Item">
             <h3>6. Consent mode that isn't actually wired up</h3>
-            <p>A cookie banner exists, but it's never connected to Google Consent Mode, so Google has no signal about what a visitor accepted or declined. GA4's DebugView shows the consent state attached to every hit, which is the fastest way to tell whether yours is doing anything.</p>
+            <p>A cookie banner exists, but it's never connected to Google Consent Mode, so Google has no signal about what a visitor accepted or declined. Tag Assistant is where you check this: it shows the consent state read on the page and the API calls behind it. DebugView will not tell you, since it shows events and parameters and not consent state.</p>
           </div>
           <div class="Checklist--Item">
             <h3>7. A tag that's installed but never reports a specific event</h3>
@@ -302,7 +302,7 @@ h2{font-size:2.6rem}
       <div class="DIY">
         <ul>
           <li><strong>GTM Preview mode,</strong> run against your own store, shows exactly which tags fire and which triggers never match. The fastest way to catch an empty container or a trigger wired to the wrong page.</li>
-          <li><strong>GA4 DebugView,</strong> walking through your own site, shows events arriving in real time, including the consent state attached to each one.</li>
+          <li><strong>GA4 DebugView,</strong> walking through your own site, shows events arriving in real time with their parameters. It does not show consent state, so use <strong>Tag Assistant</strong> for that part.</li>
           <li><strong>Meta Events Manager's Test Events tab</strong> shows what a pixel is actually receiving, including anything sent from your server that a browser-only check would never see.</li>
           <li><strong>A device split in GA4</strong> over the last 30 days (desktop vs. mobile event counts) catches a tag that only runs on one of them.</li>
           <li><strong>Searching your theme settings and app embeds</strong> for the exact string of a suspicious-looking ID is usually how a placeholder value gets found.</li>
@@ -363,7 +363,7 @@ h2{font-size:2.6rem}
 
 <footer class="footer">
   <div class="container taCenter">
-    <a href="/#contact">contact</a> | <a href="https://scan.ecomloop.com">free scanner</a> | <a href="/gtm-audit.html">gtm audit checklist</a> | <a href="https://github.com/RantumBits" target="_blank" rel="noopener noreferrer">github</a> | <a href="https://www.upwork.com/freelancers/andrewmaury" target="_blank" rel="noopener noreferrer">upwork</a> | <a href="https://www.linkedin.com/company/ecomloop/" target="_blank" rel="noopener noreferrer">linkedin</a>
+    <a href="/#contact">contact</a> | <a href="https://scan.ecomloop.com">free scanner</a> | <a href="/gtm-audit.html">gtm audit checklist</a> | <a href="/ga4-purchase-count-mismatch.html">ga4 vs shopify orders</a> | <a href="https://github.com/RantumBits" target="_blank" rel="noopener noreferrer">github</a> | <a href="https://www.upwork.com/freelancers/andrewmaury" target="_blank" rel="noopener noreferrer">upwork</a> | <a href="https://www.linkedin.com/company/ecomloop/" target="_blank" rel="noopener noreferrer">linkedin</a>
     <br>© 2026 ecomloop. All rights reserved.
   </div>
 </footer>
