@@ -278,30 +278,78 @@ week's delay.
 
 Work the tiers top down. One tier per week is enough; the scan log and the
 "was anything wrong" replies from one tier should be read before the next opens.
-Decided 2026-10-01: Tier 1 opens the week of 2026-10-05, after the gate work
-(ground-truth check on the 10 stores, feedback link, API spend limit) lands.
+
+Two things learned in the first week that apply to every venue below. Every
+worthwhile community gates entry behind an application, a verification bot or a
+karma threshold, and several reject silently — **apply to the next tier's venues
+while the current one runs**, or approval becomes the bottleneck. And measure the
+result in the Cloud Run request log, not in replies: a report opened by someone
+other than Andrew is the only honest signal this has reached anyone, since scans
+and `GET /r/<id>` hits are both logged and his own IP is easy to exclude.
+Tier 1 opened 2026-10-02, the day the gate work (ground-truth check on the 10
+stores, feedback link, API spend limit) reached production as Cloud Run revision
+`tracking-scanner-00009`. The seven-day clock for Tier 2 runs from that date.
 
 *Tier 1: answer existing threads (best fit).*
 
-1. Shopify Community forums (`community.shopify.com`, boards: Ecommerce Marketing,
-   Technical Q&A, Shopify Apps). Reply to existing "why is my pixel firing twice"
-   threads rather than opening a launch thread. Live threads at time of writing:
-   Meta pixel counting one page view as two (t/399974), Events duplication Meta
-   (ecommerce-marketing/m-p/2715903), GA4 purchase firing twice in a GTM store
-   (t/148983), Facebook Ads deduplication (t/401996).
+1. Shopify Community forums (`community.shopify.com`). Reply to existing threads
+   rather than opening a launch thread, and only to threads active in the last
+   month: the four candidates researched on 2026-10-01 turned out to be 18 months
+   to 4 years old, and one URL was dead. Find live ones with the forum's own
+   search (`/search.json?q=<terms> after:<date> order:latest` lists reply counts
+   and last-post dates). Posted 2026-10-02 as `andrew_ecomloop`: "How do you catch
+   it when your Meta Pixel / GA4 / CAPI quietly stops firing?" (t/666988, with
+   link), "Your Shopify store made 20 sales, Meta says 14, Google says 11"
+   (t/683256, with link), "Purchase event fires on homepage load" (t/678989, no
+   link: the scanner does not yet flag a Meta Purchase on a browsing page), and one
+   stale thread (t/399974) before the age rule was set. Agencies are working the
+   same threads by hand with "here is what your page loads" replies, so a reply
+   has to answer the question, not just carry the link.
+
+   Second pass the same day, after scanning the stores named in active threads
+   with the CLI: "Is my store ready for conversions?" (t/607458, arvaneleather.com,
+   no link: Pinterest and Microsoft Ads each sent twice, channel pixel plus a second
+   Customer-events pixel) and "Comprehensive review of my Shopify store" (t/682313,
+   safeina.com, with link: Google Ads run with no conversion tag, no GA4, Clarity
+   returning 400). Scanning the store first and replying with its findings is the
+   reply that beats the agencies' hand-made ones. Caveat learned on arvaneleather:
+   read the saved request URLs before posting a count, because the report
+   overcounted Pinterest and pointed at theme code when both senders were web
+   pixels (detector fix spun off 2026-10-02).
+   On 2026-10-07, answering a measurement question beat posting findings: t/693112
+   ("Comparing GA4 purchase events with Shopify orders") already had three good
+   answers about matching transaction ids, so the reply covered the one thing none
+   of them did — a GA4 tag installed in theme code is simply absent at checkout, so
+   the purchase event never fires for anyone — and cited 33 of 192 scanned brands
+   running two of their own GA4 properties. No link; the profile carries it.
 2. Shopify Developer Forums (`community.shopify.dev`). Guidelines remove unsolicited
    promotion. Answer first, link when asked.
 3. The official Shopify Developers Discord (~21k members). The live replacement for
    the sunset Partners Slack, with the agency and freelancer density wanted for blunt
-   feedback. Same rule: help in a tracking channel, then share.
+   feedback. Same rule: help in a tracking channel, then share. Joining needs an
+   application; applied 2026-10-06, still pending.
 4. Talk Shop Discord (`letstalkshop.com`). Shopify builders and merchants; it also
-   runs a daily newsletter that features tools.
+   runs a daily newsletter that features tools. Entered 2026-10-06 and the rules are
+   strict enough to plan around: a Double Counter bot gates every channel until you
+   verify; **a moderator's permission is needed before posting any link anywhere**,
+   so members write domains as `store[dot]com` and keep the real URL in their
+   profile bio; self-promo outside `#self-promo` is a ban, as is soliciting DMs;
+   `#self-promo` allows **one post per week per person**. The way in is
+   `#help-forum`'s pinned "Want an extra set of eyes on your store?" — a mod's
+   standing offer to review any store posted there, explicitly open to anyone else
+   with a good eye. Replied there 2026-10-06 with rootier.shop's findings (two Meta
+   pixels; theme-code Meta and TikTok absent at checkout) and posted the scanner in
+   `#self-promo` the next day. No reply to either after a day.
 
 *Tier 2: analytics practitioners (fastest false-positive finders).*
 
 5. Measure Slack (`join.measure.chat`, ~15k+). No self-promotion culture, but
    "built this, run it on a store you know and tell me what is wrong" in a GA4 or
-   GTM channel fits. Never cross-post channels.
+   GTM channel fits. Never cross-post channels. Entry is a Google Form requiring a
+   LinkedIn profile that shows you work in the industry, and **they do not notify
+   rejections** — applied 2026-10-06, so reapply if nothing arrives by 2026-10-09.
+   Its terms ban capturing members to sell to and ban soliciting link sharing, which
+   rules out following up by DM.
 6. Analytics Mania GTM and GA4 Facebook groups (Julius Fedorovicius). Rules allow
    GTM-related products when the post is useful. Two strikes and out, so one post
    each.
@@ -313,7 +361,13 @@ Decided 2026-10-01: Tier 1 opens the week of 2026-10-05, after the gate work
 
 9. r/shopify and r/ecommerce. Promotion-free, strictly enforced, karma gate.
    Comment replies only, never the same ask in several subs on one day. Lead with a
-   redacted example report, not the URL.
+   redacted example report, not the URL. Checked 2026-10-06 and it is weaker than it
+   looks: r/shopify has **no weekly feedback thread** (the only pinned post is the
+   rules), the newest 100 posts named no store at all, and AutoModerator removes
+   comments from accounts with **post karma under 10** — check the account's karma
+   before counting on this venue. Reddit also blocks both browsers available here on
+   policy and rate-limits scripts; `https://www.reddit.com/r/<sub>/new/.rss` works
+   if a minute is left between calls.
 10. Shopify Entrepreneurs Facebook group (HeyCarson, 100k+). Non-partners pay $250
     per promotional post, and links to services competing with HeyCarson or
     Storetasker are banned outright, which a tracking audit offer likely trips.
