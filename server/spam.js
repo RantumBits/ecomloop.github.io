@@ -82,6 +82,65 @@ export function createTokenSigner(secret) {
   };
 }
 
+// A rejected submission is shown the same thank-you page as a real one, so the
+// pool learns nothing. That is the point, but it means the page cannot carry an
+// analytics tag unconditionally: a bot, a reused token or a back-button
+// resubmit would each count as a conversion while sending no email. So a
+// submission that actually notified hands back a one-time receipt, and only a
+// request presenting one gets the tagged page.
+export const RECEIPT_FIELD = 'cr';
+// Long enough to survive the redirect and a slow page load, short enough that a
+// receipt left in a cookie jar is worthless later.
+export const RECEIPT_MAX_AGE_SECONDS = 600;
+
+const spentReceipts = new Map();
+
+export function createReceiptSigner(secret) {
+  // Domain-separated from the form tokens: both are signed with FORM_SECRET, so
+  // without the prefix a minted form token would verify as a receipt.
+  const sign = (payload) =>
+    createHmac('sha256', secret).update(`receipt:${payload}`).digest('base64url');
+
+  return {
+    mint(now = Date.now()) {
+      const payload = `${Math.floor(now / 1000)}.${randomBytes(9).toString('base64url')}`;
+      return `${payload}.${sign(payload)}`;
+    },
+
+    // True at most once per receipt. Cloud Run runs up to two instances and
+    // this map is per-instance, so a reload that lands on the other one could
+    // still redeem; clearing the cookie on first render is the real defence and
+    // this is the backstop. Both fail safe: no receipt is ever issued for a
+    // rejection, which is the case that would corrupt the data.
+    redeem(value, now = Date.now()) {
+      if (typeof value !== 'string' || !value) return false;
+
+      const lastDot = value.lastIndexOf('.');
+      if (lastDot < 0) return false;
+      const payload = value.slice(0, lastDot);
+      const presented = Buffer.from(value.slice(lastDot + 1), 'base64url');
+      const expected = Buffer.from(sign(payload), 'base64url');
+      if (presented.length !== expected.length) return false;
+      if (!timingSafeEqual(presented, expected)) return false;
+
+      const [issuedAtRaw, nonce] = payload.split('.');
+      const issuedAt = Number(issuedAtRaw);
+      if (!Number.isFinite(issuedAt) || !nonce) return false;
+
+      const ageSeconds = now / 1000 - issuedAt;
+      if (ageSeconds < 0 || ageSeconds > RECEIPT_MAX_AGE_SECONDS) return false;
+
+      for (const [spent, expiresAt] of spentReceipts) {
+        if (expiresAt <= now) spentReceipts.delete(spent);
+      }
+      if (spentReceipts.has(nonce)) return false;
+      spentReceipts.set(nonce, now + RECEIPT_MAX_AGE_SECONDS * 1000);
+
+      return true;
+    },
+  };
+}
+
 // Caps that a genuine lead stays well inside. These are a second line behind
 // the token, aimed at the shapes actually seen in the 20 submissions rather
 // than at wording, which is cheap for a bot to vary and risks real leads.
