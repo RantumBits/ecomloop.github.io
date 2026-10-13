@@ -3,3 +3,4 @@
 .claude
 docs
 *.md
+node_modules

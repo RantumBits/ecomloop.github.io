@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GA4 Purchase Count Doesn't Match Shopify Orders: How to Find Out Why | ecomloop</title>
+<meta name="description" content="Some of the gap is always normal: POS, subscriptions, marketplace orders, ad blockers. Here's how to work out your real baseline first, then find what's actually broken.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/images/logo.png" type="image/png">
+<link rel="canonical" href="https://ecomloop.com/ga4-purchase-count-mismatch.html">
+<meta property="og:title" content="GA4 Purchase Count Doesn't Match Shopify Orders: How to Find Out Why | ecomloop">
+<meta property="og:description" content="Some of the gap is always normal: POS, subscriptions, marketplace orders, ad blockers. Here's how to work out your real baseline first, then find what's actually broken.">
+<meta property="og:image" content="https://ecomloop.com/images/hero.jpg">
+<meta property="og:url" content="https://ecomloop.com/ga4-purchase-count-mismatch.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ecomloop">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#00c2bd; --secondary:#000; --lightGrey:whitesmoke; --midGrey:#cacaca; --darkGrey:#272727;
+  --borderRadius:3px; --container:110rem;
+}
+*{box-sizing:border-box}
+html{font-size:62.5%;min-height:100%;background:var(--lightGrey);scroll-behavior:smooth}
+body{margin:0;font-family:'Inconsolata',monospace;background:#fff;color:var(--secondary);font-size:1.6em;font-weight:400;letter-spacing:.01em;line-height:1.6;-webkit-font-smoothing:antialiased}
+::selection{background:rgba(0,194,189,.6)}
+a{color:var(--primary)}
+p{margin:0 0 1em}
+h1,h2{margin:0 0 .5em;font-family:'Montserrat',sans-serif;font-weight:600;line-height:1.2}
+h3,h4{font-family:'Inconsolata',monospace;font-weight:700;margin:0 0 .5em}
+h2{font-size:2.6rem}
+.container{max-width:var(--container);margin:0 auto;padding:0 2rem}
+.taCenter{text-align:center}
+.section{padding:5rem 0}
+.section h2.emoji{text-align:center;margin-bottom:3rem}
+
+/* nav */
+.Nav{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.Nav .container{display:flex;align-items:center;gap:2.4rem;height:5.2rem}
+.Logo{display:block;width:3.2rem;height:3.2rem;background:url(/images/logo.png) center/contain no-repeat;flex:none}
+.Nav--Links{display:flex;align-items:center;gap:1.8rem;margin-left:auto}
+.NavLink{color:var(--secondary);text-decoration:none;font-size:1.5rem}
+.NavLink:hover{color:var(--primary)}
+.Nav--CTA{background:var(--primary);color:#fff;text-transform:uppercase;font-size:1.2rem;letter-spacing:.06em;padding:.7rem 1.2rem;border-radius:var(--borderRadius)}
+.Nav--CTA:hover{color:#fff;background:#00a9a4}
+.Hero--CTAs{display:flex;flex-wrap:wrap;gap:1.2rem;margin-top:1.6rem}
+.Hero--CTAs a{display:inline-block;text-decoration:none;text-transform:uppercase;font-size:1.2rem;letter-spacing:.06em;padding:1rem 1.6rem;border-radius:var(--borderRadius)}
+.Hero--CTAs a.primary{background:var(--primary);color:#fff}
+.Hero--CTAs a.primary:hover{background:#00a9a4}
+.Hero--CTAs a.secondary{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.5)}
+.Hero--CTAs a.secondary:hover{background:rgba(255,255,255,.22)}
+@media (max-width:640px){.Nav--Links .NavLink:not(.Nav--CTA){display:none}}
+
+/* hero */
+.PageHeader{position:relative;background:var(--darkGrey);color:#fff;padding:9rem 0 20rem;overflow:hidden}
+.PageHeader .BackgroundImage{position:absolute;inset:0;background:linear-gradient(90deg,rgba(39,39,39,.75),rgba(39,39,39,.4)),url(/images/hero.jpg) center/cover no-repeat;opacity:.9}
+.PageHeader .container{position:relative;animation:fadeIn .5s ease-out}
+.PageHeader--Title{font-size:4.6rem;margin-bottom:1.6rem;color:#fff;text-wrap:balance;max-width:28ch}
+.PageHeader--Subtitle{font-weight:700;font-size:1.8rem;margin:0 0 .6em;color:#fff;max-width:60ch}
+.PageHeader--Subtitle::before{content:">> "}
+.PageHeader > svg{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:16rem;display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (max-width:600px){.PageHeader{padding:6rem 0 12rem}.PageHeader--Title{font-size:3rem}.PageHeader > svg{height:9rem}}
+@media (prefers-reduced-motion:reduce){.PageHeader .container{animation:none}}
+
+.Intro p{max-width:78ch}
+.Intro .who{background:var(--lightGrey);border-left:3px solid var(--primary);padding:1.2rem 1.6rem;border-radius:var(--borderRadius);max-width:78ch;font-size:1.45rem}
+.Intro .toc{font-size:1.4rem;color:#444}
+.Intro .toc a{margin:0 .2rem}
+
+/* normal-gap list */
+.Normal{max-width:80rem;margin:0 auto}
+.Normal p{max-width:78ch}
+.Normal ul{padding-left:1.8rem;font-size:1.5rem}
+.Normal li{margin-bottom:.8rem}
+.Normal h3{font-size:1.6rem;margin-top:2rem}
+
+/* cause cards */
+.Causes{max-width:88rem;margin:0 auto}
+.Causes--Item{background:#fff;border-left:3px solid var(--primary);border-radius:var(--borderRadius);box-shadow:0 2px 12px rgba(0,0,0,.06);padding:1.8rem 2.2rem;margin-bottom:1.4rem}
+.Causes--Item h3{font-size:1.7rem;margin-bottom:.5em}
+.Causes--Item p{font-size:1.45rem;margin:0 0 .8em;max-width:76ch}
+.Causes--Item p:last-child{margin-bottom:0}
+.Causes--Item .stat{font-size:1.4rem;color:#444;border-top:1px solid #e8e8e8;padding-top:.8em}
+
+/* step list */
+.Steps{max-width:80rem;margin:0 auto}
+.Steps ol{padding-left:2rem;font-size:1.5rem}
+.Steps li{margin-bottom:1.6rem}
+.Steps code{background:var(--lightGrey);padding:.1rem .4rem;border-radius:3px;font-size:1.4rem}
+.Steps .warn{display:block;margin-top:.5em;font-size:1.4rem;color:#444}
+
+.Example{background:var(--lightGrey);border-left:3px solid var(--primary);padding:2rem 2.4rem;border-radius:var(--borderRadius);max-width:78ch;margin:0 auto}
+.Example h4{margin-bottom:.6rem}
+.Example p{font-size:1.45rem}
+
+/* method note */
+.Method{max-width:78ch;margin:0 auto;font-size:1.4rem;color:#444;background:#fff;border:1px solid #e3e3e3;border-radius:var(--borderRadius);padding:1.6rem 2rem}
+.Method h4{margin-bottom:.6rem;color:#000}
+
+/* accordion (FAQ) */
+.Accordion{max-width:88rem;margin:0 auto;display:flex;flex-direction:column;gap:1.6rem}
+.Accordion details{background:#fff;border-radius:var(--borderRadius);box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.Accordion summary{list-style:none;cursor:pointer;padding:2rem 2.4rem;font-family:'Montserrat',sans-serif;font-weight:600;font-size:1.3rem;text-transform:uppercase;letter-spacing:.02em;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.Accordion summary::-webkit-details-marker{display:none}
+.Accordion summary::after{content:"";width:.8rem;height:.8rem;border-right:2px solid #333;border-bottom:2px solid #333;transform:rotate(45deg);flex:none;transition:transform .2s}
+.Accordion details[open] summary::after{transform:rotate(-135deg)}
+.Accordion .body{padding:0 2.4rem 2.2rem;font-size:1.5rem;max-width:74ch}
+
+/* CTA band */
+.Band{background:var(--darkGrey);color:#fff}
+.Band h2{color:#fff}
+.Band p{max-width:72ch}
+
+/* footer */
+.footer{padding:2.4rem 0;background:var(--lightGrey);font-size:1.2rem;line-height:1.9}
+.footer a{color:#000;text-decoration:none;margin:0 .3rem}
+.footer a:hover{color:var(--primary)}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "GA4 Purchase Count Doesn't Match Shopify Orders: How to Find Out Why",
+  "description": "Some of the gap between GA4 purchases and Shopify orders is always structural. How to build an adjusted baseline first, then find the tracking faults that explain the rest.",
+  "author": { "@type": "Person", "name": "Andrew Maury" },
+  "publisher": { "@type": "Organization", "name": "ecomloop", "logo": { "@type": "ImageObject", "url": "https://ecomloop.com/images/logo.png" } },
+  "datePublished": "2026-10-09",
+  "dateModified": "2026-10-09",
+  "mainEntityOfPage": "https://ecomloop.com/ga4-purchase-count-mismatch.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How big a gap between GA4 purchases and Shopify orders is normal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no published figure worth trusting. Shopify and Google do not state one, and the ranges you see quoted in blog posts come with no method attached. The gap depends entirely on your own order mix: a store with POS, subscriptions or marketplace channels will run a large structural gap with nothing broken, and a store selling one product through one storefront will run a small one. Build your own baseline by subtracting the orders that could never fire a browser event, then judge what is left."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my GA4 purchase count higher than my Shopify order count?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GA4 counting above Shopify almost always means the same purchase is being recorded more than once, either because two installs of the same tag are both live or because two GA4 properties are collecting the same traffic. Confirm it in GA4 DebugView or Tag Assistant rather than by counting rows in the Network tab, since gtag batches several events into one request."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my GA4 purchase count lower than my Shopify order count?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually because a share of your orders never involved a browser session at all: POS, draft and manual orders, subscription rebills, and marketplace or channel orders. After you subtract those, the remaining shortfall is ad blockers, declined consent under basic consent mode, customers who close the tab after an offsite payment, or a purchase event that is not wired into checkout at all."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can a second GA4 measurement ID be hiding on a Shopify store?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Seven places: app pixels under Settings and Customer events, custom pixels in the same place, the Google and YouTube channel app, hardcoded gtag or GTM in theme code, apps that inject script tags or theme app extensions, a server-side GTM container or Measurement Protocol send, and any GTM container that holds its own GA4 configuration tag. Custom pixels are worth checking first, because Shopify auto-migrated legacy Preferences tags into them in February 2025."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="Nav">
+  <div class="container">
+    <a href="/" class="Logo" aria-label="ecomloop home"></a>
+    <div class="Nav--Links">
+      <a class="NavLink" href="/#what-we-do">what I do</a>
+      <a class="NavLink" href="https://scan.ecomloop.com">free scanner</a>
+      <a class="NavLink" href="/offer.html">the audit</a>
+      <a class="NavLink" href="/gtm-audit.html">gtm audit checklist</a>
+      <a class="NavLink Nav--CTA" href="https://scan.ecomloop.com">run free scan</a>
+    </div>
+  </div>
+</nav>
+
+<header class="PageHeader">
+  <div class="BackgroundImage" role="presentation"></div>
+  <div class="container">
+    <h1 class="PageHeader--Title">GA4 purchase count doesn't match your Shopify orders</h1>
+    <p class="PageHeader--Subtitle">some of that gap is structural and always will be. work out your real baseline first, then go looking for what's broken</p>
+    <div class="Hero--CTAs">
+      <a class="primary" href="https://scan.ecomloop.com">run the free scanner</a>
+      <a class="secondary" href="/offer.html">see the $1,750 tracking audit</a>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true"><path fill="#fff" d="M0,160L48,181.3C96,203,192,245,288,229.3C384,213,480,139,576,106.7C672,75,768,85,864,106.7C960,128,1056,160,1152,192C1248,224,1344,256,1392,272L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</header>
+
+<main>
+  <section class="section Intro">
+    <div class="container">
+      <h2>start here: the two numbers were never going to match</h2>
+      <p>GA4 counts purchase events fired by a browser. Shopify counts orders. Those are different things, and on most stores they are different by a few percent before anything is wrong. If you go straight to debugging you will spend a day chasing a gap that your order mix explains on its own.</p>
+      <p>So the first job is a baseline: subtract the orders that could never have fired a browser event, and see what is left. If the remainder is still off, that is the part worth debugging, and the rest of this page covers how.</p>
+      <p class="who">Written by Andrew Maury. I run the <a href="https://scan.ecomloop.com">free tracking scanner</a> and the <a href="/offer.html">paid audit</a>, and the figures lower down come from my own scan of 192 Shopify storefronts. Last reviewed 9 October 2026, against Shopify's current checkout and pixel behaviour.</p>
+      <p class="toc"><strong>jump to:</strong> <a href="#normal">what's normal</a> &middot; <a href="#broken">what's actually broken</a> &middot; <a href="#check">how to check, in order</a> &middot; <a href="#faq">FAQ</a></p>
+    </div>
+  </section>
+
+  <section class="section" id="normal" style="background:var(--lightGrey)">
+    <div class="container">
+      <h2 class="emoji taCenter"><span aria-hidden="true">📐</span> how much of the gap is normal</h2>
+      <div class="Normal">
+        <p>I am not going to give you a percentage. Shopify and Google don't publish one, and the numbers you'll find quoted around (5 to 10 percent, 10 to 20, up to 30) are asserted with no method behind them. The honest answer is that it depends on your order mix, and you can work yours out in about ten minutes.</p>
+
+        <h3>Orders that never had a browser session</h3>
+        <p>None of these can fire a GA4 purchase event, because no one loaded a page:</p>
+        <ul>
+          <li><strong>POS orders.</strong> In-person sales through Shopify POS.</li>
+          <li><strong>Draft and manual orders</strong> created in the admin, including invoices and phone orders.</li>
+          <li><strong>Subscription rebills.</strong> Recurring charges through Shopify Subscriptions, Recharge and similar never load a checkout. On a subscription-heavy store this is the whole gap on its own.</li>
+          <li><strong>Marketplace and channel orders.</strong> Amazon, eBay, Faire, Walmart, Instagram and Facebook Shops, TikTok Shop, the Shop app, and B2B or wholesale orders.</li>
+          <li><strong>Orders created by an app or the Admin API</strong>, including ERP pushes and replacement orders raised by a returns app.</li>
+          <li><strong>Post-purchase upsells and order edits</strong> that add line items or spawn a second order.</li>
+        </ul>
+
+        <h3>Orders where the session existed but the hit didn't arrive</h3>
+        <ul>
+          <li><strong>Ad blockers and tracking protection.</strong> uBlock, Brave, Safari ITP and Firefox ETP all block requests to google-analytics.com.</li>
+          <li><strong>Declined consent under basic consent mode</strong>, where tags are held until someone accepts and nothing is sent before that.</li>
+          <li><strong>Offsite payment redirects.</strong> PayPal, Klarna, Afterpay, iDEAL. Most customers do come back to the confirmation page, so size this smaller than your share of orders paid that way.</li>
+          <li><strong>Someone closing the tab</strong> the moment payment clears.</li>
+        </ul>
+
+        <h3>Two things people blame that aren't the cause</h3>
+        <ul>
+          <li><strong>Refunds and cancellations do not reduce your GA4 purchase count.</strong> A refund is a separate event. They affect revenue comparisons, and they affect the Transactions metric, but the purchase event count stays where it was. Your Shopify order count also still includes cancelled orders unless you filter them out, so this one can push either way.</li>
+          <li><strong>Attribution windows do not change the total.</strong> They change which channel gets credit. If your totals disagree, attribution settings are not why.</li>
+        </ul>
+
+        <h3>One that is worth checking in five seconds</h3>
+        <p><strong>Timezones.</strong> GA4 reports in the property's reporting timezone, Shopify Analytics in the store's timezone. If they differ, orders slide between days. Compare a window of 28 days or more so a day-boundary shift stops mattering.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="broken">
+    <div class="container">
+      <h2 class="emoji taCenter"><span aria-hidden="true">🔎</span> what's actually broken, when something is</h2>
+      <div class="Causes">
+
+        <div class="Causes--Item">
+          <h3>Two installs of the same tag, both live</h3>
+          <p>The usual way a store ends up counting a purchase twice. Shopify's own setup sends the event, and a GA4 app, a theme snippet or an old agency's tag sends it again. Both carry the same measurement ID, so GA4 has no way to tell the second one is a copy.</p>
+          <p class="stat">On 5 October 2026 I scanned 192 well-known DTC Shopify brands I picked myself. 63 of them fired the same page view twice. My scan doesn't place orders, so I can't tell you from it how often a <em>purchase</em> gets doubled. What it does show is how often a store has two live installs of one tag, which is the setup that produces a doubled purchase.</p>
+        </div>
+
+        <div class="Causes--Item">
+          <h3>Two GA4 properties collecting the same traffic</h3>
+          <p>Same problem one level up: two different measurement IDs, usually an old agency's property that nobody removed when the new one went in. Each property records its own copy of the order, so neither one agrees with Shopify and neither one agrees with the other.</p>
+          <p class="stat">33 of those same 192 stores were running two or more of their own GA4 properties at once. The raw detector flagged 45 before exclusions. I removed a tracking vendor's own property appearing on 10 stores through first-party subdomains, four template placeholder IDs that were never filled in, one pixel that loaded a second ID and never sent a hit, and one embedded video player's own property.</p>
+        </div>
+
+        <div class="Causes--Item">
+          <h3>Nothing firing a purchase at checkout at all</h3>
+          <p>The tag works on your product pages and there is no route for it to fire at checkout, so GA4 only ever hears about the orders where something else picked it up. Since the checkout changes below, this is now an easy state to end up in by accident.</p>
+          <p class="stat">42 of the 133 stores where my scan reached checkout had a tag live on storefront pages and no sign of it at the cart or checkout step. I record that as likely rather than confirmed: a server-side send is invisible from outside the store, so some of those 42 are tracking fine in a way I can't see.</p>
+        </div>
+
+      </div>
+      <div class="Method" style="margin-top:2.4rem">
+        <h4>what these numbers are and aren't</h4>
+        <p>One scan, one day, 192 storefronts I chose because they are well known. Not a random sample of Shopify, so read them as "this is common among brands you've heard of," not as a rate across all stores. The scan reads public pages only: it never signs in, never places an order, and can't see anything sent server-side. Counts above are recomputed from the stored evidence with the current detector rather than quoted from the run.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="check" style="background:var(--lightGrey)">
+    <div class="container">
+      <h2 class="emoji taCenter"><span aria-hidden="true">🧰</span> how to check, in order</h2>
+      <div class="Steps">
+        <ol>
+          <li><strong>Pull both counts over 28 days or more, and check the two timezones.</strong> Shopify Admin &gt; Orders, filtered to the range. In GA4 go to <strong>Reports &gt; Engagement &gt; Events</strong>, find the <code>purchase</code> row and read Event count.
+            <span class="warn">Don't use Monetization &gt; Ecommerce purchases for this. That report is item-scoped, so a three-line order counts as three. Don't use the Transactions metric either: Google's definition of it includes refund events.</span>
+          </li>
+          <li><strong>Subtract the orders that could never fire a browser event.</strong> Filter the Shopify order list by sales channel and pull out POS, draft and manual, subscription rebills, marketplace and B2B. What's left is the number GA4 could in principle have seen. Compare against that, not against your total.</li>
+          <li><strong>Match on <code>transaction_id</code>, not on totals.</strong> Export your orders and left join them against GA4 purchases. First confirm which value GA4 is actually sending: the order name (<code>#1001</code>) or the numeric order ID. Comparing the wrong field makes perfectly good tracking look broken, and this catches more people than any other single thing here. Matching also tells you <em>which</em> orders went missing, which is where the pattern usually shows up.</li>
+          <li><strong>If GA4 is over the adjusted baseline, look for a second install.</strong> <strong>DebugView</strong> or <strong>Tag Assistant</strong> is the reliable route: place a test order and watch whether one purchase arrives or two.
+            <span class="warn">If you'd rather watch the Network tab, two things will trip you up. gtag batches events into a single POST to <code>/g/collect</code> with the event name in the request body, so typing <code>en=purchase</code> into the filter box matches nothing. Use Cmd-F or Ctrl-F inside the Network panel instead, which does search bodies. And set the type filter to <strong>All</strong>, because some hits leave via sendBeacon with resource type <code>ping</code> and the Fetch/XHR filter hides them. The <code>en=</code> and <code>gcs=</code> parameters are stable and widely relied on, but Google doesn't document them, so treat them as observed rather than specified.</span>
+          </li>
+          <li><strong>Work through every place a GA4 ID can live.</strong> There are seven: app pixels under <strong>Settings &gt; Customer events</strong>; <strong>custom pixels</strong> in the same screen; the <strong>Google &amp; YouTube channel app</strong>; hardcoded gtag or GTM in theme code; apps injecting script tags or theme app extensions; a server-side GTM container or Measurement Protocol send; and any GTM container holding its own GA4 configuration tag.
+            <span class="warn">Check custom pixels first. Shopify removed the old Google Analytics and Meta fields from Online Store &gt; Preferences in February 2025 and auto-migrated what was in them into custom pixels. A lot of stores are carrying a second tag there that nobody consciously installed.</span>
+          </li>
+          <li><strong>If GA4 is under the adjusted baseline, check how a purchase reaches GA4 at all.</strong> Theme code and additional scripts no longer run on the thank-you or order status page for anyone: that sunset on 28 August 2025 for Plus and 26 August 2026 for everyone else. Three routes are left, and you need at least one of them: an app pixel subscribing to <code>checkout_completed</code>, a custom pixel, or a server-side send.
+            <span class="warn">If you have a post-purchase extension installed, <code>checkout_completed</code> can fire on the post-purchase page rather than the thank-you URL. Looking only at the thank-you page will tell you it's broken when it isn't.</span>
+          </li>
+          <li><strong>Rule consent in or out properly.</strong> Under <strong>advanced</strong> consent mode a declined visitor still sends a cookieless ping, so the tag did fire. Under <strong>basic</strong> consent mode nothing is sent at all until someone accepts, and those orders are simply gone from GA4. Check which you're running in <strong>Tag Assistant</strong>, or read the <code>gcs</code> parameter on the request. DebugView won't tell you: it shows events and parameters, not consent state, and with analytics storage denied the event may not reach DebugView in the first place.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="Example">
+        <h4>the one I'd check first on a store I'd never seen</h4>
+        <p>Custom pixels, under Settings and Customer events. The February 2025 migration moved a lot of old tags into that screen without anyone deciding to put them there, and a store that also installed a GA4 app afterwards now has two installs that look unrelated in the admin. It costs thirty seconds to look, and when it's the answer it's a deletion rather than a rebuild.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section Band">
+    <div class="container">
+      <h2><span aria-hidden="true">📊</span> or have something else look</h2>
+      <p>The free scanner loads your storefront, cart and checkout pages and reports every tracking ID it sees firing, which covers steps 4 and 5 above without you placing a test order. It reads public pages only, so it can't see server-side sends and it can't reconcile against your orders. Three scans a day per IP. If you want the full comparison against your real order records, that's the $1,750 Tracking &amp; Profit Audit on a fixed 10-business-day turnaround.</p>
+      <div class="Hero--CTAs">
+        <a class="primary" href="https://scan.ecomloop.com">run the free scanner</a>
+        <a class="secondary" href="/offer.html">see the $1,750 audit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <h2 class="emoji taCenter"><span aria-hidden="true">❓</span> questions people actually ask</h2>
+      <div class="Accordion">
+        <details>
+          <summary>how big a gap is normal?</summary>
+          <div class="body">There is no published figure worth trusting. Shopify and Google don't state one, and the ranges quoted in blog posts come with no method attached. The gap depends entirely on your order mix: a store with POS, subscriptions or marketplace channels will run a large structural gap with nothing broken, and a store selling one product through one storefront will run a small one. Build your own baseline by subtracting the orders that could never fire a browser event, then judge what's left.</div>
+        </details>
+        <details>
+          <summary>why is my GA4 purchase count higher than my Shopify order count?</summary>
+          <div class="body">GA4 counting above Shopify almost always means the same purchase is recorded more than once, either because two installs of the same tag are both live or because two GA4 properties are collecting the same traffic. Confirm it in DebugView or Tag Assistant rather than by counting rows in the Network tab, since gtag batches several events into one request.</div>
+        </details>
+        <details>
+          <summary>why is my GA4 purchase count lower than my Shopify order count?</summary>
+          <div class="body">Usually because a share of your orders never involved a browser session at all: POS, draft and manual orders, subscription rebills, marketplace and channel orders. After you subtract those, the rest is ad blockers, declined consent under basic consent mode, customers closing the tab after an offsite payment, or no purchase event wired into checkout at all.</div>
+        </details>
+        <details>
+          <summary>where can a second GA4 measurement ID be hiding on a Shopify store?</summary>
+          <div class="body">Seven places: app pixels under Settings and Customer events, custom pixels in the same screen, the Google &amp; YouTube channel app, hardcoded gtag or GTM in theme code, apps injecting script tags or theme app extensions, a server-side GTM container or Measurement Protocol send, and any GTM container holding its own GA4 configuration tag. Check custom pixels first: Shopify auto-migrated legacy Preferences tags into them in February 2025.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container taCenter">
+    <a href="/#contact">contact</a> | <a href="https://scan.ecomloop.com">free scanner</a> | <a href="/gtm-audit.html">gtm audit checklist</a> | <a href="/ga4-purchase-count-mismatch.html">ga4 vs shopify orders</a> | <a href="https://github.com/RantumBits" target="_blank" rel="noopener noreferrer">github</a> | <a href="https://www.upwork.com/freelancers/andrewmaury" target="_blank" rel="noopener noreferrer">upwork</a> | <a href="https://www.linkedin.com/company/ecomloop/" target="_blank" rel="noopener noreferrer">linkedin</a>
+    <br>© 2026 ecomloop. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>

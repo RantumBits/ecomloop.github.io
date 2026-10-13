@@ -78,19 +78,45 @@ if (!process.env.FORM_SECRET) {
 
 const redirects = loadRedirects();
 
+// Puts the incoming query onto a redirect target, ahead of any fragment and
+// merging with a query the target already carries.
+function withQuery(target, query) {
+  if (!query) return target;
+  const [base, hash] = target.split('#');
+  const separator = base.includes('?') ? '&' : '?';
+  return base + separator + query + (hash ? '#' + hash : '');
+}
+
 // Extension-less link to the offer page (ads, social posts, etc. pointing at
 // /offer rather than /offer.html).
 app.addHook('onRequest', async (req, reply) => {
-  const [path, query] = req.url.split('?');
-  if (path === '/offer' || path === '/offer/') {
-    return reply.redirect('/offer.html' + (query ? '?' + query : ''), 301);
+  const [pathname, query] = req.url.split('?');
+  if (pathname === '/offer' || pathname === '/offer/') {
+    return reply.redirect(withQuery('/offer.html', query), 301);
   }
 });
 
+// A 404/410 rule serves the 404 page with that status instead of redirecting:
+// Google reads a redirect to an unrelated page as a soft 404 and keeps the old
+// URL around, while a real 410 drops it from the index.
+const GONE_BODY = readFileSync(path.join(SITE_DIR, '404.html'));
+
 app.addHook('onRequest', async (req, reply) => {
-  const [path, query] = req.url.split('?');
-  const rule = redirects.find((r) => path === r.prefix.replace(/\/$/, '') || path.startsWith(r.prefix));
-  if (rule) return reply.redirect(rule.to + (query ? '?' + query : ''), rule.status);
+  // Match on the path alone. req.url carries the query string, so matching on
+  // it meant /posts/old?utm=x missed its rule and fell through to the generic
+  // 404 — losing the 410 as well as the redirect.
+  const [pathname, query] = req.url.split('?');
+  const rule = redirects.find((r) => pathname === r.prefix.replace(/\/$/, '') || pathname.startsWith(r.prefix));
+  if (!rule) return;
+  // A gone rule serves the 404 body under its own status. There is no
+  // destination, so there is nothing to carry the query onto.
+  if (rule.status === 404 || rule.status === 410) {
+    return reply.code(rule.status).type('text/html; charset=utf-8').send(GONE_BODY);
+  }
+  // Carry the query across so a gclid survives the hop and the click stays
+  // attributable. Two targets end in a fragment (/#who, /#contact), and a
+  // query has to go before it or it lands inside the fragment and is lost.
+  return reply.redirect(withQuery(rule.to, query), rule.status);
 });
 
 // --------------------------------------------------------------- form submit
