@@ -104,6 +104,15 @@ h2{font-size:2.6rem}
 .footer a{color:#000;text-decoration:none;margin:0 .3rem}
 .footer a:hover{color:var(--primary)}
 </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18501014034"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18501014034');
+</script>
 </head>
 <body>
 
@@ -136,6 +145,7 @@ h2{font-size:2.6rem}
       <h2>a fixed-price audit, no retainer required</h2>
       <p>Most stores have a gap between what their analytics report and what their order records actually say: a duplicate Purchase event, a Meta CAPI send with no de-duplication against the browser pixel, a Google Ads tag left over from an old account. Every one of those quietly inflates or deflates the numbers a platform's Smart Bidding optimizes toward, and the ROAS a founder reads on a dashboard. Shopify, Magento, BigCommerce, a custom cart: the defects are the same, and so is the reconciliation.</p>
       <p>The audit finds exactly what's wrong, tells you what it's costing you, and shows you the sample-size math on which tests, if any, your current traffic can decide inside 30 days. Sometimes that math says to wait, and you get the number rather than a guess. No redesign, no retainer required to see it.</p>
+      <p>If you are working on conversion rate optimization, this comes first. A duplicated Purchase event or a pixel firing twice on checkout changes the conversion rate you are measuring, which means every test you run is scored against a number that is already wrong. A variant that reads as a win can be a counting artifact, and a real win can sit under the noise and get thrown out. Fixing the measurement does not raise the rate on its own. It decides whether what you read next is true.</p>
       <p>Start wherever you want to start. <a href="https://scan.ecomloop.com">The free scanner</a> finds duplicate, dead and missing tags on your storefront in about a minute, from the outside. From there it goes three steps deeper, and <a href="#pricing">each step is credited in full toward the next one</a>. If you want to see the full checklist before you run anything, <a href="/gtm-audit.html">here's what a Google Tag Manager audit actually checks</a>.</p>
     </div>
   </section>
@@ -264,7 +274,7 @@ h2{font-size:2.6rem}
         </div></div>
         <div class="Card"><div class="Card--Body">
           <h3 class="Card--Title">3. Report</h3>
-          <p>A written report and a 30-minute recorded walkthrough: what's broken, what it's costing, and the tests worth running next. Yours either way.</p>
+          <p>A written report and a 30-minute recorded walkthrough: what's broken, what it's costing, and the tests worth running next. You keep it whether or not you hire me to fix any of it.</p>
         </div></div>
       </div>
     </div>
@@ -315,7 +325,7 @@ h2{font-size:2.6rem}
   }
   const src = params.get('src');
   const source = document.getElementById('source');
-  if (source && ['report', 'warm', 'cold', 'watch'].includes(src)) source.value = src;
+  if (source && ['report', 'warm', 'cold', 'watch', 'ads'].includes(src)) source.value = src;
 
   // The tier buttons jump to the form and preselect what they asked for. With
   // JS off the link still jumps; it just arrives on whatever the select shows.

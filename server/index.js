@@ -10,7 +10,14 @@ import { readFileSync } from 'node:fs';
 import { randomBytes } from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { createTokenSigner, checkFields, TOKEN_FIELD } from './spam.js';
+import {
+  createTokenSigner,
+  createReceiptSigner,
+  checkFields,
+  TOKEN_FIELD,
+  RECEIPT_FIELD,
+  RECEIPT_MAX_AGE_SECONDS,
+} from './spam.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SITE_DIR = path.join(__dirname, '..', 'site');
@@ -25,6 +32,28 @@ const MAIL_FROM = process.env.MAIL_FROM || 'ecomloop site <site@ecomloop.com>';
 // Manager in Cloud Run. The random fallback keeps a local run working.
 const FORM_SECRET = process.env.FORM_SECRET || randomBytes(32).toString('hex');
 const tokens = createTokenSigner(FORM_SECRET);
+const receipts = createReceiptSigner(FORM_SECRET);
+
+function readCookie(req, name) {
+  const header = req.headers.cookie;
+  if (!header) return '';
+  for (const part of header.split(';')) {
+    const eq = part.indexOf('=');
+    if (eq < 0) continue;
+    if (part.slice(0, eq).trim() === name) return part.slice(eq + 1).trim();
+  }
+  return '';
+}
+
+// Scoped to the one page that reads it. An empty value expires it.
+function receiptCookie(req, value) {
+  const host = req.headers.host || '';
+  const secure = req.headers['x-forwarded-proto'] === 'https' || !/^localhost(:|$)/.test(host);
+  const maxAge = value ? RECEIPT_MAX_AGE_SECONDS : 0;
+  return `${RECEIPT_FIELD}=${value}; Path=/thanks.html; Max-Age=${maxAge}; HttpOnly; SameSite=Lax${
+    secure ? '; Secure' : ''
+  }`;
+}
 
 const app = Fastify({ logger: { level: process.env.LOG_LEVEL || 'info' } });
 
@@ -49,10 +78,22 @@ if (!process.env.FORM_SECRET) {
 
 const redirects = loadRedirects();
 
+// Puts the incoming query onto a redirect target, ahead of any fragment and
+// merging with a query the target already carries.
+function withQuery(target, query) {
+  if (!query) return target;
+  const [base, hash] = target.split('#');
+  const separator = base.includes('?') ? '&' : '?';
+  return base + separator + query + (hash ? '#' + hash : '');
+}
+
 // Extension-less link to the offer page (ads, social posts, etc. pointing at
 // /offer rather than /offer.html).
 app.addHook('onRequest', async (req, reply) => {
-  if (req.url === '/offer') return reply.redirect('/offer.html', 301);
+  const [pathname, query] = req.url.split('?');
+  if (pathname === '/offer' || pathname === '/offer/') {
+    return reply.redirect(withQuery('/offer.html', query), 301);
+  }
 });
 
 // A 404/410 rule serves the 404 page with that status instead of redirecting:
@@ -61,12 +102,21 @@ app.addHook('onRequest', async (req, reply) => {
 const GONE_BODY = readFileSync(path.join(SITE_DIR, '404.html'));
 
 app.addHook('onRequest', async (req, reply) => {
-  const rule = redirects.find((r) => req.url === r.prefix.replace(/\/$/, '') || req.url.startsWith(r.prefix));
+  // Match on the path alone. req.url carries the query string, so matching on
+  // it meant /posts/old?utm=x missed its rule and fell through to the generic
+  // 404 — losing the 410 as well as the redirect.
+  const [pathname, query] = req.url.split('?');
+  const rule = redirects.find((r) => pathname === r.prefix.replace(/\/$/, '') || pathname.startsWith(r.prefix));
   if (!rule) return;
+  // A gone rule serves the 404 body under its own status. There is no
+  // destination, so there is nothing to carry the query onto.
   if (rule.status === 404 || rule.status === 410) {
     return reply.code(rule.status).type('text/html; charset=utf-8').send(GONE_BODY);
   }
-  return reply.redirect(rule.to, rule.status);
+  // Carry the query across so a gclid survives the hop and the click stays
+  // attributable. Two targets end in a fragment (/#who, /#contact), and a
+  // query has to go before it or it lands inside the fragment and is lost.
+  return reply.redirect(withQuery(rule.to, query), rule.status);
 });
 
 // --------------------------------------------------------------- form submit
@@ -152,7 +202,11 @@ app.post('/submit', async (req, reply) => {
   } catch (err) {
     req.log.error({ err }, 'failed to send form notification');
   }
-  return reply.redirect('/thanks.html', 303);
+  // The only place a receipt is issued: this submission passed every check and
+  // reached sendNotification. pretendSuccess returns the same page without one.
+  return reply
+    .header('set-cookie', receiptCookie(req, receipts.mint()))
+    .redirect('/thanks.html', 303);
 });
 
 // --------------------------------------------------------- form page serving
@@ -191,6 +245,30 @@ for (const [route, render] of formPageRenderers) {
       .send(render(tokens.mint())),
   );
 }
+
+// ------------------------------------------------------------ thank-you page
+// Rendered per request so the conversion tag can be withheld. Rejections land
+// here too, by design, and a tag served unconditionally would count them — plus
+// every reload and bookmark — as leads that were never emailed.
+const THANKS_HTML = readFileSync(path.join(SITE_DIR, 'thanks.html'), 'utf8');
+const CONVERSION_BLOCK = /\n?<!-- conversion:start -->[\s\S]*?<!-- conversion:end -->/;
+
+// Same reasoning as the form-token probe above: a silent miss here would tag
+// every rejection, so fail at startup instead.
+if (!CONVERSION_BLOCK.test(THANKS_HTML)) {
+  throw new Error('thanks.html is missing the conversion:start/conversion:end markers');
+}
+const THANKS_UNTAGGED = THANKS_HTML.replace(CONVERSION_BLOCK, '');
+
+app.get('/thanks.html', async (req, reply) =>
+  reply
+    .type('text/html; charset=utf-8')
+    .header('cache-control', 'no-store, must-revalidate')
+    // Cleared either way: a receipt is good for exactly one render, so a
+    // refresh of a genuine thank-you does not count a second conversion.
+    .header('set-cookie', receiptCookie(req, ''))
+    .send(receipts.redeem(readCookie(req, RECEIPT_FIELD)) ? THANKS_HTML : THANKS_UNTAGGED),
+);
 
 // -------------------------------------------------------------- static files
 await app.register(fastifyStatic, { root: SITE_DIR, prefix: '/' });
