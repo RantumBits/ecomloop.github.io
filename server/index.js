@@ -52,12 +52,16 @@ const redirects = loadRedirects();
 // Extension-less link to the offer page (ads, social posts, etc. pointing at
 // /offer rather than /offer.html).
 app.addHook('onRequest', async (req, reply) => {
-  if (req.url === '/offer') return reply.redirect('/offer.html', 301);
+  const [path, query] = req.url.split('?');
+  if (path === '/offer' || path === '/offer/') {
+    return reply.redirect('/offer.html' + (query ? '?' + query : ''), 301);
+  }
 });
 
 app.addHook('onRequest', async (req, reply) => {
-  const rule = redirects.find((r) => req.url === r.prefix.replace(/\/$/, '') || req.url.startsWith(r.prefix));
-  if (rule) return reply.redirect(rule.to, rule.status);
+  const [path, query] = req.url.split('?');
+  const rule = redirects.find((r) => path === r.prefix.replace(/\/$/, '') || path.startsWith(r.prefix));
+  if (rule) return reply.redirect(rule.to + (query ? '?' + query : ''), rule.status);
 });
 
 // --------------------------------------------------------------- form submit
