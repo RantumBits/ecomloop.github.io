@@ -1,16 +1,19 @@
-Subject: First look: two samples of Shopify storefronts, same tracking defect rates
+Subject: Pre-BFCM data: 19% of Shopify storefronts in a random sample double-send GA4 page views
 
 Hi Paul,
 
-I scanned a random sample of Shopify storefronts in the Majestic Million for tracking defects, 386 stores. 16.6% load two or more GA4 properties, and 6.0% still load Universal Analytics, which Google stopped processing in 2023.
+I scanned a random sample of Shopify storefronts in the Majestic Million, 386 stores, for tracking problems. On a single page load:
 
-A panel of 192 DTC brands I picked by hand got 17.2% and 6.3%. Two samples built different ways, within 0.6 points.
+- 73 (19%) send GA4 the same page view twice
+- 31 (8%) fire the Meta pixel twice
+- 64 (17%) send data to two or more GA4 properties
+- 23 (6%) still load Universal Analytics, which Google shut off in 2023
 
-38% of the random stores have at least one of those two or a tag firing twice. Yet the whole category gets about 600 to 700 US searches a month. My read is that the dashboard looks fine, so nobody looks.
+A panel of 192 DTC brands I picked by hand gave the same GA4 and UA rates within a point, so it isn't a quirk of how I picked stores.
 
-I'd like Shopifreaks to have these numbers first. The full report, with method notes and no stores named, goes up on ecomloop.com the day you cover it. If you pass, I'll publish it in two weeks.
+None of this shows up as an error in the dashboard, so merchants head into Black Friday reading these numbers as true.
 
-Draft attached.
+I think it makes a useful item before BFCM: the numbers plus a two-minute check any merchant can run in Chrome. You'd have it first. The full report goes up on ecomloop.com the day you run it, or in two weeks if you pass.
 
 Andrew
 ecomloop.com

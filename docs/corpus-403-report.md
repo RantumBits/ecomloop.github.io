@@ -15,7 +15,7 @@ The first group was a hand-picked list of well-known DTC brands. The obvious obj
 
 - **16.6% (64)** load two or more GA4 properties that belong to the store. Shared app IDs and placeholder IDs are not counted. Every visit and sale is sent to each property, so the numbers you see depend on which one you open. Sometimes the second property is deliberate, and a scan can't tell which.
 - **6.0% (23)** still load Universal Analytics. Google stopped processing standard UA data in July 2023. The script still downloads on every page view and records nothing anyone can use.
-- **27.2% (105)** fire the same tag twice on one page. That can count page views or events twice. One way it happens is a tag installed both through an app and by hand.
+- **27.2% (105)** fire the same tag twice on one page. That can count page views or events twice. One way it happens is a tag installed both through an app and by hand. GA4 was the most common (73 stores), then the Meta pixel (31) and Bing (22).
 - **26.5% (82 of 310)** have a tag on the storefront that does not appear at checkout. The base here is the 310 stores whose checkout page loaded for the scanner. Some stores send purchases server-side instead, which a scan from outside can't see, so treat this one as something to check rather than a verdict.
 
 **146 of the 386 stores (38%)** had at least one of the first three. Counting checkout-blind as well, 181 (47%).
