@@ -1,4 +1,4 @@
-Subject: Exclusive data: two samples of Shopify storefronts, same tracking defect rates
+Subject: First look: two samples of Shopify storefronts, same tracking defect rates
 
 Hi Paul,
 
@@ -8,9 +8,9 @@ A panel of 192 DTC brands I picked by hand got 17.2% and 6.3%. Two samples built
 
 38% of the random stores have at least one of those two or a tag firing twice. Yet the whole category gets about 600 to 700 US searches a month. My read is that the dashboard looks fine, so nobody looks.
 
-I'd like to offer the write-up to Shopifreaks as an exclusive: about 800 words, aggregate only, method notes included, no fee. I won't publish it elsewhere until it runs with you, or for two weeks if you pass.
+I'd like Shopifreaks to have these numbers first. The full report, with method notes and no stores named, goes up on ecomloop.com the day you cover it. If you pass, I'll publish it in two weeks.
 
-Draft attached. Happy to cut it to fit.
+Draft attached.
 
 Andrew
 ecomloop.com
