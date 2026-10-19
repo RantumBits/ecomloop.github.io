@@ -1,6 +1,6 @@
 # Newsletter candidates for the corpus-403 exclusive
 
-Drafted 2026-10-19. Pick one; the pitch offers an exclusive, so send to one at a time. Not checked live: confirm each is still publishing and find the current editor before sending.
+Drafted 2026-10-19. Shopifreaks gets the first look (decided 2026-10-19); the pitch is a first-look offer, so only one at a time. Not checked live: confirm each is still publishing and find the current editor before sending.
 
 1. **Shopifreaks** (Paul Bryzek). Weekly news about the Shopify ecosystem, read by merchants, app developers and agencies. A Shopify-only data story fits its beat exactly, and a one-person newsletter can say yes quickly.
 2. **2PM** (Web Smith). DTC strategy for operators and investors, and it already runs data-heavy analysis. The replication result is the kind of finding it covers.
