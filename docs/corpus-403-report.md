@@ -28,7 +28,7 @@ More than a third of a random sample has at least one of the first three problem
 
 My read is that this gap is what a silent defect looks like. Fewer people hiring consultants, or asking a chatbot instead, explains some of it. It doesn't explain why the symptom searches are close to zero. A store with two GA4 properties or a doubled tag gets no error. The dashboard loads, the charts move, and the numbers look reasonable. They are just wrong, and nothing prompts anyone to check. People search for problems they can see.
 
-So if you run a store, don't wait for the dashboard to show it. Look at what the site actually loads. Open a product page with Google Tag Assistant, or in your browser's network tab, and count the GA4 IDs (they start with G-). Check whether any request goes out twice. Then do the same on the checkout page.
+So if you run a store, don't wait for the dashboard to show it. Look at what the site actually loads. Open a product page in Google Tag Assistant and count the GA4 IDs (they start with G-) against your own, look for any UA- ID, and check that one page load sends one page_view. The full step-by-step check is on the published page.
 
 ## Method notes
 

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- LAUNCH: remove this noindex line on publish day, and add the page to sitemap.xml and the footers. -->
+<meta name="robots" content="noindex">
+<title>Two Samples, One Answer: How Often Shopify Tracking Is Broken | ecomloop</title>
+<meta name="description" content="A random sample of 386 Shopify storefronts and a hand-picked panel of 192 brands agree within a point: about 1 in 6 run two GA4 properties and 1 in 16 still load Universal Analytics.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/images/logo.png" type="image/png">
+<link rel="canonical" href="https://ecomloop.com/shopify-tracking-study.html">
+<meta property="og:title" content="Two Samples, One Answer: How Often Shopify Tracking Is Broken | ecomloop">
+<meta property="og:description" content="A random sample of 386 Shopify storefronts and a hand-picked panel of 192 brands agree within a point: about 1 in 6 run two GA4 properties and 1 in 16 still load Universal Analytics.">
+<meta property="og:image" content="https://ecomloop.com/images/hero.jpg">
+<meta property="og:url" content="https://ecomloop.com/shopify-tracking-study.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ecomloop">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#00c2bd; --secondary:#000; --lightGrey:whitesmoke; --midGrey:#cacaca; --darkGrey:#272727;
+  --borderRadius:3px; --container:110rem;
+}
+*{box-sizing:border-box}
+html{font-size:62.5%;min-height:100%;background:var(--lightGrey);scroll-behavior:smooth}
+body{margin:0;font-family:'Inconsolata',monospace;background:#fff;color:var(--secondary);font-size:1.6em;font-weight:400;letter-spacing:.01em;line-height:1.6;-webkit-font-smoothing:antialiased}
+::selection{background:rgba(0,194,189,.6)}
+a{color:var(--primary)}
+p{margin:0 0 1em}
+h1,h2{margin:0 0 .5em;font-family:'Montserrat',sans-serif;font-weight:600;line-height:1.2}
+h3,h4{font-family:'Inconsolata',monospace;font-weight:700;margin:0 0 .5em}
+h2{font-size:2.6rem}
+.container{max-width:var(--container);margin:0 auto;padding:0 2rem}
+.taCenter{text-align:center}
+.section{padding:5rem 0}
+.section h2.emoji{text-align:center;margin-bottom:3rem}
+
+/* nav */
+.Nav{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.Nav .container{display:flex;align-items:center;gap:2.4rem;height:5.2rem}
+.Logo{display:block;width:3.2rem;height:3.2rem;background:url(/images/logo.png) center/contain no-repeat;flex:none}
+.Nav--Links{display:flex;align-items:center;gap:1.8rem;margin-left:auto}
+.NavLink{color:var(--secondary);text-decoration:none;font-size:1.5rem}
+.NavLink:hover{color:var(--primary)}
+.Nav--CTA{background:var(--primary);color:#fff;text-transform:uppercase;font-size:1.2rem;letter-spacing:.06em;padding:.7rem 1.2rem;border-radius:var(--borderRadius)}
+.Nav--CTA:hover{color:#fff;background:#00a9a4}
+.Hero--CTAs{display:flex;flex-wrap:wrap;gap:1.2rem;margin-top:1.6rem}
+.Hero--CTAs a{display:inline-block;text-decoration:none;text-transform:uppercase;font-size:1.2rem;letter-spacing:.06em;padding:1rem 1.6rem;border-radius:var(--borderRadius)}
+.Hero--CTAs a.primary{background:var(--primary);color:#fff}
+.Hero--CTAs a.primary:hover{background:#00a9a4}
+.Hero--CTAs a.secondary{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.5)}
+.Hero--CTAs a.secondary:hover{background:rgba(255,255,255,.22)}
+@media (max-width:640px){.Nav--Links .NavLink:not(.Nav--CTA){display:none}}
+
+/* hero */
+.PageHeader{position:relative;background:var(--darkGrey);color:#fff;padding:9rem 0 20rem;overflow:hidden}
+.PageHeader .BackgroundImage{position:absolute;inset:0;background:linear-gradient(90deg,rgba(39,39,39,.75),rgba(39,39,39,.4)),url(/images/hero.jpg) center/cover no-repeat;opacity:.9}
+.PageHeader .container{position:relative;animation:fadeIn .5s ease-out}
+.PageHeader--Title{font-size:4.6rem;margin-bottom:1.6rem;color:#fff;text-wrap:balance;max-width:28ch}
+.PageHeader--Subtitle{font-weight:700;font-size:1.8rem;margin:0 0 .6em;color:#fff;max-width:60ch}
+.PageHeader--Subtitle::before{content:">> "}
+.PageHeader > svg{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:16rem;display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (max-width:600px){.PageHeader{padding:6rem 0 12rem}.PageHeader--Title{font-size:3rem}.PageHeader > svg{height:9rem}}
+@media (prefers-reduced-motion:reduce){.PageHeader .container{animation:none}}
+
+.Intro p{max-width:78ch}
+.Intro .who{background:var(--lightGrey);border-left:3px solid var(--primary);padding:1.2rem 1.6rem;border-radius:var(--borderRadius);max-width:78ch;font-size:1.45rem}
+.Intro .toc{font-size:1.4rem;color:#444}
+.Intro .toc a{margin:0 .2rem}
+
+/* normal-gap list */
+.Normal{max-width:80rem;margin:0 auto}
+.Normal p{max-width:78ch}
+.Normal ul{padding-left:1.8rem;font-size:1.5rem}
+.Normal li{margin-bottom:.8rem}
+.Normal h3{font-size:1.6rem;margin-top:2rem}
+
+/* cause cards */
+.Causes{max-width:88rem;margin:0 auto}
+.Causes--Item{background:#fff;border-left:3px solid var(--primary);border-radius:var(--borderRadius);box-shadow:0 2px 12px rgba(0,0,0,.06);padding:1.8rem 2.2rem;margin-bottom:1.4rem}
+.Causes--Item h3{font-size:1.7rem;margin-bottom:.5em}
+.Causes--Item p{font-size:1.45rem;margin:0 0 .8em;max-width:76ch}
+.Causes--Item p:last-child{margin-bottom:0}
+.Causes--Item .stat{font-size:1.4rem;color:#444;border-top:1px solid #e8e8e8;padding-top:.8em}
+
+/* step list */
+.Steps{max-width:80rem;margin:0 auto}
+.Steps ol{padding-left:2rem;font-size:1.5rem}
+.Steps li{margin-bottom:1.6rem}
+.Steps code{background:var(--lightGrey);padding:.1rem .4rem;border-radius:3px;font-size:1.4rem}
+.Steps .warn{display:block;margin-top:.5em;font-size:1.4rem;color:#444}
+
+.Example{background:var(--lightGrey);border-left:3px solid var(--primary);padding:2rem 2.4rem;border-radius:var(--borderRadius);max-width:78ch;margin:0 auto}
+.Example h4{margin-bottom:.6rem}
+.Example p{font-size:1.45rem}
+
+/* method note */
+.Method{max-width:78ch;margin:0 auto;font-size:1.4rem;color:#444;background:#fff;border:1px solid #e3e3e3;border-radius:var(--borderRadius);padding:1.6rem 2rem}
+.Method h4{margin-bottom:.6rem;color:#000}
+
+/* accordion (FAQ) */
+.Accordion{max-width:88rem;margin:0 auto;display:flex;flex-direction:column;gap:1.6rem}
+.Accordion details{background:#fff;border-radius:var(--borderRadius);box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.Accordion summary{list-style:none;cursor:pointer;padding:2rem 2.4rem;font-family:'Montserrat',sans-serif;font-weight:600;font-size:1.3rem;text-transform:uppercase;letter-spacing:.02em;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.Accordion summary::-webkit-details-marker{display:none}
+.Accordion summary::after{content:"";width:.8rem;height:.8rem;border-right:2px solid #333;border-bottom:2px solid #333;transform:rotate(45deg);flex:none;transition:transform .2s}
+.Accordion details[open] summary::after{transform:rotate(-135deg)}
+.Accordion .body{padding:0 2.4rem 2.2rem;font-size:1.5rem;max-width:74ch}
+
+/* CTA band */
+.Band{background:var(--darkGrey);color:#fff}
+.Band h2{color:#fff}
+.Band p{max-width:72ch}
+
+/* footer */
+.footer{padding:2.4rem 0;background:var(--lightGrey);font-size:1.2rem;line-height:1.9}
+.footer a{color:#000;text-decoration:none;margin:0 .3rem}
+.footer a:hover{color:var(--primary)}
+
+/* comparison table */
+.Compare{border-collapse:collapse;margin:0 0 1.6em;font-size:1.5rem;max-width:78ch;width:100%}
+.Compare th,.Compare td{border-bottom:1px solid #e3e3e3;padding:.8rem 1rem;text-align:left;vertical-align:top}
+.Compare th{font-weight:700}
+.Compare th span{font-weight:400;color:#666;font-size:1.3rem}
+.Method p:last-child{margin-bottom:0}
+@media (max-width:600px){.Compare{font-size:1.35rem}.Compare th,.Compare td{padding:.6rem .4rem}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Two samples, one answer: how often Shopify tracking is broken",
+  "description": "A random sample of 386 Shopify storefronts and a hand-picked panel of 192 brands agree within a point: about 1 in 6 run two GA4 properties and 1 in 16 still load Universal Analytics.",
+  "author": { "@type": "Person", "name": "Andrew Maury" },
+  "publisher": { "@type": "Organization", "name": "ecomloop", "logo": { "@type": "ImageObject", "url": "https://ecomloop.com/images/logo.png" } },
+  "datePublished": "LAUNCH-DATE",
+  "dateModified": "LAUNCH-DATE",
+  "mainEntityOfPage": "https://ecomloop.com/shopify-tracking-study.html"
+}
+</script>
+</head>
+<body>
+
+<nav class="Nav">
+  <div class="container">
+    <a href="/" class="Logo" aria-label="ecomloop home"></a>
+    <div class="Nav--Links">
+      <a class="NavLink" href="/#what-we-do">what I do</a>
+      <a class="NavLink" href="https://scan.ecomloop.com">free scanner</a>
+      <a class="NavLink" href="/offer.html">the audit</a>
+      <a class="NavLink" href="/gtm-audit.html">gtm audit checklist</a>
+      <a class="NavLink Nav--CTA" href="https://scan.ecomloop.com">run free scan</a>
+    </div>
+  </div>
+</nav>
+
+<header class="PageHeader">
+  <div class="BackgroundImage" role="presentation"></div>
+  <div class="container">
+    <h1 class="PageHeader--Title">Two samples, one answer: how often Shopify tracking is broken</h1>
+    <p class="PageHeader--Subtitle">a random sample of 386 storefronts and a hand-picked panel of 192 brands came out within a point of each other</p>
+    <div class="Hero--CTAs">
+      <a class="primary" href="#check">check your own store</a>
+      <a class="secondary" href="https://scan.ecomloop.com">run the free scanner</a>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true"><path fill="#fff" d="M0,160L48,181.3C96,203,192,245,288,229.3C384,213,480,139,576,106.7C672,75,768,85,864,106.7C960,128,1056,160,1152,192C1248,224,1344,256,1392,272L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</header>
+
+<main>
+  <section class="section Intro">
+    <div class="container">
+      <h2>the result</h2>
+      <p>I sell tracking audits to Shopify stores, and I run a free scanner that finds the problems. In October 2026 I ran it on two groups of storefronts that were put together in completely different ways. On the two clearest defects, the results came out within 0.6 points of each other.</p>
+      <table class="Compare">
+        <thead><tr><th>Finding</th><th>192 brands I picked<br><span>scanned 5 Oct</span></th><th>386 random storefronts<br><span>scanned 13&ndash;14 Oct</span></th></tr></thead>
+        <tbody>
+          <tr><td>Two or more GA4 properties</td><td>17.2%</td><td><strong>16.6%</strong> (64)</td></tr>
+          <tr><td>Universal Analytics still loading</td><td>6.3%</td><td><strong>6.0%</strong> (23)</td></tr>
+        </tbody>
+      </table>
+      <p>The first group was a hand-picked list of well-known DTC brands. The obvious objection to it is that I chose them. So the second group was drawn at random: a random sample of Shopify storefronts in the Majestic Million, a public list of the top million websites ranked by how many other networks link to them. Nobody chose those stores, and they produced nearly the same numbers.</p>
+      <p class="who">Written by Andrew Maury. Figures are recomputed from the stored scan evidence, not quoted from the run. No store is named on this page. Method notes are <a href="#method">at the bottom</a>.</p>
+    </div>
+  </section>
+
+  <section class="section" id="findings" style="background:var(--lightGrey)">
+    <div class="container">
+      <h2 class="emoji taCenter"><span aria-hidden="true">🔎</span> what the random sample showed</h2>
+      <div class="Causes">
+        <div class="Causes--Item">
+          <h3>16.6% (64 of 386) load two or more GA4 properties</h3>
+          <p>Properties that belong to the store. Shared app IDs and placeholder IDs are not counted. Every visit and sale is sent to each property, so the numbers you see depend on which one you open. Sometimes the second property is deliberate, and a scan can't tell which.</p>
+        </div>
+        <div class="Causes--Item">
+          <h3>6.0% (23) still load Universal Analytics</h3>
+          <p>Google stopped processing standard UA data in July 2023. The script still downloads on every page view and records nothing anyone can use.</p>
+        </div>
+        <div class="Causes--Item">
+          <h3>27.2% (105) fire the same tag twice on one page</h3>
+          <p>That can count page views or events twice. One way it happens is a tag installed both through an app and by hand. GA4 was the most common (73 stores), then the Meta pixel (31) and Bing (22).</p>
+        </div>
+        <div class="Causes--Item">
+          <h3>26.5% (82 of 310) have a tag on the storefront that does not appear at checkout</h3>
+          <p>The base here is the 310 stores whose checkout page loaded for the scanner. Some stores send purchases server-side instead, which a scan from outside can't see, so treat this one as something to check rather than a verdict.</p>
+        </div>
+      </div>
+      <div class="Method" style="margin-top:2.4rem">
+        <p><strong>146 of the 386 stores (38%)</strong> had at least one of the first three. Counting checkout-blind as well, 181 (47%).</p>
+        <p>The other two findings agree more loosely. In the hand-picked group, duplicate firing was 32.8% and checkout-blind was 31.6%, about five points higher than the random sample. My guess is that well-known brands run more tags and more apps, so they have more chances to double up. I haven't tested that.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="silent">
+    <div class="container">
+      <h2 class="emoji taCenter"><span aria-hidden="true">🔕</span> why nobody goes looking</h2>
+      <div class="Normal">
+        <p>More than a third of a random sample has at least one of the first three problems. Yet in Google's Keyword Planner (checked 13 October 2026), all the US searches for tracking audits and analytics consultants together come to about 600 to 700 a month. Searches that describe the symptom, like "ga4 not matching shopify" or "duplicate purchase event ga4", are each under 10 a month.</p>
+        <p>My read is that this gap is what a silent defect looks like. Fewer people hiring consultants, or asking a chatbot instead, explains some of it. It doesn't explain why the symptom searches are close to zero. A store with two GA4 properties or a doubled tag gets no error. The dashboard loads, the charts move, and the numbers look reasonable. They are just wrong, and nothing prompts anyone to check.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="check" style="background:var(--lightGrey)">
+    <div class="container">
+      <h2 class="emoji taCenter"><span aria-hidden="true">🧰</span> check your own store in a few minutes</h2>
+      <div class="Steps">
+        <ol>
+          <li><strong>Find your own GA4 ID first.</strong> In GA4 go to <strong>Admin &gt; Data streams</strong> and open your web stream. The measurement ID starts with <code>G-</code>. Write it down.</li>
+          <li><strong>Open a product page in Tag Assistant.</strong> Go to <a href="https://tagassistant.google.com">tagassistant.google.com</a>, add your store's URL, and let it load. Tag Assistant lists every Google tag the page loads.</li>
+          <li><strong>Count the <code>G-</code> IDs.</strong> If you see one besides yours, something is sending your traffic to a second property. If you see a <code>UA-</code> ID, that's Universal Analytics: it hasn't recorded anything since 2023 and can come out.</li>
+          <li><strong>Check that each page view arrives once.</strong> Under your <code>G-</code> ID, look at the events from that one page load. One <code>page_view</code> is right. Two means two installs of the same tag.
+            <span class="warn">Use Tag Assistant or GA4 DebugView for this, not a count of requests in the browser's Network tab. gtag batches several events into one request, so request counts mislead.</span>
+          </li>
+          <li><strong>Do the same for Meta.</strong> The Meta Pixel Helper extension for Chrome shows each pixel on the page and how many times <code>PageView</code> fired. More than one per load is the same doubled install.</li>
+          <li><strong>Find where the extra copy lives.</strong> In Shopify admin go to <strong>Settings &gt; Customer events</strong>. Every app pixel and custom pixel is listed there. Two that send to GA4, or one with an ID you don't recognise, is usually the source. Then check the Google &amp; YouTube app and your theme code.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="method">
+    <div class="container">
+      <h2 class="emoji taCenter"><span aria-hidden="true">📐</span> method notes</h2>
+      <div class="Method">
+        <p><strong>2026-10-05.</strong> Hand-picked panel: 193 well-known DTC brands, 192 scanned successfully. The panel figures above are after detector fixes made on 2026-10-06, re-checked offline from the stored scan evidence. The scan-day output overcounted two-GA4 stores (45 on the day, 33 after the fixes), which is why the second sample got the same offline re-check.</p>
+        <p><strong>2026-10-13.</strong> Downloaded the Majestic Million. Shuffled it with a fixed random seed (20261013) and checked domains in that order with a fixed four-signal Shopify test until 403 Shopify storefronts were found. That took 18,900 domains; 2.13% were Shopify.</p>
+        <p><strong>2026-10-13 to 14.</strong> Scanned all 403. 386 completed; 17 failed (14 timeouts, 2 unreachable, 1 other). The scanner independently confirmed Shopify on all 386. Each scan loads the home page, a product page, the cart and checkout in a real browser, and records which tags load and which requests fire.</p>
+        <p><strong>2026-10-14.</strong> Re-ran the detector offline on all 386 stored evidence bundles. No store's result changed.</p>
+        <p><strong>Excluded.</strong> The scanner runs other checks. Two of them were left out of this report because they raise too many false alarms to publish as defects.</p>
+        <p><strong>Limits.</strong> Because the Majestic Million ranks by links, this sample leans toward larger, established stores. It is a random sample of Shopify storefronts in the Majestic Million, not of all Shopify stores. Headless Shopify sites don't pass the selection test, so they aren't in it. A scan sees only what loads in a visitor's browser. It can't see server-side tracking or GA4 admin settings.</p>
+        <p>Contains data from the Majestic Million (<a href="https://majestic.com">https://majestic.com</a>), licensed under CC BY 3.0.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section Band">
+    <div class="container">
+      <h2><span aria-hidden="true">📊</span> or have the scanner look</h2>
+      <p>The scanner used for this study is free. It loads your storefront, cart and checkout pages and reports every tracking ID it sees firing. It reads public pages only, so it can't see server-side sends. Three scans a day per IP.</p>
+      <div class="Hero--CTAs">
+        <a class="primary" href="https://scan.ecomloop.com">run the free scanner</a>
+        <a class="secondary" href="/offer.html">see the tracking audit</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container taCenter">
+    <a href="/#contact">contact</a> | <a href="https://scan.ecomloop.com">free scanner</a> | <a href="/gtm-audit.html">gtm audit checklist</a> | <a href="/ga4-purchase-count-mismatch.html">ga4 vs shopify orders</a> | <a href="https://github.com/RantumBits" target="_blank" rel="noopener noreferrer">github</a> | <a href="https://www.upwork.com/freelancers/andrewmaury" target="_blank" rel="noopener noreferrer">upwork</a> | <a href="https://www.linkedin.com/company/ecomloop/" target="_blank" rel="noopener noreferrer">linkedin</a>
+    <br>© 2026 ecomloop. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
