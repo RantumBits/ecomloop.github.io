@@ -1,6 +1,6 @@
 Subject: Exclusive data: two samples of Shopify storefronts, same tracking defect rates
 
-Hi [first name],
+Hi Paul,
 
 I scanned a random sample of Shopify storefronts in the Majestic Million for tracking defects, 386 stores. 16.6% load two or more GA4 properties, and 6.0% still load Universal Analytics, which Google stopped processing in 2023.
 
@@ -8,7 +8,7 @@ A panel of 192 DTC brands I picked by hand got 17.2% and 6.3%. Two samples built
 
 38% of the random stores have at least one of those two or a tag firing twice. Yet the whole category gets about 600 to 700 US searches a month. My read is that the dashboard looks fine, so nobody looks.
 
-I'd like to offer the write-up to [newsletter] as an exclusive: about 800 words, aggregate only, method notes included, no fee. I won't publish it elsewhere until it runs with you, or for two weeks if you pass.
+I'd like to offer the write-up to Shopifreaks as an exclusive: about 800 words, aggregate only, method notes included, no fee. I won't publish it elsewhere until it runs with you, or for two weeks if you pass.
 
 Draft attached. Happy to cut it to fit.
 
