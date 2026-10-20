@@ -6,12 +6,12 @@
 <!-- LAUNCH: remove this noindex line on publish day, and add the page to sitemap.xml and the footers. -->
 <meta name="robots" content="noindex">
 <title>Two Samples, One Answer: How Often Shopify Tracking Is Broken | ecomloop</title>
-<meta name="description" content="A random sample of 386 Shopify storefronts and a hand-picked panel of 192 brands agree within a point: about 1 in 6 run two GA4 properties and 1 in 16 still load Universal Analytics.">
+<meta name="description" content="A random sample of 386 Shopify storefronts and a hand-picked panel of 192 brands agree within a point: about 1 in 6 run two GA4 properties and 1 in 17 still load Universal Analytics.">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/images/logo.png" type="image/png">
 <link rel="canonical" href="https://ecomloop.com/shopify-tracking-study.html">
 <meta property="og:title" content="Two Samples, One Answer: How Often Shopify Tracking Is Broken | ecomloop">
-<meta property="og:description" content="A random sample of 386 Shopify storefronts and a hand-picked panel of 192 brands agree within a point: about 1 in 6 run two GA4 properties and 1 in 16 still load Universal Analytics.">
+<meta property="og:description" content="A random sample of 386 Shopify storefronts and a hand-picked panel of 192 brands agree within a point: about 1 in 6 run two GA4 properties and 1 in 17 still load Universal Analytics.">
 <meta property="og:image" content="https://ecomloop.com/images/hero.jpg">
 <meta property="og:url" content="https://ecomloop.com/shopify-tracking-study.html">
 <meta property="og:type" content="article">
@@ -117,6 +117,16 @@ h2{font-size:2.6rem}
 .Band h2{color:#fff}
 .Band p{max-width:72ch}
 
+/* study signup */
+.Signup{max-width:78ch;margin:0 auto;background:var(--lightGrey);border-left:3px solid var(--primary);border-radius:var(--borderRadius);padding:2rem 2.4rem}
+.Signup h3{font-size:1.7rem}
+.Signup p{font-size:1.45rem;max-width:70ch}
+.Signup form{display:flex;flex-wrap:wrap;gap:1.2rem;align-items:flex-end}
+.Signup label{display:flex;flex-direction:column;font-size:1.3rem;gap:.3rem;flex:1 1 18rem}
+.Signup input{font:inherit;font-size:1.5rem;padding:.8rem;border:1px solid var(--midGrey);border-radius:var(--borderRadius);background:#fff}
+.Signup button{font:inherit;font-size:1.2rem;text-transform:uppercase;letter-spacing:.06em;padding:1.1rem 1.6rem;background:var(--primary);color:#fff;border:0;border-radius:var(--borderRadius);cursor:pointer}
+.Signup button:hover{background:#00a9a4}
+
 /* footer */
 .footer{padding:2.4rem 0;background:var(--lightGrey);font-size:1.2rem;line-height:1.9}
 .footer a{color:#000;text-decoration:none;margin:0 .3rem}
@@ -135,7 +145,7 @@ h2{font-size:2.6rem}
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Two samples, one answer: how often Shopify tracking is broken",
-  "description": "A random sample of 386 Shopify storefronts and a hand-picked panel of 192 brands agree within a point: about 1 in 6 run two GA4 properties and 1 in 16 still load Universal Analytics.",
+  "description": "A random sample of 386 Shopify storefronts and a hand-picked panel of 192 brands agree within a point: about 1 in 6 run two GA4 properties and 1 in 17 still load Universal Analytics.",
   "author": { "@type": "Person", "name": "Andrew Maury" },
   "publisher": { "@type": "Organization", "name": "ecomloop", "logo": { "@type": "ImageObject", "url": "https://ecomloop.com/images/logo.png" } },
   "datePublished": "LAUNCH-DATE",
@@ -185,7 +195,7 @@ h2{font-size:2.6rem}
         </tbody>
       </table>
       <p>The first group was a hand-picked list of well-known DTC brands. The obvious objection to it is that I chose them. So the second group was drawn at random: a random sample of Shopify storefronts in the Majestic Million, a public list of the top million websites ranked by how many other networks link to them. Nobody chose those stores, and they produced nearly the same numbers.</p>
-      <p class="who">Written by Andrew Maury. Figures are recomputed from the stored scan evidence, not quoted from the run. No store is named on this page. Method notes are <a href="#method">at the bottom</a>.</p>
+      <p class="who">Written by Andrew Maury. I sell the audit linked at the bottom of this page. Method notes are <a href="#method">there too</a>.</p>
     </div>
   </section>
 
@@ -222,7 +232,7 @@ h2{font-size:2.6rem}
       <h2 class="emoji taCenter"><span aria-hidden="true">🔕</span> why nobody goes looking</h2>
       <div class="Normal">
         <p>More than a third of a random sample has at least one of the first three problems. Yet in Google's Keyword Planner (checked 13 October 2026), all the US searches for tracking audits and analytics consultants together come to about 600 to 700 a month. Searches that describe the symptom, like "ga4 not matching shopify" or "duplicate purchase event ga4", are each under 10 a month.</p>
-        <p>My read is that this gap is what a silent defect looks like. Fewer people hiring consultants, or asking a chatbot instead, explains some of it. It doesn't explain why the symptom searches are close to zero. A store with two GA4 properties or a doubled tag gets no error. The dashboard loads, the charts move, and the numbers look reasonable. They are just wrong, and nothing prompts anyone to check.</p>
+        <p>My read: fewer people hiring consultants, or asking a chatbot instead, explains some of the low search volume. It doesn't explain why the symptom searches are close to zero. A store with two GA4 properties or a doubled tag gets no error. The dashboard loads, the charts move, and the numbers look reasonable. They are just wrong, and nothing prompts anyone to check.</p>
       </div>
     </div>
   </section>
@@ -241,6 +251,24 @@ h2{font-size:2.6rem}
           <li><strong>Do the same for Meta.</strong> The Meta Pixel Helper extension for Chrome shows each pixel on the page and how many times <code>PageView</code> fired. More than one per load is the same doubled install.</li>
           <li><strong>Find where the extra copy lives.</strong> In Shopify admin go to <strong>Settings &gt; Customer events</strong>. Every app pixel and custom pixel is listed there. Two that send to GA4, or one with an ID you don't recognise, is usually the source. Then check the Google &amp; YouTube app and your theme code.</li>
         </ol>
+        <p class="warn" style="max-width:78ch;margin:1.6rem auto 0;font-size:1.45rem;color:#444"><strong>If it's close to Black Friday:</strong> a dead UA tag is safe to remove any time. A doubled GA4 or Meta install is one to write down now and pull after Cyber Monday, when a mistake costs less.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="updates">
+    <div class="container">
+      <div class="Signup">
+        <h3>I'll re-scan this sample in January</h3>
+        <p>Leave an email and I'll send the before-and-after numbers when they're in. Nothing else goes to this list.</p>
+        <form name="study" method="POST" action="/submit">
+          <input type="hidden" name="form-name" value="study">
+          <input type="hidden" name="source" value="shopify-tracking-study">
+          <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+          <label>name <input type="text" name="name" required autocomplete="name"></label>
+          <label>email <input type="email" name="email" required autocomplete="email"></label>
+          <button type="submit">send me the re-scan</button>
+        </form>
       </div>
     </div>
   </section>
@@ -251,9 +279,9 @@ h2{font-size:2.6rem}
       <div class="Method">
         <p><strong>2026-10-05.</strong> Hand-picked panel: 193 well-known DTC brands, 192 scanned successfully. The panel figures above are after detector fixes made on 2026-10-06, re-checked offline from the stored scan evidence. The scan-day output overcounted two-GA4 stores (45 on the day, 33 after the fixes), which is why the second sample got the same offline re-check.</p>
         <p><strong>2026-10-13.</strong> Downloaded the Majestic Million. Shuffled it with a fixed random seed (20261013) and checked domains in that order with a fixed four-signal Shopify test until 403 Shopify storefronts were found. That took 18,900 domains; 2.13% were Shopify.</p>
-        <p><strong>2026-10-13 to 14.</strong> Scanned all 403. 386 completed; 17 failed (14 timeouts, 2 unreachable, 1 other). The scanner independently confirmed Shopify on all 386. Each scan loads the home page, a product page, the cart and checkout in a real browser, and records which tags load and which requests fire.</p>
+        <p><strong>2026-10-13 to 14.</strong> Scanned all 403. 386 completed; 17 failed (14 timeouts, 2 unreachable, 1 other). The scanner independently confirmed Shopify on all 386. Each scan loads up to four pages in a real browser (home, a product page, cart, checkout) and records which tags load and which requests fire. 283 of the 386 reached all four; 39 reached only the home page. For those stores the rates above are floors.</p>
         <p><strong>2026-10-14.</strong> Re-ran the detector offline on all 386 stored evidence bundles. No store's result changed.</p>
-        <p><strong>Excluded.</strong> The scanner runs other checks. Two of them were left out of this report because they raise too many false alarms to publish as defects.</p>
+        <p><strong>Excluded.</strong> The scanner runs 20 other checks that are not reported here. Two of them (conversion misfire and tracking cost) were considered and dropped because they raise too many false alarms to publish as defects.</p>
         <p><strong>Limits.</strong> Because the Majestic Million ranks by links, this sample leans toward larger, established stores. It is a random sample of Shopify storefronts in the Majestic Million, not of all Shopify stores. Headless Shopify sites don't pass the selection test, so they aren't in it. A scan sees only what loads in a visitor's browser. It can't see server-side tracking or GA4 admin settings.</p>
         <p>Contains data from the Majestic Million (<a href="https://majestic.com">https://majestic.com</a>), licensed under CC BY 3.0.</p>
       </div>
@@ -263,10 +291,10 @@ h2{font-size:2.6rem}
   <section class="section Band">
     <div class="container">
       <h2><span aria-hidden="true">📊</span> or have the scanner look</h2>
-      <p>The scanner used for this study is free. It loads your storefront, cart and checkout pages and reports every tracking ID it sees firing. It reads public pages only, so it can't see server-side sends. Three scans a day per IP.</p>
+      <p>The scanner used for this study is free. It loads your storefront, cart and checkout pages and reports every tracking ID it sees firing. It reads public pages only, so it can't see server-side sends. Three scans a day per IP. If you want me to read the result with you and say what to change, that's the $250 Scan Read; the full $1,750 audit reconciles against your real orders.</p>
       <div class="Hero--CTAs">
         <a class="primary" href="https://scan.ecomloop.com">run the free scanner</a>
-        <a class="secondary" href="/offer.html">see the tracking audit</a>
+        <a class="secondary" href="/offer.html">read a scan with me, $250</a>
       </div>
     </div>
   </section>

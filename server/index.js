@@ -186,7 +186,8 @@ app.post('/submit', async (req, reply) => {
   const fieldReason = checkFields({ name, email, url, message });
   if (fieldReason) return pretendSuccess(fieldReason);
 
-  const subject = `${formName === 'audit' ? 'Audit request' : 'Contact'}: ${name}`;
+  const SUBJECTS = { audit: 'Audit request', study: 'Re-scan list' };
+  const subject = `${SUBJECTS[formName] || 'Contact'}: ${name}`;
   const lines = [
     `name: ${name}`,
     `email: ${email}`,
@@ -213,7 +214,12 @@ app.post('/submit', async (req, reply) => {
 // The form pages carry a freshly minted token, so they are rendered per
 // request rather than served by fastifyStatic. Everything else in site/ is
 // still served as-is.
-const FORM_PAGES = { '/': 'index.html', '/index.html': 'index.html', '/offer.html': 'offer.html' };
+const FORM_PAGES = {
+  '/': 'index.html',
+  '/index.html': 'index.html',
+  '/offer.html': 'offer.html',
+  '/shopify-tracking-study.html': 'shopify-tracking-study.html',
+};
 
 function renderFormPage(file) {
   const html = readFileSync(path.join(SITE_DIR, file), 'utf8');

@@ -1,19 +1,26 @@
-Subject: Pre-BFCM data: 19% of Shopify storefronts in a random sample double-send GA4 page views
+Form subject: News Article Submission
+(Shopifreaks takes submissions through the form at shopifreaks.com/contact. The subject field is a dropdown; the line below is the first line of the message.)
+
+Pre-BFCM data: 1 in 6 Shopify storefronts in a random sample send GA4 to two properties
 
 Hi Paul,
 
-I scanned a random sample of Shopify storefronts in the Majestic Million, 386 stores, for tracking problems. On a single page load:
+I scanned a random sample of Shopify storefronts in the Majestic Million, 386 stores, for tracking faults. On one page load:
 
-- 73 (19%) send GA4 the same page view twice
-- 31 (8%) fire the Meta pixel twice
 - 64 (17%) send data to two or more GA4 properties
 - 23 (6%) still load Universal Analytics, which Google shut off in 2023
+- 73 (19%) fire the GA4 tag twice
+- 31 (8%) fire the Meta pixel twice
 
-A hand-picked panel of 192 DTC brands matched the GA4 and UA rates within a point.
+A hand-picked panel of 192 DTC brands matched the first two within a point; duplicate firing ran five points higher there.
 
-None of this shows up as an error, so merchants head into Black Friday trusting these numbers.
+None of it shows as an error, so merchants go into Black Friday trusting the numbers. Dead UA is safe to remove now; a doubled pixel is one to log and pull after Cyber Monday.
 
-For a pre-BFCM item: the numbers plus a two-minute check any merchant can run in Chrome. You'd have it first. The full report goes up on ecomloop.com the day you run it, or in two weeks if you pass.
+Unlisted draft, with method notes and a self-check: https://ecomloop.com/shopify-tracking-study.html
+
+Yours through Friday Oct 30. Live Monday Nov 2 either way.
+
+A line you can lift: "A scan of 386 randomly sampled Shopify storefronts found 17% sending GA4 data to two properties and 6% still loading Universal Analytics, two years after Google switched it off."
 
 Andrew
 ecomloop.com

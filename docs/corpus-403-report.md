@@ -26,7 +26,7 @@ The other two findings agree more loosely. In the hand-picked group, duplicate f
 
 More than a third of a random sample has at least one of the first three problems. Yet in Google's Keyword Planner (checked October 13, 2026), all the US searches for tracking audits and analytics consultants together come to about 600 to 700 a month. Searches that describe the symptom, like "ga4 not matching shopify" or "duplicate purchase event ga4", are each under 10 a month.
 
-My read is that this gap is what a silent defect looks like. Fewer people hiring consultants, or asking a chatbot instead, explains some of it. It doesn't explain why the symptom searches are close to zero. A store with two GA4 properties or a doubled tag gets no error. The dashboard loads, the charts move, and the numbers look reasonable. They are just wrong, and nothing prompts anyone to check. People search for problems they can see.
+My read: fewer people hiring consultants, or asking a chatbot instead, explains some of the low search volume. It doesn't explain why the symptom searches are close to zero. A store with two GA4 properties or a doubled tag gets no error. The dashboard loads, the charts move, and the numbers look reasonable. They are just wrong, and nothing prompts anyone to check. People search for problems they can see.
 
 So if you run a store, don't wait for the dashboard to show it. Look at what the site actually loads. Open a product page in Google Tag Assistant and count the GA4 IDs (they start with G-) against your own, look for any UA- ID, and check that one page load sends one page_view. The full step-by-step check is on the published page.
 
@@ -34,9 +34,9 @@ So if you run a store, don't wait for the dashboard to show it. Look at what the
 
 - **2026-10-05.** Hand-picked panel: 193 well-known DTC brands, 192 scanned successfully. The panel figures above are after detector fixes made on 2026-10-06, re-checked offline from the stored scan evidence. The scan-day output overcounted two-GA4 stores (45 on the day, 33 after the fixes), which is why the second sample got the offline re-check described below.
 - **2026-10-13.** Downloaded the Majestic Million. Shuffled it with a fixed random seed (20261013) and checked domains in that order with a fixed four-signal Shopify test until 403 Shopify storefronts were found. That took 18,900 domains; 2.13% were Shopify.
-- **2026-10-13 to 14.** Scanned all 403. 386 completed; 17 failed (14 timeouts, 2 unreachable, 1 other). The scanner independently confirmed Shopify on all 386. Each scan loads the home page, a product page, the cart and checkout in a real browser, and records which tags load and which requests fire.
+- **2026-10-13 to 14.** Scanned all 403. 386 completed; 17 failed (14 timeouts, 2 unreachable, 1 other). The scanner independently confirmed Shopify on all 386. Each scan loads up to four pages in a real browser (home, a product page, cart, checkout) and records which tags load and which requests fire. 283 of the 386 reached all four; 39 reached only the home page. For those stores the rates above are floors.
 - **2026-10-14.** Re-ran the detector offline on all 386 stored evidence bundles. No store's result changed.
-- **Excluded.** The scanner runs other checks. Two of them were left out of this report because they raise too many false alarms to publish as defects.
+- **Excluded.** The scanner runs 20 other checks that are not reported here. Two of them (conversion misfire and tracking cost) were considered and dropped because they raise too many false alarms to publish as defects.
 - **Limits.** Because the Majestic Million ranks by links, this sample leans toward larger, established stores. It is a random sample of Shopify storefronts in the Majestic Million, not of all Shopify stores. Headless Shopify sites don't pass the selection test, so they aren't in it. A scan sees only what loads in a visitor's browser. It can't see server-side tracking or GA4 admin settings.
 - **Aggregate only.** No store is named here.
 
