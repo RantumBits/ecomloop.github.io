@@ -203,6 +203,9 @@ app.post('/submit', async (req, reply) => {
   } catch (err) {
     req.log.error({ err }, 'failed to send form notification');
   }
+  // A re-scan signup is not a lead: its own page, and no receipt, so the
+  // conversion tag never sees it.
+  if (formName === 'study') return reply.redirect('/thanks-study.html', 303);
   // The only place a receipt is issued: this submission passed every check and
   // reached sendNotification. pretendSuccess returns the same page without one.
   return reply
