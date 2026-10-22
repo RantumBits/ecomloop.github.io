@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tracking Fix booked | ecomloop</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/images/logo.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<style>
+html{font-size:62.5%;background:whitesmoke}
+body{margin:0;font-family:'Inconsolata',monospace;font-size:1.6em;line-height:1.5;color:#000;background:#fff;min-height:100vh;padding:4rem 2rem}
+h1,h2{font-family:'Montserrat',sans-serif;font-weight:600}
+h1{font-size:2.8rem;margin:0 0 1rem}
+h2{font-size:2rem;margin:3rem 0 1rem}
+a{color:#00c2bd}
+main{max-width:60rem;margin:0 auto}
+ol li{margin:0 0 1rem}
+form{display:grid;gap:1.4rem;margin:2rem 0;background:whitesmoke;padding:2rem;border-radius:3px}
+label{display:grid;gap:.4rem;font-weight:700}
+label small{font-weight:400}
+input,textarea{font:inherit;padding:1rem 1.2rem;border:2px solid #000;border-radius:3px;background:#fff}
+button{font:inherit;font-weight:700;background:#00c2bd;color:#000;border:0;border-radius:3px;padding:1.2rem 2.4rem;cursor:pointer;justify-self:start}
+.fine{font-size:1.4rem;color:#272727}
+</style>
+</head>
+<body>
+<main>
+  <h1>paid. thank you.</h1>
+  <p>Your Tracking Fix is booked. Stripe has emailed you a receipt. Here's what happens next.</p>
+
+  <h2>1. Give me access</h2>
+  <ol>
+    <li><strong>Shopify:</strong> in your Shopify admin go to <em>Settings, Users</em>, find <em>Collaborators</em>,
+      and copy the 4-digit collaborator request code. Put it in the form below and I'll send the request.
+      You approve it, and you can remove me the moment the work is done.</li>
+    <li><strong>Google Tag Manager</strong>, if you use it: go to <em>Admin, User management</em> and add
+      <strong>andrew@ecomloop.com</strong> with Publish permission on the container.</li>
+  </ol>
+
+  <form name="fix" method="POST" action="/submit">
+    <input type="hidden" name="form-name" value="fix">
+    <input type="hidden" name="source" id="source">
+    <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+    <label>your name <input type="text" name="name" required autocomplete="name"></label>
+    <label>email <small>(the one you paid with is fine)</small> <input type="email" name="email" required autocomplete="email"></label>
+    <label>store URL <input type="url" name="url" placeholder="https://" required autocomplete="url"></label>
+    <label>Shopify collaborator request code <input type="text" name="code" inputmode="numeric" maxlength="8" placeholder="1234"></label>
+    <label>anything I should know <small>(GTM added? apps you rely on? a day not to touch the site?)</small>
+      <textarea name="message" rows="4"></textarea></label>
+    <button type="submit">send access details</button>
+  </form>
+
+  <h2>2. We agree the list</h2>
+  <p>Within one business day I'll email the exact items I'll fix, taken from your scan report. Nothing outside that list gets touched.</p>
+
+  <h2>3. Fixed, then proved</h2>
+  <p>The work is done within 3 business days of access landing. Then I rescan your store and send you the before and after.
+    If the rescan isn't clean on the agreed items, you get a full refund.</p>
+
+  <p class="fine">Questions: reply to this at <a href="mailto:andrew@ecomloop.com">andrew@ecomloop.com</a>.</p>
+</main>
+<script>
+// Stripe sends the buyer here with ?session_id=..., which ties the access
+// details back to the payment.
+document.getElementById('source').value = new URLSearchParams(location.search).get('session_id') || '';
+</script>
+</body>
+</html>
