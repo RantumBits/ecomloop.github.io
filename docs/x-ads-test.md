@@ -15,8 +15,8 @@ their own store at a cost that beats the alternatives?
    from, so the campaign objective is Website traffic and the scan log is the
    source of truth. Add the pixel only if the test passes and scales.
 4. **Shopifreaks exclusive runs to Oct 30.** Posts A and B quote the corpus
-   study, so they cannot run before Oct 31. Post C has no study numbers and can
-   run earlier if you want a head start.
+   study, so they cannot run before Oct 31. Post C's text has no study numbers,
+   but its video does, so as video ads all three start Oct 31.
 
 ## Dates and budget
 
@@ -64,6 +64,99 @@ GA4, 23 of 386 (6.0%) dead UA. Post A says "the revenue you see depends on
 which one you open", not "never matches", because some second properties are
 deliberate and the report says so. If X asks for the claim's source, the study page
 goes public Nov 2.
+
+## Video ads
+
+Each post above runs as a video ad, with the post text as its copy. Same three
+`utm_content` tags, so the scan log still tells them apart.
+
+**Rules for all three**
+
+- **The AI presenter is a narrator, never a customer.** It states what the
+  study found and shows the scanner. No first-person "I ran this on my store"
+  lines, no reactions, no names. A made-up user is a fake testimonial under the
+  FTC's 2024 rule, whatever tool made it.
+- **Label it.** A small on-screen "AI-generated presenter" for the whole video,
+  and add `Video: AI presenter.` as the last line of the post text.
+- **The proof is the screen recording.** The presenter frames the problem; a
+  real scan running is what makes the claim believable. Never mock up a result.
+- **20 to 30 seconds, 9:16 or 1:1, captions burned in.** Most X video plays
+  muted, so the captions carry the message on their own.
+- **Numbers say "a random sample of Shopify storefronts"**, never "of Shopify
+  stores". That phrasing is required by the study's method note.
+
+### A: two GA4 properties (`two-ga4`)
+
+| Time | Picture | Voiceover | On-screen text |
+|---|---|---|---|
+| 0–3s | Presenter, tight framing | "Your GA4 revenue could be counted twice, and your dashboard wouldn't tell you." | **Counted twice?** |
+| 3–11s | Animation: one sale splits into two GA4 dashboards showing different totals | "We scanned a random sample of 386 Shopify storefronts. One in six sends every sale to two different GA4 properties." | **1 in 6** send sales to two GA4 properties |
+| 11–15s | Presenter | "So the revenue you see depends on which one you open." | **Which number is real?** |
+| 15–25s | Screen recording, shot list below | "Check yours. Paste your store's address, and about a minute later you'll see every GA4 ID it loads." | **Free scan · about a minute** |
+| 25–28s | End card | — | **scan.ecomloop.com** |
+
+### B: dead Universal Analytics (`dead-ua`)
+
+| Time | Picture | Voiceover | On-screen text |
+|---|---|---|---|
+| 0–3s | Presenter | "Google switched off Universal Analytics in 2023. Is your store still loading it?" | **Still loading UA?** |
+| 3–11s | Animation: a UA tag loading on every page, its data going nowhere | "In a random sample of 386 Shopify storefronts, 6% still do. The script downloads on every page view and records nothing." | **6% still load it** |
+| 11–15s | Presenter | "Nothing on your dashboard will tell you it's there." | **Dead code, every page view** |
+| 15–25s | Screen recording, shot list below | "Paste your store's address. The scan lists every tag your site loads, including the dead ones." | **Free scan · about a minute** |
+| 25–28s | End card | — | **scan.ecomloop.com** |
+
+### C: duplicate firing (`double-fire`)
+
+| Time | Picture | Voiceover | On-screen text |
+|---|---|---|---|
+| 0–3s | Presenter | "Before Black Friday, check whether your tracking fires twice." | **Firing twice?** |
+| 3–12s | Animation: the same tag reaching the page twice, once through an app and once added by hand | "In a random sample of 386 Shopify storefronts, more than a quarter fired the same tag twice on one page. One way it happens: the tag is installed through an app and again by hand." | **27% fire a tag twice** |
+| 12–15s | Presenter | "Then your reports count some events twice." | **Same event, counted twice** |
+| 15–25s | Screen recording, shot list below | "Paste your store's address. The scan shows which tags fire more than once." | **Free scan · about a minute** |
+| 25–28s | End card | — | **scan.ecomloop.com** |
+
+C now quotes the study (105 of 386, 27.2%), so like A and B it cannot run
+before Oct 31. It says "some events", not "orders": the study counted any tag
+firing twice on a page, not purchases specifically.
+
+### Screen recording (shared by all three)
+
+One recording, about 40 seconds raw, cut to 10 seconds in each video.
+
+1. Browser at scan.ecomloop.com, clean window, no bookmarks bar or other tabs.
+2. Paste a store address and press **Scan my site**.
+3. Let the progress run; it will be sped up in the edit.
+4. The report loads. Scroll slowly past the summary to the finding that matches
+   the video: two GA4 properties for A, Universal Analytics for B, duplicate
+   firing for C. If one store doesn't show all three, record more than one.
+5. Hold on each finding for 2 seconds so the caption can be read.
+6. **Crop or blur the "N of M stores we have scanned had this" line** under each
+   finding. It is the scanner's running count across everyone who has used it,
+   a self-selected group, so it won't match the study. On Oct 22 the two-GA4
+   finding read "37 of the 72 stores". Next to a voiceover saying "one in six",
+   that looks like the ad contradicting itself.
+
+**Which store.** Showing a real brand's defects in an ad is a risk of its own, so either:
+
+- **Blur a real store.** Scan a store from the corpus that has the finding you
+  need. In the edit, blur the domain in the address bar, the report title, any
+  brand names and the tag IDs. Public lookup tools can tie a GA4 or Meta ID
+  back to the site that uses it.
+- **Use your own demo store.** A Shopify store you control, with GA4 installed
+  twice and a UA tag left in. The results are real, and nothing needs blurring.
+  Check first that the scanner can reach it: a development store behind a
+  storefront password probably won't scan.
+
+### Making them
+
+- **Presenter:** an AI avatar tool such as HeyGen or Synthesia, with a stock
+  avatar in a plain setting. Avoid tools built around fake "customer" UGC.
+- **Animations and edit:** any editor with simple motion graphics. The three
+  animations are basic: one sale splitting into two, a tag loading with nothing
+  coming out, one tag arriving twice.
+- **Before launch,** check each video for: the "AI-generated presenter" label
+  on screen, numbers matching the study, no real brand visible, and captions
+  readable with sound off.
 
 ## Targeting
 
