@@ -167,6 +167,9 @@ app.post('/submit', async (req, reply) => {
   const url = String(body.url || '').trim();
   const source = String(body.source || '').trim();
   const message = String(body.message || '').trim();
+  // The Shopify collaborator request code from the Tracking Fix booking form.
+  // Digits only, so it can't carry anything else into the notification.
+  const code = String(body.code || '').replace(/\D/g, '').slice(0, 8);
   // Which rung of the offer ladder they picked. Allow-listed rather than
   // echoed, so the notification can never carry attacker-chosen text.
   const TIERS = {
@@ -188,13 +191,14 @@ app.post('/submit', async (req, reply) => {
   const fieldReason = checkFields({ name, email, url, message });
   if (fieldReason) return pretendSuccess(fieldReason);
 
-  const SUBJECTS = { audit: 'Audit request', study: 'Re-scan list' };
+  const SUBJECTS = { audit: 'Audit request', study: 'Re-scan list', fix: 'Tracking Fix access' };
   const subject = `${SUBJECTS[formName] || 'Contact'}: ${name}`;
   const lines = [
     `name: ${name}`,
     `email: ${email}`,
     url && `url: ${url}`,
     tier && `wants: ${tier}`,
+    code && `collaborator code: ${code}`,
     source && `source: ${source}`,
     '',
     message || '(no message)',
@@ -208,6 +212,9 @@ app.post('/submit', async (req, reply) => {
   // A re-scan signup is not a lead: its own page, and no receipt, so the
   // conversion tag never sees it.
   if (formName === 'study') return reply.redirect('/thanks-study.html', 303);
+  // A paid Tracking Fix sending its access details: already a customer, so
+  // no receipt and no conversion tag here either.
+  if (formName === 'fix') return reply.redirect('/thanks-fix.html', 303);
   // The only place a receipt is issued: this submission passed every check and
   // reached sendNotification. pretendSuccess returns the same page without one.
   return reply
@@ -225,6 +232,7 @@ const FORM_PAGES = {
   '/offer.html': 'offer.html',
   '/distributors.html': 'distributors.html',
   '/shopify-tracking-study.html': 'shopify-tracking-study.html',
+  '/fix-booked.html': 'fix-booked.html',
 };
 
 function renderFormPage(file) {
