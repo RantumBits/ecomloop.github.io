@@ -38,7 +38,7 @@ Plain, first person, one finding each, link last. Each is under 280 characters.
 > to two different GA4 properties, so the revenue you see depends on which
 > one you open.
 >
-> Free check for your store, about a minute:
+> Free check for your store, takes a few minutes:
 > scan.ecomloop.com/?utm_source=x&utm_medium=paid&utm_campaign=bfcm-tracking&utm_content=two-ga4
 
 **B: dead Universal Analytics** (`utm_content=dead-ua`)
@@ -92,7 +92,7 @@ Each post above runs as a video ad, with the post text as its copy. Same three
 | 0–3s | Presenter, tight framing | "Your GA4 revenue could be counted twice, and your dashboard wouldn't tell you." | **Counted twice?** |
 | 3–11s | Animation: one sale splits into two GA4 dashboards showing different totals | "We scanned a random sample of 386 Shopify storefronts. One in six sends every sale to two different GA4 properties." | **1 in 6** send sales to two GA4 properties |
 | 11–15s | Presenter | "So the revenue you see depends on which one you open." | **Which number is real?** |
-| 15–25s | Screen recording, shot list below | "Check yours. Paste your store's address, and about a minute later you'll see every GA4 ID it loads." | **Free scan · about a minute** |
+| 15–25s | Screen recording, shot list below | "Check yours. Paste your store's address, and a few minutes later you'll see every GA4 ID it loads." | **Free scan · a few minutes** |
 | 25–28s | End card | — | **scan.ecomloop.com** |
 
 ### B: dead Universal Analytics (`dead-ua`)
@@ -102,7 +102,7 @@ Each post above runs as a video ad, with the post text as its copy. Same three
 | 0–3s | Presenter | "Google switched off Universal Analytics in 2023. Is your store still loading it?" | **Still loading UA?** |
 | 3–11s | Animation: a UA tag loading on every page, its data going nowhere | "In a random sample of 386 Shopify storefronts, 6% still do. The script downloads on every page view and records nothing." | **6% still load it** |
 | 11–15s | Presenter | "Nothing on your dashboard will tell you it's there." | **Dead code, every page view** |
-| 15–25s | Screen recording, shot list below | "Paste your store's address. The scan lists every tag your site loads, including the dead ones." | **Free scan · about a minute** |
+| 15–25s | Screen recording, shot list below | "Paste your store's address. The scan lists every tag your site loads, including the dead ones." | **Free scan · a few minutes** |
 | 25–28s | End card | — | **scan.ecomloop.com** |
 
 ### C: duplicate firing (`double-fire`)
@@ -112,7 +112,7 @@ Each post above runs as a video ad, with the post text as its copy. Same three
 | 0–3s | Presenter | "Before Black Friday, check whether your tracking fires twice." | **Firing twice?** |
 | 3–12s | Animation: the same tag reaching the page twice, once through an app and once added by hand | "In a random sample of 386 Shopify storefronts, more than a quarter fired the same tag twice on one page. One way it happens: the tag is installed through an app and again by hand." | **27% fire a tag twice** |
 | 12–15s | Presenter | "Then your reports count some events twice." | **Same event, counted twice** |
-| 15–25s | Screen recording, shot list below | "Paste your store's address. The scan shows which tags fire more than once." | **Free scan · about a minute** |
+| 15–25s | Screen recording, shot list below | "Paste your store's address. The scan shows which tags fire more than once." | **Free scan · a few minutes** |
 | 25–28s | End card | — | **scan.ecomloop.com** |
 
 C now quotes the study (105 of 386, 27.2%), so like A and B it cannot run
@@ -142,23 +142,25 @@ One recording, about 40 seconds raw, cut to 10 seconds in each video.
   need. In the edit, blur the domain in the address bar, the report title, any
   brand names and the tag IDs. Public lookup tools can tie a GA4 or Meta ID
   back to the site that uses it.
-  Picked Oct 22 from the random sample, all three findings re-confirmed that
-  day with a local CLI scan:
-  - **deerruntreadmill.com** (first choice): two GA4 properties, both firing
-    twice, plus Universal Analytics. Never emailed (no contact found), and
-    eight findings, so the report stays readable.
-  - **ayoubs.ca** (backup): two GA4 properties, GA4, Meta and Bing all firing
-    twice, plus UA. Ten findings, so more scrolling. Emailed in the outreach
-    batch.
-  - Not wusthof.com: it has all three, but it's a brand people would
-    recognise even blurred, and it was emailed too.
+  **Recorded Oct 22** (files in `x-ads-footage/`, kept out of git, with
+  `timestamps.txt` marking where to blur):
+  - **ayoubs.ca** is the one to use. Its live report shows all three:
+    two GA4 properties, Universal Analytics (finding 10 of 11), and GA4, Meta
+    and Bing each firing twice. It was emailed in the outreach batch, so blur
+    thoroughly.
+  - **deerruntreadmill.com** is a backup for A and C only. Its live scan
+    couldn't add a product to the cart and didn't report Universal
+    Analytics, although a local scan did.
+  - Not wusthof.com: a brand people would recognise even blurred.
 
-  **One take per store per day.** The live scanner caches a result for 24
-  hours, and the page has no "scan again" option. Your first scan of a store
-  shows the progress; any retake that day jumps straight to the report. Plan
-  the first take as the real one, and keep the backup store for a second
-  attempt. Run it from a browser with no ad blocker, and note this machine
-  gets 3 free scans a day before asking for an email.
+  **Scans take 2 to 3 minutes, not one.** Both recordings took about 2.5
+  minutes from Scan to report, so speed the progress up in the edit and keep
+  the captions at "a few minutes". The scan page itself still says "Takes
+  about a minute"; that should change with the wait-time work.
+
+  The live scanner caches each result for 24 hours, so a fresh take of the
+  scan itself is one per store per day. The report scroll-through can be
+  re-recorded any time from its `/r/` link.
 
 - **Use your own demo store.** A Shopify store you control, with GA4 installed
   twice and a UA tag left in. The results are real, and nothing needs blurring.
