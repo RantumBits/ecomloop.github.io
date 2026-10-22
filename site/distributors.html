@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Google Ads Tracking for Distributors | ecomloop</title>
+<meta name="description" content="Tracking reconciliation for distributors and suppliers who sell online, by phone and through branches: find the Google Ads tags counting conversions that never happened.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/images/logo.png" type="image/png">
+<link rel="canonical" href="https://ecomloop.com/distributors.html">
+<meta property="og:title" content="Google Ads Tracking for Distributors | ecomloop">
+<meta property="og:description" content="Tracking reconciliation for distributors and suppliers who sell online, by phone and through branches: find the Google Ads tags counting conversions that never happened.">
+<meta property="og:image" content="https://ecomloop.com/images/hero.jpg">
+<meta property="og:url" content="https://ecomloop.com/distributors.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ecomloop">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#00c2bd; --secondary:#000; --lightGrey:whitesmoke; --midGrey:#cacaca; --darkGrey:#272727;
+  --borderRadius:3px; --container:110rem;
+}
+*{box-sizing:border-box}
+html{font-size:62.5%;min-height:100%;background:var(--lightGrey);scroll-behavior:smooth}
+body{margin:0;font-family:'Inconsolata',monospace;background:#fff;color:var(--secondary);font-size:1.6em;font-weight:400;letter-spacing:.01em;line-height:1.6;-webkit-font-smoothing:antialiased}
+::selection{background:rgba(0,194,189,.6)}
+a{color:var(--primary)}
+p{margin:0 0 1em}
+h1,h2{margin:0 0 .5em;font-family:'Montserrat',sans-serif;font-weight:600;line-height:1.2}
+h3,h4{font-family:'Inconsolata',monospace;font-weight:700;margin:0 0 .5em}
+h2{font-size:2.6rem}
+.container{max-width:var(--container);margin:0 auto;padding:0 2rem}
+.taCenter{text-align:center}
+.section{padding:5rem 0}
+.section h2.emoji{text-align:center;margin-bottom:3rem}
+
+/* nav */
+.Nav{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.Nav .container{display:flex;align-items:center;gap:2.4rem;height:5.2rem}
+.Logo{display:block;width:3.2rem;height:3.2rem;background:url(/images/logo.png) center/contain no-repeat;flex:none}
+.Nav--Links{display:flex;align-items:center;gap:1.8rem;margin-left:auto}
+.NavLink{color:var(--secondary);text-decoration:none;font-size:1.5rem}
+.NavLink:hover{color:var(--primary)}
+.Nav--CTA{background:var(--primary);color:#fff;text-transform:uppercase;font-size:1.2rem;letter-spacing:.06em;padding:.7rem 1.2rem;border-radius:var(--borderRadius)}
+.Nav--CTA:hover{color:#fff;background:#00a9a4}
+@media (max-width:640px){.Nav--Links .NavLink:not(.Nav--CTA){display:none}}
+
+/* hero */
+.PageHeader{position:relative;background:var(--darkGrey);color:#fff;padding:9rem 0 20rem;overflow:hidden}
+.PageHeader .BackgroundImage{position:absolute;inset:0;background:linear-gradient(90deg,rgba(39,39,39,.75),rgba(39,39,39,.4)),url(/images/hero.jpg) center/cover no-repeat;opacity:.9}
+.PageHeader .container{position:relative;animation:fadeIn .5s ease-out}
+.PageHeader--Title{font-size:4.6rem;margin-bottom:1.6rem;color:#fff;text-wrap:balance;max-width:24ch}
+.PageHeader--Subtitle{font-weight:700;font-size:1.8rem;margin:0 0 .6em;color:#fff;max-width:56ch}
+.PageHeader--Subtitle::before{content:">> "}
+.PageHeader > svg{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:16rem;display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (max-width:600px){.PageHeader{padding:6rem 0 12rem}.PageHeader--Title{font-size:3rem}.PageHeader > svg{height:9rem}}
+@media (prefers-reduced-motion:reduce){.PageHeader .container{animation:none}}
+
+.Intro p{max-width:78ch}
+
+/* offer ladder */
+.Tiers--Lead{max-width:70ch;margin:0 auto 3rem;text-align:center;font-size:1.5rem}
+.Tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(28rem,1fr));gap:2.4rem;align-items:stretch}
+.Tier{background:#fff;border:1px solid var(--midGrey);border-radius:var(--borderRadius);padding:2.6rem 2.2rem;display:flex;flex-direction:column}
+.Tier--Featured{border:2px solid var(--primary);box-shadow:0 2px 20px rgba(0,0,0,.12);position:relative}
+.Tier--Badge{position:absolute;top:-1.2rem;left:2.2rem;background:var(--primary);color:#fff;text-transform:uppercase;font-size:1.1rem;letter-spacing:.06em;padding:.4rem 1rem;border-radius:var(--borderRadius)}
+.Tier--Name{font-family:'Inconsolata',monospace;font-weight:700;font-size:1.7rem;margin:0 0 .4em}
+.Tier--Price{font-family:'Montserrat',sans-serif;font-weight:600;font-size:3.4rem;margin:0 0 .6em;line-height:1}
+.Tier--Price small{font-family:'Inconsolata',monospace;font-weight:400;font-size:1.4rem;display:block;color:#555;margin-top:.6rem;line-height:1.5}
+.Tier--Access{font-size:1.4rem;font-weight:700;background:var(--lightGrey);padding:1rem 1.2rem;border-radius:var(--borderRadius);margin:0 0 1.4rem}
+.Tier ul{padding-left:1.7rem;margin:0 0 1.4rem;font-size:1.45rem}
+.Tier li{margin-bottom:.7rem}
+.Tier--Limit{font-size:1.35rem;color:#555;margin:0 0 1.4rem}
+.Tier--For{font-size:1.35rem;margin:auto 0 1.6rem;padding-top:1.2rem;border-top:1px solid var(--midGrey)}
+.Tier--CTA{display:block;background:var(--primary);color:#fff;text-decoration:none;text-transform:uppercase;font-size:1.2rem;letter-spacing:.06em;padding:.9rem 1.4rem;border-radius:var(--borderRadius);text-align:center}
+.Tier--CTA:hover{color:#fff;background:#00a9a4}
+.Tier--CTA.alt{background:#fff;color:var(--secondary);border:1px solid var(--midGrey)}
+.Tier--CTA.alt:hover{color:var(--secondary);border-color:var(--primary)}
+.credit{background:#fff;border-left:3px solid var(--primary);padding:1.4rem 1.8rem;border-radius:var(--borderRadius);font-size:1.45rem;margin:3rem auto 0;max-width:78ch}
+
+.Grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(26rem,1fr));gap:3rem}
+.Card{background:#fff;border-radius:var(--borderRadius);box-shadow:0 2px 12px rgba(0,0,0,.08);overflow:hidden;display:flex;flex-direction:column}
+.Card--Body{padding:2.4rem 2rem 2.2rem;display:flex;flex-direction:column;gap:.6rem}
+.Card--Title{font-family:'Inconsolata',monospace;font-weight:700;font-size:1.7rem;margin:0}
+.Card p{margin:0;font-size:1.45rem}
+
+.Example{background:var(--lightGrey);border-left:3px solid var(--primary);padding:2rem 2.4rem;border-radius:var(--borderRadius);max-width:78ch}
+.Example h4{margin-bottom:.6rem}
+
+/* contact */
+.Contact form{max-width:60rem;margin:0 auto;display:grid;gap:1.4rem}
+.Contact label{display:grid;gap:.4rem;font-size:1.4rem;font-weight:700}
+.Contact input,.Contact textarea,.Contact select{font:inherit;font-size:1.5rem;padding:1rem;border:1px solid var(--midGrey);border-radius:var(--borderRadius);width:100%;background:#fff}
+.Contact input:focus,.Contact textarea:focus,.Contact select:focus{outline:2px solid var(--primary);border-color:var(--primary)}
+.Contact button{font:inherit;background:var(--primary);color:#fff;border:0;text-transform:uppercase;letter-spacing:.06em;font-size:1.3rem;padding:1.1rem 1.6rem;border-radius:var(--borderRadius);cursor:pointer;justify-self:start}
+.Contact .alt{text-align:center;font-size:1.4rem;margin-top:2rem}
+
+/* footer */
+.footer{padding:2.4rem 0;background:var(--lightGrey);font-size:1.2rem;line-height:1.9}
+.footer a{color:#000;text-decoration:none;margin:0 .3rem}
+.footer a:hover{color:var(--primary)}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18501014034"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18501014034');
+</script>
+</head>
+<body>
+
+<nav class="Nav">
+  <div class="container">
+    <a href="/" class="Logo" aria-label="ecomloop home"></a>
+    <div class="Nav--Links">
+      <a class="NavLink" href="https://scan.ecomloop.com?src=distributors">free scanner</a>
+      <a class="NavLink" href="/gtm-audit.html">gtm audit checklist</a>
+      <a class="NavLink" href="/offer.html">the audit</a>
+      <a class="NavLink Nav--CTA" href="#audit-contact">start the audit</a>
+    </div>
+  </div>
+</nav>
+
+<header class="PageHeader">
+  <div class="BackgroundImage" role="presentation"></div>
+  <div class="container">
+    <h1 class="PageHeader--Title">your Google Ads may be bidding on orders that never happened</h1>
+    <p class="PageHeader--Subtitle">tracking reconciliation for distributors and suppliers who sell online, by phone and through branches</p>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true"><path fill="#fff" d="M0,160L48,181.3C96,203,192,245,288,229.3C384,213,480,139,576,106.7C672,75,768,85,864,106.7C960,128,1056,160,1152,192C1248,224,1344,256,1392,272L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</header>
+
+<main>
+  <section class="section Intro">
+    <div class="container">
+      <h2>why distributors are prone to this</h2>
+      <p>Smart Bidding learns from the conversions your website reports. When two Google Ads tags count the same order, or a tag from an old account is still counting next to the current one, Google sees more conversions than you had and raises your bids to buy more of them. You pay that premium on every auction until someone looks.</p>
+      <p>Distributors and suppliers are set up for this to go unnoticed. Most of the revenue closes by phone, at a branch or on a trade account, so the website is a small slice that nobody audits. The agency that installed the tags has often moved on. And the conversion that matters is frequently a quote request rather than a checkout, which is easy to count twice and hard to check against anything.</p>
+      <p>Start with <a href="https://scan.ecomloop.com?src=distributors">the free scanner</a>. It reads your public site in about a minute, no login, and lists every Google Ads, GA4 and Meta ID it finds, so you can check each one yourself in view-source.</p>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--lightGrey)">
+    <div class="container">
+      <h2 class="emoji"><span aria-hidden="true">🔎</span> what a scan of 17 supplier sites found</h2>
+      <div class="Example">
+        <h4>October 2026, run from the outside, no access</h4>
+        <p>I ran the scanner on 20 distributor and supplier sites across industrial and safety supply, dental, veterinary, uniforms and replacement parts. The scan completed on 17, and none of them were on Shopify.</p>
+        <ul>
+          <li><strong>10 of 17</strong> had at least one confirmed tracking defect.</li>
+          <li><strong>5 of 17</strong> loaded more than one Google Ads ID on the same site, the pattern that double-counts or misfiles conversions.</li>
+          <li><strong>3 of 17</strong> still loaded a Universal Analytics tag. Google switched UA off in July 2023, so those tags have collected nothing for three years.</li>
+        </ul>
+        <p>Confirmed means the IDs are in the page source where anyone can see them. Whether a given duplicate is costing money depends on whether you spend on that platform, which is the first thing the audit settles.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="emoji"><span aria-hidden="true">🧾</span> what it checks, and what it doesn't</h2>
+      <div class="Grid">
+        <div class="Card"><div class="Card--Body">
+          <h3 class="Card--Title">it checks</h3>
+          <p>Every conversion your site reports to Google Ads, GA4 and Meta, traced and matched against your own records of web orders and quote requests. The overcount or undercount gets named exactly, tag by tag.</p>
+        </div></div>
+        <div class="Card"><div class="Card--Body">
+          <h3 class="Card--Title">it doesn't check</h3>
+          <p>Branch, phone or trade-account revenue. For a business that sells through three channels, website revenue is not company revenue, so you won't get a percent-of-revenue estimate that pretends otherwise.</p>
+        </div></div>
+        <div class="Card"><div class="Card--Body">
+          <h3 class="Card--Title">what you hand over</h3>
+          <p>View-only access to Google Ads, GA4 and Tag Manager, plus an export of recent web orders or quote requests. No admin account and no code changes to start.</p>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--lightGrey)">
+    <div class="container">
+      <h2 class="emoji"><span aria-hidden="true">🚒</span> a supplier I've worked with</h2>
+      <div class="Example">
+        <h4>Duffy Supply Company, fire and rescue equipment (now Howell Rescue Supply)</h4>
+        <p>First hired in 2019 for conversion rate optimization, then brought back in 2020 to stand up a new WooCommerce site integrated with Google Ads on a tight timeline. A repeat client.</p>
+        <p><em>"ecomloop does exceptional work and was a big part of our success. We will be using him for more projects in the future."</em></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="emoji"><span aria-hidden="true">💵</span> three ways in</h2>
+      <p class="Tiers--Lead">Each step sees further in, depending on what access you give. Full details are on <a href="/offer.html#pricing">the audit page</a>.</p>
+      <div class="Tiers">
+        <div class="Tier">
+          <h3 class="Tier--Name">the Scan Read</h3>
+          <p class="Tier--Price">$250 <small>3 business days</small></p>
+          <p class="Tier--Access">No access at all.</p>
+          <p class="Tier--Limit">Every defect on your public site, ranked by likely exposure and named by ad platform.</p>
+          <a class="Tier--CTA alt" href="#audit-contact" data-tier="scan-read">start here</a>
+        </div>
+        <div class="Tier">
+          <h3 class="Tier--Name">the Ad Spend Check</h3>
+          <p class="Tier--Price">$750 <small>5 business days</small></p>
+          <p class="Tier--Access">Read-only on your ad accounts and GA4.</p>
+          <p class="Tier--Limit">Which of those tags are actually spending money, read from the accounts rather than guessed from outside.</p>
+          <a class="Tier--CTA alt" href="#audit-contact" data-tier="ad-spend-check">start here</a>
+        </div>
+        <div class="Tier Tier--Featured">
+          <span class="Tier--Badge">recommended</span>
+          <h3 class="Tier--Name">the Tracking &amp; Profit Audit</h3>
+          <p class="Tier--Price">$1,750 <small>10 business days from the day access lands</small></p>
+          <p class="Tier--Access">The above, plus an export of web orders or quote requests.</p>
+          <p class="Tier--Limit">The only one that compares what your tracking reported to what actually came in.</p>
+          <a class="Tier--CTA" href="#audit-contact" data-tier="audit">start the audit</a>
+        </div>
+      </div>
+      <p class="credit"><strong>Whatever you paid comes off the next tier up, if you move within 60 days.</strong></p>
+    </div>
+  </section>
+
+  <section class="section Contact" id="audit-contact" style="background:var(--lightGrey)">
+    <div class="container">
+      <h2 class="emoji"><span aria-hidden="true">📬</span> get started</h2>
+      <form name="audit" method="POST" action="/submit">
+        <input type="hidden" name="form-name" value="audit">
+        <input type="hidden" name="source" id="source" value="distributors">
+        <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+        <label>name <input type="text" name="name" id="name" required autocomplete="name"></label>
+        <label>email <input type="email" name="email" id="email" required autocomplete="email"></label>
+        <label>website <input type="url" name="url" id="url" placeholder="https://" required autocomplete="url"></label>
+        <label>which one <select name="tier" id="tier">
+            <option value="audit">the Tracking &amp; Profit Audit, $1,750</option>
+            <option value="ad-spend-check">the Ad Spend Check, $750</option>
+            <option value="scan-read">the Scan Read, $250</option>
+            <option value="unsure">Not sure yet, tell me which fits</option>
+          </select></label>
+        <label>roughly what you spend on Google Ads a month, and anything you already suspect is off <textarea name="message" id="message" rows="4" placeholder="Optional"></textarea></label>
+        <button type="submit">send it</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container taCenter">
+    <a href="/#contact">contact</a> | <a href="https://scan.ecomloop.com?src=distributors">free scanner</a> | <a href="/gtm-audit.html">gtm audit checklist</a> | <a href="/offer.html">the audit</a> | <a href="https://www.linkedin.com/company/ecomloop/" target="_blank" rel="noopener noreferrer">linkedin</a>
+    <br>© 2026 ecomloop. All rights reserved.
+  </div>
+</footer>
+
+<script>
+// Same as offer.html: ?store= prefills the website field, ?src= overrides the
+// default "distributors" source, and the tier buttons preselect the dropdown.
+(() => {
+  const params = new URLSearchParams(location.search);
+  const store = params.get('store');
+  const field = document.getElementById('url');
+  if (store && field && !field.value) {
+    field.value = /^https?:\/\//i.test(store) ? store : 'https://' + store;
+  }
+  const src = params.get('src');
+  const source = document.getElementById('source');
+  if (source && ['report', 'warm', 'cold', 'watch', 'ads'].includes(src)) source.value = 'distributors-' + src;
+
+  const tierField = document.getElementById('tier');
+  const setTier = (value) => {
+    if (tierField && [...tierField.options].some((o) => o.value === value)) tierField.value = value;
+  };
+  setTier(params.get('tier'));
+  for (const link of document.querySelectorAll('[data-tier]')) {
+    link.addEventListener('click', () => setTier(link.dataset.tier));
+  }
+})();
+</script>
+
+</body>
+</html>

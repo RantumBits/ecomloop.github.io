@@ -87,12 +87,14 @@ function withQuery(target, query) {
   return base + separator + query + (hash ? '#' + hash : '');
 }
 
-// Extension-less link to the offer page (ads, social posts, etc. pointing at
-// /offer rather than /offer.html).
+// Extension-less links to the landing pages (ads, social posts, outreach
+// emails, etc. pointing at /offer rather than /offer.html).
+const EXTENSIONLESS = ['offer', 'distributors'];
 app.addHook('onRequest', async (req, reply) => {
   const [pathname, query] = req.url.split('?');
-  if (pathname === '/offer' || pathname === '/offer/') {
-    return reply.redirect(withQuery('/offer.html', query), 301);
+  const page = pathname.replace(/^\/|\/$/g, '');
+  if (EXTENSIONLESS.includes(page)) {
+    return reply.redirect(withQuery(`/${page}.html`, query), 301);
   }
 });
 
@@ -221,6 +223,7 @@ const FORM_PAGES = {
   '/': 'index.html',
   '/index.html': 'index.html',
   '/offer.html': 'offer.html',
+  '/distributors.html': 'distributors.html',
   '/shopify-tracking-study.html': 'shopify-tracking-study.html',
 };
 
