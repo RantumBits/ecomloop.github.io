@@ -142,6 +142,24 @@ One recording, about 40 seconds raw, cut to 10 seconds in each video.
   need. In the edit, blur the domain in the address bar, the report title, any
   brand names and the tag IDs. Public lookup tools can tie a GA4 or Meta ID
   back to the site that uses it.
+  Picked Oct 22 from the random sample, all three findings re-confirmed that
+  day with a local CLI scan:
+  - **deerruntreadmill.com** (first choice): two GA4 properties, both firing
+    twice, plus Universal Analytics. Never emailed (no contact found), and
+    eight findings, so the report stays readable.
+  - **ayoubs.ca** (backup): two GA4 properties, GA4, Meta and Bing all firing
+    twice, plus UA. Ten findings, so more scrolling. Emailed in the outreach
+    batch.
+  - Not wusthof.com: it has all three, but it's a brand people would
+    recognise even blurred, and it was emailed too.
+
+  **One take per store per day.** The live scanner caches a result for 24
+  hours, and the page has no "scan again" option. Your first scan of a store
+  shows the progress; any retake that day jumps straight to the report. Plan
+  the first take as the real one, and keep the backup store for a second
+  attempt. Run it from a browser with no ad blocker, and note this machine
+  gets 3 free scans a day before asking for an email.
+
 - **Use your own demo store.** A Shopify store you control, with GA4 installed
   twice and a UA tag left in. The results are real, and nothing needs blurring.
   Check first that the scanner can reach it: a development store behind a
