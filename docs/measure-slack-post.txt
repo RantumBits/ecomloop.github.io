@@ -1,0 +1,5 @@
+I do tracking cleanup on Shopify stores and wrote a scanner to do the first pass for me. It loads a store's home, product, cart and first checkout step and reports what the tags did: a GA4 property firing twice, two Measurement IDs collecting at once, a tag that runs on the storefront and is gone at checkout, Universal Analytics still loading. Free, no login, about a minute: scan.ecomloop.com
+
+It's browser-side only. It can't see the purchase event, server-side sends, or how a conversion action is set up in Google Ads, and the report says so where it matters.
+
+I'm posting here for the false positives. So far it has counted Pinterest's enhanced-match call as a second page view and blamed theme code for a duplicate that was an app pixel under Customer events. Both fixed. If you run it on a store you know and it tells you something that isn't true, I want to know — reply here or scanner@ecomloop.com.
