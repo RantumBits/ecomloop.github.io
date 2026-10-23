@@ -159,10 +159,10 @@ h2{font-size:2.6rem}
     <a href="/" class="Logo" aria-label="ecomloop home"></a>
     <div class="Nav--Links">
       <a class="NavLink" href="/#what-we-do">what I do</a>
-      <a class="NavLink" href="https://scan.ecomloop.com">free scanner</a>
+      <a class="NavLink" href="https://scan.ecomloop.com/?utm_source=study&amp;utm_medium=site&amp;utm_content=nav">free scanner</a>
       <a class="NavLink" href="/offer.html">the audit</a>
       <a class="NavLink" href="/gtm-audit.html">gtm audit checklist</a>
-      <a class="NavLink Nav--CTA" href="https://scan.ecomloop.com">run free scan</a>
+      <a class="NavLink Nav--CTA" href="https://scan.ecomloop.com/?utm_source=study&amp;utm_medium=site&amp;utm_content=nav-cta">run free scan</a>
     </div>
   </div>
 </nav>
@@ -174,7 +174,7 @@ h2{font-size:2.6rem}
     <p class="PageHeader--Subtitle">a random sample of 386 storefronts and a hand-picked panel of 192 brands came out within a point of each other</p>
     <div class="Hero--CTAs">
       <a class="primary" href="#check">check your own store</a>
-      <a class="secondary" href="https://scan.ecomloop.com">run the free scanner</a>
+      <a class="secondary" href="https://scan.ecomloop.com/?utm_source=study&amp;utm_medium=site&amp;utm_content=top">run the free scanner</a>
     </div>
   </div>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true"><path fill="#fff" d="M0,160L48,181.3C96,203,192,245,288,229.3C384,213,480,139,576,106.7C672,75,768,85,864,106.7C960,128,1056,160,1152,192C1248,224,1344,256,1392,272L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
@@ -291,7 +291,7 @@ h2{font-size:2.6rem}
       <h2><span aria-hidden="true">📊</span> or have the scanner look</h2>
       <p>The scanner used for this study is free. It loads your storefront, cart and checkout pages and reports every tracking ID it sees firing. It reads public pages only, so it can't see server-side sends. Three scans a day per IP. If you want me to read the result with you and say what to change, that's the $250 Scan Read; the full $1,750 audit reconciles against your real orders.</p>
       <div class="Hero--CTAs">
-        <a class="primary" href="https://scan.ecomloop.com">run the free scanner</a>
+        <a class="primary" href="https://scan.ecomloop.com/?utm_source=study&amp;utm_medium=site&amp;utm_content=end">run the free scanner</a>
         <a class="secondary" href="/offer.html">read a scan with me, $250</a>
       </div>
     </div>
@@ -300,10 +300,25 @@ h2{font-size:2.6rem}
 
 <footer class="footer">
   <div class="container taCenter">
-    <a href="/#contact">contact</a> | <a href="https://scan.ecomloop.com">free scanner</a> | <a href="/shopify-tracking-study.html">tracking study</a> | <a href="/gtm-audit.html">gtm audit checklist</a> | <a href="/ga4-purchase-count-mismatch.html">ga4 vs shopify orders</a> | <a href="https://github.com/RantumBits" target="_blank" rel="noopener noreferrer">github</a> | <a href="https://www.upwork.com/freelancers/andrewmaury" target="_blank" rel="noopener noreferrer">upwork</a> | <a href="https://www.linkedin.com/company/ecomloop/" target="_blank" rel="noopener noreferrer">linkedin</a>
+    <a href="/#contact">contact</a> | <a href="https://scan.ecomloop.com/?utm_source=study&amp;utm_medium=site&amp;utm_content=footer">free scanner</a> | <a href="/shopify-tracking-study.html">tracking study</a> | <a href="/gtm-audit.html">gtm audit checklist</a> | <a href="/ga4-purchase-count-mismatch.html">ga4 vs shopify orders</a> | <a href="https://github.com/RantumBits" target="_blank" rel="noopener noreferrer">github</a> | <a href="https://www.upwork.com/freelancers/andrewmaury" target="_blank" rel="noopener noreferrer">upwork</a> | <a href="https://www.linkedin.com/company/ecomloop/" target="_blank" rel="noopener noreferrer">linkedin</a>
     <br>© 2026 ecomloop. All rights reserved.
   </div>
 </footer>
 
+<script>
+// A visitor who arrived with utm_ tags (an X post, say) keeps them on the way
+// to the scanner, so the scan is credited to that post, not to this page.
+(function () {
+  var page = new URLSearchParams(location.search);
+  var tags = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'].filter(function (k) { return page.get(k); });
+  if (!tags.length) return;
+  document.querySelectorAll('a[href^="https://scan.ecomloop.com"]').forEach(function (a) {
+    var url = new URL(a.href);
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'].forEach(function (k) { url.searchParams.delete(k); });
+    tags.forEach(function (k) { url.searchParams.set(k, page.get(k)); });
+    a.href = url.toString();
+  });
+})();
+</script>
 </body>
 </html>
