@@ -308,14 +308,20 @@ h2{font-size:2.6rem}
 <script>
 // A visitor who arrived with utm_ tags (an X post, say) keeps them on the way
 // to the scanner, so the scan is credited to that post, not to this page.
+// Ad click IDs go along too: this site loads no ad tags, so only the X pixel
+// and Google Ads tag on the scanner can pick them up.
 (function () {
+  var UTM = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'];
+  var CLICK_IDS = ['twclid', 'gclid'];
   var page = new URLSearchParams(location.search);
-  var tags = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'].filter(function (k) { return page.get(k); });
-  if (!tags.length) return;
+  var has = function (k) { return page.get(k); };
+  var tags = UTM.filter(has);
+  var ids = CLICK_IDS.filter(has);
+  if (!tags.length && !ids.length) return;
   document.querySelectorAll('a[href^="https://scan.ecomloop.com"]').forEach(function (a) {
     var url = new URL(a.href);
-    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'].forEach(function (k) { url.searchParams.delete(k); });
-    tags.forEach(function (k) { url.searchParams.set(k, page.get(k)); });
+    if (tags.length) UTM.forEach(function (k) { url.searchParams.delete(k); });
+    tags.concat(ids).forEach(function (k) { url.searchParams.set(k, page.get(k)); });
     a.href = url.toString();
   });
 })();
