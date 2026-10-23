@@ -1,34 +1,71 @@
 # X ads test: free scanner, pre-BFCM
 
-Two weeks, $280, one question: does paid X traffic get Shopify owners to scan
-their own store at a cost that beats the alternatives?
+About 19 days, $380, one question: does paid X traffic get Shopify owners to
+scan their own store at a cost that beats the alternatives?
 
-## Before launch
+## As launched
 
-1. **Merge and deploy scanner PR #15** (RantumBits/ecomloop-scanner). Without it
-   every X visit logs as a bare `https://t.co/...` referrer and the test cannot
-   be read.
-2. **Smoke test after deploy:** open the post-A link below, scan one store,
-   then run `GOOGLE_CLOUD_PROJECT=<project> node script/campaign-report.mjs x`
-   and check the row shows `content=two-ga4`. Delete that row or note its host.
-3. **No X pixel.** At ~$280 X's conversion optimisation has nothing to learn
-   from, so the campaign objective is Website traffic and the scan log is the
-   source of truth. Add the pixel only if the test passes and scales.
-4. **Shopifreaks exclusive runs to Oct 30.** Posts A and B quote the corpus
-   study, so they cannot run before Oct 31. Post C's text has no study numbers,
-   but its video does, so as video ads all three start Oct 31.
+Published Oct 22 and approved that night (status "Scheduled"). Campaign
+`bfcm-tracking` (ID 42833443) in the EcomLoop ad account, posting as @ecomloop.
+
+- **Fri Oct 23, 06:00 PT, scheduled to end Fri Nov 13, 23:59 PT.** $20/day
+  across two ad groups, **$380** at most. The start moved up from Oct 26 on
+  Oct 22; the caps stayed at $190 per group, so each group stops when it hits
+  its cap, around **Nov 10** (day 19), before the scheduled end.
+- Objective: Website traffic (link clicks), auto bid. Placement: home timeline
+  and search results. Geo: US, UK, CA, AU. Language: English. X's "Optimize
+  targeting" is off. Targeting is the same in both groups (see Targeting below).
+- **Two ad groups, $10/day each with a $190 total cap.** They split by
+  presenter, so each presenter gets the same spend:
+
+| Ad group | Ad (`utm_content`) | Creative |
+|---|---|---|
+| `andrew` | `two-ga4-andrew` | Post A, HeyGen avatar of Andrew (office, polo), his cloned voice |
+| `andrew` | `dead-ua-andrew` | Post B, same avatar |
+| `andrew` | `chat-ga4-video` | Mock chat plus real report, marked "Illustration"; not AI |
+| `becca` | `two-ga4-becca` | Post A, AI-generated presenter "Becca" |
+| `becca` | `dead-ua-becca` | Post B, same presenter |
+
+- Every link is `scan.ecomloop.com/?utm_source=x&utm_medium=paid&utm_campaign=bfcm-tracking&utm_content=<tag>`.
+  X keeps the parameters in its "URL tracking" field, not the website URL.
+- The AI ads end their post text with "Video: AI version of me (Andrew)." or
+  "Video: AI presenter.", and carry X's "Made with AI" label. The chat ad has
+  neither.
+- Post C (double firing) isn't running this round. A `chat-ga4-image` ad was
+  built but X dropped it from the draft on save, so it didn't launch.
+- Setup notes and the post text as entered are in `docs/x-ads-campaign-setup.md`.
+
+**The presenter comparison is ad by ad, not group by group.** The chat ad shares
+the `andrew` group's $10/day, so compare `two-ga4-andrew` and `dead-ua-andrew`
+against the two `-becca` ads on 3-second view rate and completion rate.
+
+**Test rows to leave out:** dgk.com (`two-ga4`, Oct 22) and juniperridge.com
+(`two-ga4-andrew`, Oct 23) were tracking checks, not ad traffic.
+
+## Before launch (done)
+
+1. **Scanner PR #15** (RantumBits/ecomloop-scanner) is deployed, so X visits
+   log their campaign tags, not a bare `https://t.co/...` referrer.
+2. **Smoke tests passed:** the scan log showed `content=two-ga4` on Oct 22 and
+   `content=two-ga4-andrew` on Oct 23.
+3. **The X pixel is installed** on the scanner, but the campaign doesn't
+   optimise on it. At this budget X's conversion optimisation has nothing to
+   learn from, so the objective is Website traffic and the scan log is the
+   source of truth.
+4. **The study is public** at https://ecomloop.com/shopify-tracking-study.html
+   since Oct 22, so the Shopifreaks exclusive no longer limits the start date.
 
 ## Dates and budget
 
-- **Oct 31 to Nov 13**, $20/day, 14 days = **$280**.
+- **Oct 23 to about Nov 10**, $20/day, 19 days = **$380**, when the $190
+  caps run out (the scheduled end is Nov 13).
 - Stop by Nov 14 regardless: after that owners are in code freeze and Meta/X
   CPMs climb into BFCM.
-- Objective: Website traffic (link clicks). Placement: home timeline and
-  search. Exclude the audience network. Geo: US, UK, CA, AU. Language: English.
-- One campaign, one ad group, three ads. X rotates them, and the tags below
-  separate them in the scan log.
 
 ## Posts
+
+The original drafts. A and B ran with these words, minus the link (the
+website card carries it) and plus the AI disclosure line. C didn't run.
 
 Plain, first person, one finding each, link last. Each is under 280 characters.
 
@@ -63,7 +100,7 @@ Numbers in A and B are from `docs/corpus-403-report.md`: 64 of 386 (16.6%) two+
 GA4, 23 of 386 (6.0%) dead UA. Post A says "the revenue you see depends on
 which one you open", not "never matches", because some second properties are
 deliberate and the report says so. If X asks for the claim's source, the study page
-goes public Nov 2.
+is public at https://ecomloop.com/shopify-tracking-study.html.
 
 ## Video ads
 
@@ -115,9 +152,9 @@ Each post above runs as a video ad, with the post text as its copy. Same three
 | 15–25s | Screen recording, shot list below | "Paste your store's address. The scan shows which tags fire more than once." | **Free scan · a few minutes** |
 | 25–28s | End card | — | **scan.ecomloop.com** |
 
-C now quotes the study (105 of 386, 27.2%), so like A and B it cannot run
-before Oct 31. It says "some events", not "orders": the study counted any tag
-firing twice on a page, not purchases specifically.
+C now quotes the study (105 of 386, 27.2%). It says "some events", not
+"orders": the study counted any tag firing twice on a page, not purchases
+specifically.
 
 ### Screen recording (shared by all three)
 
@@ -223,9 +260,16 @@ diagnostic only.
 in 13 scans. 13 is a guess, not a measured number, but it puts paid X against
 the paid option it competes with, not against cold email, which costs no money.
 
-**Early stop at $100 spent (~Nov 4):** if CTR is under 0.5%, or there are
-fewer than 2 scans, pause the weakest post and move its budget to the best one.
-If all three are under that line, stop the test.
+**Early check at $100 spent (around Oct 27, day 5 of 19):** any ad with CTR
+under 0.5%, or fewer than 2 scans, gets paused, and X moves its group's budget
+to the other ads in that group. If every ad is under that line, stop the test.
+Don't pause a whole group on this check; that ends the presenter comparison
+early.
+
+**Presenter read around Nov 1:** compare the two `-andrew` ads with the two
+`-becca` ads on 3-second view rate. If one presenter is at least 20% ahead with
+comparable impressions, move the other group's $10/day to it for the rest of
+the test.
 
 **Follow-up:** within two days of each scan, if its host has a tier-1 finding
 (dead UA or two GA4s), send the usual short email about the store's own
@@ -235,11 +279,15 @@ not just "scan".
 ## Reading it
 
 ```bash
-GOOGLE_CLOUD_PROJECT=<project> node script/campaign-report.mjs x 2026-10-31
+GOOGLE_CLOUD_PROJECT=ecomloop-scanner node script/campaign-report.mjs x 2026-10-23
 ```
 
 Run from the scanner repo. It prints scans, distinct stores, stores with a
-finding and emails per post, then one line per store for follow-up. Known gap:
+finding and emails per `utm_content`, then one line per store for follow-up.
+Starting at Oct 23 leaves out the dgk.com test row, but **not**
+juniperridge.com (`two-ga4-andrew`, logged Oct 23 UTC): drop that row by hand.
+Add each finding's `-andrew` and `-becca` rows
+together to read A against B. Known gap:
 if someone scans a store that is already cached, no row is written, so that
 visit is not counted. Most stores arriving from an ad will not be cached, so
 the undercount should be small.
