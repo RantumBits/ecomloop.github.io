@@ -42,6 +42,30 @@ against the two `-becca` ads on 3-second view rate and completion rate.
 **Test rows to leave out:** dgk.com (`two-ga4`, Oct 22) and juniperridge.com
 (`two-ga4-andrew`, Oct 23) were tracking checks, not ad traffic.
 
+**Oct 23: both A ads paused for a wording fix.** `two-ga4-andrew` and
+`two-ga4-becca` said 1 in 6 stores "send every sale to two different GA4
+properties". The study measured two GA4 properties *loading* on the
+storefront (64 of 386); it never followed a purchase, and 26.5% of stores
+are checkout-blind. The claim was in the post text, the voiceover, the
+captions, the animation headline and diagram, and the end card. Paused at
+about $1.03 (becca) and $1.23 (andrew) spent; B and the chat ad carry the
+budget meanwhile.
+
+- Rebuilt videos say "load two GA4 properties", drop the revenue totals
+  from the diagram, and end on "Is your store loading two GA4 properties?".
+  They are `x-ads-footage/final/a-two-ga4-polo-v2.mp4` and
+  `a-two-ga4-becca-v2.mp4`; the old files are kept.
+- Relaunch them as new ads with the **same** `utm_content` tags
+  (`two-ga4-andrew`, `two-ga4-becca`) so the scan log continues. Use the
+  corrected post text in `docs/x-ads-campaign-setup.md`.
+- X's own per-ad numbers start fresh on the new ads, so compare presenters
+  on the B ads, which did not change.
+- **Relaunched Oct 23** as `two-ga4-andrew-v2` (post 2113678689179181516)
+  and `two-ga4-becca-v2` (post 2113678689200144733), both Active, same
+  groups, budgets and targeting, "Made with AI" on. The old two stay paused.
+- Organic post #3 (Oct 24, 7:00 AM) was edited the same day to "load two
+  GA4 properties".
+
 ## Before launch (done)
 
 1. **Scanner PR #15** (RantumBits/ecomloop-scanner) is deployed, so X visits

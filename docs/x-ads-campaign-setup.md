@@ -84,6 +84,19 @@ disclosure: "AI version of me" in the `andrew` group, "AI presenter" in the
 >
 > Video: AI version of me. / Video: AI presenter.
 
+**A, corrected Oct 23** (265 / 261). Replaces A above, which said "sends every
+sale"; the study only saw both properties load on the storefront.
+
+> I scanned a random sample of 386 Shopify storefronts. 1 in 6 load two
+> different GA4 properties.
+>
+> Sometimes that's deliberate. If nobody on your team knows why the second
+> one is there, find out before BFCM.
+>
+> Free check, takes a few minutes.
+>
+> Video: AI version of me. / Video: AI presenter.
+
 **B** (209 / 205)
 
 > 6% of the Shopify stores I scanned still load Universal Analytics. Google
